@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Untitled - The Social Coder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/assets/css/prettify.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <style type="text/css">
+      body { padding-top: 60px; padding-bottom: 40px; }
+      @media (max-width: 980px) {
+        body {
+          padding-top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Social Coder</a>
+            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li><a href="/blog.html">Blog</a>
+                </li>
+                <li>
+                  <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/tag/c.html">c</a></li>
+                      <li><a href="/tag/java.html">java</a></li>
+                      <li><a href="/tag/python.html">python</a></li>
+                    </ul>
+                  </li>
+                </li>
+                <li><a href="/archive.html">Archive</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pull-right nav-collapse collapse">
+              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
+                <input type="hidden" value="UTF-8" name="ie">
+                <input type="hidden" value="UTF-8" name="oe">
+                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center">
+        <div id="page_subtitle">   Posts tagged with : python</div>
+      </div>
+      <div class="row-fluid">
+        <article class="post shadow">
+          <header>
+            <h2><a href="/articles/hello-world/">Banana Python</a></h2><a href="/archive.html" class="back">January 08</a>
+            <hr>
+            <p>By &nbsp;<span class="author">Sanjeev Kumar</span>
+            </p>
+          </header>
+          <section class="content"><p>Welcome to your new wintersmith site mortal.</p>
+<p>This is an example of how you can set up a blog with RSS, and an archive using Wintersmith.
+If you want a bare bones example check out the site in <code>examples/basic/</code> in the repository root or
+use <code>wintersmith new &lt;path&gt; --template basic</code> when creating a new site.</p>
+<p>Site structure:</p>
+<pre><code>├── config<span class="preprocessor">.json</span>                          site configuration <span class="keyword">and</span> metadata
+├── contents
+│   ├── archive<span class="preprocessor">.md</span>
+│   ├── articles                         each article is a subfolder of articles
+│   │   ├── another-test
+│   │   │   └── index<span class="preprocessor">.md</span>
+│   │   ├── bamboo-cutter
+│   │   │   ├── Taketori_Monogatari<span class="preprocessor">.jpg</span>
+│   │   │   └── index<span class="preprocessor">.md</span>
+│   │   ├── hello-world
+│   │   │   └── index<span class="preprocessor">.md</span>
+│   │   └── red-herring
+│   │       ├── banana<span class="preprocessor">.jpg</span>
+│   │       └── index<span class="preprocessor">.md</span>
+│   ├── authors                          if an author is <span class="keyword">set</span> <span class="keyword">in</span> an articles metadata it
+│   │   ├── sanjeev<span class="preprocessor">.json</span>                   will be read from here
+│   │   └── another-author<span class="preprocessor">.json</span>
+│   ├── css
+│   │   ├── github<span class="preprocessor">.css</span>
+│   │   └── main<span class="preprocessor">.css</span>
+│   ├── feed<span class="preprocessor">.json</span>                        json page that renders the rss feed to feed<span class="preprocessor">.xml</span>
+│   ├── index<span class="preprocessor">.json</span>
+└── templates
+    ├── archive<span class="preprocessor">.jade</span>
+    ├── article<span class="preprocessor">.jade</span>
+    ├── author<span class="preprocessor">.jade</span>
+    ├── feed<span class="preprocessor">.jade</span>
+    ├── index<span class="preprocessor">.jade</span>
+    └── layout<span class="preprocessor">.jade</span></code></pre>
+<p>Articles are sorted by date and the 3 most recent are shown (configurable in <code>config.json</code>). All other articles
+are avalible via their permalink or the archive page.</p>
+<p>Example article/post:</p>
+<pre><code class="lang-markdown">title: My new shiny blog
+author: johndoe
+date: 2012-12-12 12:12
+
+<span class="header"># Hello!</span>
+
+I'm an article. Bla bla bla so interesting.</code></pre>
+</section>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/hello-world/" data-url="http://blog.sanjeevonline.com/articles/hello-world/" data-text="Banana Python #java #python /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/hello-world/"></g:plusone></div>
+            <div class="social">
+              <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+              <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/hello-world/" data-counter="top"></script>
+            </div>
+            <div class="social">
+              <div class="share-delicious">
+                <div id="delic" class="delicious">0</div>
+                <div id="delicious-b"><a href="http://del.icio.us/post?url=http://blog.sanjeevonline.com/articles/hello-world/&amp;title=&quot;Save To Delicious&quot;" target="blank">delicious</a></div>
+              </div> <script type='text/javascript'>
+               function delic(info) {
+                if(!info[0]) return;
+                var num = info[0].total_posts;
+                 if(!num) return;
+                 var delic = document.getElementById('delic');
+                 delic.innerHTML = '' + num;
+                 delic.style.textIndent = 0;
+                 delic.style.paddingRight= '6px';
+               }
+               </script>
+               <script src='http://badges.del.icio.us/feeds/json/url/data?url=http://blog.sanjeevonline.com/articles/hello-world/'&callback=declic></script>
+            </div>
+          </div><script type="text/javascript">
+            (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+          </script>
+          <hr>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">
+              <p class="pull-right"><a href="#">back to top</a></p>
+              <p>
+                Posted on Mon Jan 08 2007 15:00:00 GMT+0530 (IST)
+                | Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/python.html" rel="category tag" title="View all posts in 'python'">python</a>&nbsp;
+              </p>
+            </div>
+          </footer>
+        </article>
+        <article class="post shadow">
+          <header>
+            <h2><a href="/articles/sanjeev4/">Code &amp; Stuff</a></h2><a href="/archive.html" class="back">January 08</a>
+            <hr>
+            <p>By &nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>
+            </p>
+          </header>
+          <section class="content"><p>A long time ago, when the world was young
+Someone put some food on their tong
+They tasted the food, and thought it was nice
+Most fruit liked it - but banana&#39;s thought twice.</p>
+<p>
+            <p class="read-more"><a href="/articles/sanjeev4/">read more</a></p></section>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/sanjeev4/" data-url="http://blog.sanjeevonline.com/articles/sanjeev4/" data-text="Code &amp; Stuff #c #python /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/sanjeev4/"></g:plusone></div>
+            <div class="social">
+              <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+              <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/sanjeev4/" data-counter="top"></script>
+            </div>
+            <div class="social">
+              <div class="share-delicious">
+                <div id="delic" class="delicious">0</div>
+                <div id="delicious-b"><a href="http://del.icio.us/post?url=http://blog.sanjeevonline.com/articles/sanjeev4/&amp;title=&quot;Save To Delicious&quot;" target="blank">delicious</a></div>
+              </div> <script type='text/javascript'>
+               function delic(info) {
+                if(!info[0]) return;
+                var num = info[0].total_posts;
+                 if(!num) return;
+                 var delic = document.getElementById('delic');
+                 delic.innerHTML = '' + num;
+                 delic.style.textIndent = 0;
+                 delic.style.paddingRight= '6px';
+               }
+               </script>
+               <script src='http://badges.del.icio.us/feeds/json/url/data?url=http://blog.sanjeevonline.com/articles/sanjeev4/'&callback=declic></script>
+            </div>
+          </div><script type="text/javascript">
+            (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+          </script>
+          <hr>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">
+              <p class="pull-right"><a href="#">back to top</a></p>
+              <p>
+                Posted on Mon Jan 08 2007 15:00:00 GMT+0530 (IST)
+                | Tags :&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;<a href="/tag/python.html" rel="category tag" title="View all posts in 'python'">python</a>&nbsp;
+              </p>
+            </div>
+          </footer>
+        </article>
+      </div><a href="/archive.html" id="archive">Visit the archives!</a><hr />
+      <footer class="footer">
+        <div style="font-size: 13px" class="inner">
+          <p class="pull-right"><a href="#">back to top</a></p>
+          <p>
+             
+            Put together by SanjeevOnline Blog - Copyright 2007-2013 - Powered by &nbsp;<a href="http://www.nodejs.org" title="Powered by Node.js" target="_blank">Node.js</a> and<a href="https://github.com/jnordberg/wintersmith" title="Powered by Wintersmith" target="_blank"> Wintersmith </a> - Special thanks to <a href="http://twitter.github.com/bootstrap/" target="_blank" title="Bootstrap, from Twitter">Twitter Bootstrap</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!--le javascript-->
+    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
+    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
+    <script src="/assets/javascript/jquery.min.js"></script>
+    <script src="/assets/javascript/app.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>

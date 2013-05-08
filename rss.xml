@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
+  <channel></channel>
+  <updated>2013-05-08T18:17:47.146Z</updated>
+  <title>SanjeevOnline Blog</title>
+  <subtitle type="text"></subtitle>
+  <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
+  <id>http://feeds.feedburner.com/sanjeevonline/rss</id>
+  <generator uri="https://github.com/jnordberg/wintersmith" version="1.1.1">Wintersmith</generator>
+  <entry>
+    <author>
+      <name>Sanjeev Kumar</name>
+      <title type="html"><![CDATA[Banana Python]]></title>
+      <description><![CDATA[this a sample excerpt for post with title Banana Python tagged with ['java', 'python'] - &lt;a href="http://blog.sanjeevonline.com/articles/hello-world/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world/"></link>
+      <id>http://blog.sanjeevonline.com/articles/hello-world/</id>
+      <updated>2007-01-08T09:30:00.000Z</updated>
+      <published>2007-01-08T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="python"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/hello-world/">this a sample excerpt for post with title Banana Python tagged with ['java', 'python']</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/hello-world/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/hello-world//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>Sanjeev Kumar</name>
+      <title type="html"><![CDATA[Banana]]></title>
+      <description><![CDATA[this a sample excerpt for post with title Banana tagged with ['java', 'c'] - &lt;a href="http://blog.sanjeevonline.com/articles/hello-world2/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world2/"></link>
+      <id>http://blog.sanjeevonline.com/articles/hello-world2/</id>
+      <updated>2007-01-08T09:30:00.000Z</updated>
+      <published>2007-01-08T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="c"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/hello-world2/">this a sample excerpt for post with title Banana tagged with ['java', 'c']</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world2/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/hello-world2/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/hello-world2//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev kumar</name>
+      <title type="html"><![CDATA[Code &amp; Stuff]]></title>
+      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['java'] - &lt;a href="http://blog.sanjeevonline.com/articles/sanjeev/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/sanjeev/"></link>
+      <id>http://blog.sanjeevonline.com/articles/sanjeev/</id>
+      <updated>2007-01-08T09:30:00.000Z</updated>
+      <published>2007-01-08T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/sanjeev/">this a sample excerpt for post with title Code &amp; Stuff tagged with ['java']</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/sanjeev/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/sanjeev/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/sanjeev//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev kumar</name>
+      <title type="html"><![CDATA[Code &amp; Stuff]]></title>
+      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python'] - &lt;a href="http://blog.sanjeevonline.com/articles/sanjeev4/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/sanjeev4/"></link>
+      <id>http://blog.sanjeevonline.com/articles/sanjeev4/</id>
+      <updated>2007-01-08T09:30:00.000Z</updated>
+      <published>2007-01-08T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="c"></category>
+      <category schema="http://blog.sanjeevonline.com" term="python"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/sanjeev4/">this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python']</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/sanjeev4/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/sanjeev4/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/sanjeev4//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+</rss>
