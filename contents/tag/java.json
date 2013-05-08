@@ -1,9 +1,0 @@
-{
-    "currentTag": "java",
-    "template": "tag.jade",
-    "menu":
-        {
-          "title": "Java",
-          "order": 6
-        }
-}

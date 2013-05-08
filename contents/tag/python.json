@@ -1,9 +1,0 @@
-{
-    "currentTag": "python",
-    "template": "tag.jade",
-    "menu":
-    {
-        "title": "Python",
-        "order": 6
-    }
-}

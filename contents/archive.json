@@ -1,8 +1,0 @@
-{
-    "template": "archive.jade",
-    "title": "Archives",
-    "menu": {
-        "title": "Archive",
-        "order": 3
-    }
-}

@@ -1,9 +1,0 @@
-{
-    "currentTag": "all",
-    "template": "tag.jade",
-    "menu":
-    {
-        "title": "All",
-        "order": 6
-    }
-}

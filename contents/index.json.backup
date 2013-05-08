@@ -1,8 +1,0 @@
-{
-    "title": "The Social Coder",
-    "template": "index.jade",
-    "menu": {
-        "title": "Home",
-        "order": 0
-    }
-}
