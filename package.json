@@ -1,0 +1,55 @@
+{
+    "name": "blog.bazoud.com",
+    "version": "0.2.0",
+    "description": "The source code of Olivier Bazoud's website",
+    "homepage": "https://github.com/obazoud/blog.bazoud.com",
+    "keywords": [
+        "twitter",
+        "bootstrap",
+        "website",
+        "wintersmith",
+        "theme"
+    ],
+    "author": {
+        "name": "Olivier Bazoud",
+        "url": "http://blog.bazoud.com"
+    },
+    "maintainers": [
+        {
+            "name": "Olivier Bazoud",
+            "url": "http://blog.bazoud.com"
+        }
+    ],
+    "bugs": {
+        "url": "https://github.com/obazoud/blog.bazoud.com/issues"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/obazoud/blog.bazoud.com"
+    },
+    "dependencies": {
+        "coffee-script": "1.3.3",
+        "wintersmith": "1.1.1",
+        "express": "3.0",
+        "gzippo": "0.1.7",
+        "connect": "2.3.4",
+        "rss": "0.0.2",
+        "datejs": "0.0.2",
+        "async": "0.1.22"
+    },
+    "_notes_": {
+        "gzippo/connect bugs": "see https://github.com/tomgco/gzippo/issues/43"
+    },
+    "devDependencies": {
+        "vows": "0.6.4",
+        "phantom": "0.3.5",
+        "request": "*"
+    },
+    "scripts": {
+        "test": "vows --spec test/*-test.coffee"
+    },
+    "engines" : {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    }
+}
