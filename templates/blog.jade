@@ -19,9 +19,19 @@ block content
   each article in articles
     article.post.shadow
       header
-        h3
+        h1
           a(href=locals.baseUrl + article.url)= article.title
-        a.back(href=locals.baseUrl + '/archive.html') #{ map[page.date.getMonth()] } #{ page.date.toString().substring(8, 10) }
+        | Posted by&nbsp;
+        mixin author(article.metadata.author)
+        | |on&nbsp;
+        a.back(href=locals.baseUrl + '/archive.html') #{ map[page.date.getMonth()] } #{ page.date.toString().substring(8, 10) }, #{page.date.getFullYear()}
+        | |
+        a(href="#{locals.url}#{article.url}#disqus_thread") Comments
+        | |Tags :&nbsp;
+        each tag in article.metadata.tags
+           a(href=locals.baseUrl + "/tag/#{tag}.html", rel="category tag", title="View all posts in '#{tag}'")
+             = tag
+           &nbsp;
         hr
       section.content!= article.intro
         if article.hasMore

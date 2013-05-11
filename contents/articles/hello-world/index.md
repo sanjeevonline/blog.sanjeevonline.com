@@ -2,7 +2,7 @@
 template: article.jade
 title: Banana Python
 date: 2007-01-08 15:00
-author: Sanjeev Kumar
+author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [Programming, Travel, Photography]
 tags: ['java', 'python']

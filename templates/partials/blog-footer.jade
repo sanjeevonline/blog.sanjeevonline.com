@@ -34,16 +34,17 @@
 |     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 |   })();
 | </script>
-
 hr
 footer.footer
-      div.inner(style="font-size: 13px")
-        block footer
-          p(class="pull-right"): a(href="#") back to top
-          p
-            | Posted on #{article.date}
-            | | Tags :&nbsp;
-            each tag in article.metadata.tags
-                         a(href=locals.baseUrl + "/tag/#{tag}.html", rel="category tag", title="View all posts in '#{tag}'")
-                           = tag
-                         &nbsp;
+  div.inner(style="font-size: 13px")
+    block footer
+      p(class="pull-right"): a(href="#") back to top
+      p
+        | Posted on #{article.date}
+        |
+        a(href="#{locals.url}#{article.url}#disqus_thread") Comments
+        | | Tags :&nbsp;
+        each tag in article.metadata.tags
+             a(href=locals.baseUrl + "/tag/#{tag}.html", rel="category tag", title="View all posts in '#{tag}'")
+               = tag
+             &nbsp;

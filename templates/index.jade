@@ -1,8 +1,7 @@
 extends layout
 
 block append title
-  |  » Les derniers articles
-
+  |  » Latest posts
 block content
   include author
   //- underscore helps us filter and sort our articles
@@ -17,7 +16,7 @@ block content
   - }).first(35).value() // and finally take the first 5
   section#page
     .page-header
-      h1 Les derniers articles
+      h1 Latest posts
     table.table.table-striped
       tbody
         each article in articles
