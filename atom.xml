@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
   <title type="text">SanjeevOnline Blog</title>
-  <updated>2013-05-08T18:17:47.039Z</updated>
+  <updated>2013-05-11T06:01:22.099Z</updated>
   <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com"></link>
   <id>http://blog.sanjeevonline.com</id>
   <link rel="self" type="application/atom+xml" href="http://feeds.feedburner.com/sanjeevonline/atom"></link>
   <generator uri="https://github.com/jnordberg/wintersmith" version="1.1.1">Wintersmith</generator>
   <entry>
     <author>
-      <name>Sanjeev Kumar</name>
+      <name>sanjeev</name>
     </author>
     <title type="html"><![CDATA[Banana Python]]></title>
     <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world/"></link>

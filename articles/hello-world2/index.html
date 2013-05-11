@@ -52,13 +52,12 @@
           </div>
         </div>
       </div>
-      <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>
-      <p id="post_bottom_meta2" class="muted">Tags :<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>|<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>|
-      </p>
       <article class="post shadow">
-        <div style="text-align: center">
-          <h1>Banana</h1><a href="/archive.html" class="back">January 08</a><br>By &nbsp;<span class="author">Sanjeev Kumar</span>
-        </div><br>
+        <div>
+          <h1>Banana</h1>
+          <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author">Sanjeev Kumar</span>|on&nbsp;<a href="/archive.html" class="back">January 08, 2007</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;
+        </div>
+        <hr>
         <section class="content"><p>Welcome to your new wintersmith site mortal.</p>
 <p>This is an example of how you can set up a blog with RSS, and an archive using Wintersmith.
 If you want a bare bones example check out the site in <code>examples/basic/</code> in the repository root or
@@ -173,17 +172,23 @@ I'm an article. Bla bla bla so interesting.</code></pre>
             document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/dongsa/get_num_replies.js' + query + '"></' + 'script>');
           })();
         </script>
-        <hr>
       </article><hr />
       <footer class="footer">
         <div style="font-size: 13px" class="inner">
           <p class="pull-right"><a href="#">back to top</a></p>
-          <p>
-            Posted on Mon Jan 08 2007 15:00:00 GMT+0530 (IST)
-            | Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;
-          </p>
+          <p>Put together by SanjeevOnline Blog - Copyright 2007-2013 - Powered by &nbsp;<a href="http://www.nodejs.org" title="Powered by Node.js" target="_blank">Node.js</a> and<a href="https://github.com/jnordberg/wintersmith" title="Powered by Wintersmith" target="_blank"> Wintersmith</a> - Special thanks to<a href="http://twitter.github.com/bootstrap/" target="_blank" title="Bootstrap, from Twitter">Twitter Bootstrap</a></p>
         </div>
-      </footer>
+      </footer><script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+      </script>
     </div>
     <!--le javascript-->
     <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->

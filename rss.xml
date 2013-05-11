@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2013-05-08T18:17:47.146Z</updated>
+  <updated>2013-05-11T06:01:22.184Z</updated>
   <title>SanjeevOnline Blog</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
@@ -9,7 +9,7 @@
   <generator uri="https://github.com/jnordberg/wintersmith" version="1.1.1">Wintersmith</generator>
   <entry>
     <author>
-      <name>Sanjeev Kumar</name>
+      <name>sanjeev</name>
       <title type="html"><![CDATA[Banana Python]]></title>
       <description><![CDATA[this a sample excerpt for post with title Banana Python tagged with ['java', 'python'] - &lt;a href="http://blog.sanjeevonline.com/articles/hello-world/"&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world/"></link>
