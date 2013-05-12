@@ -1,4 +1,5 @@
 {
+    "title":"Tag",
     "currentTag": "all",
     "template": "tag.jade",
     "menu":

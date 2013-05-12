@@ -11,17 +11,20 @@ block content
       include author
       div
           h1= page.title
-          p(class="pull-right")
-            a.back(href=locals.baseUrl + '/blog.html') << back to index
-          | Posted by&nbsp;
-          mixin author(page.metadata.author)
-          | |on&nbsp;
-          a.back(href=locals.baseUrl + '/archive.html') #{ map[page.date.getMonth()] } #{ page.date.toString().substring(8, 10) }, #{page.date.getFullYear()}
-          | |Tags :&nbsp;
-          each tag in page.metadata.tags
-             a(href=locals.baseUrl + "/tag/#{tag}.html", rel="category tag", title="View all posts in '#{tag}'")
-               = tag
-             &nbsp;
+          footer.footer
+            div.inner(style="font-size: 13px")
+              p(class="pull-right")
+                a.back(href=locals.baseUrl + '/blog.html') << back to index
+              block footer
+              | Posted by&nbsp;
+              mixin author(page.metadata.author)
+              | |on&nbsp;
+              a.back(href=locals.baseUrl + '/archive.html') #{ map[page.date.getMonth()] } #{ page.date.toString().substring(8, 10) }, #{page.date.getFullYear()}
+              | |Tags :&nbsp;
+              each tag in page.metadata.tags
+                a(href=locals.baseUrl + "/tag/#{tag}.html", rel="category tag", title="View all posts in '#{tag}'")
+                  = tag
+                &nbsp;
       hr
       section.content!= page.html
       hr

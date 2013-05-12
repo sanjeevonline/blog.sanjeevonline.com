@@ -1,4 +1,4 @@
-- var cloud = _.chain(contents.articles._.directories).map(function(item) {
+- var tagCloud = _.chain(contents.articles._.directories).map(function(item) {
 -   return item.index
 - }).compact().filter(function(article) {
 -   return article.metadata.ignored !== true
@@ -8,7 +8,7 @@
 -   counts[word] = (counts[word] || 0) + 1
 -   return counts
 - }, {}).value()
-- var sortedWord = _.chain(cloud).keys().map(function(item) {
+- var sortedTags = _.chain(tagCloud).keys().map(function(item) {
 -   return item
 - }).sortBy(function(word) {
 -   return word.toLowerCase()
@@ -32,29 +32,33 @@ div.navbar.navbar-fixed-top
             - }).value();
               - each item in menu_items
                 - if (page.metadata.title == item.metadata.title)
-                  li.active
-                    if (item.metadata.menu.title == "Tags")
-                      li.dropdown
+                    if (page.metadata.title == "Tag")
+                      li.dropdown.active
                         a.dropdown-toggle(href="#", data-toggle="dropdown") #{item.metadata.menu.title}
-                          &nbsp;b.caret
+                          b.caret
                         ul.dropdown-menu
-                            each word in sortedWord
-                              li
-                                a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
+                            each word in sortedTags
+                              if (page.metadata.currentTag == word)
+                                li.active
+                                  a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
+                              else
+                                li
+                                  a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
                     else
-                       a(href= locals.baseUrl + item.url) #{item.metadata.menu.title}
+                       li.active
+                          a(href= locals.baseUrl + item.url) #{item.metadata.menu.title}
                 - else
-                  li
-                    if (item.metadata.menu.title == "Tags")
+                    if (item.metadata.title == "Tag")
                       li.dropdown
                         a.dropdown-toggle(href="#", data-toggle="dropdown") #{item.metadata.menu.title}
                           b.caret
                         ul.dropdown-menu
-                            each word in sortedWord
+                            each word in sortedTags
                               li
                                 a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
                     else
-                      a(href= locals.baseUrl + item.url) #{item.metadata.menu.title}
+                      li
+                        a(href= locals.baseUrl + item.url) #{item.metadata.menu.title}
       div(class="pull-right").nav-collapse.collapse
           form(id="search-form", class="navbar-search pull-left", action="http://www.google.com/search", method="get")
             span(class="glass js-search-action"): i

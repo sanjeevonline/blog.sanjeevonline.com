@@ -14,17 +14,19 @@ block content
   -   // sort them by date
   -   return -item.date
   - }).first(35).value() // and finally take the first 5
+  - var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   section#page
     .page-header
       h1 Latest posts
     table.table.table-striped
+
       tbody
         each article in articles
           tr
             td
-              span
-                = article.date.toString('dd/MM/yyyy')
+               a(href=article.url)= article.title
             td
-              a(href=article.url)= article.title
+               span
+                   |  #{ map[article.date.getMonth()] } #{ article.date.toString().substring(8, 10) }, #{article.date.getFullYear()}
     p
       a(href="/next", class="btn small primary") La suite...

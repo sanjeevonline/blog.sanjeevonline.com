@@ -5,7 +5,7 @@ date: 2007-01-08 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [Programming, Travel, Photography]
-tags: ['java', 'python']
+tags: [java, python, b]
 excerpt: this a sample excerpt for post with title Banana Python tagged with ['java', 'python']
 ---
 Welcome to your new wintersmith site mortal.

@@ -1,4 +1,5 @@
 {
+    "title":"Tag",
     "currentTag": "python",
     "template": "tag.jade",
     "menu":
