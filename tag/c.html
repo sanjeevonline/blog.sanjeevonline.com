@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Untitled - The Social Coder</title>
+    <title>Tag - The Social Coder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/github.css">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="/assets/css/prettify.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
     <link rel="stylesheet" href="/assets/css/app.css">
     <style type="text/css">
       body { padding-top: 60px; padding-bottom: 40px; }
+      
+      /* Large desktop */
+      @media (min-width: 1200px) {
+          body { font-size:100%;}
+          .wrap {max-width:770px;}
+      }
+      
       @media (max-width: 980px) {
-        body {
-          padding-top: 0px;
-        }
+         body {
+            padding-top: 0px;
+         }
+      }
+      
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {
+          body { font-size:100%;}
+          h1 {
+            font-size: 24pt;
+          }
+          h2 {
+            font-size: 22pt;
+          }
+      }
+      
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) {
+          body { font-size:90%;}
+          h1 {
+            font-size: 22pt;
+          }
+          h2 {
+            font-size: 20pt;
+          }
+      }
+      
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+            font-size: 20pt;
+          }
+          h2 {
+            font-size: 18pt;
+          }
       }
     </style>
   </head>
@@ -25,19 +65,16 @@
           <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Social Coder</a>
             <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
               <ul class="nav">
-                <li><a href="/blog.html">Blog</a>
+                <li><a href="/blog.html">Blog</a></li>
+                <li class="dropdown active"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tag<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/tag/b.html">b</a></li>
+                    <li class="active"><a href="/tag/c.html">c</a></li>
+                    <li><a href="/tag/java.html">java</a></li>
+                    <li><a href="/tag/python.html">python</a></li>
+                  </ul>
                 </li>
-                <li>
-                  <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="/tag/c.html">c</a></li>
-                      <li><a href="/tag/java.html">java</a></li>
-                      <li><a href="/tag/python.html">python</a></li>
-                    </ul>
-                  </li>
-                </li>
-                <li><a href="/archive.html">Archive</a>
-                </li>
+                <li><a href="/archive.html">Archive</a></li>
               </ul>
             </div>
             <div class="pull-right nav-collapse collapse">
@@ -58,7 +95,11 @@
       <div class="row-fluid">
         <article class="post shadow">
           <header>
-            <h1><a href="/articles/hello-world2/">Banana</a></h1>Posted by&nbsp;<span class="author">Sanjeev Kumar</span>|on&nbsp;<a href="/archive.html" class="back">January 01 1970</a>|<a href="http://blog.sanjeevonline.com/articles/hello-world2/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;
+            <h1><a href="/articles/hello-world2/">Banana</a></h1>
+            <footer class="footer">
+              <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author">Sanjeev Kumar</span>|on&nbsp;<a href="/archive.html" class="back">January 01 1970</a>|<a href="http://blog.sanjeevonline.com/articles/hello-world2/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;
+              </div>
+            </footer>
           </header>
           <hr>
           <section class="content"><p>Welcome to your new wintersmith site mortal.</p>
@@ -111,48 +152,16 @@ I'm an article. Bla bla bla so interesting.</code></pre>
                 <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
             </div>
             <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/hello-world2/"></g:plusone></div>
-            <div class="social">
-              <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-              <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/hello-world2/" data-counter="top"></script>
-            </div>
-            <div class="social">
-              <div class="share-delicious">
-                <div id="delic" class="delicious">0</div>
-                <div id="delicious-b"><a href="http://del.icio.us/post?url=http://blog.sanjeevonline.com/articles/hello-world2/&amp;title=&quot;Save To Delicious&quot;" target="blank">delicious</a></div>
-              </div> <script type='text/javascript'>
-               function delic(info) {
-                if(!info[0]) return;
-                var num = info[0].total_posts;
-                 if(!num) return;
-                 var delic = document.getElementById('delic');
-                 delic.innerHTML = '' + num;
-                 delic.style.textIndent = 0;
-                 delic.style.paddingRight= '6px';
-               }
-               </script>
-               <script src='http://badges.del.icio.us/feeds/json/url/data?url=http://blog.sanjeevonline.com/articles/hello-world2/'&callback=declic></script>
-            </div>
-          </div><script type="text/javascript">
-            (function() {
-              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-              po.src = 'https://apis.google.com/js/plusone.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-            })();
-          </script>
-          <hr>
-          <footer class="footer">
-            <div style="font-size: 13px" class="inner">
-              <p class="pull-right"><a href="#">back to top</a></p>
-              <p>
-                Posted on Mon Jan 08 2007 15:00:00 GMT+0530 (IST)
-                |<a href="http://blog.sanjeevonline.com/articles/hello-world2/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;
-              </p>
-            </div>
-          </footer>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/hello-world2/" data-counter="top"></script></div>
+          </div>
         </article>
         <article class="post shadow">
           <header>
-            <h1><a href="/articles/sanjeev4/">Code &amp; Stuff</a></h1>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">January 01 1970</a>|<a href="http://blog.sanjeevonline.com/articles/sanjeev4/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;<a href="/tag/python.html" rel="category tag" title="View all posts in 'python'">python</a>&nbsp;
+            <h1><a href="/articles/sanjeev4/">Code &amp; Stuff</a></h1>
+            <footer class="footer">
+              <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">January 01 1970</a>|<a href="http://blog.sanjeevonline.com/articles/sanjeev4/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;<a href="/tag/python.html" rel="category tag" title="View all posts in 'python'">python</a>&nbsp;
+              </div>
+            </footer>
           </header>
           <hr>
           <section class="content"><p>A long time ago, when the world was young
@@ -166,62 +175,14 @@ Most fruit liked it - but banana&#39;s thought twice.</p>
                 <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
             </div>
             <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/sanjeev4/"></g:plusone></div>
-            <div class="social">
-              <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-              <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/sanjeev4/" data-counter="top"></script>
-            </div>
-            <div class="social">
-              <div class="share-delicious">
-                <div id="delic" class="delicious">0</div>
-                <div id="delicious-b"><a href="http://del.icio.us/post?url=http://blog.sanjeevonline.com/articles/sanjeev4/&amp;title=&quot;Save To Delicious&quot;" target="blank">delicious</a></div>
-              </div> <script type='text/javascript'>
-               function delic(info) {
-                if(!info[0]) return;
-                var num = info[0].total_posts;
-                 if(!num) return;
-                 var delic = document.getElementById('delic');
-                 delic.innerHTML = '' + num;
-                 delic.style.textIndent = 0;
-                 delic.style.paddingRight= '6px';
-               }
-               </script>
-               <script src='http://badges.del.icio.us/feeds/json/url/data?url=http://blog.sanjeevonline.com/articles/sanjeev4/'&callback=declic></script>
-            </div>
-          </div><script type="text/javascript">
-            (function() {
-              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-              po.src = 'https://apis.google.com/js/plusone.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-            })();
-          </script>
-          <hr>
-          <footer class="footer">
-            <div style="font-size: 13px" class="inner">
-              <p class="pull-right"><a href="#">back to top</a></p>
-              <p>
-                Posted on Mon Jan 08 2007 15:00:00 GMT+0530 (IST)
-                |<a href="http://blog.sanjeevonline.com/articles/sanjeev4/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/c.html" rel="category tag" title="View all posts in 'c'">c</a>&nbsp;<a href="/tag/python.html" rel="category tag" title="View all posts in 'python'">python</a>&nbsp;
-              </p>
-            </div>
-          </footer>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/sanjeev4/" data-counter="top"></script></div>
+          </div>
         </article>
       </div><a href="/archive.html" id="archive">Visit the archives!</a><hr />
       <footer class="footer">
         <div style="font-size: 13px" class="inner">
-          <p class="pull-right"><a href="#">back to top</a></p>
-          <p>Put together by SanjeevOnline Blog - Copyright 2007-2013 - Powered by &nbsp;<a href="http://www.nodejs.org" title="Powered by Node.js" target="_blank">Node.js</a> and<a href="https://github.com/jnordberg/wintersmith" title="Powered by Wintersmith" target="_blank"> Wintersmith</a> - Special thanks to<a href="http://twitter.github.com/bootstrap/" target="_blank" title="Bootstrap, from Twitter">Twitter Bootstrap</a></p>
         </div>
-      </footer><script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-      }());
-      </script>
+      </footer>
     </div>
     <!--le javascript-->
     <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
@@ -231,7 +192,6 @@ Most fruit liked it - but banana&#39;s thought twice.</p>
     <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
     <script src="/assets/bootstrap/js/bootstrap-alert.js"></script>
     <script src="/assets/bootstrap/js/bootstrap-modal.js"></script>
-    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
     <script src="/assets/bootstrap/js/bootstrap-scrollspy.js"></script>
     <script src="/assets/bootstrap/js/bootstrap-tab.js"></script>
     <script src="/assets/bootstrap/js/bootstrap-tooltip.js"></script>
@@ -240,5 +200,24 @@ Most fruit liked it - but banana&#39;s thought twice.</p>
     <script src="/assets/bootstrap/js/bootstrap-collapse.js"></script>
     <script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
     <script src="/assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="http://platform.linkedin.com/in.js"></script><script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
   </body>
 </html>

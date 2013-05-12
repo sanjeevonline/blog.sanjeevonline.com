@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/archive.html</loc>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -37,43 +37,49 @@
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/java</loc>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/python</loc>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/tag/b</loc>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/c</loc>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/category/Programming</loc>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/category/Travel</loc>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/category/Photography</loc>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/archive/2007</loc>
-    <lastmod>2013-05-11T06:01:22.182Z</lastmod>
+    <lastmod>2013-05-12T19:33:23.167Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
