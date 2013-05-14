@@ -2,7 +2,7 @@
     "title": "Tag",
     "template": "tag.jade",
     "menu": {
-        "title": "Tag",
+        "title": "Tags",
         "order": 2
     }
 }

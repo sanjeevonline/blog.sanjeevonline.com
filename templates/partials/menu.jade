@@ -14,6 +14,22 @@
 -   return word.toLowerCase()
 - }).value()
 
+- var categories = _.chain(contents.articles._.directories).map(function(item) {
+-   return item.index
+- }).compact().filter(function(article) {
+-   return article.metadata.ignored !== true
+- }).map(function(article) {
+-   return article.metadata.categories
+- }).flatten().reduce(function(counts, word) {
+-   counts[word] = (counts[word] || 0) + 1
+-   return counts
+- }, {}).value()
+- var sortedCategories = _.chain(categories).keys().map(function(item) {
+-   return item
+- }).sortBy(function(word) {
+-   return word.toLowerCase()
+- }).value()
+
 div.navbar.navbar-fixed-top
   div.navbar-inner
     div.container

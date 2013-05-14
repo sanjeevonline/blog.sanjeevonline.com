@@ -1,65 +1,19 @@
 ---
 template: article.jade
-title: Banana Python
-date: 2007-01-08 15:00
+title: A walk in Brussels 
+date: 2009-11-30 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
-categories: [Programming, Travel, Photography]
-tags: [java, python, b]
-excerpt: this a sample excerpt for post with title Banana Python tagged with ['java', 'python']
+categories: [Travel]
+tags: [travel]
+excerpt: A day well spent with friends and family. A lot of site seeing and a lot of fun.
 ---
-Welcome to your new wintersmith site mortal.
+Arun and Anagha, our family friends, visited us in Brussels and we decided to do a little site seeing while they were around. Brussels has grown from a 10th-century fortress town to a sizeable city. It has a lot of popular places that a lot of tourists come to see.
 
-This is an example of how you can set up a blog with RSS, and an archive using Wintersmith.
-If you want a bare bones example check out the site in `examples/basic/` in the repository root or
-use `wintersmith new <path> --template basic` when creating a new site.
+We started our site seeing from the famous Atomium which is in Hayzel and is not very from where we live in Brussels. Rajni cooked some Parathas and snacks to carry along for site seeing. Later that day we went to see this place called Grand Place which is at walking distance from our place. It was a day well spent with family and friends.
 
-Site structure:
+Here are some pics from the tour.
 
-```
-├── config.json                          site configuration and metadata
-├── contents
-│   ├── archive.md
-│   ├── articles                         each article is a subfolder of articles
-│   │   ├── another-test
-│   │   │   └── index.md
-│   │   ├── bamboo-cutter
-│   │   │   ├── Taketori_Monogatari.jpg
-│   │   │   └── index.md
-│   │   ├── hello-world
-│   │   │   └── index.md
-│   │   └── red-herring
-│   │       ├── banana.jpg
-│   │       └── index.md
-│   ├── authors                          if an author is set in an articles metadata it
-│   │   ├── sanjeev.json                   will be read from here
-│   │   └── another-author.json
-│   ├── css
-│   │   ├── github.css
-│   │   └── main.css
-│   ├── feed.json                        json page that renders the rss feed to feed.xml
-│   ├── index.json
-└── templates
-    ├── archive.jade
-    ├── article.jade
-    ├── author.jade
-    ├── feed.jade
-    ├── index.jade
-    └── layout.jade
-```
-
-Articles are sorted by date and the 3 most recent are shown (configurable in `config.json`). All other articles
-are avalible via their permalink or the archive page.
-
-Example article/post:
-
-```markdown
-title: My new shiny blog
-author: johndoe
-date: 2012-12-12 12:12
-
-# Hello!
-
-I'm an article. Bla bla bla so interesting.
-
-```
+<span2><img src="https://lh5.googleusercontent.com/-PJUjJY7H-5Q/UR--ouCHg5I/AAAAAAAAZYY/6RmJksypA7Q/w352-h264-p-o/P1040813.JPG" ></span2>
+<span2><img src="https://lh3.googleusercontent.com/-doW0wcSR15c/UR-_CgQ51OI/AAAAAAAAZZQ/4QNtJtl-ays/w345-h259-p-o/P1030536.JPG"></span2>
+<span2><img src="https://lh6.googleusercontent.com/-_7_x0VNACsI/UR--4ZuJ2LI/AAAAAAAAZY4/eX_c7crLv7c/w359-h269-p-o/P1040558.JPG"></span2>
