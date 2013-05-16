@@ -27,7 +27,7 @@ block content
             | Posted by&nbsp;
             mixin author(article.metadata.author)
             | |on&nbsp;
-            a.back(href=locals.baseUrl + '/archive.html') #{ map[page.date.getMonth()] } #{ page.date.toString().substring(8, 10) }, #{page.date.getFullYear()}
+            a.back(href=locals.baseUrl + '/archive.html') #{ map[article.date.getMonth()] } #{ article.date.toString().substring(8, 10) }, #{article.date.getFullYear()}
             | |
             a(href="#{locals.url}#{article.url}#disqus_thread") Comments
             | |Tags :&nbsp;

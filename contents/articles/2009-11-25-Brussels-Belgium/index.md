@@ -1,7 +1,7 @@
 ---
 template: article.jade
 title: A walk in Brussels 
-date: 2009-11-30 15:00
+date: 2009-11-25 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [Travel]
