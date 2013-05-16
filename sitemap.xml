@@ -1,91 +1,109 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/archive.html</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://blog.sanjeevonline.com/articles/hello-world/</loc>
-    <lastmod>2009-11-30T09:30:00.000Z</lastmod>
+    <loc>http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</loc>
+    <lastmod>+020010-05-20T09:30:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://blog.sanjeevonline.com/articles/sanjeev/</loc>
-    <lastmod>2007-01-08T09:30:00.000Z</lastmod>
+    <loc>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</loc>
+    <lastmod>2010-01-01T09:30:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://blog.sanjeevonline.com/articles/hello-world2/</loc>
-    <lastmod>2007-01-08T09:30:00.000Z</lastmod>
+    <loc>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</loc>
+    <lastmod>2009-12-31T09:30:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://blog.sanjeevonline.com/articles/sanjeev4/</loc>
-    <lastmod>2007-01-08T09:30:00.000Z</lastmod>
+    <loc>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</loc>
+    <lastmod>2009-12-30T09:30:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://blog.sanjeevonline.com/tag/java</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <loc>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</loc>
+    <lastmod>2009-12-01T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</loc>
+    <lastmod>2009-11-25T09:30:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/travel</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/c</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/python</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://blog.sanjeevonline.com/category/Programming</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/category/Travel</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/category/travel</loc>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/category/Programming</loc>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/category/Photography</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://blog.sanjeevonline.com/archive/2007</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/archive/2009</loc>
-    <lastmod>2013-05-14T17:15:45.627Z</lastmod>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/archive/20010</loc>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/archive/2010</loc>
+    <lastmod>2013-05-16T09:22:50.189Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>

@@ -5,44 +5,14 @@
     <atom:link href="http://blog.sanjeevonline.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://blog.sanjeevonline.com</link>
     <description>The Social Coder</description>
-    <pubDate>Mon, 08 Jan 2007 15:00:00 +0550</pubDate>
+    <pubDate>Wed, 25 Nov 2009 15:00:00 +0550</pubDate>
     <generator>The mighty Wintersmith</generator>
     <language>en</language>
     <item>
-      <title>Code &amp; Stuff</title>
-      <link>http://blog.sanjeevonline.com/articles/sanjeev/</link>
-      <pubDate>Mon, 08 Jan 2007 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/sanjeev/</guid>
-      <author></author>
-      <description>&lt;p&gt;A long time ago, when the world was young
-Someone put some food on their tong
-They tasted the food, and thought it was nice
-Most fruit liked it - but banana&amp;#39;s thought twice.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;They held a meeting at quarter past eight
-Whilst the human&amp;#39;s were getting home late
-They decided they didn&amp;#39;t want to be eaten
-they said &amp;quot;No way, we&amp;#39;re not going to be beaten&amp;quot;&lt;/p&gt;
-&lt;p&gt;So time went by, and human&amp;#39;s got old
-Banana&amp;#39;s got ready, for their prophets had told
-That soon shall come the dawn of war.
-Where humans will rule the earth no more.&lt;/p&gt;
-&lt;p&gt;The humans knew not of the evil banana&amp;#39;s plans
-They made their cars, guitars and aluminum cans
-And the banana&amp;#39;s began to take over the east
-While humans knew not, and kept having their feast.&lt;/p&gt;
-&lt;p&gt;But time has run out, no more hiding there can be
-Or else the banana&amp;#39;s will kill George, you and me
-We must take up arms, and fight to the end
-Because, believe it or not, a banana is not a friend.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/articles/sanjeev/banana.jpg&quot; alt=&quot;a banana&quot;&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>A walk in Brussels</title>
-      <link>http://blog.sanjeevonline.com/articles/hello-world/</link>
-      <pubDate>Mon, 30 Nov 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/hello-world/</guid>
+      <link>http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</link>
+      <pubDate>Wed, 25 Nov 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</guid>
       <author></author>
       <description>&lt;p&gt;Arun and Anagha, our family friends, visited us in Brussels and we decided to do a little site seeing while they were around. Brussels has grown from a 10th-century fortress town to a sizeable city. It has a lot of popular places that a lot of tourists come to see.&lt;/p&gt;
 &lt;p&gt;We started our site seeing from the famous Atomium which is in Hayzel and is not very from where we live in Brussels. Rajni cooked some Parathas and snacks to carry along for site seeing. Later that day we went to see this place called Grand Place which is at walking distance from our place. It was a day well spent with family and friends.&lt;/p&gt;
@@ -52,85 +22,86 @@ Because, believe it or not, a banana is not a friend.&lt;/p&gt;
 &lt;span2&gt;&lt;img src=&quot;https://lh6.googleusercontent.com/-_7_x0VNACsI/UR--4ZuJ2LI/AAAAAAAAZY4/eX_c7crLv7c/w359-h269-p-o/P1040558.JPG&quot;&gt;&lt;/span2&gt;</description>
     </item>
     <item>
-      <title>Banana</title>
-      <link>http://blog.sanjeevonline.com/articles/hello-world2/</link>
-      <pubDate>Mon, 08 Jan 2007 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/hello-world2/</guid>
+      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
+      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
       <author></author>
-      <description>&lt;p&gt;Welcome to your new wintersmith site mortal.&lt;/p&gt;
-&lt;p&gt;This is an example of how you can set up a blog with RSS, and an archive using Wintersmith.
-If you want a bare bones example check out the site in &lt;code&gt;examples/basic/&lt;/code&gt; in the repository root or
-use &lt;code&gt;wintersmith new &amp;lt;path&amp;gt; --template basic&lt;/code&gt; when creating a new site.&lt;/p&gt;
-&lt;p&gt;Site structure:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;├── config&lt;span class=&quot;preprocessor&quot;&gt;.json&lt;/span&gt;                          site configuration &lt;span class=&quot;keyword&quot;&gt;and&lt;/span&gt; metadata
-├── contents
-│   ├── archive&lt;span class=&quot;preprocessor&quot;&gt;.md&lt;/span&gt;
-│   ├── articles                         each article is a subfolder of articles
-│   │   ├── another-test
-│   │   │   └── index&lt;span class=&quot;preprocessor&quot;&gt;.md&lt;/span&gt;
-│   │   ├── bamboo-cutter
-│   │   │   ├── Taketori_Monogatari&lt;span class=&quot;preprocessor&quot;&gt;.jpg&lt;/span&gt;
-│   │   │   └── index&lt;span class=&quot;preprocessor&quot;&gt;.md&lt;/span&gt;
-│   │   ├── hello-world
-│   │   │   └── index&lt;span class=&quot;preprocessor&quot;&gt;.md&lt;/span&gt;
-│   │   └── red-herring
-│   │       ├── banana&lt;span class=&quot;preprocessor&quot;&gt;.jpg&lt;/span&gt;
-│   │       └── index&lt;span class=&quot;preprocessor&quot;&gt;.md&lt;/span&gt;
-│   ├── authors                          if an author is &lt;span class=&quot;keyword&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; an articles metadata it
-│   │   ├── sanjeev&lt;span class=&quot;preprocessor&quot;&gt;.json&lt;/span&gt;                   will be read from here
-│   │   └── another-author&lt;span class=&quot;preprocessor&quot;&gt;.json&lt;/span&gt;
-│   ├── css
-│   │   ├── github&lt;span class=&quot;preprocessor&quot;&gt;.css&lt;/span&gt;
-│   │   └── main&lt;span class=&quot;preprocessor&quot;&gt;.css&lt;/span&gt;
-│   ├── feed&lt;span class=&quot;preprocessor&quot;&gt;.json&lt;/span&gt;                        json page that renders the rss feed to feed&lt;span class=&quot;preprocessor&quot;&gt;.xml&lt;/span&gt;
-│   ├── index&lt;span class=&quot;preprocessor&quot;&gt;.json&lt;/span&gt;
-└── templates
-    ├── archive&lt;span class=&quot;preprocessor&quot;&gt;.jade&lt;/span&gt;
-    ├── article&lt;span class=&quot;preprocessor&quot;&gt;.jade&lt;/span&gt;
-    ├── author&lt;span class=&quot;preprocessor&quot;&gt;.jade&lt;/span&gt;
-    ├── feed&lt;span class=&quot;preprocessor&quot;&gt;.jade&lt;/span&gt;
-    ├── index&lt;span class=&quot;preprocessor&quot;&gt;.jade&lt;/span&gt;
-    └── layout&lt;span class=&quot;preprocessor&quot;&gt;.jade&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Articles are sorted by date and the 3 most recent are shown (configurable in &lt;code&gt;config.json&lt;/code&gt;). All other articles
-are avalible via their permalink or the archive page.&lt;/p&gt;
-&lt;p&gt;Example article/post:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-markdown&quot;&gt;title: My new shiny blog
-author: johndoe
-date: 2012-12-12 12:12
-
-&lt;span class=&quot;header&quot;&gt;# Hello!&lt;/span&gt;
-
-I'm an article. Bla bla bla so interesting.&lt;/code&gt;&lt;/pre&gt;
+      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
+&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
 </description>
     </item>
     <item>
-      <title>Code &amp; Stuff</title>
-      <link>http://blog.sanjeevonline.com/articles/sanjeev4/</link>
-      <pubDate>Mon, 08 Jan 2007 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/sanjeev4/</guid>
+      <title>The windmills of Kinderdijk, Netherlands</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</link>
+      <pubDate>Thu, 31 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</guid>
       <author></author>
-      <description>&lt;p&gt;A long time ago, when the world was young
-Someone put some food on their tong
-They tasted the food, and thought it was nice
-Most fruit liked it - but banana&amp;#39;s thought twice.&lt;/p&gt;
+      <description>&lt;p&gt;We had heard a lot about Netherlands wind mills that were built more than two centuries ago and are still into existence.For many centuries these windmills played an important role in the drainage &amp;amp; subsequent reclamation of the lands in NL. These windmills were already on our agenda for this weekend. &lt;/p&gt;
+&lt;p&gt;Arun checked the bus and train route and selected the best way to reach Kiderdijk. Bus was a little more convenient than train as it was the direct route. So we left for the bus stop from where we were to board the bus  number 90 for Kinderdijk. I remember the bus number because it saved us some 40 € for the travel. For some reasons, that day it was free travel on that route so we didn&amp;#39;t have to pay anything for our trip to Kinderdijk. Arun was excited and could hardly control his happiness when the driver told him that it was a free day. I also had a similar or may be even more intense reaction when Arun told me about it.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;They held a meeting at quarter past eight
-Whilst the human&amp;#39;s were getting home late
-They decided they didn&amp;#39;t want to be eaten
-they said &amp;quot;No way, we&amp;#39;re not going to be beaten&amp;quot;&lt;/p&gt;
-&lt;p&gt;So time went by, and human&amp;#39;s got old
-Banana&amp;#39;s got ready, for their prophets had told
-That soon shall come the dawn of war.
-Where humans will rule the earth no more.&lt;/p&gt;
-&lt;p&gt;The humans knew not of the evil banana&amp;#39;s plans
-They made their cars, guitars and aluminum cans
-And the banana&amp;#39;s began to take over the east
-While humans knew not, and kept having their feast.&lt;/p&gt;
-&lt;p&gt;But time has run out, no more hiding there can be
-Or else the banana&amp;#39;s will kill George, you and me
-We must take up arms, and fight to the end
-Because, believe it or not, a banana is not a friend.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/articles/sanjeev4/banana.jpg&quot; alt=&quot;a banana&quot;&gt;&lt;/p&gt;
+&lt;p&gt;After an hour and twenty minutes journey we reached Kinderdijk. From the bus stop itself we could see some windmills. The weather was very pleasant that day and it added to our pleasure. &lt;/p&gt;
+&lt;p&gt;After we all used the toilet (using a single 50 cent coin) we were all set to explore and appreciate the beauty of the 19 windmills that were there. It was very scenic and calm place and spent some some quality time there and clicked some nice snaps for my photo album.&lt;/p&gt;
+&lt;p&gt;After spending about couple of hours and after clicking photographs around the windmills in all possible posses like all Indians do, we wrapped up and decided to go to Rotterdam to see some more sites. Of-course we boarded the same bus route number 90. &lt;/p&gt;
+&lt;p&gt;Arun suggested a few more sites that we could have visited on the same day but I didn&amp;#39;t feel like going anywhere as Ranit had already slept in his pram and it would have been a bit of inconvenience for him. Besides I was still awestruck after seeing the beautiful and natural windmills of Kinderdijk and didn&amp;#39;t want to let thyis feeling go for some more time.&lt;/p&gt;
+&lt;p&gt;We realized that we had not eaten anything after the breakfast and decided to get some chicken kebabs and french fries. After spoiling the floor of kebab shop with the chicken and bread from our kebabs we decided to call it a day and started our journey for Arun&amp;#39;s apartment. We also had to pack our bags for next day as we had planned to see Amsterdam city and board the train for Brussels directly from there.&lt;/p&gt;
+&lt;p&gt;Overall it was another wonderful day!!!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Domtoren Utrecht, Netherlands</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
+      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
+      <author></author>
+      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
+&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
+&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
+&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
+&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
+&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
+&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
+Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>London, England</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</link>
+      <pubDate>Thu, 20 May 20010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</guid>
+      <author></author>
+      <description>&lt;p&gt;It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travelog. &lt;/p&gt;
+&lt;p&gt;So the trip started with a very positive news from London about Simi &amp;amp; Rohit (My sis-in-law) getting blessed with a baby boy. I was excited to join them in London during these happy moments. Rajni and Ranit were already in London from past one month so seeing them after so long was itself a great feeling that I was looking forward to. &lt;/p&gt;
+&lt;p&gt;As usual we didn&amp;#39;t have a very well planned agenda for our 7 days of London sight seeing trips, as I was relying completely on Rohit for that. Thanks to Rohit for planning all our trips perfectly so that we can see as much of London as possible without exerting ourselves to death :-). It worked out very well for us and we will cherish the memories from that trip forever.  &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So on our first day we went to see the Kingston Riverside where we spent most of our time hanging out along the river side on that sunny day. While I was enjoying my beer, Rajni ensured that kids don&amp;#39;t jump into the river while feeding ducks :-). Afterall they are Indian kids so anything is possible. Specially Ranit is quite capable of doing such stuff. It was overall a relaxed day where we warmed up ourselves for the rest of our trip.  One thing that I remember from this day was these two old women, probably in their late 80&amp;#39;s, sitting on a bench under the most beautiful tree on the riverside. That was the perfect place to click some snaps, so we decided to wait for sometime for these ladies to move. We waited for some 4 hrs and eventually gave up the hope to get a snap in that area. These women were like glued together with the bench and sat there throughout the day. For my satisfaction I went a little closer and was relieved to see that both were alive.&lt;/p&gt;
+&lt;p&gt;On our second day we saw a lot many popular places of London like O2 Arena, Greenwich Observatory, CuttySark and Canary Wharf. Rajni liked the skyscrapers rising from the Thames river in Canary Wharf and Ranit and I liked Greenwich Observatory for its greenery and huge parks and play areas for kids. &lt;/p&gt;
+&lt;p&gt;Third day was Rajni&amp;#39;s birthday and was reserved for the best sites of London. That day we visited London Bridge, Big Ben, London Eye, Footbridge on Thames and the famous Tate Art Gallery. London looked very beautiful and tiny from within the LondonEye capsule.  We unanimously agree for London Eye to be our favorite from this day.&lt;/p&gt;
+&lt;p&gt;We were a little tired so decided to rest on the forth day. We also visited Usha Didi&amp;#39;s house on that day where Ranit got a foot scooter as a gift. He was so exited and possessive about it that he refused to open it fearing that Gungun (Simi&amp;#39;s daughter) will take it.&lt;/p&gt;
+&lt;p&gt;Fifth day we saw Buckingham Palace, Hyde Park, Saint James Park, Madam Tussuad, Trafalgar square and Oxford street. In Madam Tussuad I got the opportunity to pose with, hold and kiss the likes of Julia Roberts and Angelina Joli while Rajni was hanging out with Johnny Depp &amp;amp; Brad pit. Ranit found a hiding place near the legs of Marilyn Monroe. &lt;/p&gt;
+&lt;p&gt;Sixth day was the most special one when Rohit drove us to Brighton beach which was some 60 miles from their house. Gungun was also with us on this trip. It was a nice sunny day again like on all other days during our trip. This was kind-of rare during that part of the year. We spent full day on this pebbled beach and it was so much fun. We spent some time playing some games in this casino-for-kids kind of thing. Gungun managed to win a few gifts from the games which were later distributed between Gungun and Ranit. Rohit also demonstrated his skills by winning us couple of toy dolphins by beating all his competitors in the fish race. He did that not once but twice and second time I was also competing with him. He won by a second or two. I was at second position.&lt;/p&gt;
+&lt;p&gt;Seventh day we spent at home. Usha Didi and Jija ji also joined us at Rohit&amp;#39;s house and in the evening Rohit stuffed us with a lot of chilled beer and delicious pork which he cooked himself.&lt;/p&gt;
+&lt;p&gt;Gungun, Simi and Rohit were awesome hosts throughout our stay in London and we thoroughly enjoyed each and every minute that we spent there.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <author></author>
+      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
+&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
+&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
+&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
+It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
+&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
+&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
+&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
   </channel>

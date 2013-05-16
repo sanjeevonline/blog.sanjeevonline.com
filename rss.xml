@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2013-05-14T17:15:45.625Z</updated>
+  <updated>2013-05-16T09:22:50.187Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
@@ -10,70 +10,103 @@
   <entry>
     <author>
       <name>sanjeev</name>
-      <title type="html"><![CDATA[A walk in Brussels]]></title>
-      <description><![CDATA[A day well spent with friends and family. A lot of site seeing and a lot of fun. - &lt;a href="http://blog.sanjeevonline.com/articles/hello-world/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world/"></link>
-      <id>http://blog.sanjeevonline.com/articles/hello-world/</id>
-      <updated>2009-11-30T09:30:00.000Z</updated>
-      <published>2009-11-30T09:30:00.000Z</published>
+      <title type="html"><![CDATA[London, England]]></title>
+      <description><![CDATA[It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</id>
+      <updated>+020010-05-20T09:30:00.000Z</updated>
+      <published>+020010-05-20T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/hello-world/">A day well spent with friends and family. A lot of site seeing and a lot of fun.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/hello-world/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/hello-world//lastest.rss</link>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/">It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-05-20-London-England//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Day trip to the largest city of Netherlands - Amsterdam]]></title>
+      <description><![CDATA[The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda of Netherlands trip. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</id>
+      <updated>2010-01-01T09:30:00.000Z</updated>
+      <published>2010-01-01T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/">The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda of Netherlands trip.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-01-01-Amsterdam-Netherlands//lastest.rss</link>
       <thr:total>0</thr:total>
     </author>
   </entry>
   <entry>
     <author>
       <name>sanjeev kumar</name>
-      <title type="html"><![CDATA[Code &amp; Stuff]]></title>
-      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['java'] - &lt;a href="http://blog.sanjeevonline.com/articles/sanjeev/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/sanjeev/"></link>
-      <id>http://blog.sanjeevonline.com/articles/sanjeev/</id>
-      <updated>2007-01-08T09:30:00.000Z</updated>
-      <published>2007-01-08T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="java"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/sanjeev/">this a sample excerpt for post with title Code &amp; Stuff tagged with ['java']</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/sanjeev/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/sanjeev/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/sanjeev//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>Sanjeev Kumar</name>
-      <title type="html"><![CDATA[Banana]]></title>
-      <description><![CDATA[this a sample excerpt for post with title Banana tagged with ['java', 'c'] - &lt;a href="http://blog.sanjeevonline.com/articles/hello-world2/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world2/"></link>
-      <id>http://blog.sanjeevonline.com/articles/hello-world2/</id>
-      <updated>2007-01-08T09:30:00.000Z</updated>
-      <published>2007-01-08T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="java"></category>
-      <category schema="http://blog.sanjeevonline.com" term="c"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/hello-world2/">this a sample excerpt for post with title Banana tagged with ['java', 'c']</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/hello-world2/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/hello-world2/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/hello-world2//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev kumar</name>
-      <title type="html"><![CDATA[Code &amp; Stuff]]></title>
-      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python'] - &lt;a href="http://blog.sanjeevonline.com/articles/sanjeev4/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/sanjeev4/"></link>
-      <id>http://blog.sanjeevonline.com/articles/sanjeev4/</id>
-      <updated>2007-01-08T09:30:00.000Z</updated>
-      <published>2007-01-08T09:30:00.000Z</published>
+      <title type="html"><![CDATA[The windmills of Kinderdijk, Netherlands]]></title>
+      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python'] - &lt;a href="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</id>
+      <updated>2009-12-31T09:30:00.000Z</updated>
+      <published>2009-12-31T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="c"></category>
       <category schema="http://blog.sanjeevonline.com" term="python"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/sanjeev4/">this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python']</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/sanjeev4/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/sanjeev4/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/sanjeev4//lastest.rss</link>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/">this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python']</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2009-12-31-Kinderdijk-Netherlands//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Domtoren Utrecht, Netherlands]]></title>
+      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['java'] - &lt;a href="http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</id>
+      <updated>2009-12-30T09:30:00.000Z</updated>
+      <published>2009-12-30T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/">this a sample excerpt for post with title Code &amp; Stuff tagged with ['java']</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2009-12-30-Domtoren-Utrecht//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[A day trip to Aquatopia at Antwerp, Brussels]]></title>
+      <description><![CDATA[Finally we went to see this large Aquarium, Aquatopia that Ranit was longing to see from quite some time. - &lt;a href="http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</id>
+      <updated>2009-12-01T09:30:00.000Z</updated>
+      <published>2009-12-01T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/">Finally we went to see this large Aquarium, Aquatopia that Ranit was longing to see from quite some time.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2009-11-30-Aquatopia-Aquarium//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[A walk in Brussels]]></title>
+      <description><![CDATA[A day well spent with friends and family. A lot of site seeing and a lot of fun. - &lt;a href="http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</id>
+      <updated>2009-11-25T09:30:00.000Z</updated>
+      <published>2009-11-25T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/">A day well spent with friends and family. A lot of site seeing and a lot of fun.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2009-11-25-Brussels-Belgium//lastest.rss</link>
       <thr:total>0</thr:total>
     </author>
   </entry>
