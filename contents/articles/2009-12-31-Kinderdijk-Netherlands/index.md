@@ -4,8 +4,8 @@ title: The windmills of Kinderdijk, Netherlands
 date: 2009-12-31 15:00
 author: sanjeev kumar
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
-categories: [Programming, Travel, Photography]
-tags: ['c', 'python']
+categories: [travel]
+tags: [travel]
 excerpt: this a sample excerpt for post with title Code & Stuff tagged with ['c', 'python']
 ---
 
@@ -14,7 +14,6 @@ We had heard a lot about Netherlands wind mills that were built more than two ce
 Arun checked the bus and train route and selected the best way to reach Kiderdijk. Bus was a little more convenient than train as it was the direct route. So we left for the bus stop from where we were to board the bus  number 90 for Kinderdijk. I remember the bus number because it saved us some 40 € for the travel. For some reasons, that day it was free travel on that route so we didn't have to pay anything for our trip to Kinderdijk. Arun was excited and could hardly control his happiness when the driver told him that it was a free day. I also had a similar or may be even more intense reaction when Arun told me about it.
 
 <span class="more"></span>
-
 
 After an hour and twenty minutes journey we reached Kinderdijk. From the bus stop itself we could see some windmills. The weather was very pleasant that day and it added to our pleasure. 
 

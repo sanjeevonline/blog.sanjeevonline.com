@@ -1,13 +1,12 @@
 ---
 template: article.jade
 title: London, England
-date: 20010-05-20 15:00
+date: 2010-05-05 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [travel]
 tags: [travel]
 excerpt: It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog. 
-
 ---
 
 It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travelog. 

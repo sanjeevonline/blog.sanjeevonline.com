@@ -1,10 +1,5 @@
 {
     "title":"Tag",
     "currentTag": "java",
-    "template": "tag.jade",
-    "menu":
-        {
-          "title": "Java",
-          "order": 6
-        }
+    "template": "tag.jade"
 }

@@ -1,5 +1,5 @@
 {
     "title":"Tag",
-    "currentTag": "c",
+    "currentTag": "best-practices",
     "template": "tag.jade"
 }
