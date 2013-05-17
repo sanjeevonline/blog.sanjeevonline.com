@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Domtoren Utrecht, Netherlands - The Social Coder</title>
+    <title>Overridable methods need special care - The Social Coder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/github.css">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
@@ -90,34 +90,27 @@
       </div>
       <article class="post shadow">
         <div>
-          <h1>Domtoren Utrecht, Netherlands</h1>
+          <h1>Overridable methods need special care</h1>
           <footer class="footer">
             <div style="font-size: 13px" class="inner">
-              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">December 30, 2009</a>|Tags :&nbsp;<a href="/tag/travel.html" rel="category tag" title="View all posts in 'travel'">travel</a>&nbsp;
+              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">August 29, 2010</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
             </div>
           </footer>
         </div>
         <hr>
-        <section class="content"><p>We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.</p>
-<p>The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).</p>
-<p><span class="more"></span></p>
-<p>Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.</p>
-<p>After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &quot;Domtoren&quot; in  Netherlands. It was hardly a few yards from Arun&#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&#39;s Swiss umbrella. </p>
-<p>After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.</p>
-<p>Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. </p>
-<p>Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&#39;s luxurious :-)  apartment.</p>
-<p>Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &quot;Hanuman Returns&quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
-Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &quot;The daaru party&quot;.</p>
+        <section class="content"><p><b>Allowing a method to be overridden should always be done intentionally, not by accident</b>.</p>
+<p>Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.</p>
+<p>When you do override a method, you should use the @Override annotation. This allows the compiler to verify that the method is indeed a valid override of an existing method. For example, your implementations of toString, equals, and hashCode should always use @Override in the method header. </p>
 </section>
         <hr>
         <div id="social_bottom" class="topsocial">
-          <div class="social"><a href="/articles/2009-12-30-Domtoren-Utrecht/" data-url="http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/" data-text="Domtoren Utrecht, Netherlands #travel /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+          <div class="social"><a href="/articles/2010-08-29-Overiride-Carefully/" data-url="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-text="Overridable methods need special care #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
               <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
           </div>
-          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/"></g:plusone></div>
+          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/"></g:plusone></div>
           <div class="social">
             <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/" data-counter="top"></script>
+            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-counter="top"></script>
           </div>
         </div>
         <hr>
@@ -125,19 +118,16 @@ Overall it was an excellent start and we all were  very happy and excited and we
         <table class="table table-striped">
           <tbody>
             <tr>
-              <td><a href="/articles/2009-11-25-Brussels-Belgium/" title="travel">A walk in Brussels</a></td>
+              <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
             </tr>
             <tr>
-              <td><a href="/articles/2010-01-01-Amsterdam-Netherlands/" title="travel">Day trip to the largest city of Netherlands - Amsterdam</a></td>
+              <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
             </tr>
             <tr>
-              <td><a href="/articles/2009-11-30-Aquatopia-Aquarium/" title="travel">A day trip to Aquatopia at Antwerp, Brussels</a></td>
+              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
             </tr>
             <tr>
-              <td><a href="/articles/2009-12-30-Domtoren-Utrecht/" title="travel">Domtoren Utrecht, Netherlands</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2009-12-31-Kinderdijk-Netherlands/" title="travel">The windmills of Kinderdijk, Netherlands</a></td>
+              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
             </tr>
           </tbody>
         </table>
