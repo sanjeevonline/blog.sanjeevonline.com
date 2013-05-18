@@ -1,6 +1,6 @@
 ---
 template: article.jade
-title: Pcakage by feature not layer
+title: Package by feature not layer
 date: 2010-10-20 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']

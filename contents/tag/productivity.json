@@ -1,0 +1,5 @@
+{
+    "title":"Tag",
+    "currentTag": "productivity",
+    "template": "tag.jade"
+}
