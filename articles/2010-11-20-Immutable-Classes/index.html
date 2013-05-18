@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crave for immutable classes - The Social Coder</title>
+    <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/assets/css/prettify.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <style type="text/css">
+      body { padding-top: 60px; padding-bottom: 40px; }
+      
+      /* Large desktop */
+      @media (min-width: 1200px) {
+          body { font-size:100%;}
+          .wrap {max-width:770px;}
+      }
+      
+      @media (max-width: 980px) {
+         body {
+            padding-top: 0px;
+         }
+      }
+      
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {
+          body { font-size:95%;}
+          h1 {
+            font-size: 22pt;
+          }
+          h2 {
+            font-size: 18pt;
+          }
+          h3 {
+            font-size: 16pt;
+          }
+      }
+      
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) {
+          body { font-size:90%;}
+          h1 {
+            font-size: 20pt;
+          }
+          h2 {
+            font-size: 16pt;
+          }
+          h3 {
+            font-size: 14pt;
+          }
+      }
+      
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+            font-size: 18pt;
+          }
+          h2 {
+            font-size: 14pt;
+          }
+          h3 {
+            font-size: 12pt;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Social Coder</a>
+            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li><a href="/blog.html">Blog</a></li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/tag/agile.html">agile</a></li>
+                    <li><a href="/tag/best-practices.html">best-practices</a></li>
+                    <li><a href="/tag/eclipse.html">eclipse</a></li>
+                    <li><a href="/tag/java.html">java</a></li>
+                    <li><a href="/tag/productivity.html">productivity</a></li>
+                    <li><a href="/tag/travel.html">travel</a></li>
+                  </ul>
+                </li>
+                <li><a href="/archive.html">Archive</a></li>
+              </ul>
+            </div>
+            <div class="pull-right nav-collapse collapse">
+              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
+                <input type="hidden" value="UTF-8" name="ie">
+                <input type="hidden" value="UTF-8" name="oe">
+                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="post shadow">
+        <div>
+          <h1>Crave for immutable classes</h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">
+              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">November 20, 2010</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+        </div>
+        <hr>
+        <section class="content"><p>In the book &quot;Effective Java&quot;, Joshua Bloch makes this compelling recommendation :</p>
+<p><i>
+&quot;Classes should be immutable unless there&#39;s a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible.&quot;
+</i></p>
+<p>Immutable objects are objects whose data or properties cannot be changed after it is constructed. JDK has a number of immutable class like String and Integer. Immutable objects have big list of compelling positive qualities and they can greatly simplify your program. Immutable objects :
+are simple to construct, test, and use</p>
+<ul>
+<li>are automatically thread-safe and have no synchronization issues</li>
+<li>do not need a copy constructor</li>
+<li>do not need an implementation of clone</li>
+<li>allow hashCode to use lazy initialization, and to cache its return value</li>
+<li>do not need to be copied defensively when used as a field</li>
+<li>make good Map keys and set elements (these objects must not change state while in the collection)</li>
+<li>have their class invariant established once upon construction, and it never needs to be checked again</li>
+<li>always have &quot;failure atomicity&quot; (a term used by Joshua Bloch in his book &quot;Effective Java&quot;) : if an immutable object throws an exception, it&#39;s never left in an undesirable or indeterminate state</li>
+</ul>
+<p>They are among the simplest and most robust kinds of classes you can possibly build in JAVA. When you create immutable classes, entire categories of problems simply disappear.</p>
+<p>Make a class immutable by following these guidelines :</p>
+<ul>
+<li>ensure the class cannot be overridden - make the class final, or use static factories and keep constructors private</li>
+<li>make fields private and final</li>
+<li>force callers to construct an object completely in a single step, instead of using a no-argument constructor combined with subsequent calls to setXXX methods (that is, avoid the Java Beans convention)</li>
+<li>do not provide any methods which can change the state of the object in any way - not just setXXX methods, but any method which can change state</li>
+<li>if the class has any mutable object fields, then they must be defensively copied when passed between the class and its caller</li>
+</ul>
+<p>Here is an example. Please go through the comments that are there in the code to understand the concept.</p>
+<pre><code><span class="keyword">package</span> com.javagyan.examples;
+
+<span class="keyword">import</span> java.util.Date;
+
+<span class="javadoc">/**
+* Planet is an immutable class, since there is no way to change its state after construction.
+*/</span>
+<span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Planet</span> {</span>
+
+  <span class="keyword">public</span> Planet (<span class="keyword">double</span> aMass, String aName, Date aDateOfDiscovery) {
+     fMass = aMass;
+     fName = aName;
+     <span class="comment">//make a private copy of aDateOfDiscovery</span>
+     <span class="comment">//this is the only way to keep the fDateOfDiscovery</span>
+     <span class="comment">//field private, and shields this class from any changes that </span>
+     <span class="comment">//the caller may make to the original aDateOfDiscovery object</span>
+     fDateOfDiscovery = <span class="keyword">new</span> Date(aDateOfDiscovery.getTime());
+  }
+
+  <span class="javadoc">/**
+  * Returns a primitive value.
+  *
+  * The caller can do whatever they want with the return value, without 
+  * affecting the internals of this class. Why? Because this is a primitive 
+  * value. The caller sees its "own" double that simply has the
+  * same value as fMass.
+  * <span class="javadoctag">@return</span> double
+  */</span>
+  <span class="keyword">public</span> <span class="keyword">double</span> getMass() {
+    <span class="keyword">return</span> fMass;
+  }
+
+  <span class="javadoc">/**
+  * Returns an immutable object.
+  *
+  * The caller gets a direct reference to the internal field. But this is not 
+  * dangerous, since String is immutable and cannot be changed.
+ * <span class="javadoctag">@return</span> String
+  */</span>
+  <span class="keyword">public</span> String getName() {
+    <span class="keyword">return</span> fName;
+  }
+
+<span class="comment">//  /**</span>
+<span class="comment">//  * Returns a mutable object - likely bad style.</span>
+<span class="comment">//  *</span>
+<span class="comment">//  * The caller gets a direct reference to the internal field. This is usually dangerous, </span>
+<span class="comment">//  * since the Date object state can be changed both by this class and its caller.</span>
+<span class="comment">//  * That is, this class is no longer in complete control of fDate.</span>
+<span class="comment">//  */</span>
+<span class="comment">//  public Date getDateOfDiscovery() {</span>
+<span class="comment">//    return fDateOfDiscovery;</span>
+<span class="comment">//  }</span>
+
+  <span class="javadoc">/**
+  * Returns a mutable object - good style.
+  * 
+  * Returns a defensive copy of the field.
+  * The caller of this method can do anything they want with the
+  * returned Date object, without affecting the internals of this
+  * class in any way. Why? Because they do not have a reference to 
+  * fDate. Rather, they are playing with a second Date that initially has the 
+  * same data as fDate.
+ * <span class="javadoctag">@return</span> Date
+  */</span>
+  <span class="keyword">public</span> Date getDateOfDiscovery() {
+    <span class="keyword">return</span> <span class="keyword">new</span> Date(fDateOfDiscovery.getTime());
+  }
+
+  <span class="comment">// PRIVATE //</span>
+
+  <span class="javadoc">/**
+  * Final primitive data is always immutable.
+  */</span>
+  <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">double</span> fMass;
+
+  <span class="javadoc">/**
+  * An immutable object field. (String objects never change state.)
+  */</span>
+  <span class="keyword">private</span> <span class="keyword">final</span> String fName;
+
+  <span class="javadoc">/**
+  * A mutable object field. In this case, the state of this mutable field
+  * is to be changed only by this class. (In other cases, it makes perfect
+  * sense to allow the state of a field to be changed outside the native
+  * class; this is the case when a field acts as a "pointer" to an object
+  * created elsewhere.)
+  */</span>
+  <span class="keyword">private</span> <span class="keyword">final</span> Date fDateOfDiscovery;
+}</code></pre>
+</section>
+        <hr>
+        <div id="social_bottom" class="topsocial">
+          <div class="social"><a href="/articles/2010-11-20-Immutable-Classes/" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-text="Crave for immutable classes #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+              <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          </div>
+          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/"></g:plusone></div>
+          <div class="social">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-counter="top"></script>
+          </div>
+        </div>
+        <hr>
+        <h3>Similar Articles</h3>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4></h4>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript" src="http://disqus.com/forums/dongsa/embed.js"></script>
+        <noscript><a href="http://disqus.com/forums/dongsa/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+        <script type="text/javascript">
+          (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+              if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+              }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/dongsa/get_num_replies.js' + query + '"></' + 'script>');
+          })();
+        </script>
+      </article><hr />
+      <footer class="footer">
+        <div style="font-size: 13px" class="inner">
+        </div>
+      </footer>
+    </div>
+    <!--le javascript-->
+    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
+    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
+    <script src="/assets/javascript/jquery.min.js"></script>
+    <script src="/assets/javascript/app.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="http://platform.linkedin.com/in.js"></script><script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+  </body>
+</html>

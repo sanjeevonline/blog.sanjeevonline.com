@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Implementing Comparable and understanding compareTo - The Social Coder</title>
+    <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/assets/css/prettify.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <style type="text/css">
+      body { padding-top: 60px; padding-bottom: 40px; }
+      
+      /* Large desktop */
+      @media (min-width: 1200px) {
+          body { font-size:100%;}
+          .wrap {max-width:770px;}
+      }
+      
+      @media (max-width: 980px) {
+         body {
+            padding-top: 0px;
+         }
+      }
+      
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {
+          body { font-size:95%;}
+          h1 {
+            font-size: 22pt;
+          }
+          h2 {
+            font-size: 18pt;
+          }
+          h3 {
+            font-size: 16pt;
+          }
+      }
+      
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) {
+          body { font-size:90%;}
+          h1 {
+            font-size: 20pt;
+          }
+          h2 {
+            font-size: 16pt;
+          }
+          h3 {
+            font-size: 14pt;
+          }
+      }
+      
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+            font-size: 18pt;
+          }
+          h2 {
+            font-size: 14pt;
+          }
+          h3 {
+            font-size: 12pt;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Social Coder</a>
+            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li><a href="/blog.html">Blog</a></li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/tag/agile.html">agile</a></li>
+                    <li><a href="/tag/best-practices.html">best-practices</a></li>
+                    <li><a href="/tag/eclipse.html">eclipse</a></li>
+                    <li><a href="/tag/java.html">java</a></li>
+                    <li><a href="/tag/productivity.html">productivity</a></li>
+                    <li><a href="/tag/travel.html">travel</a></li>
+                  </ul>
+                </li>
+                <li><a href="/archive.html">Archive</a></li>
+              </ul>
+            </div>
+            <div class="pull-right nav-collapse collapse">
+              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
+                <input type="hidden" value="UTF-8" name="ie">
+                <input type="hidden" value="UTF-8" name="oe">
+                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="post shadow">
+        <div>
+          <h1>Implementing Comparable and understanding compareTo</h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">
+              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">March 20, 2011</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+        </div>
+        <hr>
+        <section class="content"><h3>Implementing Comparable</h3>
+
+<p>Implementing Comparable allows:</p>
+<ol>
+<li>Calling Collections.sort and Collections.binarySearch.</li>
+<li>Calling Arrays.sort and Arrays.binarySearch.</li>
+<li>Using objects as keys in a TreeMap.</li>
+<li>Using objects as elements in a TreeSet.</li>
+</ol>
+<h3>Understanding compareTo</h3>
+
+<p>The compareTo() method is the sole member of Comparable interface. It provides a means of fully ordering objects. For a concrete comparable implementation class to work well, the compareTo() implementation needs to satisfy the certain conditions.</p>
+<ol>
+<li>Anti Commutation :  x.compareTo(y) is the opposite sign of y.compareTo(x)</li>
+<li>Exception Symmetry : x.compareTo(y) throws exactly the same exceptions as y.compareTo(x)</li>
+<li>Transitivity :  <ol>
+<li>if x.compareTo(y) &gt; 0 and y.compareTo(z) &gt; 0, then x.compareTo(z) &gt; 0  (and same for less than)</li>
+<li>if x.compareTo(y)==0, then x.compareTo(z) has the same sign as y.compareTo(z)</li>
+</ol>
+</li>
+<li>consistency with equals : It is highly recommended, but not required : x.compareTo(y) == 0, if and only if x.equals(y) ; consistency with equals is required for ensuring sorted collections (such as TreeSet) are well-behaved.</li>
+</ol>
+<h3>Things to remember while implementing compareTo()</h3>
+
+<p>Compare the various types of fields as follows :</p>
+<ol>
+<li>Numeric primitive : use &lt; and &gt;. There is an exception to this rule: float and double primitives should be compared using Float.compare(float, float) and Double.compare(double, double). This avoids problems associated with special border values.</li>
+<li>Boolean primitive :  use tests of the form (x &amp;&amp; !y)</li>
+<li>Object : use compareTo. (Note that possibly-null fields present a problem : while x.equals(null) returns false, x.compareTo(null) will always throw a NullPointerException)</li>
+<li>Type-safe enumeration : use compareTo, like any Object</li>
+<li>collection or array : Comparable does not seem to be intended for these kinds of fields. For example, List, Map and Set do not implement Comparable. As well, some collections have no definite order of iteration, so doing an element-by-element comparison cannot be meaningful in those cases.</li>
+</ol>
+<h3>Comparable implementations in JDK</h3>
+
+<p>All primitive wrapper classes like Integer, Long, Float, Double, Boolean and many more implement Comparable.  </p>
+<h3>Hot tips</h3>
+
+<ol>
+<li>One can greatly increase the performance of compareTo by comparing first on items which are most likely to differ.</li>
+<li>Avoid instanceof in methods that override or implement Object.equals(), Comparable.compareTo()</li>
+<li>If the task is to perform a sort of items which are stored in a relational database, then it is usually much preferred to let the database perform the sort using the ORDER BY clause, rather than in code.</li>
+<li>An alternative to implementing Comparable is passing Comparator objects as parameters. Be aware that if a Comparator compares only one of several significant fields, then the Comparator is very likely not synchronized with equals.</li>
+<li>When a class extends a concrete Comparable class and adds a significant field, a correct implementation of compareTo cannot be constructed. The only alternative is to use composition instead of inheritance. (A similar situation holds true for equals. See Effective Java for more information.)</li>
+</ol>
+</section>
+        <hr>
+        <div id="social_bottom" class="topsocial">
+          <div class="social"><a href="/articles/2011-05-05-Understanding-Comparable/" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-text="Implementing Comparable and understanding compareTo #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+              <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          </div>
+          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/"></g:plusone></div>
+          <div class="social">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-counter="top"></script>
+          </div>
+        </div>
+        <hr>
+        <h3>Similar Articles</h3>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4></h4>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript" src="http://disqus.com/forums/dongsa/embed.js"></script>
+        <noscript><a href="http://disqus.com/forums/dongsa/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+        <script type="text/javascript">
+          (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+              if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+              }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/dongsa/get_num_replies.js' + query + '"></' + 'script>');
+          })();
+        </script>
+      </article><hr />
+      <footer class="footer">
+        <div style="font-size: 13px" class="inner">
+        </div>
+      </footer>
+    </div>
+    <!--le javascript-->
+    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
+    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
+    <script src="/assets/javascript/jquery.min.js"></script>
+    <script src="/assets/javascript/app.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="http://platform.linkedin.com/in.js"></script><script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+  </body>
+</html>

@@ -1,15 +1,141 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/archive.html</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</loc>
+    <lastmod>2012-01-05T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/</loc>
+    <lastmod>2011-11-21T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/</loc>
+    <lastmod>2011-11-11T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</loc>
+    <lastmod>2011-10-23T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</loc>
+    <lastmod>2011-08-03T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</loc>
+    <lastmod>2011-07-08T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</loc>
+    <lastmod>2011-06-01T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/</loc>
+    <lastmod>2011-03-20T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</loc>
+    <lastmod>2011-03-20T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</loc>
+    <lastmod>2011-03-15T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/</loc>
+    <lastmod>2011-02-25T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/</loc>
+    <lastmod>2011-01-15T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/</loc>
+    <lastmod>2010-12-31T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/</loc>
+    <lastmod>2010-12-29T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</loc>
+    <lastmod>2010-12-28T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</loc>
+    <lastmod>2010-12-20T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</loc>
+    <lastmod>2010-11-27T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/</loc>
+    <lastmod>2010-11-20T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</loc>
+    <lastmod>2010-11-18T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</loc>
+    <lastmod>2010-10-30T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/</loc>
+    <lastmod>2010-10-20T09:30:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</loc>
@@ -91,49 +217,79 @@
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/travel</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/java</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/tag/best-practices</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/tag/eclipse</loc>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/tag/productivity</loc>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/tag/agile</loc>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/category/Travel</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/category/travel</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/category/technology</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/archive/2009</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://blog.sanjeevonline.com/archive/2010</loc>
-    <lastmod>2013-05-17T06:02:16.116Z</lastmod>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/archive/2011</loc>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://blog.sanjeevonline.com/archive/2012</loc>
+    <lastmod>2013-05-18T17:26:04.925Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>

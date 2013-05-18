@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2013-05-17T06:02:16.113Z</updated>
+  <updated>2013-05-18T17:26:04.921Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
@@ -10,174 +10,176 @@
   <entry>
     <author>
       <name>sanjeev</name>
-      <title type="html"><![CDATA[Beware of floating point numbers]]></title>
-      <description><![CDATA[iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</id>
-      <updated>2010-10-20T09:30:00.000Z</updated>
-      <published>2010-10-20T09:30:00.000Z</published>
+      <title type="html"><![CDATA[Choosing the right collection]]></title>
+      <description><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. - &lt;a href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</id>
+      <updated>2012-01-05T09:30:00.000Z</updated>
+      <published>2012-01-05T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/">iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-10-20-Beware-Of-Floating-Points//lastest.rss</link>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/">Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2012-01-05-Choosing-The-Right-Collections//lastest.rss</link>
       <thr:total>0</thr:total>
     </author>
   </entry>
   <entry>
     <author>
       <name>sanjeev</name>
-      <title type="html"><![CDATA[Use final liberally. Please do.]]></title>
-      <description><![CDATA[Use the final keyword liberally to communicate your intent - &lt;a href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</id>
-      <updated>2010-09-19T09:30:00.000Z</updated>
-      <published>2010-09-19T09:30:00.000Z</published>
+      <title type="html"><![CDATA[Improving code quality in agile teams]]></title>
+      <description><![CDATA[Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind - &lt;a href="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/</id>
+      <updated>2011-11-21T09:30:00.000Z</updated>
+      <published>2011-11-21T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="agile"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/">Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-11-21-Code-Quality-Agile-Teams//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Java7 updates]]></title>
+      <description><![CDATA[It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples - &lt;a href="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/</id>
+      <updated>2011-11-11T09:30:00.000Z</updated>
+      <published>2011-11-11T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/">It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-11-11-Java7-Updates//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Evolution of Java]]></title>
+      <description><![CDATA[I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java. - &lt;a href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</id>
+      <updated>2011-10-23T09:30:00.000Z</updated>
+      <published>2011-10-23T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/">I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-10-23-Evolution-Of-Java//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Change default author name for JavaDocs in Eclipse]]></title>
+      <description><![CDATA[The auto generated Java docs at the class level picks the user name from the system user. - &lt;a href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</id>
+      <updated>2011-08-03T09:30:00.000Z</updated>
+      <published>2011-08-03T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/">The auto generated Java docs at the class level picks the user name from the system user.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-08-03-Changing-Default-Author-Eclipse//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Remote debugging in Eclipse]]></title>
+      <description><![CDATA[To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server - &lt;a href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</id>
+      <updated>2011-07-08T09:30:00.000Z</updated>
+      <published>2011-07-08T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/">To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-07-08-Remote-Debugging-Jboss//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Skip over certain classes when using Step Into(F5) in Eclipse’s debugger]]></title>
+      <description><![CDATA[Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes. - &lt;a href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</id>
+      <updated>2011-06-01T09:30:00.000Z</updated>
+      <published>2011-06-01T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/">Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-06-01-Debugging-With-Eclipse//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Implementing Comparable and understanding compareTo]]></title>
+      <description><![CDATA[Implementing Comparable and understanding compareTo - &lt;a href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/</id>
+      <updated>2011-03-20T09:30:00.000Z</updated>
+      <published>2011-03-20T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/">Use the final keyword liberally to communicate your intent</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-09-19-Use-Final-Liberally//lastest.rss</link>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-05-05-Understanding-Comparable//lastest.rss</link>
       <thr:total>0</thr:total>
     </author>
   </entry>
   <entry>
     <author>
       <name>sanjeev</name>
-      <title type="html"><![CDATA[Overridable methods need special care]]></title>
-      <description><![CDATA[Allowing a method to be overridden should always be done intentionally, not by accident. Any method which is not private, static, or final can be overridden. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</id>
-      <updated>2010-08-29T09:30:00.000Z</updated>
-      <published>2010-08-29T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <title type="html"><![CDATA[Eclipse keyboard shortcuts]]></title>
+      <description><![CDATA[These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/). - &lt;a href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</id>
+      <updated>2011-03-20T09:30:00.000Z</updated>
+      <published>2011-03-20T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/).</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Using Eclipse effectively]]></title>
+      <description><![CDATA[To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. - &lt;a href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</id>
+      <updated>2011-03-15T09:30:00.000Z</updated>
+      <published>2011-03-15T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/">Allowing a method to be overridden should always be done intentionally, not by accident. Any method which is not private, static, or final can be overridden.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-08-29-Overiride-Carefully//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-      <title type="html"><![CDATA[Prefer composition over inheritance]]></title>
-      <description><![CDATA[Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance - &lt;a href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</id>
-      <updated>2010-08-07T09:30:00.000Z</updated>
-      <published>2010-08-07T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="java"></category>
-      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/">Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-08-09-Composition-Inheritance//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-      <title type="html"><![CDATA[History, heritage and beauty of Italy]]></title>
-      <description><![CDATA[After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</id>
-      <updated>2010-07-07T09:30:00.000Z</updated>
-      <published>2010-07-07T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/">After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-07-07-Rome-Florence-Venice-Italy//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-      <title type="html"><![CDATA[A day trip to Dinant, belgium]]></title>
-      <description><![CDATA[Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</id>
-      <updated>2010-06-07T09:30:00.000Z</updated>
-      <published>2010-06-07T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/">Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-06-07-Dinant-Belgium//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-      <title type="html"><![CDATA[A trip to the city of fashion, Paris]]></title>
-      <description><![CDATA[Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit's school. So I have some time to pen down some moments from our Paris trip that we did earlier this month. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/</id>
-      <updated>2010-05-30T09:30:00.000Z</updated>
-      <published>2010-05-30T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/">Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit's school. So I have some time to pen down some moments from our Paris trip that we did earlier this month.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-05-30-Paris-France//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-      <title type="html"><![CDATA[London, England]]></title>
-      <description><![CDATA[It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</id>
-      <updated>2010-05-05T09:30:00.000Z</updated>
-      <published>2010-05-05T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/">It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-05-20-London-England/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-05-20-London-England//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-      <title type="html"><![CDATA[Day trip to the largest city of Netherlands - Amsterdam]]></title>
-      <description><![CDATA[The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda of Netherlands trip. - &lt;a href="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</id>
-      <updated>2010-01-01T09:30:00.000Z</updated>
-      <published>2010-01-01T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/">The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda of Netherlands trip.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2010-01-01-Amsterdam-Netherlands//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev kumar</name>
-      <title type="html"><![CDATA[The windmills of Kinderdijk, Netherlands]]></title>
-      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python'] - &lt;a href="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</id>
-      <updated>2009-12-31T09:30:00.000Z</updated>
-      <published>2009-12-31T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/">this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python']</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2009-12-31-Kinderdijk-Netherlands//lastest.rss</link>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/">To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features.</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-03-15-Using-Eclipse-Effectively//lastest.rss</link>
       <thr:total>0</thr:total>
     </author>
   </entry>

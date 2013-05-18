@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java7 updates - The Social Coder</title>
+    <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/assets/css/prettify.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <style type="text/css">
+      body { padding-top: 60px; padding-bottom: 40px; }
+      
+      /* Large desktop */
+      @media (min-width: 1200px) {
+          body { font-size:100%;}
+          .wrap {max-width:770px;}
+      }
+      
+      @media (max-width: 980px) {
+         body {
+            padding-top: 0px;
+         }
+      }
+      
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {
+          body { font-size:95%;}
+          h1 {
+            font-size: 22pt;
+          }
+          h2 {
+            font-size: 18pt;
+          }
+          h3 {
+            font-size: 16pt;
+          }
+      }
+      
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) {
+          body { font-size:90%;}
+          h1 {
+            font-size: 20pt;
+          }
+          h2 {
+            font-size: 16pt;
+          }
+          h3 {
+            font-size: 14pt;
+          }
+      }
+      
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+            font-size: 18pt;
+          }
+          h2 {
+            font-size: 14pt;
+          }
+          h3 {
+            font-size: 12pt;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Social Coder</a>
+            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li><a href="/blog.html">Blog</a></li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/tag/agile.html">agile</a></li>
+                    <li><a href="/tag/best-practices.html">best-practices</a></li>
+                    <li><a href="/tag/eclipse.html">eclipse</a></li>
+                    <li><a href="/tag/java.html">java</a></li>
+                    <li><a href="/tag/productivity.html">productivity</a></li>
+                    <li><a href="/tag/travel.html">travel</a></li>
+                  </ul>
+                </li>
+                <li><a href="/archive.html">Archive</a></li>
+              </ul>
+            </div>
+            <div class="pull-right nav-collapse collapse">
+              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
+                <input type="hidden" value="UTF-8" name="ie">
+                <input type="hidden" value="UTF-8" name="oe">
+                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="post shadow">
+        <div>
+          <h1>Java7 updates</h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">
+              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">November 11, 2011</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;
+            </div>
+          </footer>
+        </div>
+        <hr>
+        <section class="content"><p>It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples. 
+Contents</p>
+<ol>
+<li>Strings in switch statements</li>
+<li>The diamond operator &quot;&lt;&gt;&quot;</li>
+<li>Handling more than one type of exception</li>
+<li>Re-throwing exceptions with more inclusive type checking</li>
+<li>The try-with-resources statement</li>
+<li>Numeric literals with underscores</li>
+<li>Binary literals</li>
+<li>Fork and Join</li>
+<li>Supporting dynamism</li>
+</ol>
+<h3>Strings in switch statements</h3>
+
+<p>In the JDK 7 release, you can use a String object in the expression of a switch statement:</p>
+<pre><code><span class="keyword">public</span> String getTypeOfDayWithSwitchStatement(String dayOfWeekArg) {
+     String typeOfDay;
+     <span class="keyword">switch</span> (dayOfWeekArg) {
+         <span class="keyword">case</span> <span class="string">"Monday"</span>:
+            typeOfDay = <span class="string">"Start of work week"</span>;
+             <span class="keyword">break</span>;
+         <span class="keyword">case</span> <span class="string">"Tuesday"</span>:
+         <span class="keyword">case</span> <span class="string">"Wednesday"</span>:
+         <span class="keyword">case</span> <span class="string">"Thursday"</span>:
+            typeOfDay = <span class="string">"Midweek"</span>;
+             <span class="keyword">break</span>;
+         <span class="keyword">case</span> <span class="string">"Friday"</span>:
+             typeOfDay = <span class="string">"End of work week"</span>;
+             <span class="keyword">break</span>;
+         <span class="keyword">case</span> <span class="string">"Saturday"</span>:
+         <span class="keyword">case</span> <span class="string">"Sunday"</span>:
+            typeOfDay = <span class="string">"Weekend"</span>;
+             <span class="keyword">break</span>;
+        <span class="keyword">default</span>:
+            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"Invalid day of the week: "</span> + dayOfWeekArg);
+     }
+     <span class="keyword">return</span> typeOfDay;
+}</code></pre>
+<h3>The diamond operator &quot;&lt;&gt;&quot;</h3>
+
+<p>You can replace the type arguments required to invoke the constructor of a generic class with an empty set of type parameters (&lt;&gt;) as long as the compiler can infer the type arguments from the context. This pair of angle brackets is informally called the diamond.</p>
+<p>For example, consider the following variable declaration:</p>
+<pre><code>Map<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt; myMap = new HashMap<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt;();</code></pre>
+<p>In Java SE 7, you can substitute the parameterized type of the constructor with an empty set of type parameters (&lt;&gt;):</p>
+<pre><code>Map<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt; myMap = new HashMap<span class="tag">&lt;&gt;</span>();</code></pre>
+<p>Java SE 7 supports limited type inference for generic instance creation; you can only use type inference if the parameterized type of the constructor is obvious from the context. For example, the following example does not compile:</p>
+<pre><code>List<span class="tag">&lt;<span class="title">String</span>&gt;</span> list = new ArrayList<span class="tag">&lt;&gt;</span>();
+list.add("A");
+list.addAll(new ArrayList<span class="tag">&lt;&gt;</span>()); // Statement should fail since addAll expects Collection<span class="pi">&lt;? extends String&gt;</code></pre>
+<p>In comparison, the following example compiles:</p>
+<pre><code>List<span class="pi">&lt;? extends String&gt; list2 = new ArrayList&lt;&gt;();
+list.addAll(list2);</code></pre>
+<p>Note: The diamond often works in method calls; however, it is suggested that you use the diamond primarily for variable declarations.</p>
+<h3>Handling more than one type of exception</h3>
+
+<p>In Java SE 7 and later, a single catch block can handle more than one type of exception. Consider the following example, which contains duplicate code in each of the catch blocks:</p>
+<pre><code>//<span class="variable">Prior</span> to <span class="variable">Java</span> <span class="number">7</span>
+<span class="function"><span class="title">catch</span> <span class="params">(<span class="variable">IOException</span> ex)</span> {
+ <span class="title">logger</span>.<span class="title">log</span><span class="params">(ex)</span>;
+ <span class="title">throw</span> <span class="title">ex</span>;
+<span class="title">catch</span> <span class="params">(<span class="variable">SQLException</span> ex)</span> {
+ <span class="title">logger</span>.<span class="title">log</span><span class="params">(ex)</span>;
+ <span class="title">throw</span> <span class="title">ex</span>;
+}</code></pre>
+<p>In releases prior to Java SE 7, it is difficult to create a common method to eliminate the duplicated code because the variable ex has different types.</p>
+<p>The following example, which is valid in Java SE 7 and later, eliminates the duplicated code:</p>
+<pre><code><span class="keyword">catch</span> (IOException|SQLException ex) { <span class="comment">// java 7 handling more than one type of exception</span>
+    logger<span class="variable">.log</span>(ex);
+    <span class="keyword">throw</span> ex;
+}</code></pre>
+<p>The catch clause specifies the types of exceptions that the block can handle, and each exception type is separated with a vertical bar (|). Some other advantages apart from syntactical improvement:</p>
+<ul>
+<li>Bytecode generated by compiling a catch block that handles multiple exception types will be smaller (and thus superior) than compiling many catch blocks that handle only one exception type each. </li>
+<li>A catch block that handles multiple exception types creates no duplication in the bytecode generated by the compiler; the bytecode has no replication of exception handlers. </li>
+</ul>
+<p>Note: If a catch block handles more than one exception type, then the catch parameter is implicitly final. In this example, the catch parameter ex is final and therefore you cannot assign any values to it within the catch block.</p>
+<h3>Re-throwing exceptions with more inclusive type checking</h3>
+
+<p>The Java SE 7 compiler performs more precise analysis of rethrown exceptions than earlier releases of Java SE. This enables you to specify more specific exception types in the throws clause of a method declaration.</p>
+<p>Consider the following example:</p>
+<pre><code><span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">FirstException</span> <span class="keyword">extends</span> <span class="title">Exception</span> {</span> }
+  <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SecondException</span> <span class="keyword">extends</span> <span class="title">Exception</span> {</span> }
+
+  <span class="keyword">public</span> <span class="keyword">void</span> rethrowException(String exceptionName) <span class="keyword">throws</span> Exception {
+    <span class="keyword">try</span> {
+          <span class="keyword">if</span> (exceptionName.equals(<span class="string">"First"</span>)) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> FirstException();
+          } <span class="keyword">else</span> {
+            <span class="keyword">throw</span> <span class="keyword">new</span> SecondException();
+          }
+    } <span class="keyword">catch</span> (Exception e) {
+          <span class="keyword">throw</span> e;
+    }
+  }</code></pre>
+<p>This examples&#39;s try block could throw either FirstException or SecondException. Suppose you want to specify these exception types in the throws clause of the rethrowException method declaration. In releases prior to Java SE 7, you cannot do so. Because the exception parameter of the catch clause, e, is type Exception, and the catch block rethrows the exception parameter e, you can only specify the exception type Exception in the throws clause of the rethrowException method declaration.</p>
+<p>However, in Java SE 7, you can specify the exception types FirstException and SecondException in the throws clause in the rethrowException method declaration. The Java SE 7 compiler can determine that the exception thrown by the statement throw e must have come from the try block, and the only exceptions thrown by the try block can be FirstException and SecondException. Even though the exception parameter of the catch clause, e, is type Exception, the compiler can determine that it is an instance of either FirstException or SecondException:</p>
+<pre><code>public void rethrowException(String exceptionName) throws FirstException, SecondException {
+    <span class="keyword">try</span> {
+          // <span class="keyword">...</span>
+    }
+    catch (Exception e) {
+          throw e;
+    }
+  }</code></pre>
+<p>This analysis is disabled if the catch parameter is assigned to another value in the catch block. However, if the catch parameter is assigned to another value, you must specify the exception type Exception in the throws clause of the method declaration.</p>
+<p>In detail, in Java SE 7 and later, when you declare one or more exception types in a catch clause, and rethrow the exception handled by this catch block, the compiler verifies that the type of the rethrown exception meets the following conditions:</p>
+<ul>
+<li>The try block is able to throw it.</li>
+<li>There are no other preceding catch blocks that can handle it.</li>
+<li>It is a subtype or supertype of one of the catch clause&#39;s exception parameters.</li>
+</ul>
+<p>The Java SE 7 compiler allows you to specify the exception types FirstException and SecondException in the throws clause in the rethrowException method declaration because you can rethrow an exception that is a supertype of any of the types declared in the throws.</p>
+<p>In releases prior to Java SE 7, you cannot throw an exception that is a supertype of one of the catch clause&#39;s exception parameters. A compiler from a release prior to Java SE 7 generates the error, &quot;unreported exception Exception; must be caught or declared to be thrown&quot; at the statement throw e. The compiler checks if the type of the exception thrown is assignable to any of the types declared in the throws clause of the rethrowException method declaration. However, the type of the catch parameter e is Exception, which is a supertype, not a subtype, of FirstException andSecondException.</p>
+<h3>The try-with-resources statement</h3>
+
+<p>The try-with-resources statement is a try statement that declares one or more resources. A resource is as an object that must be closed after the program is finished with it. The try-with-resources statement ensures that each resource is closed at the end of the statement. Any object that implements java.lang.AutoCloseable, which includes all objects which implement java.io.Closeable, can be used as a resource.</p>
+<p>The following example reads the first line from a file. It uses an instance of BufferedReader to read data from the file. BufferedReader is a resource that must be closed after the program is finished with it:</p>
+<pre><code><span class="comment">// Java 7 Code</span>
+<span class="keyword">static</span> String readFirstLineFromFile(String path) <span class="keyword">throws</span> IOException { 
+      <span class="keyword">try</span> (BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(path))) {
+        <span class="keyword">return</span> br.readLine();
+      }<span class="comment">//no finally block required as resources will be closed automatically</span>
+}</code></pre>
+<p>In this example, the resource declared in the try-with-resources statement is a BufferedReader. The declaration statement appears within parentheses immediately after the try keyword. The class BufferedReader, in Java SE 7 and later, implements the interface java.lang.AutoCloseable. Because the BufferedReader instance is declared in a try-with-resource statement, it will be closed regardless of whether the try statement completes normally or abruptly (as a result of the method BufferedReader.readLine throwing an IOException).</p>
+<p>Prior to Java SE 7, you can use a finally block to ensure that a resource is closed regardless of whether the whether the try statement completes normally or abruptly. The following example uses a finally block instead of a try-with-resources statement:</p>
+<pre><code><span class="comment">//Before Java 7</span>
+<span class="keyword">static</span> String readFirstLineFromFileWithFinallyBlock(String path) <span class="keyword">throws</span> IOException {
+  BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(path));
+    <span class="keyword">try</span> {
+    <span class="keyword">return</span> br.readLine();
+    } <span class="keyword">finally</span> { 
+    <span class="keyword">if</span> (br != <span class="keyword">null</span>) br.close();
+    }
+}</code></pre>
+<p>You may declare one or more resources in a try-with-resources statement.</p>
+<p>Note: A try-with-resources statement can still have catch and finally blocks just like an ordinary try statement. In a try-with-resources statement, any catch or finally block is run after the resources declared have been closed.</p>
+<h3>Numeric literals with underscores</h3>
+
+<p>In Java SE 7 and later, any number of underscore characters (_) can appear anywhere between digits in a numerical literal. This feature enables you, for example, to separate groups of digits in numeric literals, which can improve the readability of your code.</p>
+<p>You can place underscores only between digits; you cannot place underscores in the following places:</p>
+<ul>
+<li>At the beginning or end of a number</li>
+<li>Adjacent to a decimal point in a floating point literal</li>
+<li>Prior to an F or L suffix</li>
+<li>In positions where a string of digits is expected</li>
+</ul>
+<p>The following examples demonstrate valid and invalid underscore placements (which are highlighted) in numeric literals:</p>
+<pre><code>float pi1 = <span class="number">3</span>_<span class="number">.1415</span>F;      // Invalid; cannot <span class="keyword">put</span> underscores adjacent <span class="keyword">to</span> a decimal point
+float pi2 = <span class="number">3.</span>_1415F;      // Invalid; cannot <span class="keyword">put</span> underscores adjacent <span class="keyword">to</span> a decimal point
+long ssn= <span class="number">999</span>_99_9999_L; // Invalid; cannot <span class="keyword">put</span> underscores prior <span class="keyword">to</span> an L suffix
+
+int x1 = _52;              // This <span class="keyword">is</span> an identifier, <span class="keyword">not</span> a numeric literal
+int x2 = <span class="number">5</span>_2;              // OK (decimal literal)
+int x3 = <span class="number">52</span>_;              // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a literal
+int x4 = <span class="number">5</span>_______2;        // OK (decimal literal)
+
+int x5 = <span class="number">0</span>_x52;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">in</span> <span class="keyword">the</span> <span class="number">0</span>x radix prefix
+int x6 = <span class="number">0</span>x_52;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">beginning</span> <span class="keyword">of</span> a <span class="type">number</span>
+int x7 = <span class="number">0x5</span>_2;            // OK (hexadecimal literal)
+int x8 = <span class="number">0x52</span>_;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a <span class="type">number</span>
+
+int x9 = <span class="number">0</span>_52;             // OK (octal literal)
+int x10 = <span class="number">05</span>_2;            // OK (octal literal)
+int x11 = <span class="number">052</span>_;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a <span class="type">number</span></code></pre>
+<h3>Binary literals</h3>
+
+<p>In Java SE 7, the integral types (byte, short, int, and long) can also be expressed using the binary number system. To specify a binary literal, add the prefix 0b or 0B to the number. The following examples show binary literals:</p>
+<pre><code><span class="comment">// An 8-bit 'byte' value:</span>
+<span class="keyword">byte</span> aByte = (<span class="keyword">byte</span>)<span class="number">0</span>b00100001;
+
+<span class="comment">// A 16-bit 'short' value:</span>
+<span class="keyword">short</span> aShort = (<span class="keyword">short</span>)<span class="number">0</span>b1010000101000101;
+
+<span class="comment">// Some 32-bit 'int' values:</span>
+<span class="keyword">int</span> anInt1 = <span class="number">0</span>b10100001010001011010000101000101;
+<span class="keyword">int</span> anInt2 = <span class="number">0</span>b101;
+<span class="keyword">int</span> anInt3 = <span class="number">0</span>B101; <span class="comment">// The B can be upper or lower case.</span>
+
+<span class="comment">// A 64-bit 'long' value. Note the "L" suffix:</span>
+<span class="keyword">long</span> aLong = <span class="number">0</span>b1010000101000101101000010100010110100001010001011010000101000101L;</code></pre>
+<h3>Fork and Join</h3>
+
+<p>The effective use of parallel cores in a Java program has always been a challenge. There were few home-grown frameworks that would distribute the work across multiple cores and then join them to return the result set. Java 7 has incorporated this feature as a Fork and Join framework.</p>
+<p>Basically the Fork-Join breaks the task at hand into mini-tasks until the mini-task is simple enough that it can be solved without further breakups. It&#39;s like a divide-and-conquer algorithm. One important concept to note in this framework is that ideally no worker thread is idle. They implement a work-stealing algorithm in that idle workers &quot;steal&quot; the work from those workers who are busy.</p>
+<p>The core classes supporting the Fork-Join mechanism are ForkJoinPool and ForkJoinTask. The ForkJoinPool is basically a specialized implementation of ExecutorService implementing the work-stealing algorithm.</p>
+<h3>Supporting dynamism</h3>
+
+<p>Java is a statically typed language — the type checking of the variables, methods and return values is performed at compile time. The JVM executes this strongly-typed bytecode at runtime without having to worry about finding the type information.</p>
+<p>There&#39;s another breed of typed languages — the dynamically typed languages. Ruby, Python and Clojure are in this category. The type information is unresolved until runtime in these languages. This is not possible in Java as it would not have any necessary type information.</p>
+<p>There is an increasing pressure on Java folks improvise running the dynamic languages efficiently. Although it is possible to run these languages on a JVM (using Reflection), it&#39;s not without constraints and restrictions.</p>
+<p>In Java 7, a new feature called invokedynamic was introduced. This makes VM changes to incorporate non-Java language requirements. A new package, java.lang.invoke, consisting of classes such as MethodHandle, CallSite and others, has been created to extend the support of dynamic languages.</p>
+</section>
+        <hr>
+        <div id="social_bottom" class="topsocial">
+          <div class="social"><a href="/articles/2011-11-11-Java7-Updates/" data-url="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/" data-text="Java7 updates #java /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+              <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          </div>
+          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/"></g:plusone></div>
+          <div class="social">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/" data-counter="top"></script>
+          </div>
+        </div>
+        <hr>
+        <h3>Similar Articles</h3>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4></h4>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript" src="http://disqus.com/forums/dongsa/embed.js"></script>
+        <noscript><a href="http://disqus.com/forums/dongsa/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+        <script type="text/javascript">
+          (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+              if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+              }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/dongsa/get_num_replies.js' + query + '"></' + 'script>');
+          })();
+        </script>
+      </article><hr />
+      <footer class="footer">
+        <div style="font-size: 13px" class="inner">
+        </div>
+      </footer>
+    </div>
+    <!--le javascript-->
+    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
+    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
+    <script src="/assets/javascript/jquery.min.js"></script>
+    <script src="/assets/javascript/app.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="http://platform.linkedin.com/in.js"></script><script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remote debugging in Eclipse - The Social Coder</title>
+    <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/assets/css/prettify.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <style type="text/css">
+      body { padding-top: 60px; padding-bottom: 40px; }
+      
+      /* Large desktop */
+      @media (min-width: 1200px) {
+          body { font-size:100%;}
+          .wrap {max-width:770px;}
+      }
+      
+      @media (max-width: 980px) {
+         body {
+            padding-top: 0px;
+         }
+      }
+      
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {
+          body { font-size:95%;}
+          h1 {
+            font-size: 22pt;
+          }
+          h2 {
+            font-size: 18pt;
+          }
+          h3 {
+            font-size: 16pt;
+          }
+      }
+      
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) {
+          body { font-size:90%;}
+          h1 {
+            font-size: 20pt;
+          }
+          h2 {
+            font-size: 16pt;
+          }
+          h3 {
+            font-size: 14pt;
+          }
+      }
+      
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+            font-size: 18pt;
+          }
+          h2 {
+            font-size: 14pt;
+          }
+          h3 {
+            font-size: 12pt;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Social Coder</a>
+            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li><a href="/blog.html">Blog</a></li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/tag/agile.html">agile</a></li>
+                    <li><a href="/tag/best-practices.html">best-practices</a></li>
+                    <li><a href="/tag/eclipse.html">eclipse</a></li>
+                    <li><a href="/tag/java.html">java</a></li>
+                    <li><a href="/tag/productivity.html">productivity</a></li>
+                    <li><a href="/tag/travel.html">travel</a></li>
+                  </ul>
+                </li>
+                <li><a href="/archive.html">Archive</a></li>
+              </ul>
+            </div>
+            <div class="pull-right nav-collapse collapse">
+              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
+                <input type="hidden" value="UTF-8" name="ie">
+                <input type="hidden" value="UTF-8" name="oe">
+                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="post shadow">
+        <div>
+          <h1>Remote debugging in Eclipse</h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">
+              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">July 08, 2011</a>|Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;
+            </div>
+          </footer>
+        </div>
+        <hr>
+        <section class="content"><p>To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server. By default it is turned off. In order to set jboss app server to be running in debugging mode, you should uncomment following line in &quot;jboss-5.1.0.GA/jboss/bin/run.conf&quot;</p>
+<p>like this:</p>
+<pre><code><span class="comment">#Sample JPDA settings for remote socket debugging</span>
+<span class="constant">JAVA_OPTS</span>=”<span class="variable">$JAVA_OPTS</span> -<span class="constant">Xrunjdwp</span><span class="symbol">:transport=dt_socket</span>,address=<span class="number">8787</span>,serve </code></pre>
+<p>Once done you can configure your eclipse remote application debugger on port 8787 and start debugging your application.</p>
+<p>Happy debugging !!</p>
+</section>
+        <hr>
+        <div id="social_bottom" class="topsocial">
+          <div class="social"><a href="/articles/2011-07-08-Remote-Debugging-Jboss/" data-url="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/" data-text="Remote debugging in Eclipse #eclipse /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+              <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          </div>
+          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/"></g:plusone></div>
+          <div class="social">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/" data-counter="top"></script>
+          </div>
+        </div>
+        <hr>
+        <h3>Similar Articles</h3>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/" title="eclipse,productivity">Troubleshooting eclipse issues</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2011-03-15-Using-Eclipse-Effectively/" title="eclipse,best-practices,productivity">Using Eclipse effectively</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/" title="eclipse,productivity">Eclipse keyboard shortcuts</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2011-06-01-Debugging-With-Eclipse/" title="eclipse,productivity">Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2011-07-08-Remote-Debugging-Jboss/" title="eclipse">Remote debugging in Eclipse</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4></h4>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript" src="http://disqus.com/forums/dongsa/embed.js"></script>
+        <noscript><a href="http://disqus.com/forums/dongsa/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+        <script type="text/javascript">
+          (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+              if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+              }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/dongsa/get_num_replies.js' + query + '"></' + 'script>');
+          })();
+        </script>
+      </article><hr />
+      <footer class="footer">
+        <div style="font-size: 13px" class="inner">
+        </div>
+      </footer>
+    </div>
+    <!--le javascript-->
+    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
+    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
+    <script src="/assets/javascript/jquery.min.js"></script>
+    <script src="/assets/javascript/app.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="http://platform.linkedin.com/in.js"></script><script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+  </body>
+</html>

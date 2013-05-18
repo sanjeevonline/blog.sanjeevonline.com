@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Use PMD - Programming Mistake Detector? - The Social Coder</title>
+    <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/assets/css/prettify.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <style type="text/css">
+      body { padding-top: 60px; padding-bottom: 40px; }
+      
+      /* Large desktop */
+      @media (min-width: 1200px) {
+          body { font-size:100%;}
+          .wrap {max-width:770px;}
+      }
+      
+      @media (max-width: 980px) {
+         body {
+            padding-top: 0px;
+         }
+      }
+      
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {
+          body { font-size:95%;}
+          h1 {
+            font-size: 22pt;
+          }
+          h2 {
+            font-size: 18pt;
+          }
+          h3 {
+            font-size: 16pt;
+          }
+      }
+      
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) {
+          body { font-size:90%;}
+          h1 {
+            font-size: 20pt;
+          }
+          h2 {
+            font-size: 16pt;
+          }
+          h3 {
+            font-size: 14pt;
+          }
+      }
+      
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+            font-size: 18pt;
+          }
+          h2 {
+            font-size: 14pt;
+          }
+          h3 {
+            font-size: 12pt;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Social Coder</a>
+            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li><a href="/blog.html">Blog</a></li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/tag/agile.html">agile</a></li>
+                    <li><a href="/tag/best-practices.html">best-practices</a></li>
+                    <li><a href="/tag/eclipse.html">eclipse</a></li>
+                    <li><a href="/tag/java.html">java</a></li>
+                    <li><a href="/tag/productivity.html">productivity</a></li>
+                    <li><a href="/tag/travel.html">travel</a></li>
+                  </ul>
+                </li>
+                <li><a href="/archive.html">Archive</a></li>
+              </ul>
+            </div>
+            <div class="pull-right nav-collapse collapse">
+              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
+                <input type="hidden" value="UTF-8" name="ie">
+                <input type="hidden" value="UTF-8" name="oe">
+                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="post shadow">
+        <div>
+          <h1>Use PMD - Programming Mistake Detector?</h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">
+              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">October 30, 2010</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+        </div>
+        <hr>
+        <section class="content"><h3>About PMD</h3>
+
+<p>How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &quot;PMD&quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. </p>
+<p><b>Note</b>: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.</p>
+<p>PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:</p>
+<ol>
+<li>Possible bugs - empty try/catch/finally/switch statements</li>
+<li>Dead code - unused local variables, parameters and private methods</li>
+<li>Suboptimal code - wasteful String/StringBuffer usage</li>
+<li>Overcomplicated expressions - unnecessary if statements, for loops that could be while loops</li>
+<li>Duplicate code - copied/pasted code means copied/pasted bugs</li>
+</ol>
+<p>You can <a href="http://sourceforge.net/project/showfiles.php?group_id=56262">download everything from here</a>, and you can get an overview of all the rules at the <a href="http://pmd.sourceforge.net/rules/index.html">rulesets index page</a>.</p>
+<p>PMD is integrated with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.</p>
+<h3>Instructions for configuring PMD for Eclipse</h3>
+
+
+<p>Let me walk you through the steps required to quickly configure it with your Eclipse installation. It works like a breeze.</p>
+<ol>
+<li>Start Eclipse.</li>
+<li>Start the installation procedure : select the Help&gt;Software Updates&gt;Find and Install... menu item.</li>
+<li>Select &quot;Search for new features to install&quot; option and click Next.</li>
+<li>Click New Remote Site...</li>
+<li>Give a name (ie PMD Eclipse Site), enter the URL <a href="http://pmd.sourceforge.net/eclipse">http://pmd.sourceforge.net/eclipse</a></li>
+<li>Select this new site in the Sites to include in search list and click Next.</li>
+<li>Select PMD for Eclipse 3 and Apache Xerces in the &quot;Select the features to install&quot; list and click Next.</li>
+<li>Accept the terms of the license agreements and click Next.</li>
+<li>Verify that the install location is your Eclipse installation directory, otherwise select the correct one, click Finish.</li>
+<li>A warning appear telling the feature is not signed. Ignore and click Install to continue.</li>
+<li>Accept to restart the workbench to load PMD into the workbench.
+Eclipse is restarted and a PMD welcome page is displayed : the plugin is correctly installed. </li>
+</ol>
+<h3>Writing custom rules</h3>
+
+<p>It is interesting and important to note that you can write your custom rules. Writing PMD rules is cool because you don&#39;t have to wait for PMD team to get around to implementing feature requests. Following are the two approaches to write custom rules.
+1. Write a rule using Java
+2. Write an XPath expression
+More details about each of these approaches can be found at <a href="http://pmd.sourceforge.net/howtowritearule.html">sourceforge</a>.</p>
+<p>Happy coding.. </p>
+</section>
+        <hr>
+        <div id="social_bottom" class="topsocial">
+          <div class="social"><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-text="Use PMD - Programming Mistake Detector? #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+              <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          </div>
+          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/"></g:plusone></div>
+          <div class="social">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-counter="top"></script>
+          </div>
+        </div>
+        <hr>
+        <h3>Similar Articles</h3>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4></h4>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript" src="http://disqus.com/forums/dongsa/embed.js"></script>
+        <noscript><a href="http://disqus.com/forums/dongsa/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+        <script type="text/javascript">
+          (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+              if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+              }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/dongsa/get_num_replies.js' + query + '"></' + 'script>');
+          })();
+        </script>
+      </article><hr />
+      <footer class="footer">
+        <div style="font-size: 13px" class="inner">
+        </div>
+      </footer>
+    </div>
+    <!--le javascript-->
+    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
+    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
+    <script src="/assets/javascript/jquery.min.js"></script>
+    <script src="/assets/javascript/app.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="http://platform.linkedin.com/in.js"></script><script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+  </body>
+</html>

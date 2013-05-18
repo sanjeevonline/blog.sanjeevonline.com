@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exception handling guidelines/best practices - The Social Coder</title>
+    <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
+    <link rel="stylesheet" href="/assets/css/github.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/assets/css/prettify.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <style type="text/css">
+      body { padding-top: 60px; padding-bottom: 40px; }
+      
+      /* Large desktop */
+      @media (min-width: 1200px) {
+          body { font-size:100%;}
+          .wrap {max-width:770px;}
+      }
+      
+      @media (max-width: 980px) {
+         body {
+            padding-top: 0px;
+         }
+      }
+      
+      /* Portrait tablet to landscape and desktop */
+      @media (min-width: 768px) and (max-width: 979px) {
+          body { font-size:95%;}
+          h1 {
+            font-size: 22pt;
+          }
+          h2 {
+            font-size: 18pt;
+          }
+          h3 {
+            font-size: 16pt;
+          }
+      }
+      
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) {
+          body { font-size:90%;}
+          h1 {
+            font-size: 20pt;
+          }
+          h2 {
+            font-size: 16pt;
+          }
+          h3 {
+            font-size: 14pt;
+          }
+      }
+      
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+            font-size: 18pt;
+          }
+          h2 {
+            font-size: 14pt;
+          }
+          h3 {
+            font-size: 12pt;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Social Coder</a>
+            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+              <ul class="nav">
+                <li><a href="/blog.html">Blog</a></li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/tag/agile.html">agile</a></li>
+                    <li><a href="/tag/best-practices.html">best-practices</a></li>
+                    <li><a href="/tag/eclipse.html">eclipse</a></li>
+                    <li><a href="/tag/java.html">java</a></li>
+                    <li><a href="/tag/productivity.html">productivity</a></li>
+                    <li><a href="/tag/travel.html">travel</a></li>
+                  </ul>
+                </li>
+                <li><a href="/archive.html">Archive</a></li>
+              </ul>
+            </div>
+            <div class="pull-right nav-collapse collapse">
+              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
+                <input type="hidden" value="UTF-8" name="ie">
+                <input type="hidden" value="UTF-8" name="oe">
+                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="post shadow">
+        <div>
+          <h1>Exception handling guidelines/best practices</h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">
+              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">December 20, 2010</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+        </div>
+        <hr>
+        <section class="content"><p>Let’s review some basic exception design guidelines, summarized from Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock and Alan McKean, Addison-Wesley, 2003).</p>
+<ul>
+<li><b>Don’t try to handle coding errors</b>: Unless your software is required to take extraordinary measures in error scenarios, don’t spend a lot of time designing it to detect and recover from programming errors. In the case of an out-of-bounds array index, divide-by zero error, or any other programming error, the best strategy is to fail fast (and leave an audit trail of the problem that can be used to troubleshoot it).</li>
+<li><b>Avoid declaring lots of exception classes</b>: Create a new exception class only when you expect some handling of the code to take a significantly different action, based on the exception type. In my experience it is rarely the case and exception classes available in java API serve the purpose.</li>
+<li><b>Recast lower-level exceptions to higher-level ones whenever you raise an abstraction level</b>: Don’t let implementation details leak out of a method invocation as exceptions. Otherwise, your users might think your software is broken. When low-level exceptions percolate up to a high-level handler, there’s little context to assist the handler in making informed decisions or reporting conditions that are traceable to any obvious cause. Recasting an exception whenever you cross an abstraction boundary enables exception handlers higher up in the call chain to make more informed decisions. If you want to include a problem trace when recasting them, you can always create a chained exception. A chained exception provides added context and holds a reference to the original lower level exception. You can repeatedly chain exceptions.</li>
+<li><p><b>Provide context along with an exception</b>: What’s most important in exception handling is information that helps create an informed response. Exception classes hold information. You can design them to be packed with information in addition to the bare-bones stack trace information provided by default. You might include values of parameters that raised the exception, specific error text, or detailed information that could be useful to plan a recovery. When an exception occurs, it is important that all pertinent data be passed to the exception&#39;s constructor. Such data is often critical for understanding and solving the problem, and can greatly reduce the time needed to find a solution.
+The this reference is sometimes useful for this purpose, since toString is implicitly called. In addition, if you are defining exception classes yourself, you may even design your constructors to force the caller to pass the pertinent data.</p>
+<p>  Uninformative stack traces are very frustrating for the maintainer, and often inspire even the most well-tempered programmers to temporarily violate local community standards for obscenity.</p>
+<p>  Example</p>
+<pre><code>public final class RangeChecker {
+
+/**
+* Return <span class="tag">&lt;<span class="title">code</span>&gt;</span>true<span class="tag">&lt;/<span class="title">code</span>&gt;</span> only if <span class="tag">&lt;<span class="title">code</span>&gt;</span>aNumber<span class="tag">&lt;/<span class="title">code</span>&gt;</span> is in the range
+* <span class="tag">&lt;<span class="title">code</span>&gt;</span>aLow..aHigh<span class="tag">&lt;/<span class="title">code</span>&gt;</span> (inclusive).
+*
+* @param <span class="tag">&lt;<span class="title">code</span>&gt;</span>aLow<span class="tag">&lt;/<span class="title">code</span>&gt;</span> less than or equal to <span class="tag">&lt;<span class="title">code</span>&gt;</span>aHigh<span class="tag">&lt;/<span class="title">code</span>&gt;</span>.
+*/
+static public boolean isInRange( int aNumber, int aLow, int aHigh ){
+  if (aLow &gt; aHigh) {
+    throw new IllegalArgumentException("Low:" + aLow + " greater than High:" + aHigh);
+  }
+  return (aLow <span class="tag">&lt;<span class="title">=</span> <span class="attribute">aNumber</span> &amp;&amp; <span class="attribute">aNumber</span> &lt;= <span class="attribute">aHigh</span>);
+}
+}</code></pre>
+</li>
+<li><p><b>Handle exceptions as close to the problem as you can</b>: As a first line of defense, consider the initial requestor. If the caller knows enough to perform a corrective action, you can rectify the condition on the spot. If you propagate an exception far away from the source, it can be difficult to trace the source. Often objects further away from the problem can’t make meaningful decisions.</p>
+</li>
+<li><b>Use exceptions only to signal emergencies</b>: Exceptions shouldn’t be raised to indicate normal branching conditions that will alter the flow in the calling code. For example, a find operation may return zero, one, or many objects, so I wouldn’t raise an exception in this case. Instead, I’d design my find() method to return a null object or an empty collection. A dropped database connection, on the other hand, is a real emergency. There’s nothing that can be done to continue as planned.</li>
+<li><b>Don’t repeatedly re-throw the same exception</b>: Although exceptions don’t cost anything until they’re raised, programs that frequently raise exceptions run more slowly.</li>
+<li><p><b>Avoid empty catch blocks</b>: It is usually a very bad idea to have an empty catch block because when the exception occurs, nothing happens, and the program fails for unknown reasons.</p>
+<p>  In general, when a exception occurs, it can be thrown up to the caller, or it can be caught in a catch block. When catching an exception, some options include :</p>
+<pre><code>   ** Inform <span class="keyword">the</span> user (strongly recommended)
+   ** Log <span class="keyword">the</span> problem, using <span class="keyword">the</span> <span class="type">application</span> specific loggers <span class="keyword">or</span> JDK logging services, <span class="keyword">or</span> similar tool
+   ** Send an email describing <span class="keyword">the</span> problem <span class="keyword">to</span> an administrator</code></pre>
+<p>  Deciding what exactly to do seems to depend on the nature of the problem. If there is an actual bug in the program - a defect that needs to be fixed - then one might do all three of the above. In this case, the end user should likely be shown a generic &quot;Sorry, we goofed&quot; message, not a stack trace. It is usually considered bad form to display a stack trace to a non-technical end user, or if exposing a stack trace may be a security risk.</p>
+<p>  If the exception does not represent a bug, then different behavior may be appropriate. For example, if a problem with user input is detected and an exception is thrown as a result, then merely informing the user of the problem might be all that is required.</p>
+</li>
+<li><p><b>Exception translation</b>: Occasionally, it is appropriate to translate one type of exception into another.</p>
+<p>  The data layer, for example, can profit from this technique. Here, the data layer seeks to hide almost all of its implementation details from other parts of the program. It even seeks to hide the basic persistence mechanism - whether or not a database or an ad hoc file scheme is used, for example.</p>
+<p>  However, every persistence style has specific exceptions - SQLException for databases,  and IOException for files, for example. If the rest of the program is to remain truly ignorant of the persistence mechanism, then these exceptions cannot be allowed to propagate outside the data layer, and must be translated into some higher level abstraction - DataAccessException, say.</p>
+</li>
+<li><b>Use template for repeated try-catch</b>: Java&#39;s try-catch blocks are particularly common when using APIs which give an important role to checked exceptions (such as SQLException in JDBC). When using such an API, many published examples simply repeat the same try-catch code structure whenever necessary. However, it is simple to eliminate such code repetition using the template method pattern. The idea is to define the structure of the try-catch block in one place, in an abstract base class (ABC). Such an ABC is then extended whenever that particular try-catch block is needed. The concrete implementation of such an ABC will often have simple, &quot;straight line&quot; code.</li>
+</ul>
+</section>
+        <hr>
+        <div id="social_bottom" class="topsocial">
+          <div class="social"><a href="/articles/2010-12-10-Exception-Handling/" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-text="Exception handling guidelines/best practices #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+              <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          </div>
+          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/"></g:plusone></div>
+          <div class="social">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-counter="top"></script>
+          </div>
+        </div>
+        <hr>
+        <h3>Similar Articles</h3>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+            </tr>
+            <tr>
+              <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4></h4>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript" src="http://disqus.com/forums/dongsa/embed.js"></script>
+        <noscript><a href="http://disqus.com/forums/dongsa/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
+        <script type="text/javascript">
+          (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+              if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+              }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/dongsa/get_num_replies.js' + query + '"></' + 'script>');
+          })();
+        </script>
+      </article><hr />
+      <footer class="footer">
+        <div style="font-size: 13px" class="inner">
+        </div>
+      </footer>
+    </div>
+    <!--le javascript-->
+    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
+    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
+    <script src="/assets/javascript/jquery.min.js"></script>
+    <script src="/assets/javascript/app.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="http://platform.linkedin.com/in.js"></script><script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+  </body>
+</html>
