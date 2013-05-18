@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Prefer switch over if-else - The Social Coder</title>
+    <title>Tag - The Social Coder</title>
     <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
     <link rel="stylesheet" href="/assets/css/github.css">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
@@ -75,9 +75,9 @@
             <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
               <ul class="nav">
                 <li><a href="/blog.html">Blog</a></li>
-                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                <li class="dropdown active"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="/tag/agile.html">agile</a></li>
+                    <li class="active"><a href="/tag/agile.html">agile</a></li>
                     <li><a href="/tag/best-practices.html">best-practices</a></li>
                     <li><a href="/tag/eclipse.html">eclipse</a></li>
                     <li><a href="/tag/java.html">java</a></li>
@@ -100,67 +100,43 @@
           </div>
         </div>
       </div>
-      <article class="post shadow">
-        <div>
-          <h1>Prefer switch over if-else</h1>
-          <footer class="footer">
-            <div style="font-size: 13px" class="inner">
-              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">December 28, 2010</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-            </div>
-          </footer>
-        </div>
-        <hr>
-        <section class="content"><p>In most cases switch will be lighter and performs faster than an if/else ladder. The compiler is able to optimize switch statements into a lookup table and perform compile-time checking for literals when dealing with enumerations, so I&#39;d suggest that it&#39;s usually preferable to use switch over if/else if if you&#39;re dealing with numeric or enum types in Java. </p>
+      <div style="text-align: center">
+        <div id="page_subtitle"> Posts tagged with : agile</div>
+      </div>
+      <div class="row-fluid">
+        <article class="post shadow">
+          <header>
+            <h1><a href="/articles/2011-11-21-Code-Quality-Agile-Teams/">Improving code quality in agile teams</a></h1>
+            <footer class="footer">
+              <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">November 21 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/agile.html" rel="category tag" title="View all posts in 'agile'">agile</a>&nbsp;
+              </div>
+            </footer>
+          </header>
+          <hr>
+          <section class="content"><p>Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind.</p>
+<ul>
+<li>Improve how retrospectives are done so they can effectively detect and address these kinds of quality problems</li>
+<li>If there are quality differences in the code written by different team members, have the better programmers find ways to raise the quality of code written by others.</li>
+<li>Focus on defect prevention, not just detection. Tools that can help are:<ul>
+<li>code inspections</li>
+<li>checklists</li>
+</ul>
+</li>
+<li>Use pair-programming to improve knowledge sharing within the team. It seems expensive but mostly it is worth it.</li>
+<li>Begin regular use of static or dynamic code analysis tools.</li>
+<li>Implement continous integration tools to proactively detect and prevent code quality issues</li>
+</ul>
 </section>
-        <hr>
-        <div id="social_bottom" class="topsocial">
-          <div class="social"><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-url="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-text="Prefer switch over if-else #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-              <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-11-21-Code-Quality-Agile-Teams/" data-url="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/" data-text="Improving code quality in agile teams #agile /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/" data-counter="top"></script></div>
           </div>
-          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/"></g:plusone></div>
-          <div class="social">
-            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-counter="top"></script>
-          </div>
-        </div>
-        <hr>
-        <h3>Similar Articles</h3>
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2010-10-30-Package-By-Features/" title="best-practices,java">Package by feature not layer</a></td>
-            </tr>
-          </tbody>
-        </table>
-        <h4></h4>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript" src="http://disqus.com/forums/dongsa/embed.js"></script>
-        <noscript><a href="http://disqus.com/forums/dongsa/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by<span class="logo-disqus">Disqus</span></a>
-        <script type="text/javascript">
-          (function() {
-            var links = document.getElementsByTagName('a');
-            var query = '?';
-            for(var i = 0; i < links.length; i++) {
-              if(links[i].href.indexOf('#disqus_thread') >= 0) {
-                query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-              }
-            }
-            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/dongsa/get_num_replies.js' + query + '"></' + 'script>');
-          })();
-        </script>
-      </article><hr />
+        </article>
+      </div><a href="/archive.html" id="archive">Visit the archives!</a><hr />
       <footer class="footer">
         <div style="font-size: 13px" class="inner">
         </div>
