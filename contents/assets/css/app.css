@@ -131,12 +131,11 @@ h1#page_heading a, h1#page_heading a:hover, h1#page_heading a:visited {
     text-decoration: none;
 }
 #page_subtitle {
-    font-family: Bilbo, 'times new roman', serif;
     font-size: 1.2em;
-    margin: 10px auto 20px;
+    margin: 0px auto 20px;
     width: 400px;
     text-align: center;
-    padding: 11px 0 13px;
+    padding: 11px 0 11px;
     color: #888;
     border-bottom: 1px solid #EAEAEA;
     border-top: 1px solid #EAEAEA;

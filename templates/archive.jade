@@ -4,6 +4,7 @@ block header
   div#page_subtitle
     | Archives
 block content
+
   != page.html
   - var archive = _.chain(contents.articles._.directories).map(function(item) {
   -   return item.index
@@ -26,4 +27,3 @@ block content
               each article in articles
                 br
                 a(href=locals.baseUrl + article.url)= article.title
-
