@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
   <title type="text">Sanjeev Kumar</title>
-  <updated>2013-05-18T17:29:38.787Z</updated>
+  <updated>2013-05-19T18:27:27.083Z</updated>
   <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com"></link>
   <id>http://blog.sanjeevonline.com</id>
   <link rel="self" type="application/atom+xml" href="http://feeds.feedburner.com/sanjeevonline/atom"></link>
   <generator uri="https://github.com/jnordberg/wintersmith" version="1.1.1">Wintersmith</generator>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+    </author>
+    <title type="html"><![CDATA[High school reunion]]></title>
+    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/"></link>
+    <id>http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</id>
+    <updated>2013-05-19T09:30:00.000Z</updated>
+    <published>2013-05-19T09:30:00.000Z</published>
+    <category scheme="http://blog.sanjeevonline.com" term="trivia" telabel="trivia"></category>
+    <summary type="html"><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.]]></summary>
+    <content type="html"><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.]]></content>
+    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/#disqus_thread" thr:count="0"></link>
+    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2013-05-19-High-School-Reunion//lastest.rss" thr:count="0"></link>
+    <thr:total>0</thr:total>
+  </entry>
   <entry>
     <author>
       <name>sanjeev</name>
@@ -152,24 +168,6 @@
     <content type="html"><![CDATA[These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/).]]></content>
     <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/#disqus_thread" thr:count="0"></link>
     <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts//lastest.rss" thr:count="0"></link>
-    <thr:total>0</thr:total>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-    </author>
-    <title type="html"><![CDATA[Using Eclipse effectively]]></title>
-    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/"></link>
-    <id>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</id>
-    <updated>2011-03-15T09:30:00.000Z</updated>
-    <published>2011-03-15T09:30:00.000Z</published>
-    <category scheme="http://blog.sanjeevonline.com" term="eclipse" telabel="eclipse"></category>
-    <category scheme="http://blog.sanjeevonline.com" term="best-practices" telabel="best-practices"></category>
-    <category scheme="http://blog.sanjeevonline.com" term="productivity" telabel="productivity"></category>
-    <summary type="html"><![CDATA[To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features.]]></summary>
-    <content type="html"><![CDATA[To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features.]]></content>
-    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/#disqus_thread" thr:count="0"></link>
-    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-03-15-Using-Eclipse-Effectively//lastest.rss" thr:count="0"></link>
     <thr:total>0</thr:total>
   </entry>
 </feed>

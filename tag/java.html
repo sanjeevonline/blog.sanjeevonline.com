@@ -83,6 +83,7 @@
                     <li class="active"><a href="/tag/java.html">java</a></li>
                     <li><a href="/tag/productivity.html">productivity</a></li>
                     <li><a href="/tag/travel.html">travel</a></li>
+                    <li><a href="/tag/trivia.html">trivia</a></li>
                   </ul>
                 </li>
                 <li><a href="/archive.html">Archive</a></li>
@@ -116,7 +117,7 @@
           <section class="content"><p>Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. </p>
 <p>The best general purpose or &#39;primary&#39; implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation. That special feature is usually ordering or sorting.</p>
 <p>Here, &quot;ordering&quot; refers to the order of items returned by an Iterator, and &quot;sorting&quot; refers to sorting items according to <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html">Comparable</a> or <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html">Comparator</a>. </p>
-<iframe width='100%' height='160' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&output=html&widget=true'></iframe>
+<iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&output=html&widget=true'></iframe>
 
 
 <p>Principal features of non-primary implementations :</p>
@@ -469,8 +470,7 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
 <p>Here are a few ways to create a thread safe singleton classes in your application. </p>
 <h3>1. Lazy loading Singleton instance - Using Synchronized method or block</h3>
 
-<pre><code>```
-<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
+<pre><code><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
     <span class="keyword">private</span> SingletonClass sc;
     <span class="keyword">private</span> SingletonClass(){}
 
@@ -483,28 +483,23 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
           }
         }
     }
-
-}
-```</code></pre>
+}</code></pre>
 <p><b>Issues</b>:    The use of synchronized keyword in a singleton class means that only one thread will be executing the synchronized block at a time and all other threads would be waiting.</p>
 <h3>2. Early initialization Singleton - Using Static Member Variable</h3>
 
-<pre><code>```
-<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
+<pre><code><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
     <span class="keyword">private</span> <span class="keyword">static</span> sc = <span class="keyword">new</span> SingletonClass();
     <span class="keyword">private</span> SingletonClass(){}
 
     <span class="keyword">public</span> <span class="keyword">static</span> SingletonClass getInstance(){
         <span class="keyword">return</span> sc;
     }
-}
-```    </code></pre>
+}</code></pre>
 <p>This approach is also known as early initialization because we are creating the singleton instance at an early stage and not when the instance is actually needed by another class.</p>
-<pre><code>&lt;b&gt;Issues&lt;/b&gt;: The <span class="keyword">use</span> of <span class="keyword">static</span> member variable means that <span class="keyword">this</span> singleton instance will be created <span class="keyword">as</span> soon <span class="keyword">as</span> the <span class="class"><span class="keyword">class</span> <span class="title">is</span> <span class="title">loaded</span> <span class="title">by</span> <span class="title">any</span> <span class="title">Classloader</span> <span class="title">in</span> <span class="title">JVM</span>. </code></pre>
+<p><b>Issues</b>: The use of static member variable means that this singleton instance will be created as soon as the class is loaded by any Classloader in JVM. </p>
 <h3>3. Singleton using Inner Classes</h3>
 
-<pre><code>```
-<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
+<pre><code><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
     <span class="keyword">private</span> SingletonClass(){}
     <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">InstanceHolder</span>{</span>
         <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> SingletonClass INSTANCE = <span class="keyword">new</span> SingletonClass(); 
@@ -512,28 +507,21 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
     <span class="keyword">public</span> <span class="keyword">static</span> SingletonClass getInstance(){
         <span class="keyword">return</span> InstanceHolder.INSTANCE; <span class="comment">//line1</span>
     }
-}
-```</code></pre>
+}</code></pre>
 <p>Here the instance is being created on demand and is also thread safe. The use of inner classes helps in the sense that the very first time singleton object is requested, the inner class is loaded by line1 and this loading of inner class causes the static member variable to be created and returned. Next time, the singleton member variable is requested causes the same static reference variable to be returned.</p>
 <h3>4. Singleton using enums</h3>
 
-<pre><code>```
-<span class="keyword">public</span> <span class="keyword">enum</span> Singleton{
+<pre><code><span class="keyword">public</span> <span class="keyword">enum</span> Singleton{
     INSTANCE;
     <span class="keyword">private</span> <span class="keyword">int</span> a;
     <span class="keyword">public</span> <span class="keyword">int</span> getA() {
         <span class="keyword">return</span> a;
     }
-}
-```</code></pre>
+}</code></pre>
 <p>To get a single instance of this enum one should use:</p>
-<pre><code><span class="string">``</span><span class="string">`
-Singleton.INSTANCE
-`</span><span class="string">``</span></code></pre>
+<pre><code><span class="filename">Singleton.INSTANCE</code></pre>
 <p>To get the value of member variable a, one should use:</p>
-<pre><code><span class="string">``</span><span class="string">`
-Singleton.INSTANCE.getA();
-`</span><span class="string">``</span></code></pre>
+<pre><code>Singleton<span class="preprocessor">.INSTANCE</span><span class="preprocessor">.getA</span>()<span class="comment">;</span></code></pre>
 <p><b>In my experience using enums is the best way to implement Singleton design pattern in any Java application. It is thread safe and also provides lazy initialization.</b></p>
 </section>
           <hr>
@@ -1138,17 +1126,6 @@ More details about each of these approaches can be found at <a href="http://pmd.
         po.src = 'https://apis.google.com/js/plusone.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
-    </script>
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'thesocialcoder'; // required: replace example with your forum shortname
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
     </script>
   </body>
 </html>
