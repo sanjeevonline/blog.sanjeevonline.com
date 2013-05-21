@@ -933,6 +933,35 @@ More details about each of these approaches can be found at <a href="http://pmd.
         </article>
         <article class="post shadow">
           <header>
+            <h1><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a></h1>
+            <footer class="footer">
+              <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">October 20 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+              </div>
+            </footer>
+          </header>
+          <hr>
+          <section class="content"><p>Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.</p>
+<p>In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &quot;MonetaryAmount.java&quot; that are wrappers over &quot;BigDecimal&quot; class of the JDK and that provides helper methods and functionality as needed by the business application.</p>
+<p>From an IBM article on this topic :</p>
+<p><i>
+&quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&quot;
+</i></p>
+<p>From an article by Brian Goetz :</p>
+<p><i>
+&quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&quot; 
+</i></p>
+</section>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-text="Beware of floating point numbers #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-counter="top"></script></div>
+          </div>
+        </article>
+        <article class="post shadow">
+          <header>
             <h1><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a></h1>
             <footer class="footer">
               <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">October 20 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;
@@ -967,35 +996,6 @@ More details about each of these approaches can be found at <a href="http://pmd.
             </div>
             <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/"></g:plusone></div>
             <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-counter="top"></script></div>
-          </div>
-        </article>
-        <article class="post shadow">
-          <header>
-            <h1><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a></h1>
-            <footer class="footer">
-              <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">October 20 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-              </div>
-            </footer>
-          </header>
-          <hr>
-          <section class="content"><p>Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.</p>
-<p>In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &quot;MonetaryAmount.java&quot; that are wrappers over &quot;BigDecimal&quot; class of the JDK and that provides helper methods and functionality as needed by the business application.</p>
-<p>From an IBM article on this topic :</p>
-<p><i>
-&quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&quot;
-</i></p>
-<p>From an article by Brian Goetz :</p>
-<p><i>
-&quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&quot; 
-</i></p>
-</section>
-          <hr>
-          <div id="social_bottom" class="topsocial">
-            <div class="social"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-text="Beware of floating point numbers #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-            </div>
-            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/"></g:plusone></div>
-            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-counter="top"></script></div>
           </div>
         </article>
         <article class="post shadow">
