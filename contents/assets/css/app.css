@@ -19,6 +19,9 @@ body {
     font-size: 15px;
     line-height: 23px;
 }
+li {
+    line-height: 23px;   
+}
 .navbar .brand {
     font-size: 25px;
 }

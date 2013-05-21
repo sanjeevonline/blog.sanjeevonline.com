@@ -6,10 +6,10 @@
         "name": "Sanjeev Kumar",
         "owner": "Sanjeev Kumar",
         "author": "sanjeev",
-        "description": "The Social Coder",
+        "description": "The Rootless Wanderer",
         "generator": "Wintersmith",
         "language": "en-EN",
-        "googleSiteVerification": "google36a66ae7f1a82c45",
+        "googleSiteVerification": "",
         "keywords": ["geek","web","java","spring","spring batch","spring batch in action","node.js","git","ruby","svn","subversion"],
         "feeds": {
             "feed": "http://feeds.feedburner.com/sanjeevonline/feed",
@@ -22,6 +22,6 @@
             "shortname": "sanjeevonline"
         },
         "index_articles": 3,
-        "title": "The Social Coder"
+        "title": "The Rootless Wanderer"
     }
 }
