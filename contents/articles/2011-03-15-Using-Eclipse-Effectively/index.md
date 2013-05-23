@@ -15,7 +15,11 @@ Following spread sheet has the configuration that we use in our current projects
 
 <iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&output=html&widget=true'></iframe>
 
-Also ideally your Eclipse should be configured with your "code formatter" and "CheckStyle" XML configurations. To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at http://checkstyle.sourceforge.net/. 
+Also ideally your Eclipse should be configured with your "code formatter" and "CheckStyle" XML configurations. 
+
+<span class="more"></span>
+
+To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at http://checkstyle.sourceforge.net/. 
 
 Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse-->Preferences menu.
 

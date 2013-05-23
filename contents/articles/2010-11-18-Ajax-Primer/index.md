@@ -16,6 +16,8 @@ The term Ajax has come to represent a broad group of web technologies that can b
 4. The XMLHttpRequest object for asynchronous communication
 5. JavaScript to bring these technologies together
 
+<span class="more"></span>
+
 Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.
 
 This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.

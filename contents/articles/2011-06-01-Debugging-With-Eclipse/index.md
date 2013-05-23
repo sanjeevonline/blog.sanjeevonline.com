@@ -14,6 +14,8 @@ For example, there’s almost no reason to ever want to step into Spring’s cod
 
 Fortunately, Eclipse makes it easy to specify which classes to skip by allowing step filters. This makes it easier to focus on your own code and also keeps your editor area clean since Eclipse won’t be opening classes in separate editors all the time.
 
+<span class="more"></span>
+
 <h3>Enable Step Filters</h3>
 
 To use step filters, the first step is to enable it. Eclipse comes with some default filters so let’s start by enabling them all. This will filter all Java classes (ie. java.) and all Sun classes (ie. sun.).

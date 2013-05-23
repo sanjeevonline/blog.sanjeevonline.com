@@ -19,6 +19,8 @@ Null pointer exceptions(NPE) are the undoubtedly the most common and most annoyi
         }
     }
 
+<span class="more"></span>
+
 Here if the "status" that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.
 
     //GOOD CODE

@@ -17,4 +17,6 @@ If there may be confusion, you may simplify the design:
 * retain overloading, but ensure each method has a distinct number of arguments
 * In addition, it is recommended that varargs not be used when a method is overloaded, since this makes it more difficult to determine which overload is being called.
 
+<span class="more"></span>
+
 Reminder : Overloading requires methods with distinct signatures. The signature of a method includes its name and the ordered list of its argument types. All other items appearing in a method header, such as exceptions, return type, final, and synchronized, do not contribute to a method's signature. 

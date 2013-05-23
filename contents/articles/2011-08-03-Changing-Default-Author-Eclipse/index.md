@@ -19,6 +19,8 @@ The auto generated Java docs at the class level picks the user name from the sys
 
 Here is a quick way to change the default author name in your Eclipse projects. Simply edit your eclipse.ini file found in the root directory where you placed Eclipse. I have Eclipse at C:\devtools\development\eclipse, so my path would be C:\devtools\development\eclipse\eclipse.ini. Once editing this file add the following line and save.
 
+<span class="more"></span>
+
 	-Duser.name=Sanjeev Kumar
 
 After saving restart Eclipse and when you do a JavaDoc comment and use the author attribute by typing @author and pressing enter on the autocomplete you will see something like this:

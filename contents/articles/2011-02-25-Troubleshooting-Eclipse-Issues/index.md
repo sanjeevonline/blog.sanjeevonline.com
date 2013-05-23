@@ -18,6 +18,8 @@ Following are some tips that shall help you in avoiding potential issues and for
 
 	Corrupted workspace is a common occurrence and troublemaker for many developers. So If your Eclipse installation has startup errors or a corrupted configuration, it might be time to get a fresh start. Start Eclipse with the –clean option, and all cached framework and runtime data will be cleared out. This often helps fix plug-in issues and improve general stability.
 
+<span class="more"></span>
+
 * <b>Increase the memory allocation</b>
 
 	With new plugins getting added to the core eclipse functionality and the need to use additional third party plugins, the memory requirements for your eclipse workspace increases. The default memory allocation configured in eclipse is not enough for most J2ee development projects and that causes a sluggish response from you eclipse. If you get Out of Memory errors or sluggish response, you may have to increase the defaults that are set in eclipse.ini file in the Eclipse installation directory. In particular, if you get an error about “PermGen” memory (permanent generation), add this line at the end and restart Eclipse: -

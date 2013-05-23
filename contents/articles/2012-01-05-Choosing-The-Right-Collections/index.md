@@ -17,6 +17,8 @@ Here, "ordering" refers to the order of items returned by an Iterator, and "sort
 <iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&output=html&widget=true'></iframe>
  
 
+<span class="more"></span>
+
 Principal features of non-primary implementations :
 
 * HashMap has slightly better performance than LinkedHashMap

@@ -15,6 +15,8 @@ When generics were introduced in JDK 1.5, raw types were retained only to mainta
 * they aren't type safe, and some important kinds of errors will only appear at runtime
 * they are less expressive, and don't self-document in the same way as parameterized types
 
+<span class="more"></span>
+
 Unless you are using a JDK version prior to 1.5 I don't see a reason why you should not use parameterized types in your code.
 
 Happy coding !!

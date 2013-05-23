@@ -18,6 +18,8 @@ Implementing Comparable allows:
 3. Using objects as keys in a TreeMap.
 4. Using objects as elements in a TreeSet.
 
+<span class="more"></span>
+
 <h3>Understanding compareTo</h3>
 
 The compareTo() method is the sole member of Comparable interface. It provides a means of fully ordering objects. For a concrete comparable implementation class to work well, the compareTo() implementation needs to satisfy the certain conditions.

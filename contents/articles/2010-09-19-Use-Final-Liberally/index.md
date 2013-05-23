@@ -16,6 +16,8 @@ Use the final keyword liberally to communicate your intent. The final keyword ha
 
 In the last case, "value" for primitives is understood in the usual sense, while "value" for objects means the object's identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.
 
+<span class="more"></span>
+
 Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.
 
 Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.

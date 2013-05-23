@@ -19,6 +19,8 @@ Trust me on this one, I have learnt it the hard way. To start with lets start wi
 * Inheritance
   * Functionality of an object is made up of it's own functionality plus functionality from its parent classes
 
+<span class="more"></span>
+
 Sub-classing or inheritance has the following issues :
 
 * It violates encapsulation, since the implementations of the superclass and subclass become tightly coupled

@@ -14,7 +14,7 @@ block content
   - }).compact().sortBy(function(item) { // compact removes any directories w/o an index
   -   // sort them by date
   -   return -item.date
-  - }).first(5).value() // and finally take the first 5
+  - }).first(20).value() // and finally take the first 5
   - var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   each article in articles
     article.post.shadow

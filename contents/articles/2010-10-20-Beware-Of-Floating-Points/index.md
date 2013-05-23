@@ -12,6 +12,8 @@ Outside of a scientific or engineering context, the use of float and double (and
 
 In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like "MonetaryAmount.java" that are wrappers over "BigDecimal" class of the JDK and that provides helper methods and functionality as needed by the business application.
 
+<span class="more"></span>
+
 From an IBM article on this topic :
 
 <i>

@@ -13,7 +13,9 @@ The first question in building an application is "How do I divide it up into pac
 * Package by feature
 * Package by layer
 
-In my experience, the package-by-feature style seems to be the superior of the two:
+In my experience, the package-by-feature style seems to be the superior of the two. Here are some of the reasoning:
+
+<span class="more"></span>
 
 * <b>Higher Modularity</b>: As mentioned above, only package-by-feature has packages with high cohesion, high modularity, and low coupling between packages.
 * <b>Easier Code Navigation</b>: Maintenance programmers need to do a lot less searching for items, since all items needed for a given task are usually in the same directory. Some tools that encourage package-by-layer use package naming conventions to ease the problem of tedious code navigation. However, package-by-feature transcends the need for such conventions in the first place, by greatly reducing the need to navigate between directories.

@@ -12,7 +12,7 @@ block content
           - }).compact().sortBy(function(item) { // compact removes any directories w/o an index
           -   // sort them by date
           -   return -item.date
-          - }).value() // and get all
+          - }).first(20).value() // and get all
 
           - var tags = []
           - function compressArray(original) {

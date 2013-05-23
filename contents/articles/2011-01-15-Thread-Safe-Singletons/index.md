@@ -12,6 +12,8 @@ A singleton class should be designed to ensures that there exists only one insta
 
 Here are a few ways to create a thread safe singleton classes in your application. 
 
+<span class="more"></span>
+
 <h3>1. Lazy loading Singleton instance - Using Synchronized method or block</h3>
 
 	public class SingletonClass{

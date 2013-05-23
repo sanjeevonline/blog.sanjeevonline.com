@@ -17,6 +17,8 @@ How do you ensure that your code follows standard programming principles? For mo
 
 PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:
 
+<span class="more"></span>
+
 1. Possible bugs - empty try/catch/finally/switch statements
 2. Dead code - unused local variables, parameters and private methods
 3. Suboptimal code - wasteful String/StringBuffer usage

@@ -21,6 +21,8 @@ Contents
 8. Fork and Join
 9. Supporting dynamism
 
+<span class="more"></span>
+
 <h3>Strings in switch statements</h3>
 
 In the JDK 7 release, you can use a String object in the expression of a switch statement:

@@ -15,8 +15,10 @@ In the book "Effective Java", Joshua Bloch makes this compelling recommendation 
 </i>
 
 Immutable objects are objects whose data or properties cannot be changed after it is constructed. JDK has a number of immutable class like String and Integer. Immutable objects have big list of compelling positive qualities and they can greatly simplify your program. Immutable objects :
-are simple to construct, test, and use
 
+<span class="more"></span>
+
+* are simple to construct, test, and use
 * are automatically thread-safe and have no synchronization issues
 * do not need a copy constructor
 * do not need an implementation of clone
