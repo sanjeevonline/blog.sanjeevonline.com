@@ -117,45 +117,8 @@
           <section class="content"><p>Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.</p>
 <p>For example, there’s almost no reason to ever want to step into Spring’s code or proxy classes (other than to learn more about them or maybe debug a potential bug in Spring). And normally I’m not interested in Java util classes (eg. ArrayList). This also goes for Hibernate, Apache Commons, Google and many other external libraries.</p>
 <p>Fortunately, Eclipse makes it easy to specify which classes to skip by allowing step filters. This makes it easier to focus on your own code and also keeps your editor area clean since Eclipse won’t be opening classes in separate editors all the time.</p>
-<h3>Enable Step Filters</h3>
-
-<p>To use step filters, the first step is to enable it. Eclipse comes with some default filters so let’s start by enabling them all. This will filter all Java classes (ie. java.) and all Sun classes (ie. sun.).</p>
-<ol>
-<li>Go to Window &gt; Preferences &gt; Java &gt; Debug &gt; Step Filtering.</li>
-<li>Select the option Use Step Filters.</li>
-<li>Click Select All to enable all the filters.</li>
-<li>Leave the other options below the filter list as-is.</li>
-</ol>
-<p>Here’s an example of what it should look like:</p>
-<p><img src="http://i.imgur.com/jO19t.jpg" alt="Debug setting in eclipse"></p>
-<p>NB: Even with step filters enabled, you can still set breakpoints within any of these classes (if you have the source) and Eclipse will still stop at the breakpoint. Step filtering only affects the way that Step Into works.</p>
-<p>Also note that Eclipse will still step into your classes if they’re called from the ignored classes. For example, when you call Collections.sort(List, Comparator) and pass your own Comparator implementation, Eclipse will not step into the sort code, but it will step into your Comparator when it’s called by the sort code.</p>
-<p>If you want to change this behaviour (ie. prevent Eclipse from stopping in your method), then deselect Step through filters. However, I’d recommend only doing this if you’ve tried out the default, because most times you’ll probably want to step through your own code.</p>
-<h3>The next step is to create some step filters of your own.</h3>
-
-<p>Once you’ve enabled step filters, all you have to do is add the classes you want to filter. Let’s assume that we want to ignore all classes from Spring, especially proxy classes.</p>
-<ol>
-<li>If you’re not there already, go to Window &gt; Preferences &gt; Java &gt; Debug &gt; Step Filtering</li>
-<li>Click Add Filter… A dialog should appear prompting you to enter a pattern</li>
-<li>Enter a regular expression for the classes you want to filter in the Pattern to filter field then click Ok. In our example, enter org.springframework.* (see image below). It’s easier to specify the top level package name with an asterix at the end</li>
-<li>Add another filter with the pattern $Proxy* to skip over Spring proxy classes (eg. when using Spring Transactions)</li>
-<li>Click Ok on the Preferences dialog when you’re done</li>
-</ol>
-<p>Here’s what the step filter pattern dialog should look like:</p>
-<p><img src="http://i.imgur.com/2RWRS.jpg" alt="Filter pattern dialog"></p>
-<p>Now when you use the debugger, you won’t be taken into Spring classes when you use Step Into (F5).</p>
-<h3>Some ideas for custom filters</h3>
-
-<p>In addition to the Spring classes, you might also want to consider adding the following common libraries to your step filters to make debugging easier:</p>
-<ul>
-<li>org.apache.*</li>
-<li>org.hibernate.*</li>
-<li>com.google.*</li>
-<li>org.eclipse.*</li>
-<li>org.osgi.*</li>
-</ul>
-<p>The last two are especially useful if you’re doing Eclipse RCP and/or OSGi development.</p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2011-06-01-Debugging-With-Eclipse/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2011-06-01-Debugging-With-Eclipse/" data-url="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/" data-text="Skip over certain classes when using Step Into(F5) in Eclipse’s debugger #eclipse #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -199,14 +162,9 @@
 <p>Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. </p>
 <iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&output=html&widget=true'></iframe>
 
-<p>Also ideally your Eclipse should be configured with your &quot;code formatter&quot; and &quot;CheckStyle&quot; XML configurations. To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at <a href="http://checkstyle.sourceforge.net/">http://checkstyle.sourceforge.net/</a>. </p>
-<p>Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&gt;Preferences menu.</p>
-<p>Here the checkstyle and formatter that I  use on my projects </p>
-<ul>
-<li><a href="https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing">Java code formatter configuration XML</a></li>
-<li><a href="https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing">Checkstyle configuration XML</a></li>
-</ul>
-</section>
+<p>Also ideally your Eclipse should be configured with your &quot;code formatter&quot; and &quot;CheckStyle&quot; XML configurations. </p>
+<p>
+            <p class="read-more"><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2011-03-15-Using-Eclipse-Effectively/" data-url="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-text="Using Eclipse effectively #eclipse #best-practices #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -233,22 +191,9 @@
 <li><p><b>Recovering your messed up workspace</b></p>
 <p>  Corrupted workspace is a common occurrence and troublemaker for many developers. So If your Eclipse installation has startup errors or a corrupted configuration, it might be time to get a fresh start. Start Eclipse with the –clean option, and all cached framework and runtime data will be cleared out. This often helps fix plug-in issues and improve general stability.</p>
 </li>
-<li><p><b>Increase the memory allocation</b></p>
-<p>  With new plugins getting added to the core eclipse functionality and the need to use additional third party plugins, the memory requirements for your eclipse workspace increases. The default memory allocation configured in eclipse is not enough for most J2ee development projects and that causes a sluggish response from you eclipse. If you get Out of Memory errors or sluggish response, you may have to increase the defaults that are set in eclipse.ini file in the Eclipse installation directory. In particular, if you get an error about “PermGen” memory (permanent generation), add this line at the end and restart Eclipse: -</p>
-<pre><code>  <span class="constant">XX</span><span class="symbol">:MaxPermSize=</span><span class="number">256</span>m </code></pre>
-<p>  Use the lowest memory settings that work and perform well for your mix of projects.</p>
-</li>
-<li><p><b>Side by side editing</b></p>
-<p>  By dragging editors, you can show two files side by side. You can also edit two portions of the same file by using the Window &gt; New Editor command.</p>
-</li>
-<li><p><b>Automatic code improvements</b></p>
-<p>  Set up Eclipse to automatically format source code and organize imports on every save. Select Window &gt; Preferences &gt; Java Editor &gt; Save Actions to enable these actions. This dialog also lets you configure actions like removing unnecessary casts or adding missing annotations. Configuring your eclipse with optimized Compiler, Formatter and CheckStyle settings is described in detail in the post Using Eclipse Effectively</p>
-</li>
-<li><p><b>Keyboard shortcuts</b>
-  It is productive and convenient to use keyboard shortcuts for performing certain tasks in eclipse rather than looking for options to do the same in various navigation menus. For example looking up references of a variable, method or a class can be quickly achieved via shortcut Ctrl+Shift+g. For your reference I have included a list of the most important keyboard shortcuts in my post Eclipse Keyboard Shortcuts</p>
-</li>
 </ul>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/" data-url="http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/" data-text="Troubleshooting eclipse issues #eclipse #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">

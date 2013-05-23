@@ -115,10 +115,8 @@
         </header>
         <section class="content"><p>It was pleasure meeting childhood friends from school today after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.</p>
 <p>After reintroducing ourselves to each other, we were in back-to-school mode in no time and it was fun after that. We gossiped about everyone who was not around, discussed our school time heartbreaks, affairs, who-was-hot-who-was-not and what not. </p>
-<p>We all managed to finish a few pitchers of Kingfisher while these intresting conversations were on. It was all heart-to-heart conversations.. no polishing and no pretensions whatsoever.. Just like how we used to do it during our school days.</p>
-<p>I am looking forward to many more such reunions and much more participation from my childhood buddies.</p>
-<p><img src="/articles/2013-05-19-High-School-Reunion/HighSchoolReunion.jpg" alt="High School Reunion"></p>
-
+<p>
+          <p class="read-more"><a href="/articles/2013-05-19-High-School-Reunion/">read more</a></p>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2013-05-19-High-School-Reunion/" data-url="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/" data-text="High school reunion #trivia /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -143,38 +141,8 @@
 <iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&output=html&widget=true'></iframe>
 
 
-<p>Principal features of non-primary implementations :</p>
-<ul>
-<li>HashMap has slightly better performance than LinkedHashMap</li>
-<li>HashSet has slightly better performance than LinkedHashSet</li>
-<li>TreeSet is ordered and sorted, but slow</li>
-<li>TreeMap is ordered and sorted, but slow</li>
-<li>LinkedList has fast adding to the start of the list, and fast deletion from the interior via iteration</li>
-</ul>
-<p>Iteration order for above implementations :</p>
-<ul>
-<li>HashSet - undefined</li>
-<li>HashMap - undefined</li>
-<li>LinkedHashSet - insertion order</li>
-<li>LinkedHashMap - insertion order of keys (by default), or &#39;access order&#39;</li>
-<li>ArrayList - insertion order</li>
-<li>LinkedList - insertion order</li>
-<li>TreeSet - ascending order, according to Comparable / Comparator</li>
-<li>TreeMap - ascending order of keys, according to Comparable / Comparator</li>
-</ul>
-<p>For LinkedHashSet and LinkedHashMap, the re-insertion of an item does not affect insertion order.</p>
-<p>While being used in a Map or Set, these items must not change state (hence, it is recommended that these items be immutable objects):</p>
-<ul>
-<li>keys of a Map</li>
-<li>items in a Set</li>
-</ul>
-<p>Sorting requires either that :</p>
-<ul>
-<li>the stored items implement <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html">Comparable</a></li>
-<li>a <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html">Comparator</a> for the stored objects be defined</li>
-</ul>
-<p>To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.</p>
-
+<p>
+          <p class="read-more"><a href="/articles/2012-01-05-Choosing-The-Right-Collections/">read more</a></p>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2012-01-05-Choosing-The-Right-Collections/" data-url="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/" data-text="Choosing the right collection #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -238,186 +206,8 @@ Contents</p>
 <li>Fork and Join</li>
 <li>Supporting dynamism</li>
 </ol>
-<h3>Strings in switch statements</h3>
-
-<p>In the JDK 7 release, you can use a String object in the expression of a switch statement:</p>
-<pre><code><span class="keyword">public</span> String getTypeOfDayWithSwitchStatement(String dayOfWeekArg) {
-     String typeOfDay;
-     <span class="keyword">switch</span> (dayOfWeekArg) {
-         <span class="keyword">case</span> <span class="string">"Monday"</span>:
-            typeOfDay = <span class="string">"Start of work week"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Tuesday"</span>:
-         <span class="keyword">case</span> <span class="string">"Wednesday"</span>:
-         <span class="keyword">case</span> <span class="string">"Thursday"</span>:
-            typeOfDay = <span class="string">"Midweek"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Friday"</span>:
-             typeOfDay = <span class="string">"End of work week"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Saturday"</span>:
-         <span class="keyword">case</span> <span class="string">"Sunday"</span>:
-            typeOfDay = <span class="string">"Weekend"</span>;
-             <span class="keyword">break</span>;
-        <span class="keyword">default</span>:
-            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"Invalid day of the week: "</span> + dayOfWeekArg);
-     }
-     <span class="keyword">return</span> typeOfDay;
-}</code></pre>
-<h3>The diamond operator &quot;&lt;&gt;&quot;</h3>
-
-<p>You can replace the type arguments required to invoke the constructor of a generic class with an empty set of type parameters (&lt;&gt;) as long as the compiler can infer the type arguments from the context. This pair of angle brackets is informally called the diamond.</p>
-<p>For example, consider the following variable declaration:</p>
-<pre><code>Map<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt; myMap = new HashMap<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt;();</code></pre>
-<p>In Java SE 7, you can substitute the parameterized type of the constructor with an empty set of type parameters (&lt;&gt;):</p>
-<pre><code>Map<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt; myMap = new HashMap<span class="tag">&lt;&gt;</span>();</code></pre>
-<p>Java SE 7 supports limited type inference for generic instance creation; you can only use type inference if the parameterized type of the constructor is obvious from the context. For example, the following example does not compile:</p>
-<pre><code>List<span class="tag">&lt;<span class="title">String</span>&gt;</span> list = new ArrayList<span class="tag">&lt;&gt;</span>();
-list.add("A");
-list.addAll(new ArrayList<span class="tag">&lt;&gt;</span>()); // Statement should fail since addAll expects Collection<span class="pi">&lt;? extends String&gt;</code></pre>
-<p>In comparison, the following example compiles:</p>
-<pre><code>List<span class="pi">&lt;? extends String&gt; list2 = new ArrayList&lt;&gt;();
-list.addAll(list2);</code></pre>
-<p>Note: The diamond often works in method calls; however, it is suggested that you use the diamond primarily for variable declarations.</p>
-<h3>Handling more than one type of exception</h3>
-
-<p>In Java SE 7 and later, a single catch block can handle more than one type of exception. Consider the following example, which contains duplicate code in each of the catch blocks:</p>
-<pre><code>//<span class="variable">Prior</span> to <span class="variable">Java</span> <span class="number">7</span>
-<span class="function"><span class="title">catch</span> <span class="params">(<span class="variable">IOException</span> ex)</span> {
- <span class="title">logger</span>.<span class="title">log</span><span class="params">(ex)</span>;
- <span class="title">throw</span> <span class="title">ex</span>;
-<span class="title">catch</span> <span class="params">(<span class="variable">SQLException</span> ex)</span> {
- <span class="title">logger</span>.<span class="title">log</span><span class="params">(ex)</span>;
- <span class="title">throw</span> <span class="title">ex</span>;
-}</code></pre>
-<p>In releases prior to Java SE 7, it is difficult to create a common method to eliminate the duplicated code because the variable ex has different types.</p>
-<p>The following example, which is valid in Java SE 7 and later, eliminates the duplicated code:</p>
-<pre><code><span class="keyword">catch</span> (IOException|SQLException ex) { <span class="comment">// java 7 handling more than one type of exception</span>
-    logger<span class="variable">.log</span>(ex);
-    <span class="keyword">throw</span> ex;
-}</code></pre>
-<p>The catch clause specifies the types of exceptions that the block can handle, and each exception type is separated with a vertical bar (|). Some other advantages apart from syntactical improvement:</p>
-<ul>
-<li>Bytecode generated by compiling a catch block that handles multiple exception types will be smaller (and thus superior) than compiling many catch blocks that handle only one exception type each. </li>
-<li>A catch block that handles multiple exception types creates no duplication in the bytecode generated by the compiler; the bytecode has no replication of exception handlers. </li>
-</ul>
-<p>Note: If a catch block handles more than one exception type, then the catch parameter is implicitly final. In this example, the catch parameter ex is final and therefore you cannot assign any values to it within the catch block.</p>
-<h3>Re-throwing exceptions with more inclusive type checking</h3>
-
-<p>The Java SE 7 compiler performs more precise analysis of rethrown exceptions than earlier releases of Java SE. This enables you to specify more specific exception types in the throws clause of a method declaration.</p>
-<p>Consider the following example:</p>
-<pre><code><span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">FirstException</span> <span class="keyword">extends</span> <span class="title">Exception</span> {</span> }
-  <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SecondException</span> <span class="keyword">extends</span> <span class="title">Exception</span> {</span> }
-
-  <span class="keyword">public</span> <span class="keyword">void</span> rethrowException(String exceptionName) <span class="keyword">throws</span> Exception {
-    <span class="keyword">try</span> {
-          <span class="keyword">if</span> (exceptionName.equals(<span class="string">"First"</span>)) {
-            <span class="keyword">throw</span> <span class="keyword">new</span> FirstException();
-          } <span class="keyword">else</span> {
-            <span class="keyword">throw</span> <span class="keyword">new</span> SecondException();
-          }
-    } <span class="keyword">catch</span> (Exception e) {
-          <span class="keyword">throw</span> e;
-    }
-  }</code></pre>
-<p>This examples&#39;s try block could throw either FirstException or SecondException. Suppose you want to specify these exception types in the throws clause of the rethrowException method declaration. In releases prior to Java SE 7, you cannot do so. Because the exception parameter of the catch clause, e, is type Exception, and the catch block rethrows the exception parameter e, you can only specify the exception type Exception in the throws clause of the rethrowException method declaration.</p>
-<p>However, in Java SE 7, you can specify the exception types FirstException and SecondException in the throws clause in the rethrowException method declaration. The Java SE 7 compiler can determine that the exception thrown by the statement throw e must have come from the try block, and the only exceptions thrown by the try block can be FirstException and SecondException. Even though the exception parameter of the catch clause, e, is type Exception, the compiler can determine that it is an instance of either FirstException or SecondException:</p>
-<pre><code>public void rethrowException(String exceptionName) throws FirstException, SecondException {
-    <span class="keyword">try</span> {
-          // <span class="keyword">...</span>
-    }
-    catch (Exception e) {
-          throw e;
-    }
-  }</code></pre>
-<p>This analysis is disabled if the catch parameter is assigned to another value in the catch block. However, if the catch parameter is assigned to another value, you must specify the exception type Exception in the throws clause of the method declaration.</p>
-<p>In detail, in Java SE 7 and later, when you declare one or more exception types in a catch clause, and rethrow the exception handled by this catch block, the compiler verifies that the type of the rethrown exception meets the following conditions:</p>
-<ul>
-<li>The try block is able to throw it.</li>
-<li>There are no other preceding catch blocks that can handle it.</li>
-<li>It is a subtype or supertype of one of the catch clause&#39;s exception parameters.</li>
-</ul>
-<p>The Java SE 7 compiler allows you to specify the exception types FirstException and SecondException in the throws clause in the rethrowException method declaration because you can rethrow an exception that is a supertype of any of the types declared in the throws.</p>
-<p>In releases prior to Java SE 7, you cannot throw an exception that is a supertype of one of the catch clause&#39;s exception parameters. A compiler from a release prior to Java SE 7 generates the error, &quot;unreported exception Exception; must be caught or declared to be thrown&quot; at the statement throw e. The compiler checks if the type of the exception thrown is assignable to any of the types declared in the throws clause of the rethrowException method declaration. However, the type of the catch parameter e is Exception, which is a supertype, not a subtype, of FirstException andSecondException.</p>
-<h3>The try-with-resources statement</h3>
-
-<p>The try-with-resources statement is a try statement that declares one or more resources. A resource is as an object that must be closed after the program is finished with it. The try-with-resources statement ensures that each resource is closed at the end of the statement. Any object that implements java.lang.AutoCloseable, which includes all objects which implement java.io.Closeable, can be used as a resource.</p>
-<p>The following example reads the first line from a file. It uses an instance of BufferedReader to read data from the file. BufferedReader is a resource that must be closed after the program is finished with it:</p>
-<pre><code><span class="comment">// Java 7 Code</span>
-<span class="keyword">static</span> String readFirstLineFromFile(String path) <span class="keyword">throws</span> IOException { 
-      <span class="keyword">try</span> (BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(path))) {
-        <span class="keyword">return</span> br.readLine();
-      }<span class="comment">//no finally block required as resources will be closed automatically</span>
-}</code></pre>
-<p>In this example, the resource declared in the try-with-resources statement is a BufferedReader. The declaration statement appears within parentheses immediately after the try keyword. The class BufferedReader, in Java SE 7 and later, implements the interface java.lang.AutoCloseable. Because the BufferedReader instance is declared in a try-with-resource statement, it will be closed regardless of whether the try statement completes normally or abruptly (as a result of the method BufferedReader.readLine throwing an IOException).</p>
-<p>Prior to Java SE 7, you can use a finally block to ensure that a resource is closed regardless of whether the whether the try statement completes normally or abruptly. The following example uses a finally block instead of a try-with-resources statement:</p>
-<pre><code><span class="comment">//Before Java 7</span>
-<span class="keyword">static</span> String readFirstLineFromFileWithFinallyBlock(String path) <span class="keyword">throws</span> IOException {
-  BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(path));
-    <span class="keyword">try</span> {
-    <span class="keyword">return</span> br.readLine();
-    } <span class="keyword">finally</span> { 
-    <span class="keyword">if</span> (br != <span class="keyword">null</span>) br.close();
-    }
-}</code></pre>
-<p>You may declare one or more resources in a try-with-resources statement.</p>
-<p>Note: A try-with-resources statement can still have catch and finally blocks just like an ordinary try statement. In a try-with-resources statement, any catch or finally block is run after the resources declared have been closed.</p>
-<h3>Numeric literals with underscores</h3>
-
-<p>In Java SE 7 and later, any number of underscore characters (_) can appear anywhere between digits in a numerical literal. This feature enables you, for example, to separate groups of digits in numeric literals, which can improve the readability of your code.</p>
-<p>You can place underscores only between digits; you cannot place underscores in the following places:</p>
-<ul>
-<li>At the beginning or end of a number</li>
-<li>Adjacent to a decimal point in a floating point literal</li>
-<li>Prior to an F or L suffix</li>
-<li>In positions where a string of digits is expected</li>
-</ul>
-<p>The following examples demonstrate valid and invalid underscore placements (which are highlighted) in numeric literals:</p>
-<pre><code>float pi1 = <span class="number">3</span>_<span class="number">.1415</span>F;      // Invalid; cannot <span class="keyword">put</span> underscores adjacent <span class="keyword">to</span> a decimal point
-float pi2 = <span class="number">3.</span>_1415F;      // Invalid; cannot <span class="keyword">put</span> underscores adjacent <span class="keyword">to</span> a decimal point
-long ssn= <span class="number">999</span>_99_9999_L; // Invalid; cannot <span class="keyword">put</span> underscores prior <span class="keyword">to</span> an L suffix
-
-int x1 = _52;              // This <span class="keyword">is</span> an identifier, <span class="keyword">not</span> a numeric literal
-int x2 = <span class="number">5</span>_2;              // OK (decimal literal)
-int x3 = <span class="number">52</span>_;              // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a literal
-int x4 = <span class="number">5</span>_______2;        // OK (decimal literal)
-
-int x5 = <span class="number">0</span>_x52;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">in</span> <span class="keyword">the</span> <span class="number">0</span>x radix prefix
-int x6 = <span class="number">0</span>x_52;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">beginning</span> <span class="keyword">of</span> a <span class="type">number</span>
-int x7 = <span class="number">0x5</span>_2;            // OK (hexadecimal literal)
-int x8 = <span class="number">0x52</span>_;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a <span class="type">number</span>
-
-int x9 = <span class="number">0</span>_52;             // OK (octal literal)
-int x10 = <span class="number">05</span>_2;            // OK (octal literal)
-int x11 = <span class="number">052</span>_;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a <span class="type">number</span></code></pre>
-<h3>Binary literals</h3>
-
-<p>In Java SE 7, the integral types (byte, short, int, and long) can also be expressed using the binary number system. To specify a binary literal, add the prefix 0b or 0B to the number. The following examples show binary literals:</p>
-<pre><code><span class="comment">// An 8-bit 'byte' value:</span>
-<span class="keyword">byte</span> aByte = (<span class="keyword">byte</span>)<span class="number">0</span>b00100001;
-
-<span class="comment">// A 16-bit 'short' value:</span>
-<span class="keyword">short</span> aShort = (<span class="keyword">short</span>)<span class="number">0</span>b1010000101000101;
-
-<span class="comment">// Some 32-bit 'int' values:</span>
-<span class="keyword">int</span> anInt1 = <span class="number">0</span>b10100001010001011010000101000101;
-<span class="keyword">int</span> anInt2 = <span class="number">0</span>b101;
-<span class="keyword">int</span> anInt3 = <span class="number">0</span>B101; <span class="comment">// The B can be upper or lower case.</span>
-
-<span class="comment">// A 64-bit 'long' value. Note the "L" suffix:</span>
-<span class="keyword">long</span> aLong = <span class="number">0</span>b1010000101000101101000010100010110100001010001011010000101000101L;</code></pre>
-<h3>Fork and Join</h3>
-
-<p>The effective use of parallel cores in a Java program has always been a challenge. There were few home-grown frameworks that would distribute the work across multiple cores and then join them to return the result set. Java 7 has incorporated this feature as a Fork and Join framework.</p>
-<p>Basically the Fork-Join breaks the task at hand into mini-tasks until the mini-task is simple enough that it can be solved without further breakups. It&#39;s like a divide-and-conquer algorithm. One important concept to note in this framework is that ideally no worker thread is idle. They implement a work-stealing algorithm in that idle workers &quot;steal&quot; the work from those workers who are busy.</p>
-<p>The core classes supporting the Fork-Join mechanism are ForkJoinPool and ForkJoinTask. The ForkJoinPool is basically a specialized implementation of ExecutorService implementing the work-stealing algorithm.</p>
-<h3>Supporting dynamism</h3>
-
-<p>Java is a statically typed language — the type checking of the variables, methods and return values is performed at compile time. The JVM executes this strongly-typed bytecode at runtime without having to worry about finding the type information.</p>
-<p>There&#39;s another breed of typed languages — the dynamically typed languages. Ruby, Python and Clojure are in this category. The type information is unresolved until runtime in these languages. This is not possible in Java as it would not have any necessary type information.</p>
-<p>There is an increasing pressure on Java folks improvise running the dynamic languages efficiently. Although it is possible to run these languages on a JVM (using Reflection), it&#39;s not without constraints and restrictions.</p>
-<p>In Java 7, a new feature called invokedynamic was introduced. This makes VM changes to incorporate non-Java language requirements. A new package, java.lang.invoke, consisting of classes such as MethodHandle, CallSite and others, has been created to extend the support of dynamic languages.</p>
-
+<p>
+          <p class="read-more"><a href="/articles/2011-11-11-Java7-Updates/">read more</a></p>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2011-11-11-Java7-Updates/" data-url="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/" data-text="Java7 updates #java /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -447,6 +237,388 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
             </div>
             <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/"></g:plusone></div>
             <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/">Change default author name for JavaDocs in Eclipse</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">August 03, 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions. For example my user name that I use to login is something like SK0012345 and you will agree that it wouldn&#39;t look good as an author name in a Java file and might not make any sense to most other viewers of the code. </p>
+<pre><code><span class="javadoc">/**
+ * Test default author in JavaDocs
+ * <span class="javadoctag">@author</span> SK0012345
+ */</span>
+<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestClass</span> {</span>
+}</code></pre>
+<p>Here is a quick way to change the default author name in your Eclipse projects. Simply edit your eclipse.ini file found in the root directory where you placed Eclipse. I have Eclipse at C:\devtools\development\eclipse, so my path would be C:\devtools\development\eclipse\eclipse.ini. Once editing this file add the following line and save.</p>
+<p>
+          <p class="read-more"><a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/" data-url="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/" data-text="Change default author name for JavaDocs in Eclipse #eclipse /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2011-07-08-Remote-Debugging-Jboss/">Remote debugging in Eclipse</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">July 08, 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server. By default it is turned off. In order to set jboss app server to be running in debugging mode, you should uncomment following line in &quot;jboss-5.1.0.GA/jboss/bin/run.conf&quot;</p>
+<p>like this:</p>
+<pre><code><span class="comment">#Sample JPDA settings for remote socket debugging</span>
+<span class="constant">JAVA_OPTS</span>=”<span class="variable">$JAVA_OPTS</span> -<span class="constant">Xrunjdwp</span><span class="symbol">:transport=dt_socket</span>,address=<span class="number">8787</span>,serve </code></pre>
+<p>Once done you can configure your eclipse remote application debugger on port 8787 and start debugging your application.</p>
+<p>Happy debugging !!</p>
+
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-07-08-Remote-Debugging-Jboss/" data-url="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/" data-text="Remote debugging in Eclipse #eclipse /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2011-06-01-Debugging-With-Eclipse/">Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">June 01, 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;<a href="/tag/productivity.html" rel="category tag" title="View all posts in 'productivity'">productivity</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.</p>
+<p>For example, there’s almost no reason to ever want to step into Spring’s code or proxy classes (other than to learn more about them or maybe debug a potential bug in Spring). And normally I’m not interested in Java util classes (eg. ArrayList). This also goes for Hibernate, Apache Commons, Google and many other external libraries.</p>
+<p>Fortunately, Eclipse makes it easy to specify which classes to skip by allowing step filters. This makes it easier to focus on your own code and also keeps your editor area clean since Eclipse won’t be opening classes in separate editors all the time.</p>
+<p>
+          <p class="read-more"><a href="/articles/2011-06-01-Debugging-With-Eclipse/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-06-01-Debugging-With-Eclipse/" data-url="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/" data-text="Skip over certain classes when using Step Into(F5) in Eclipse’s debugger #eclipse #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">Eclipse keyboard shortcuts</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">March 20, 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;<a href="/tag/productivity.html" rel="category tag" title="View all posts in 'productivity'">productivity</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (<a href="http://creativecommons.org/licenses/by-sa/2.5/">http://creativecommons.org/licenses/by-sa/2.5/</a>).</p>
+<iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&single=true&gid=0&output=html&widget=true'></iframe>
+
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/" data-url="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/" data-text="Eclipse keyboard shortcuts #eclipse #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">March 20, 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><h3>Implementing Comparable</h3>
+
+<p>Implementing Comparable allows:</p>
+<ol>
+<li>Calling Collections.sort and Collections.binarySearch.</li>
+<li>Calling Arrays.sort and Arrays.binarySearch.</li>
+<li>Using objects as keys in a TreeMap.</li>
+<li>Using objects as elements in a TreeSet.</li>
+</ol>
+<p>
+          <p class="read-more"><a href="/articles/2011-05-05-Understanding-Comparable/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-05-05-Understanding-Comparable/" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-text="Implementing Comparable and understanding compareTo #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">March 15, 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;<a href="/tag/productivity.html" rel="category tag" title="View all posts in 'productivity'">productivity</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.</p>
+<p>Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. </p>
+<iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&output=html&widget=true'></iframe>
+
+<p>Also ideally your Eclipse should be configured with your &quot;code formatter&quot; and &quot;CheckStyle&quot; XML configurations. </p>
+<p>
+          <p class="read-more"><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-03-15-Using-Eclipse-Effectively/" data-url="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-text="Using Eclipse effectively #eclipse #best-practices #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">Troubleshooting eclipse issues</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">February 25, 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;<a href="/tag/productivity.html" rel="category tag" title="View all posts in 'productivity'">productivity</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>Following are some tips that shall help you in avoiding potential issues and for being a little more productive while working with eclipse.</p>
+<ul>
+<li><p><b>Avoid installation problems</b></p>
+<p>  Never install a new version of Eclipse on top of an older version. Rename the old one first to move it out of the way, and let the new version be unpacked in a clean directory.</p>
+</li>
+<li><p><b>Recovering your messed up workspace</b></p>
+<p>  Corrupted workspace is a common occurrence and troublemaker for many developers. So If your Eclipse installation has startup errors or a corrupted configuration, it might be time to get a fresh start. Start Eclipse with the –clean option, and all cached framework and runtime data will be cleared out. This often helps fix plug-in issues and improve general stability.</p>
+</li>
+</ul>
+<p>
+          <p class="read-more"><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/" data-url="http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/" data-text="Troubleshooting eclipse issues #eclipse #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">January 15, 2011</a>|<a href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.   </p>
+<p>Here are a few ways to create a thread safe singleton classes in your application. </p>
+<p>
+          <p class="read-more"><a href="/articles/2011-01-15-Thread-Safe-Singletons/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2011-01-15-Thread-Safe-Singletons/" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-text="Best practices for threadsafe Singletons #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2010-12-31-Tricky-Overloading/">Overloading can be tricky</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">December 31, 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type. For the case in which overloaded methods have the same number of arguments, the rules regarding this decision can sometimes be a bit tricky.</p>
+<p>If there may be confusion, you may simplify the design:</p>
+<ul>
+<li>use different method names, and avoid overloading altogether</li>
+<li>retain overloading, but ensure each method has a distinct number of arguments</li>
+<li>In addition, it is recommended that varargs not be used when a method is overloaded, since this makes it more difficult to determine which overload is being called.</li>
+</ul>
+<p>
+          <p class="read-more"><a href="/articles/2010-12-31-Tricky-Overloading/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-12-31-Tricky-Overloading/" data-url="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-text="Overloading can be tricky #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">Prefer using parameterized types over raw types</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">December 29, 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons :</p>
+<ul>
+<li>they usually require casts</li>
+<li>they aren&#39;t type safe, and some important kinds of errors will only appear at runtime</li>
+<li>they are less expressive, and don&#39;t self-document in the same way as parameterized types</li>
+</ul>
+<p>
+          <p class="read-more"><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-12-29-Prefer-Parameterized-Types/" data-url="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-text="Prefer using parameterized types over raw types #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/">Prefer switch over if-else</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">December 28, 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>In most cases switch will be lighter and performs faster than an if/else ladder. The compiler is able to optimize switch statements into a lookup table and perform compile-time checking for literals when dealing with enumerations, so I&#39;d suggest that it&#39;s usually preferable to use switch over if/else if if you&#39;re dealing with numeric or enum types in Java. </p>
+
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-url="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-text="Prefer switch over if-else #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2010-12-10-Exception-Handling/">Exception handling guidelines/best practices</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">December 20, 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>Let’s review some basic exception design guidelines, summarized from Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock and Alan McKean, Addison-Wesley, 2003).</p>
+<ul>
+<li><b>Don’t try to handle coding errors</b>: Unless your software is required to take extraordinary measures in error scenarios, don’t spend a lot of time designing it to detect and recover from programming errors. In the case of an out-of-bounds array index, divide-by zero error, or any other programming error, the best strategy is to fail fast (and leave an audit trail of the problem that can be used to troubleshoot it).</li>
+<li><b>Avoid declaring lots of exception classes</b>: Create a new exception class only when you expect some handling of the code to take a significantly different action, based on the exception type. In my experience it is rarely the case and exception classes available in java API serve the purpose.</li>
+</ul>
+<p>
+          <p class="read-more"><a href="/articles/2010-12-10-Exception-Handling/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-12-10-Exception-Handling/" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-text="Exception handling guidelines/best practices #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">Avoiding null pointer exceptions</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">November 27, 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.</p>
+<pre><code><span class="comment">// BAD CODE</span>
+<span class="keyword">private</span> Boolean isExpired(final StatusEnum status) {
+    <span class="keyword">if</span> (status<span class="variable">.equals</span>(StatusEnum<span class="variable">.EXPIRED</span>)) { <span class="comment">// Potential null pointer if status is null.</span>
+        <span class="keyword">return</span> Boolean<span class="variable">.TRUE</span>;
+    } <span class="keyword">else</span> {
+        <span class="keyword">return</span> Boolean<span class="variable">.FALSE</span>;
+    }
+}</code></pre>
+<p>
+          <p class="read-more"><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-url="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-text="Avoiding null pointer exceptions #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">November 20, 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>In the book &quot;Effective Java&quot;, Joshua Bloch makes this compelling recommendation :</p>
+<p><i>
+&quot;Classes should be immutable unless there&#39;s a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible.&quot;
+</i></p>
+<p>Immutable objects are objects whose data or properties cannot be changed after it is constructed. JDK has a number of immutable class like String and Integer. Immutable objects have big list of compelling positive qualities and they can greatly simplify your program. Immutable objects :</p>
+<p>
+          <p class="read-more"><a href="/articles/2010-11-20-Immutable-Classes/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-11-20-Immutable-Classes/" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-text="Crave for immutable classes #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
+          <h1><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">November 18, 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:</p>
+<ol>
+<li>HTML (or XHTML) and CSS for presentation</li>
+<li>The Document Object Model (DOM) for dynamic display of and interaction with data</li>
+<li>XML for the interchange of data, and XSLT for its manipulation</li>
+<li>The XMLHttpRequest object for asynchronous communication</li>
+<li>JavaScript to bring these technologies together</li>
+</ol>
+<p>
+          <p class="read-more"><a href="/articles/2010-11-18-Ajax-Primer/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-11-18-Ajax-Primer/" data-url="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-text="Ajax primer #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-counter="top"></script></div>
           </div></section>
       </article><a href="archive.html" id="archive">Visit the archives!</a><hr />
       <footer class="footer">

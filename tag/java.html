@@ -120,38 +120,8 @@
 <iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&output=html&widget=true'></iframe>
 
 
-<p>Principal features of non-primary implementations :</p>
-<ul>
-<li>HashMap has slightly better performance than LinkedHashMap</li>
-<li>HashSet has slightly better performance than LinkedHashSet</li>
-<li>TreeSet is ordered and sorted, but slow</li>
-<li>TreeMap is ordered and sorted, but slow</li>
-<li>LinkedList has fast adding to the start of the list, and fast deletion from the interior via iteration</li>
-</ul>
-<p>Iteration order for above implementations :</p>
-<ul>
-<li>HashSet - undefined</li>
-<li>HashMap - undefined</li>
-<li>LinkedHashSet - insertion order</li>
-<li>LinkedHashMap - insertion order of keys (by default), or &#39;access order&#39;</li>
-<li>ArrayList - insertion order</li>
-<li>LinkedList - insertion order</li>
-<li>TreeSet - ascending order, according to Comparable / Comparator</li>
-<li>TreeMap - ascending order of keys, according to Comparable / Comparator</li>
-</ul>
-<p>For LinkedHashSet and LinkedHashMap, the re-insertion of an item does not affect insertion order.</p>
-<p>While being used in a Map or Set, these items must not change state (hence, it is recommended that these items be immutable objects):</p>
-<ul>
-<li>keys of a Map</li>
-<li>items in a Set</li>
-</ul>
-<p>Sorting requires either that :</p>
-<ul>
-<li>the stored items implement <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html">Comparable</a></li>
-<li>a <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html">Comparator</a> for the stored objects be defined</li>
-</ul>
-<p>To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.</p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2012-01-05-Choosing-The-Right-Collections/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2012-01-05-Choosing-The-Right-Collections/" data-url="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/" data-text="Choosing the right collection #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -183,186 +153,8 @@ Contents</p>
 <li>Fork and Join</li>
 <li>Supporting dynamism</li>
 </ol>
-<h3>Strings in switch statements</h3>
-
-<p>In the JDK 7 release, you can use a String object in the expression of a switch statement:</p>
-<pre><code><span class="keyword">public</span> String getTypeOfDayWithSwitchStatement(String dayOfWeekArg) {
-     String typeOfDay;
-     <span class="keyword">switch</span> (dayOfWeekArg) {
-         <span class="keyword">case</span> <span class="string">"Monday"</span>:
-            typeOfDay = <span class="string">"Start of work week"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Tuesday"</span>:
-         <span class="keyword">case</span> <span class="string">"Wednesday"</span>:
-         <span class="keyword">case</span> <span class="string">"Thursday"</span>:
-            typeOfDay = <span class="string">"Midweek"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Friday"</span>:
-             typeOfDay = <span class="string">"End of work week"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Saturday"</span>:
-         <span class="keyword">case</span> <span class="string">"Sunday"</span>:
-            typeOfDay = <span class="string">"Weekend"</span>;
-             <span class="keyword">break</span>;
-        <span class="keyword">default</span>:
-            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"Invalid day of the week: "</span> + dayOfWeekArg);
-     }
-     <span class="keyword">return</span> typeOfDay;
-}</code></pre>
-<h3>The diamond operator &quot;&lt;&gt;&quot;</h3>
-
-<p>You can replace the type arguments required to invoke the constructor of a generic class with an empty set of type parameters (&lt;&gt;) as long as the compiler can infer the type arguments from the context. This pair of angle brackets is informally called the diamond.</p>
-<p>For example, consider the following variable declaration:</p>
-<pre><code>Map<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt; myMap = new HashMap<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt;();</code></pre>
-<p>In Java SE 7, you can substitute the parameterized type of the constructor with an empty set of type parameters (&lt;&gt;):</p>
-<pre><code>Map<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt; myMap = new HashMap<span class="tag">&lt;&gt;</span>();</code></pre>
-<p>Java SE 7 supports limited type inference for generic instance creation; you can only use type inference if the parameterized type of the constructor is obvious from the context. For example, the following example does not compile:</p>
-<pre><code>List<span class="tag">&lt;<span class="title">String</span>&gt;</span> list = new ArrayList<span class="tag">&lt;&gt;</span>();
-list.add("A");
-list.addAll(new ArrayList<span class="tag">&lt;&gt;</span>()); // Statement should fail since addAll expects Collection<span class="pi">&lt;? extends String&gt;</code></pre>
-<p>In comparison, the following example compiles:</p>
-<pre><code>List<span class="pi">&lt;? extends String&gt; list2 = new ArrayList&lt;&gt;();
-list.addAll(list2);</code></pre>
-<p>Note: The diamond often works in method calls; however, it is suggested that you use the diamond primarily for variable declarations.</p>
-<h3>Handling more than one type of exception</h3>
-
-<p>In Java SE 7 and later, a single catch block can handle more than one type of exception. Consider the following example, which contains duplicate code in each of the catch blocks:</p>
-<pre><code>//<span class="variable">Prior</span> to <span class="variable">Java</span> <span class="number">7</span>
-<span class="function"><span class="title">catch</span> <span class="params">(<span class="variable">IOException</span> ex)</span> {
- <span class="title">logger</span>.<span class="title">log</span><span class="params">(ex)</span>;
- <span class="title">throw</span> <span class="title">ex</span>;
-<span class="title">catch</span> <span class="params">(<span class="variable">SQLException</span> ex)</span> {
- <span class="title">logger</span>.<span class="title">log</span><span class="params">(ex)</span>;
- <span class="title">throw</span> <span class="title">ex</span>;
-}</code></pre>
-<p>In releases prior to Java SE 7, it is difficult to create a common method to eliminate the duplicated code because the variable ex has different types.</p>
-<p>The following example, which is valid in Java SE 7 and later, eliminates the duplicated code:</p>
-<pre><code><span class="keyword">catch</span> (IOException|SQLException ex) { <span class="comment">// java 7 handling more than one type of exception</span>
-    logger<span class="variable">.log</span>(ex);
-    <span class="keyword">throw</span> ex;
-}</code></pre>
-<p>The catch clause specifies the types of exceptions that the block can handle, and each exception type is separated with a vertical bar (|). Some other advantages apart from syntactical improvement:</p>
-<ul>
-<li>Bytecode generated by compiling a catch block that handles multiple exception types will be smaller (and thus superior) than compiling many catch blocks that handle only one exception type each. </li>
-<li>A catch block that handles multiple exception types creates no duplication in the bytecode generated by the compiler; the bytecode has no replication of exception handlers. </li>
-</ul>
-<p>Note: If a catch block handles more than one exception type, then the catch parameter is implicitly final. In this example, the catch parameter ex is final and therefore you cannot assign any values to it within the catch block.</p>
-<h3>Re-throwing exceptions with more inclusive type checking</h3>
-
-<p>The Java SE 7 compiler performs more precise analysis of rethrown exceptions than earlier releases of Java SE. This enables you to specify more specific exception types in the throws clause of a method declaration.</p>
-<p>Consider the following example:</p>
-<pre><code><span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">FirstException</span> <span class="keyword">extends</span> <span class="title">Exception</span> {</span> }
-  <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SecondException</span> <span class="keyword">extends</span> <span class="title">Exception</span> {</span> }
-
-  <span class="keyword">public</span> <span class="keyword">void</span> rethrowException(String exceptionName) <span class="keyword">throws</span> Exception {
-    <span class="keyword">try</span> {
-          <span class="keyword">if</span> (exceptionName.equals(<span class="string">"First"</span>)) {
-            <span class="keyword">throw</span> <span class="keyword">new</span> FirstException();
-          } <span class="keyword">else</span> {
-            <span class="keyword">throw</span> <span class="keyword">new</span> SecondException();
-          }
-    } <span class="keyword">catch</span> (Exception e) {
-          <span class="keyword">throw</span> e;
-    }
-  }</code></pre>
-<p>This examples&#39;s try block could throw either FirstException or SecondException. Suppose you want to specify these exception types in the throws clause of the rethrowException method declaration. In releases prior to Java SE 7, you cannot do so. Because the exception parameter of the catch clause, e, is type Exception, and the catch block rethrows the exception parameter e, you can only specify the exception type Exception in the throws clause of the rethrowException method declaration.</p>
-<p>However, in Java SE 7, you can specify the exception types FirstException and SecondException in the throws clause in the rethrowException method declaration. The Java SE 7 compiler can determine that the exception thrown by the statement throw e must have come from the try block, and the only exceptions thrown by the try block can be FirstException and SecondException. Even though the exception parameter of the catch clause, e, is type Exception, the compiler can determine that it is an instance of either FirstException or SecondException:</p>
-<pre><code>public void rethrowException(String exceptionName) throws FirstException, SecondException {
-    <span class="keyword">try</span> {
-          // <span class="keyword">...</span>
-    }
-    catch (Exception e) {
-          throw e;
-    }
-  }</code></pre>
-<p>This analysis is disabled if the catch parameter is assigned to another value in the catch block. However, if the catch parameter is assigned to another value, you must specify the exception type Exception in the throws clause of the method declaration.</p>
-<p>In detail, in Java SE 7 and later, when you declare one or more exception types in a catch clause, and rethrow the exception handled by this catch block, the compiler verifies that the type of the rethrown exception meets the following conditions:</p>
-<ul>
-<li>The try block is able to throw it.</li>
-<li>There are no other preceding catch blocks that can handle it.</li>
-<li>It is a subtype or supertype of one of the catch clause&#39;s exception parameters.</li>
-</ul>
-<p>The Java SE 7 compiler allows you to specify the exception types FirstException and SecondException in the throws clause in the rethrowException method declaration because you can rethrow an exception that is a supertype of any of the types declared in the throws.</p>
-<p>In releases prior to Java SE 7, you cannot throw an exception that is a supertype of one of the catch clause&#39;s exception parameters. A compiler from a release prior to Java SE 7 generates the error, &quot;unreported exception Exception; must be caught or declared to be thrown&quot; at the statement throw e. The compiler checks if the type of the exception thrown is assignable to any of the types declared in the throws clause of the rethrowException method declaration. However, the type of the catch parameter e is Exception, which is a supertype, not a subtype, of FirstException andSecondException.</p>
-<h3>The try-with-resources statement</h3>
-
-<p>The try-with-resources statement is a try statement that declares one or more resources. A resource is as an object that must be closed after the program is finished with it. The try-with-resources statement ensures that each resource is closed at the end of the statement. Any object that implements java.lang.AutoCloseable, which includes all objects which implement java.io.Closeable, can be used as a resource.</p>
-<p>The following example reads the first line from a file. It uses an instance of BufferedReader to read data from the file. BufferedReader is a resource that must be closed after the program is finished with it:</p>
-<pre><code><span class="comment">// Java 7 Code</span>
-<span class="keyword">static</span> String readFirstLineFromFile(String path) <span class="keyword">throws</span> IOException { 
-      <span class="keyword">try</span> (BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(path))) {
-        <span class="keyword">return</span> br.readLine();
-      }<span class="comment">//no finally block required as resources will be closed automatically</span>
-}</code></pre>
-<p>In this example, the resource declared in the try-with-resources statement is a BufferedReader. The declaration statement appears within parentheses immediately after the try keyword. The class BufferedReader, in Java SE 7 and later, implements the interface java.lang.AutoCloseable. Because the BufferedReader instance is declared in a try-with-resource statement, it will be closed regardless of whether the try statement completes normally or abruptly (as a result of the method BufferedReader.readLine throwing an IOException).</p>
-<p>Prior to Java SE 7, you can use a finally block to ensure that a resource is closed regardless of whether the whether the try statement completes normally or abruptly. The following example uses a finally block instead of a try-with-resources statement:</p>
-<pre><code><span class="comment">//Before Java 7</span>
-<span class="keyword">static</span> String readFirstLineFromFileWithFinallyBlock(String path) <span class="keyword">throws</span> IOException {
-  BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(path));
-    <span class="keyword">try</span> {
-    <span class="keyword">return</span> br.readLine();
-    } <span class="keyword">finally</span> { 
-    <span class="keyword">if</span> (br != <span class="keyword">null</span>) br.close();
-    }
-}</code></pre>
-<p>You may declare one or more resources in a try-with-resources statement.</p>
-<p>Note: A try-with-resources statement can still have catch and finally blocks just like an ordinary try statement. In a try-with-resources statement, any catch or finally block is run after the resources declared have been closed.</p>
-<h3>Numeric literals with underscores</h3>
-
-<p>In Java SE 7 and later, any number of underscore characters (_) can appear anywhere between digits in a numerical literal. This feature enables you, for example, to separate groups of digits in numeric literals, which can improve the readability of your code.</p>
-<p>You can place underscores only between digits; you cannot place underscores in the following places:</p>
-<ul>
-<li>At the beginning or end of a number</li>
-<li>Adjacent to a decimal point in a floating point literal</li>
-<li>Prior to an F or L suffix</li>
-<li>In positions where a string of digits is expected</li>
-</ul>
-<p>The following examples demonstrate valid and invalid underscore placements (which are highlighted) in numeric literals:</p>
-<pre><code>float pi1 = <span class="number">3</span>_<span class="number">.1415</span>F;      // Invalid; cannot <span class="keyword">put</span> underscores adjacent <span class="keyword">to</span> a decimal point
-float pi2 = <span class="number">3.</span>_1415F;      // Invalid; cannot <span class="keyword">put</span> underscores adjacent <span class="keyword">to</span> a decimal point
-long ssn= <span class="number">999</span>_99_9999_L; // Invalid; cannot <span class="keyword">put</span> underscores prior <span class="keyword">to</span> an L suffix
-
-int x1 = _52;              // This <span class="keyword">is</span> an identifier, <span class="keyword">not</span> a numeric literal
-int x2 = <span class="number">5</span>_2;              // OK (decimal literal)
-int x3 = <span class="number">52</span>_;              // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a literal
-int x4 = <span class="number">5</span>_______2;        // OK (decimal literal)
-
-int x5 = <span class="number">0</span>_x52;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">in</span> <span class="keyword">the</span> <span class="number">0</span>x radix prefix
-int x6 = <span class="number">0</span>x_52;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">beginning</span> <span class="keyword">of</span> a <span class="type">number</span>
-int x7 = <span class="number">0x5</span>_2;            // OK (hexadecimal literal)
-int x8 = <span class="number">0x52</span>_;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a <span class="type">number</span>
-
-int x9 = <span class="number">0</span>_52;             // OK (octal literal)
-int x10 = <span class="number">05</span>_2;            // OK (octal literal)
-int x11 = <span class="number">052</span>_;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a <span class="type">number</span></code></pre>
-<h3>Binary literals</h3>
-
-<p>In Java SE 7, the integral types (byte, short, int, and long) can also be expressed using the binary number system. To specify a binary literal, add the prefix 0b or 0B to the number. The following examples show binary literals:</p>
-<pre><code><span class="comment">// An 8-bit 'byte' value:</span>
-<span class="keyword">byte</span> aByte = (<span class="keyword">byte</span>)<span class="number">0</span>b00100001;
-
-<span class="comment">// A 16-bit 'short' value:</span>
-<span class="keyword">short</span> aShort = (<span class="keyword">short</span>)<span class="number">0</span>b1010000101000101;
-
-<span class="comment">// Some 32-bit 'int' values:</span>
-<span class="keyword">int</span> anInt1 = <span class="number">0</span>b10100001010001011010000101000101;
-<span class="keyword">int</span> anInt2 = <span class="number">0</span>b101;
-<span class="keyword">int</span> anInt3 = <span class="number">0</span>B101; <span class="comment">// The B can be upper or lower case.</span>
-
-<span class="comment">// A 64-bit 'long' value. Note the "L" suffix:</span>
-<span class="keyword">long</span> aLong = <span class="number">0</span>b1010000101000101101000010100010110100001010001011010000101000101L;</code></pre>
-<h3>Fork and Join</h3>
-
-<p>The effective use of parallel cores in a Java program has always been a challenge. There were few home-grown frameworks that would distribute the work across multiple cores and then join them to return the result set. Java 7 has incorporated this feature as a Fork and Join framework.</p>
-<p>Basically the Fork-Join breaks the task at hand into mini-tasks until the mini-task is simple enough that it can be solved without further breakups. It&#39;s like a divide-and-conquer algorithm. One important concept to note in this framework is that ideally no worker thread is idle. They implement a work-stealing algorithm in that idle workers &quot;steal&quot; the work from those workers who are busy.</p>
-<p>The core classes supporting the Fork-Join mechanism are ForkJoinPool and ForkJoinTask. The ForkJoinPool is basically a specialized implementation of ExecutorService implementing the work-stealing algorithm.</p>
-<h3>Supporting dynamism</h3>
-
-<p>Java is a statically typed language — the type checking of the variables, methods and return values is performed at compile time. The JVM executes this strongly-typed bytecode at runtime without having to worry about finding the type information.</p>
-<p>There&#39;s another breed of typed languages — the dynamically typed languages. Ruby, Python and Clojure are in this category. The type information is unresolved until runtime in these languages. This is not possible in Java as it would not have any necessary type information.</p>
-<p>There is an increasing pressure on Java folks improvise running the dynamic languages efficiently. Although it is possible to run these languages on a JVM (using Reflection), it&#39;s not without constraints and restrictions.</p>
-<p>In Java 7, a new feature called invokedynamic was introduced. This makes VM changes to incorporate non-Java language requirements. A new package, java.lang.invoke, consisting of classes such as MethodHandle, CallSite and others, has been created to extend the support of dynamic languages.</p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2011-11-11-Java7-Updates/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2011-11-11-Java7-Updates/" data-url="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/" data-text="Java7 updates #java /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -412,42 +204,8 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
 <li>Using objects as keys in a TreeMap.</li>
 <li>Using objects as elements in a TreeSet.</li>
 </ol>
-<h3>Understanding compareTo</h3>
-
-<p>The compareTo() method is the sole member of Comparable interface. It provides a means of fully ordering objects. For a concrete comparable implementation class to work well, the compareTo() implementation needs to satisfy the certain conditions.</p>
-<ol>
-<li>Anti Commutation :  x.compareTo(y) is the opposite sign of y.compareTo(x)</li>
-<li>Exception Symmetry : x.compareTo(y) throws exactly the same exceptions as y.compareTo(x)</li>
-<li>Transitivity :  <ol>
-<li>if x.compareTo(y) &gt; 0 and y.compareTo(z) &gt; 0, then x.compareTo(z) &gt; 0  (and same for less than)</li>
-<li>if x.compareTo(y)==0, then x.compareTo(z) has the same sign as y.compareTo(z)</li>
-</ol>
-</li>
-<li>consistency with equals : It is highly recommended, but not required : x.compareTo(y) == 0, if and only if x.equals(y) ; consistency with equals is required for ensuring sorted collections (such as TreeSet) are well-behaved.</li>
-</ol>
-<h3>Things to remember while implementing compareTo()</h3>
-
-<p>Compare the various types of fields as follows :</p>
-<ol>
-<li>Numeric primitive : use &lt; and &gt;. There is an exception to this rule: float and double primitives should be compared using Float.compare(float, float) and Double.compare(double, double). This avoids problems associated with special border values.</li>
-<li>Boolean primitive :  use tests of the form (x &amp;&amp; !y)</li>
-<li>Object : use compareTo. (Note that possibly-null fields present a problem : while x.equals(null) returns false, x.compareTo(null) will always throw a NullPointerException)</li>
-<li>Type-safe enumeration : use compareTo, like any Object</li>
-<li>collection or array : Comparable does not seem to be intended for these kinds of fields. For example, List, Map and Set do not implement Comparable. As well, some collections have no definite order of iteration, so doing an element-by-element comparison cannot be meaningful in those cases.</li>
-</ol>
-<h3>Comparable implementations in JDK</h3>
-
-<p>All primitive wrapper classes like Integer, Long, Float, Double, Boolean and many more implement Comparable.  </p>
-<h3>Hot tips</h3>
-
-<ol>
-<li>One can greatly increase the performance of compareTo by comparing first on items which are most likely to differ.</li>
-<li>Avoid instanceof in methods that override or implement Object.equals(), Comparable.compareTo()</li>
-<li>If the task is to perform a sort of items which are stored in a relational database, then it is usually much preferred to let the database perform the sort using the ORDER BY clause, rather than in code.</li>
-<li>An alternative to implementing Comparable is passing Comparator objects as parameters. Be aware that if a Comparator compares only one of several significant fields, then the Comparator is very likely not synchronized with equals.</li>
-<li>When a class extends a concrete Comparable class and adds a significant field, a correct implementation of compareTo cannot be constructed. The only alternative is to use composition instead of inheritance. (A similar situation holds true for equals. See Effective Java for more information.)</li>
-</ol>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2011-05-05-Understanding-Comparable/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2011-05-05-Understanding-Comparable/" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-text="Implementing Comparable and understanding compareTo #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -468,62 +226,8 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
           <hr>
           <section class="content"><p>A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.   </p>
 <p>Here are a few ways to create a thread safe singleton classes in your application. </p>
-<h3>1. Lazy loading Singleton instance - Using Synchronized method or block</h3>
-
-<pre><code><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
-    <span class="keyword">private</span> SingletonClass sc;
-    <span class="keyword">private</span> SingletonClass(){}
-
-        <span class="keyword">public</span> <span class="keyword">static</span> SingletonClass getInstance(){
-        <span class="keyword">synchronized</span>(SingletonClass.class) {
-          <span class="keyword">if</span> (sc == <span class="keyword">null</span>) {
-              sc = <span class="keyword">new</span> SingletonClass();
-          } <span class="keyword">else</span> {
-             <span class="keyword">return</span> sc;
-          }
-        }
-    }
-}</code></pre>
-<p><b>Issues</b>:    The use of synchronized keyword in a singleton class means that only one thread will be executing the synchronized block at a time and all other threads would be waiting.</p>
-<h3>2. Early initialization Singleton - Using Static Member Variable</h3>
-
-<pre><code><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
-    <span class="keyword">private</span> <span class="keyword">static</span> sc = <span class="keyword">new</span> SingletonClass();
-    <span class="keyword">private</span> SingletonClass(){}
-
-    <span class="keyword">public</span> <span class="keyword">static</span> SingletonClass getInstance(){
-        <span class="keyword">return</span> sc;
-    }
-}</code></pre>
-<p>This approach is also known as early initialization because we are creating the singleton instance at an early stage and not when the instance is actually needed by another class.</p>
-<p><b>Issues</b>: The use of static member variable means that this singleton instance will be created as soon as the class is loaded by any Classloader in JVM. </p>
-<h3>3. Singleton using Inner Classes</h3>
-
-<pre><code><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonClass</span>{</span>
-    <span class="keyword">private</span> SingletonClass(){}
-    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">InstanceHolder</span>{</span>
-        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> SingletonClass INSTANCE = <span class="keyword">new</span> SingletonClass(); 
-    }
-    <span class="keyword">public</span> <span class="keyword">static</span> SingletonClass getInstance(){
-        <span class="keyword">return</span> InstanceHolder.INSTANCE; <span class="comment">//line1</span>
-    }
-}</code></pre>
-<p>Here the instance is being created on demand and is also thread safe. The use of inner classes helps in the sense that the very first time singleton object is requested, the inner class is loaded by line1 and this loading of inner class causes the static member variable to be created and returned. Next time, the singleton member variable is requested causes the same static reference variable to be returned.</p>
-<h3>4. Singleton using enums</h3>
-
-<pre><code><span class="keyword">public</span> <span class="keyword">enum</span> Singleton{
-    INSTANCE;
-    <span class="keyword">private</span> <span class="keyword">int</span> a;
-    <span class="keyword">public</span> <span class="keyword">int</span> getA() {
-        <span class="keyword">return</span> a;
-    }
-}</code></pre>
-<p>To get a single instance of this enum one should use:</p>
-<pre><code><span class="filename">Singleton.INSTANCE</code></pre>
-<p>To get the value of member variable a, one should use:</p>
-<pre><code>Singleton<span class="preprocessor">.INSTANCE</span><span class="preprocessor">.getA</span>()<span class="comment">;</span></code></pre>
-<p><b>In my experience using enums is the best way to implement Singleton design pattern in any Java application. It is thread safe and also provides lazy initialization.</b></p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2011-01-15-Thread-Safe-Singletons/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2011-01-15-Thread-Safe-Singletons/" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-text="Best practices for threadsafe Singletons #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -549,8 +253,8 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
 <li>retain overloading, but ensure each method has a distinct number of arguments</li>
 <li>In addition, it is recommended that varargs not be used when a method is overloaded, since this makes it more difficult to determine which overload is being called.</li>
 </ul>
-<p>Reminder : Overloading requires methods with distinct signatures. The signature of a method includes its name and the ordered list of its argument types. All other items appearing in a method header, such as exceptions, return type, final, and synchronized, do not contribute to a method&#39;s signature. </p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-12-31-Tricky-Overloading/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-12-31-Tricky-Overloading/" data-url="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-text="Overloading can be tricky #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -575,9 +279,8 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
 <li>they aren&#39;t type safe, and some important kinds of errors will only appear at runtime</li>
 <li>they are less expressive, and don&#39;t self-document in the same way as parameterized types</li>
 </ul>
-<p>Unless you are using a JDK version prior to 1.5 I don&#39;t see a reason why you should not use parameterized types in your code.</p>
-<p>Happy coding !!</p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-12-29-Prefer-Parameterized-Types/" data-url="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-text="Prefer using parameterized types over raw types #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -620,46 +323,9 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
 <ul>
 <li><b>Don’t try to handle coding errors</b>: Unless your software is required to take extraordinary measures in error scenarios, don’t spend a lot of time designing it to detect and recover from programming errors. In the case of an out-of-bounds array index, divide-by zero error, or any other programming error, the best strategy is to fail fast (and leave an audit trail of the problem that can be used to troubleshoot it).</li>
 <li><b>Avoid declaring lots of exception classes</b>: Create a new exception class only when you expect some handling of the code to take a significantly different action, based on the exception type. In my experience it is rarely the case and exception classes available in java API serve the purpose.</li>
-<li><b>Recast lower-level exceptions to higher-level ones whenever you raise an abstraction level</b>: Don’t let implementation details leak out of a method invocation as exceptions. Otherwise, your users might think your software is broken. When low-level exceptions percolate up to a high-level handler, there’s little context to assist the handler in making informed decisions or reporting conditions that are traceable to any obvious cause. Recasting an exception whenever you cross an abstraction boundary enables exception handlers higher up in the call chain to make more informed decisions. If you want to include a problem trace when recasting them, you can always create a chained exception. A chained exception provides added context and holds a reference to the original lower level exception. You can repeatedly chain exceptions.</li>
-<li><p><b>Provide context along with an exception</b>: What’s most important in exception handling is information that helps create an informed response. Exception classes hold information. You can design them to be packed with information in addition to the bare-bones stack trace information provided by default. You might include values of parameters that raised the exception, specific error text, or detailed information that could be useful to plan a recovery. When an exception occurs, it is important that all pertinent data be passed to the exception&#39;s constructor. Such data is often critical for understanding and solving the problem, and can greatly reduce the time needed to find a solution.
-The this reference is sometimes useful for this purpose, since toString is implicitly called. In addition, if you are defining exception classes yourself, you may even design your constructors to force the caller to pass the pertinent data.</p>
-<p>  Uninformative stack traces are very frustrating for the maintainer, and often inspire even the most well-tempered programmers to temporarily violate local community standards for obscenity.</p>
-<p>  Example</p>
-<pre><code>public final class RangeChecker {
-
-/**
-* Return <span class="tag">&lt;<span class="title">code</span>&gt;</span>true<span class="tag">&lt;/<span class="title">code</span>&gt;</span> only if <span class="tag">&lt;<span class="title">code</span>&gt;</span>aNumber<span class="tag">&lt;/<span class="title">code</span>&gt;</span> is in the range
-* <span class="tag">&lt;<span class="title">code</span>&gt;</span>aLow..aHigh<span class="tag">&lt;/<span class="title">code</span>&gt;</span> (inclusive).
-*
-* @param <span class="tag">&lt;<span class="title">code</span>&gt;</span>aLow<span class="tag">&lt;/<span class="title">code</span>&gt;</span> less than or equal to <span class="tag">&lt;<span class="title">code</span>&gt;</span>aHigh<span class="tag">&lt;/<span class="title">code</span>&gt;</span>.
-*/
-static public boolean isInRange( int aNumber, int aLow, int aHigh ){
-  if (aLow &gt; aHigh) {
-    throw new IllegalArgumentException("Low:" + aLow + " greater than High:" + aHigh);
-  }
-  return (aLow <span class="tag">&lt;<span class="title">=</span> <span class="attribute">aNumber</span> &amp;&amp; <span class="attribute">aNumber</span> &lt;= <span class="attribute">aHigh</span>);
-}
-}</code></pre>
-</li>
-<li><p><b>Handle exceptions as close to the problem as you can</b>: As a first line of defense, consider the initial requestor. If the caller knows enough to perform a corrective action, you can rectify the condition on the spot. If you propagate an exception far away from the source, it can be difficult to trace the source. Often objects further away from the problem can’t make meaningful decisions.</p>
-</li>
-<li><b>Use exceptions only to signal emergencies</b>: Exceptions shouldn’t be raised to indicate normal branching conditions that will alter the flow in the calling code. For example, a find operation may return zero, one, or many objects, so I wouldn’t raise an exception in this case. Instead, I’d design my find() method to return a null object or an empty collection. A dropped database connection, on the other hand, is a real emergency. There’s nothing that can be done to continue as planned.</li>
-<li><b>Don’t repeatedly re-throw the same exception</b>: Although exceptions don’t cost anything until they’re raised, programs that frequently raise exceptions run more slowly.</li>
-<li><p><b>Avoid empty catch blocks</b>: It is usually a very bad idea to have an empty catch block because when the exception occurs, nothing happens, and the program fails for unknown reasons.</p>
-<p>  In general, when a exception occurs, it can be thrown up to the caller, or it can be caught in a catch block. When catching an exception, some options include :</p>
-<pre><code>   ** Inform <span class="keyword">the</span> user (strongly recommended)
-   ** Log <span class="keyword">the</span> problem, using <span class="keyword">the</span> <span class="type">application</span> specific loggers <span class="keyword">or</span> JDK logging services, <span class="keyword">or</span> similar tool
-   ** Send an email describing <span class="keyword">the</span> problem <span class="keyword">to</span> an administrator</code></pre>
-<p>  Deciding what exactly to do seems to depend on the nature of the problem. If there is an actual bug in the program - a defect that needs to be fixed - then one might do all three of the above. In this case, the end user should likely be shown a generic &quot;Sorry, we goofed&quot; message, not a stack trace. It is usually considered bad form to display a stack trace to a non-technical end user, or if exposing a stack trace may be a security risk.</p>
-<p>  If the exception does not represent a bug, then different behavior may be appropriate. For example, if a problem with user input is detected and an exception is thrown as a result, then merely informing the user of the problem might be all that is required.</p>
-</li>
-<li><p><b>Exception translation</b>: Occasionally, it is appropriate to translate one type of exception into another.</p>
-<p>  The data layer, for example, can profit from this technique. Here, the data layer seeks to hide almost all of its implementation details from other parts of the program. It even seeks to hide the basic persistence mechanism - whether or not a database or an ad hoc file scheme is used, for example.</p>
-<p>  However, every persistence style has specific exceptions - SQLException for databases,  and IOException for files, for example. If the rest of the program is to remain truly ignorant of the persistence mechanism, then these exceptions cannot be allowed to propagate outside the data layer, and must be translated into some higher level abstraction - DataAccessException, say.</p>
-</li>
-<li><b>Use template for repeated try-catch</b>: Java&#39;s try-catch blocks are particularly common when using APIs which give an important role to checked exceptions (such as SQLException in JDBC). When using such an API, many published examples simply repeat the same try-catch code structure whenever necessary. However, it is simple to eliminate such code repetition using the template method pattern. The idea is to define the structure of the try-catch block in one place, in an abstract base class (ABC). Such an ABC is then extended whenever that particular try-catch block is needed. The concrete implementation of such an ABC will often have simple, &quot;straight line&quot; code.</li>
 </ul>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-12-10-Exception-Handling/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-12-10-Exception-Handling/" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-text="Exception handling guidelines/best practices #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -687,18 +353,8 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
         <span class="keyword">return</span> Boolean<span class="variable">.FALSE</span>;
     }
 }</code></pre>
-<p>Here if the &quot;status&quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.</p>
-<pre><code><span class="comment">//GOOD CODE</span>
-<span class="keyword">private</span> Boolean isExpired(final StatusEnum status) {
-    <span class="keyword">if</span> (StatusEnum<span class="variable">.EXPIRED</span><span class="variable">.equals</span>(status)) { <span class="comment">// Move variable part as parameter to equals method.</span>
-        <span class="keyword">return</span> Boolean<span class="variable">.TRUE</span>;
-    } <span class="keyword">else</span> {
-        <span class="keyword">return</span> Boolean<span class="variable">.FALSE</span>;
-    }
-}</code></pre>
-<p>Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. </p>
-<p>Happy coding!!</p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-url="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-text="Avoiding null pointer exceptions #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -721,119 +377,9 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 <p><i>
 &quot;Classes should be immutable unless there&#39;s a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible.&quot;
 </i></p>
-<p>Immutable objects are objects whose data or properties cannot be changed after it is constructed. JDK has a number of immutable class like String and Integer. Immutable objects have big list of compelling positive qualities and they can greatly simplify your program. Immutable objects :
-are simple to construct, test, and use</p>
-<ul>
-<li>are automatically thread-safe and have no synchronization issues</li>
-<li>do not need a copy constructor</li>
-<li>do not need an implementation of clone</li>
-<li>allow hashCode to use lazy initialization, and to cache its return value</li>
-<li>do not need to be copied defensively when used as a field</li>
-<li>make good Map keys and set elements (these objects must not change state while in the collection)</li>
-<li>have their class invariant established once upon construction, and it never needs to be checked again</li>
-<li>always have &quot;failure atomicity&quot; (a term used by Joshua Bloch in his book &quot;Effective Java&quot;) : if an immutable object throws an exception, it&#39;s never left in an undesirable or indeterminate state</li>
-</ul>
-<p>They are among the simplest and most robust kinds of classes you can possibly build in JAVA. When you create immutable classes, entire categories of problems simply disappear.</p>
-<p>Make a class immutable by following these guidelines :</p>
-<ul>
-<li>ensure the class cannot be overridden - make the class final, or use static factories and keep constructors private</li>
-<li>make fields private and final</li>
-<li>force callers to construct an object completely in a single step, instead of using a no-argument constructor combined with subsequent calls to setXXX methods (that is, avoid the Java Beans convention)</li>
-<li>do not provide any methods which can change the state of the object in any way - not just setXXX methods, but any method which can change state</li>
-<li>if the class has any mutable object fields, then they must be defensively copied when passed between the class and its caller</li>
-</ul>
-<p>Here is an example. Please go through the comments that are there in the code to understand the concept.</p>
-<pre><code><span class="keyword">package</span> com.javagyan.examples;
-
-<span class="keyword">import</span> java.util.Date;
-
-<span class="javadoc">/**
-* Planet is an immutable class, since there is no way to change its state after construction.
-*/</span>
-<span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Planet</span> {</span>
-
-  <span class="keyword">public</span> Planet (<span class="keyword">double</span> aMass, String aName, Date aDateOfDiscovery) {
-     fMass = aMass;
-     fName = aName;
-     <span class="comment">//make a private copy of aDateOfDiscovery</span>
-     <span class="comment">//this is the only way to keep the fDateOfDiscovery</span>
-     <span class="comment">//field private, and shields this class from any changes that </span>
-     <span class="comment">//the caller may make to the original aDateOfDiscovery object</span>
-     fDateOfDiscovery = <span class="keyword">new</span> Date(aDateOfDiscovery.getTime());
-  }
-
-  <span class="javadoc">/**
-  * Returns a primitive value.
-  *
-  * The caller can do whatever they want with the return value, without 
-  * affecting the internals of this class. Why? Because this is a primitive 
-  * value. The caller sees its "own" double that simply has the
-  * same value as fMass.
-  * <span class="javadoctag">@return</span> double
-  */</span>
-  <span class="keyword">public</span> <span class="keyword">double</span> getMass() {
-    <span class="keyword">return</span> fMass;
-  }
-
-  <span class="javadoc">/**
-  * Returns an immutable object.
-  *
-  * The caller gets a direct reference to the internal field. But this is not 
-  * dangerous, since String is immutable and cannot be changed.
- * <span class="javadoctag">@return</span> String
-  */</span>
-  <span class="keyword">public</span> String getName() {
-    <span class="keyword">return</span> fName;
-  }
-
-<span class="comment">//  /**</span>
-<span class="comment">//  * Returns a mutable object - likely bad style.</span>
-<span class="comment">//  *</span>
-<span class="comment">//  * The caller gets a direct reference to the internal field. This is usually dangerous, </span>
-<span class="comment">//  * since the Date object state can be changed both by this class and its caller.</span>
-<span class="comment">//  * That is, this class is no longer in complete control of fDate.</span>
-<span class="comment">//  */</span>
-<span class="comment">//  public Date getDateOfDiscovery() {</span>
-<span class="comment">//    return fDateOfDiscovery;</span>
-<span class="comment">//  }</span>
-
-  <span class="javadoc">/**
-  * Returns a mutable object - good style.
-  * 
-  * Returns a defensive copy of the field.
-  * The caller of this method can do anything they want with the
-  * returned Date object, without affecting the internals of this
-  * class in any way. Why? Because they do not have a reference to 
-  * fDate. Rather, they are playing with a second Date that initially has the 
-  * same data as fDate.
- * <span class="javadoctag">@return</span> Date
-  */</span>
-  <span class="keyword">public</span> Date getDateOfDiscovery() {
-    <span class="keyword">return</span> <span class="keyword">new</span> Date(fDateOfDiscovery.getTime());
-  }
-
-  <span class="comment">// PRIVATE //</span>
-
-  <span class="javadoc">/**
-  * Final primitive data is always immutable.
-  */</span>
-  <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">double</span> fMass;
-
-  <span class="javadoc">/**
-  * An immutable object field. (String objects never change state.)
-  */</span>
-  <span class="keyword">private</span> <span class="keyword">final</span> String fName;
-
-  <span class="javadoc">/**
-  * A mutable object field. In this case, the state of this mutable field
-  * is to be changed only by this class. (In other cases, it makes perfect
-  * sense to allow the state of a field to be changed outside the native
-  * class; this is the case when a field acts as a "pointer" to an object
-  * created elsewhere.)
-  */</span>
-  <span class="keyword">private</span> <span class="keyword">final</span> Date fDateOfDiscovery;
-}</code></pre>
-</section>
+<p>Immutable objects are objects whose data or properties cannot be changed after it is constructed. JDK has a number of immutable class like String and Integer. Immutable objects have big list of compelling positive qualities and they can greatly simplify your program. Immutable objects :</p>
+<p>
+            <p class="read-more"><a href="/articles/2010-11-20-Immutable-Classes/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-11-20-Immutable-Classes/" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-text="Crave for immutable classes #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -860,10 +406,8 @@ are simple to construct, test, and use</p>
 <li>The XMLHttpRequest object for asynchronous communication</li>
 <li>JavaScript to bring these technologies together</li>
 </ol>
-<p>Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.</p>
-<p>This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.</p>
-<iframe src="https://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-11-18-Ajax-Primer/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-11-18-Ajax-Primer/" data-url="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-text="Ajax primer #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -887,41 +431,8 @@ are simple to construct, test, and use</p>
 <p>How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &quot;PMD&quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. </p>
 <p><b>Note</b>: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.</p>
 <p>PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:</p>
-<ol>
-<li>Possible bugs - empty try/catch/finally/switch statements</li>
-<li>Dead code - unused local variables, parameters and private methods</li>
-<li>Suboptimal code - wasteful String/StringBuffer usage</li>
-<li>Overcomplicated expressions - unnecessary if statements, for loops that could be while loops</li>
-<li>Duplicate code - copied/pasted code means copied/pasted bugs</li>
-</ol>
-<p>You can <a href="http://sourceforge.net/project/showfiles.php?group_id=56262">download everything from here</a>, and you can get an overview of all the rules at the <a href="http://pmd.sourceforge.net/rules/index.html">rulesets index page</a>.</p>
-<p>PMD is integrated with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.</p>
-<h3>Instructions for configuring PMD for Eclipse</h3>
-
-
-<p>Let me walk you through the steps required to quickly configure it with your Eclipse installation. It works like a breeze.</p>
-<ol>
-<li>Start Eclipse.</li>
-<li>Start the installation procedure : select the Help&gt;Software Updates&gt;Find and Install... menu item.</li>
-<li>Select &quot;Search for new features to install&quot; option and click Next.</li>
-<li>Click New Remote Site...</li>
-<li>Give a name (ie PMD Eclipse Site), enter the URL <a href="http://pmd.sourceforge.net/eclipse">http://pmd.sourceforge.net/eclipse</a></li>
-<li>Select this new site in the Sites to include in search list and click Next.</li>
-<li>Select PMD for Eclipse 3 and Apache Xerces in the &quot;Select the features to install&quot; list and click Next.</li>
-<li>Accept the terms of the license agreements and click Next.</li>
-<li>Verify that the install location is your Eclipse installation directory, otherwise select the correct one, click Finish.</li>
-<li>A warning appear telling the feature is not signed. Ignore and click Install to continue.</li>
-<li>Accept to restart the workbench to load PMD into the workbench.
-Eclipse is restarted and a PMD welcome page is displayed : the plugin is correctly installed. </li>
-</ol>
-<h3>Writing custom rules</h3>
-
-<p>It is interesting and important to note that you can write your custom rules. Writing PMD rules is cool because you don&#39;t have to wait for PMD team to get around to implementing feature requests. Following are the two approaches to write custom rules.
-1. Write a rule using Java
-2. Write an XPath expression
-More details about each of these approaches can be found at <a href="http://pmd.sourceforge.net/howtowritearule.html">sourceforge</a>.</p>
-<p>Happy coding.. </p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-text="Use PMD - Programming Mistake Detector? #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -929,35 +440,6 @@ More details about each of these approaches can be found at <a href="http://pmd.
             </div>
             <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/"></g:plusone></div>
             <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-counter="top"></script></div>
-          </div>
-        </article>
-        <article class="post shadow">
-          <header>
-            <h1><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a></h1>
-            <footer class="footer">
-              <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">October 20 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-              </div>
-            </footer>
-          </header>
-          <hr>
-          <section class="content"><p>Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.</p>
-<p>In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &quot;MonetaryAmount.java&quot; that are wrappers over &quot;BigDecimal&quot; class of the JDK and that provides helper methods and functionality as needed by the business application.</p>
-<p>From an IBM article on this topic :</p>
-<p><i>
-&quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&quot;
-</i></p>
-<p>From an article by Brian Goetz :</p>
-<p><i>
-&quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&quot; 
-</i></p>
-</section>
-          <hr>
-          <div id="social_bottom" class="topsocial">
-            <div class="social"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-text="Beware of floating point numbers #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-            </div>
-            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/"></g:plusone></div>
-            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-counter="top"></script></div>
           </div>
         </article>
         <article class="post shadow">
@@ -974,21 +456,9 @@ More details about each of these approaches can be found at <a href="http://pmd.
 <li>Package by feature</li>
 <li>Package by layer</li>
 </ul>
-<p>In my experience, the package-by-feature style seems to be the superior of the two:</p>
-<ul>
-<li><b>Higher Modularity</b>: As mentioned above, only package-by-feature has packages with high cohesion, high modularity, and low coupling between packages.</li>
-<li><b>Easier Code Navigation</b>: Maintenance programmers need to do a lot less searching for items, since all items needed for a given task are usually in the same directory. Some tools that encourage package-by-layer use package naming conventions to ease the problem of tedious code navigation. However, package-by-feature transcends the need for such conventions in the first place, by greatly reducing the need to navigate between directories.</li>
-<li><b>Higher Level of Abstraction</b>: Staying at a high level of abstraction is one of programming&#39;s guiding principles of lasting value. It makes it easier to think about a problem, and emphasizes fundamental services over implementation details. As a direct benefit of being at a high level of abstraction, the application becomes more self-documenting : the overall size of the application is communicated by the number of packages, and the basic features are communicated by the package names. The fundamental flaw with package-by-layer style, on the other hand, is that it puts implementation details ahead of high level abstractions - which is backwards.</li>
-<li><b>Separates Both Features and Layers</b>: The package-by-feature style still honors the idea of separating layers, but that separation is implemented using separate classes. The package-by-layer style, on the other hand, implements that separation using both separate classes and separate packages, which does not seem necessary or desirable.</li>
-<li><b>Minimizes Scope</b>: Minimizing scope is another guiding principle of lasting value. Here, package-by-feature allows some classes to decrease their scope from public to package-private. This is a significant change, and will help to minimize ripple effects. The package-by-layer style, on the other hand, effectively abandons package-private scope, and forces you to implement nearly all items as public. This is a fundamental flaw, since it doesn&#39;t allow you to minimize ripple effects by keeping secrets.</li>
-<li><b>Better Growth Style</b>: In the package-by-feature style, the number of classes within each package remains limited to the items related to a specific feature. If a package becomes too large, it may be refactored in a natural way into two or more packages. The package-by-layer style, on the other hand, is monolithic. As an application grows in size, the number of packages remains roughly the same, while the number of classes in each package will increase without bound.</li>
-</ul>
-<h4>Credits &amp; References</h4>
-
-<ul>
-<li><a href="http://www.javagyan.com/articles/packagebyfeaturenotlayer">Java Gyan</a></li>
-</ul>
-</section>
+<p>In my experience, the package-by-feature style seems to be the superior of the two. Here are some of the reasoning:</p>
+<p>
+            <p class="read-more"><a href="/articles/2010-10-30-Package-By-Features/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-10-30-Package-By-Features/" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-text="Package by feature not layer #best-practices #java /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -996,6 +466,28 @@ More details about each of these approaches can be found at <a href="http://pmd.
             </div>
             <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/"></g:plusone></div>
             <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-counter="top"></script></div>
+          </div>
+        </article>
+        <article class="post shadow">
+          <header>
+            <h1><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a></h1>
+            <footer class="footer">
+              <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">October 20 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+              </div>
+            </footer>
+          </header>
+          <hr>
+          <section class="content"><p>Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.</p>
+<p>In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &quot;MonetaryAmount.java&quot; that are wrappers over &quot;BigDecimal&quot; class of the JDK and that provides helper methods and functionality as needed by the business application.</p>
+<p>
+            <p class="read-more"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">read more</a></p></section>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-text="Beware of floating point numbers #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-counter="top"></script></div>
           </div>
         </article>
         <article class="post shadow">
@@ -1014,15 +506,8 @@ More details about each of these approaches can be found at <a href="http://pmd.
 <li>final fields, parameters, and local variables cannot change their value once set</li>
 </ul>
 <p>In the last case, &quot;value&quot; for primitives is understood in the usual sense, while &quot;value&quot; for objects means the object&#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.</p>
-<p>Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.</p>
-<p>Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.</p>
-<p>Using final :</p>
-<ul>
-<li>clearly communicates your intent</li>
-<li>allows the compiler and virtual machine to perform minor optimizations</li>
-<li>clearly flags items which are simpler in behavior - final says,  &quot;If you are looking for complexity, you won&#39;t find it here.&quot;</li>
-</ul>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-09-19-Use-Final-Liberally/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-09-19-Use-Final-Liberally/" data-url="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/" data-text="Use final liberally. Please do. #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -1043,8 +528,8 @@ More details about each of these approaches can be found at <a href="http://pmd.
           <hr>
           <section class="content"><p><b>Allowing a method to be overridden should always be done intentionally, not by accident</b>.</p>
 <p>Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.</p>
-<p>When you do override a method, you should use the @Override annotation. This allows the compiler to verify that the method is indeed a valid override of an existing method. For example, your implementations of toString, equals, and hashCode should always use @Override in the method header. </p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-08-29-Overiride-Carefully/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-08-29-Overiride-Carefully/" data-url="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-text="Overridable methods need special care #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
@@ -1078,16 +563,8 @@ More details about each of these approaches can be found at <a href="http://pmd.
 </ul>
 </li>
 </ul>
-<p>Sub-classing or inheritance has the following issues :</p>
-<ul>
-<li>It violates encapsulation, since the implementations of the superclass and subclass become tightly coupled</li>
-<li>new methods added to the superclass can break the subclass</li>
-<li>superclass and subclass need to evolve in parallel</li>
-<li>designing a class so that it may be safely extended takes extra work - extending a class not explicitly designed for such use is risky</li>
-<li>different packages are often under the control of different programmers - extending a class in a different package is risky</li>
-</ul>
-<p>A common exception is the template method design pattern. There, the safest style is to make all items in the abstract base class final, except for the single abstract method which needs to be implemented by the subclass.</p>
-</section>
+<p>
+            <p class="read-more"><a href="/articles/2010-08-09-Composition-Inheritance/">read more</a></p></section>
           <hr>
           <div id="social_bottom" class="topsocial">
             <div class="social"><a href="/articles/2010-08-09-Composition-Inheritance/" data-url="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/" data-text="Prefer composition over inheritance #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">

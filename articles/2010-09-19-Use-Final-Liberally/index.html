@@ -118,6 +118,7 @@
 <li>final fields, parameters, and local variables cannot change their value once set</li>
 </ul>
 <p>In the last case, &quot;value&quot; for primitives is understood in the usual sense, while &quot;value&quot; for objects means the object&#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.</p>
+<p><span class="more"></span></p>
 <p>Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.</p>
 <p>Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.</p>
 <p>Using final :</p>
@@ -149,10 +150,10 @@
               <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
             </tr>
             <tr>
-              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
             </tr>
             <tr>
-              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
             </tr>
             <tr>
               <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>

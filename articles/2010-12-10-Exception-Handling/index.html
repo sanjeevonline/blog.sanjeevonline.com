@@ -115,6 +115,9 @@
 <ul>
 <li><b>Don’t try to handle coding errors</b>: Unless your software is required to take extraordinary measures in error scenarios, don’t spend a lot of time designing it to detect and recover from programming errors. In the case of an out-of-bounds array index, divide-by zero error, or any other programming error, the best strategy is to fail fast (and leave an audit trail of the problem that can be used to troubleshoot it).</li>
 <li><b>Avoid declaring lots of exception classes</b>: Create a new exception class only when you expect some handling of the code to take a significantly different action, based on the exception type. In my experience it is rarely the case and exception classes available in java API serve the purpose.</li>
+</ul>
+<p><span class="more"></span></p>
+<ul>
 <li><b>Recast lower-level exceptions to higher-level ones whenever you raise an abstraction level</b>: Don’t let implementation details leak out of a method invocation as exceptions. Otherwise, your users might think your software is broken. When low-level exceptions percolate up to a high-level handler, there’s little context to assist the handler in making informed decisions or reporting conditions that are traceable to any obvious cause. Recasting an exception whenever you cross an abstraction boundary enables exception handlers higher up in the call chain to make more informed decisions. If you want to include a problem trace when recasting them, you can always create a chained exception. A chained exception provides added context and holds a reference to the original lower level exception. You can repeatedly chain exceptions.</li>
 <li><p><b>Provide context along with an exception</b>: What’s most important in exception handling is information that helps create an informed response. Exception classes hold information. You can design them to be packed with information in addition to the bare-bones stack trace information provided by default. You might include values of parameters that raised the exception, specific error text, or detailed information that could be useful to plan a recovery. When an exception occurs, it is important that all pertinent data be passed to the exception&#39;s constructor. Such data is often critical for understanding and solving the problem, and can greatly reduce the time needed to find a solution.
 The this reference is sometimes useful for this purpose, since toString is implicitly called. In addition, if you are defining exception classes yourself, you may even design your constructors to force the caller to pass the pertinent data.</p>
@@ -177,10 +180,10 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
               <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
             </tr>
             <tr>
-              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
             </tr>
             <tr>
-              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
             </tr>
             <tr>
               <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
