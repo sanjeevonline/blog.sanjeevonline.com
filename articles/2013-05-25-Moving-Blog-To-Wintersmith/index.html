@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>High school reunion - The Rootless Wanderer</title>
+    <title>Re-platformig this blog to Wintersmith - The Rootless Wanderer</title>
     <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
     <link rel="stylesheet" href="/assets/css/github.css">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
@@ -104,30 +104,54 @@
       </div>
       <article class="post shadow">
         <div>
-          <h1>High school reunion</h1>
+          <h1>Re-platformig this blog to Wintersmith</h1>
           <footer class="footer">
             <div style="font-size: 13px" class="inner">
-              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">May 19, 2013</a>|Tags :&nbsp;<a href="/tag/trivia.html" rel="category tag" title="View all posts in 'trivia'">trivia</a>&nbsp;
+              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">May 25, 2013</a>|Tags :&nbsp;<a href="/tag/nodejs.html" rel="category tag" title="View all posts in 'nodejs'">nodejs</a>&nbsp;
             </div>
           </footer>
         </div>
         <hr>
-        <section class="content"><p>It was pleasure meeting childhood friends from school today after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.</p>
-<p>After reintroducing ourselves to each other, we were in back-to-school mode in no time and it was fun after that. We gossiped about everyone who was not around, discussed our school time heartbreaks, affairs, who-was-hot-who-was-not and what not. </p>
+        <section class="content"><p>After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like -</p>
+<ol>
+<li>Dynamic blogs<ol>
+<li>Based on <a href="http://www.enkiblog.com/">Enki</a></li>
+<li>Custom app that I can host on <a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/www.heroku.com">Heroku</a></li>
+<li>Java, Pyhton or go based app on <a href="https://developers.google.com/appengine/">Google App Engine</a></li>
+</ol>
+</li>
+<li>Static blogs<ol>
+<li><a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/sites.google.com">Google sites</a></li>
+<li>Ruby based <a href="http://jekyllrb.com/">Jekyll</a></li>
+<li>Python based <a href="http://hyde.github.io/">Hyde</a></li>
+<li>NodeJs based <a href="http://jnordberg.github.io/wintersmith/">Wintersmith</a></li>
+</ol>
+</li>
+</ol>
+<p>After careful analysis and googling about it yielded that for a simple site like this blog it would be a little too much of work to take the Dynamic blog route and sticking to a static site generator would be quicker, easier and maintainable. Besides Static sites perform better and can be hosted anywhere.</p>
 <p><span class="more"></span></p>
-<p>We all managed to finish a few pitchers of Kingfisher while these intresting conversations were on. It was all heart-to-heart conversations.. no polishing and no pretensions whatsoever.. Just like how we used to do it during our school days.</p>
-<p>I am looking forward to many more such reunions and much more participation from my childhood buddies.</p>
-<p><img src="/articles/2013-05-19-High-School-Reunion/HighSchoolReunion.jpg" alt="High School Reunion"></p>
+<p>My earlier version of this blog was hosted on Google Sites for few years, which was good but there were some limitations to the kind of javascript, css, styles and themes that you can use and I wanted complete freedom in that. Ruby based Jekyll and Python based Hyde also looked promising but NodeJs based Wintersmith was simply impressive. Learning JavaScript and NodeJs being one of my personal goal for this year, it was the option that looked best.</p>
+<p>So here it is, my new blog based on Wintersmith.</p>
+<p>Some of the benefits of going with Wintersmith are -</p>
+<ol>
+<li>Small and simple <a href="https://github.com/jnordberg/wintersmith">codebase</a></li>
+<li><a href="http://jade-lang.com/">Jade</a> templates</li>
+<li>Nice <a href="https://github.com/jnordberg/wintersmith/wiki/Plugins">plugin</a> system</li>
+<li><a href="http://underscorejs.org/">Underscore.js</a> which is great when working with templates</li>
+<li>Being a Mac user it was fairly easy to setup it up and I was able to get it up and running in few minutes</li>
+<li>I can continue to use my favourite Markdown in my favourite Mou editor</li>
+<li>I spend a lot of time on Github anyways so having <a href="https://github.com/sanjeevonline/sanjeevonline.com">my site&#39;s code</a> and generated site on Git itself is comforting</li>
+</ol>
 </section>
         <hr>
         <div id="social_bottom" class="topsocial">
-          <div class="social"><a href="/articles/2013-05-19-High-School-Reunion/" data-url="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/" data-text="High school reunion #trivia /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+          <div class="social"><a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/" data-url="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/" data-text="Re-platformig this blog to Wintersmith #nodejs /via @sandee_sh" data-count="vertical" class="twitter-share-button">
               <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
           </div>
-          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/"></g:plusone></div>
+          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/"></g:plusone></div>
           <div class="social">
             <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/" data-counter="top"></script>
+            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/" data-counter="top"></script>
           </div>
         </div>
         <hr>
@@ -135,7 +159,7 @@
         <table class="table table-striped">
           <tbody>
             <tr>
-              <td><a href="/articles/2013-05-19-High-School-Reunion/" title="trivia">High school reunion</a></td>
+              <td><a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/" title="nodejs">Re-platformig this blog to Wintersmith</a></td>
             </tr>
           </tbody>
         </table>

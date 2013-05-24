@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2013-05-23T06:30:37.153Z</updated>
+  <updated>2013-05-24T19:12:00.019Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
   <id>http://feeds.feedburner.com/sanjeevonline/rss</id>
   <generator uri="https://github.com/jnordberg/wintersmith" version="1.1.1">Wintersmith</generator>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Re-platformig this blog to Wintersmith]]></title>
+      <description><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like - - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/"></link>
+      <id>http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/</id>
+      <updated>2013-05-24T19:30:00.000Z</updated>
+      <published>2013-05-24T19:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="nodejs"></category>
+      <summary type="html"></summary>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/">After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like -</content>
+      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/#disqus_thread" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2013-05-25-Moving-Blog-To-Wintersmith//lastest.rss</link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
   <entry>
     <author>
       <name>sanjeev</name>
@@ -142,24 +159,6 @@
       <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/">Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.</content>
       <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/#disqus_thread" thr:count="0"></link>
       <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-06-01-Debugging-With-Eclipse//lastest.rss</link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-      <title type="html"><![CDATA[Eclipse keyboard shortcuts]]></title>
-      <description><![CDATA[These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/). - &lt;a href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</id>
-      <updated>2011-03-20T09:30:00.000Z</updated>
-      <published>2011-03-20T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
-      <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
-      <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/).</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts//lastest.rss</link>
       <thr:total>0</thr:total>
     </author>
   </entry>
