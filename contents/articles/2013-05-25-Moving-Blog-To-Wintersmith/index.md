@@ -20,11 +20,11 @@ After deferring it for more than a year, finally I decided to re-platform my blo
 	3. Python based [Hyde](http://hyde.github.io/)
 	3. NodeJs based [Wintersmith](http://jnordberg.github.io/wintersmith/)
 
-After careful analysis and googling about it yielded that for a simple site like this blog it would be a little too much of work to take the Dynamic blog route and sticking to a static site generator would be quicker, easier and maintainable. Besides Static sites perform better and can be hosted anywhere.
+After careful analysis and googling about it yielded that for a simple site like this blog it would be a little too much of work to take the Dynamic blog route and sticking to a static site generator would be quicker, easier and maintainable. Besides static sites perform better and can be hosted anywhere.
 
 <span class="more"></span>
 
-My earlier version of this blog was hosted on Google Sites for few years, which was good but there were some limitations to the kind of javascript, css, styles and themes that you can use and I wanted complete freedom in that. Ruby based Jekyll and Python based Hyde also looked promising but NodeJs based Wintersmith was simply impressive. Learning JavaScript and NodeJs being one of my personal goal for this year, it was the option that looked best.
+My earlier version of this blog was hosted on Google Sites for few years, which was good but there were some limitations to the kind of javascript, css, styles and themes that you can use and I wanted complete freedom. Ruby based Jekyll and Python based Hyde also looked promising but NodeJs based Wintersmith was simply impressive. Learning JavaScript and NodeJs being one of my personal goal for this year, it was the option that looked best.
 
 So here it is, my new blog based on Wintersmith.
 
