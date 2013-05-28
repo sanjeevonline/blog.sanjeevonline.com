@@ -35,5 +35,5 @@ Some of the benefits of going with Wintersmith are -
 3. Nice [plugin](https://github.com/jnordberg/wintersmith/wiki/Plugins) system
 4. [Underscore.js](http://underscorejs.org/) which is great when working with templates
 5. Being a Mac user it was fairly easy to setup it up and I was able to get it up and running in few minutes
-6. I can continue to use my favourite Markdown in my favourite Mou editor
+6. I can continue to use my favourite [Markdown](http://en.wikipedia.org/wiki/Markdown) in my favourite [Mou](http://mouapp.com/) editor to write new posts
 7. I spend a lot of time on Github anyways so having [my site's code](https://github.com/sanjeevonline/sanjeevonline.com) and generated site on Git itself is comforting
