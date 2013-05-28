@@ -106,6 +106,20 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 </description>
     </item>
     <item>
+      <title>A day trip to Dinant, belgium</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
+      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
+&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
+&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
+&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Domtoren Utrecht, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
       <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
@@ -168,20 +182,6 @@ Overall it was an excellent start and we all were  very happy and excited and we
 &lt;li&gt;different packages are often under the control of different programmers - extending a class in a different package is risky&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A common exception is the template method design pattern. There, the safest style is to make all items in the abstract base class final, except for the single abstract method which needs to be implemented by the subclass.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>A day trip to Dinant, belgium</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
-      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
-&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
-&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
-&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -336,35 +336,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Avoiding null pointer exceptions</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
-      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
-      <author></author>
-      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
-&lt;p&gt;Happy coding!!&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Crave for immutable classes</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/</link>
       <pubDate>Sat, 20 Nov 2010 15:00:00 +0550</pubDate>
@@ -487,6 +458,35 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
   */&lt;/span&gt;
   &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;final&lt;/span&gt; Date fDateOfDiscovery;
 }&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    <item>
+      <title>Avoiding null pointer exceptions</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
+      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
+      <author></author>
+      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
+&lt;p&gt;Happy coding!!&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -687,16 +687,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
-      <title>Eclipse keyboard shortcuts</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</link>
-      <pubDate>Sun, 20 Mar 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</guid>
-      <author></author>
-      <description>&lt;p&gt;These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.5/&quot;&gt;http://creativecommons.org/licenses/by-sa/2.5/&lt;/a&gt;).&lt;/p&gt;
-&lt;iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    <item>
       <title>Using Eclipse effectively</title>
       <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
       <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
@@ -715,6 +705,16 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 &lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Eclipse keyboard shortcuts</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</link>
+      <pubDate>Sun, 20 Mar 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</guid>
+      <author></author>
+      <description>&lt;p&gt;These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.5/&quot;&gt;http://creativecommons.org/licenses/by-sa/2.5/&lt;/a&gt;).&lt;/p&gt;
+&lt;iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
 </description>
     </item>
     <item>
@@ -1186,7 +1186,7 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;li&gt;Nice &lt;a href=&quot;https://github.com/jnordberg/wintersmith/wiki/Plugins&quot;&gt;plugin&lt;/a&gt; system&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://underscorejs.org/&quot;&gt;Underscore.js&lt;/a&gt; which is great when working with templates&lt;/li&gt;
 &lt;li&gt;Being a Mac user it was fairly easy to setup it up and I was able to get it up and running in few minutes&lt;/li&gt;
-&lt;li&gt;I can continue to use my favourite Markdown in my favourite Mou editor&lt;/li&gt;
+&lt;li&gt;I can continue to use my favourite &lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; in my favourite &lt;a href=&quot;http://mouapp.com/&quot;&gt;Mou&lt;/a&gt; editor to write new posts&lt;/li&gt;
 &lt;li&gt;I spend a lot of time on Github anyways so having &lt;a href=&quot;https://github.com/sanjeevonline/sanjeevonline.com&quot;&gt;my site&amp;#39;s code&lt;/a&gt; and generated site on Git itself is comforting&lt;/li&gt;
 &lt;/ol&gt;
 </description>
