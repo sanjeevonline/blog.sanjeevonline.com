@@ -107,6 +107,27 @@
       </div>
       <article class="post shadow">
         <header>
+          <h1><a href="/articles/2013-05-27-New-Date-Time-API/">New Date and Time API in Java 8</a></h1>
+          <footer class="footer">
+            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">May 28, 2013</a>|<a href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;
+            </div>
+          </footer>
+          <hr>
+        </header>
+        <section class="content"><p>At some point during your day-to-day coding experience with Java you might have realised that the existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the <a href="http://joda-time.sourceforge.net/">Joda-Time</a> project. The good news is that the new API that got delivered with <a href="http://openjdk.java.net/projects/jdk8/milestones#M6">JDK8 milestone M6</a> has a more intuitive design allowing code to better express its intent. The classes are immutable which aligns with the multi-core direction of the industry.</p>
+<p>
+          <p class="read-more"><a href="/articles/2013-05-27-New-Date-Time-API/">read more</a></p>
+          <hr>
+          <div id="social_bottom" class="topsocial">
+            <div class="social"><a href="/articles/2013-05-27-New-Date-Time-API/" data-url="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/" data-text="New Date and Time API in Java 8 #java /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            </div>
+            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/"></g:plusone></div>
+            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/" data-counter="top"></script></div>
+          </div></section>
+      </article>
+      <article class="post shadow">
+        <header>
           <h1><a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/">Re-platformig this blog to Wintersmith</a></h1>
           <footer class="footer">
             <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">May 25, 2013</a>|<a href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/nodejs.html" rel="category tag" title="View all posts in 'nodejs'">nodejs</a>&nbsp;
@@ -118,19 +139,18 @@
 <ol>
 <li>Dynamic blogs<ol>
 <li>Based on <a href="http://www.enkiblog.com/">Enki</a></li>
-<li>Custom app that I can host on <a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/www.heroku.com">Heroku</a></li>
+<li>Custom app that I can host on <a href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/www.heroku.com">Heroku</a></li>
 <li>Java, Pyhton or go based app on <a href="https://developers.google.com/appengine/">Google App Engine</a></li>
 </ol>
 </li>
 <li>Static blogs<ol>
-<li><a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/sites.google.com">Google sites</a></li>
+<li><a href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/sites.google.com">Google sites</a></li>
 <li>Ruby based <a href="http://jekyllrb.com/">Jekyll</a></li>
 <li>Python based <a href="http://hyde.github.io/">Hyde</a></li>
 <li>NodeJs based <a href="http://jnordberg.github.io/wintersmith/">Wintersmith</a></li>
 </ol>
 </li>
 </ol>
-<p>After careful analysis and googling about it yielded that for a simple site like this blog it would be a little too much of work to take the Dynamic blog route and sticking to a static site generator would be quicker, easier and maintainable. Besides static sites perform better and can be hosted anywhere.</p>
 <p>
           <p class="read-more"><a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/">read more</a></p>
           <hr>
@@ -604,31 +624,6 @@ Contents</p>
             </div>
             <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/"></g:plusone></div>
             <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-counter="top"></script></div>
-          </div></section>
-      </article>
-      <article class="post shadow">
-        <header>
-          <h1><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a></h1>
-          <footer class="footer">
-            <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">November 20, 2010</a>|<a href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/#disqus_thread">Comments</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-            </div>
-          </footer>
-          <hr>
-        </header>
-        <section class="content"><p>In the book &quot;Effective Java&quot;, Joshua Bloch makes this compelling recommendation :</p>
-<p><i>
-&quot;Classes should be immutable unless there&#39;s a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible.&quot;
-</i></p>
-<p>Immutable objects are objects whose data or properties cannot be changed after it is constructed. JDK has a number of immutable class like String and Integer. Immutable objects have big list of compelling positive qualities and they can greatly simplify your program. Immutable objects :</p>
-<p>
-          <p class="read-more"><a href="/articles/2010-11-20-Immutable-Classes/">read more</a></p>
-          <hr>
-          <div id="social_bottom" class="topsocial">
-            <div class="social"><a href="/articles/2010-11-20-Immutable-Classes/" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-text="Crave for immutable classes #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-            </div>
-            <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/"></g:plusone></div>
-            <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-counter="top"></script></div>
           </div></section>
       </article><a href="archive.html" id="archive">Visit the archives!</a><hr />
       <footer class="footer">
