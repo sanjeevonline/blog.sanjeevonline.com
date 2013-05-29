@@ -20,6 +20,8 @@ After deferring it for more than a year, finally I decided to re-platform my blo
 	3. Python based [Hyde](http://hyde.github.io/)
 	3. NodeJs based [Wintersmith](http://jnordberg.github.io/wintersmith/)
 
+<span class="more"></span>
+
 After careful analysis and googling about it yielded that for a simple site like this blog it would be a little too much of work to take the Dynamic blog route and sticking to a static site generator would be quicker, easier and maintainable. Besides static sites perform better and can be hosted anywhere.
 
 <span class="more"></span>
