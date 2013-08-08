@@ -1,4 +1,9 @@
-
+.sidebar {
+    font-size: 12px;
+}
+.sidebar-header {
+    font-size: 26px;
+}
 .post {
     background-color: white;
     border: 1px solid #AAA;
