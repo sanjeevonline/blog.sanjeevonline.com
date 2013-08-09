@@ -6,7 +6,11 @@ html
     div.container
       include partials/menu
       block header
-      block content
+      div.row
+        div.span8
+          block content
+        div.span4
+          include partials/sidebar
       <hr />
       include partials/footer
 
