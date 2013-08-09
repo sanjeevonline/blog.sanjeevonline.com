@@ -1,8 +1,20 @@
 .sidebar {
     font-size: 12px;
+    border-left-width:thin;
+    border-left-style:solid;
+    border-left-color: #eeefff;
+    height: 100%;
+    min-height: 100%;
+    padding-left: 35px;
 }
 .sidebar-header {
     font-size: 26px;
+    border-left-width:thin;
+    border-left-style:solid;
+    border-left-color: #eeefff;
+    height: 100%;
+    min-height: 100%;
+    padding-left: 35px;
 }
 .post {
     background-color: white;

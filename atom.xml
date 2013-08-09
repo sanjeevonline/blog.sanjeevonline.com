@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
   <title type="text">Sanjeev Kumar</title>
-  <updated>2013-08-09T02:42:44.113Z</updated>
+  <updated>2013-08-09T05:49:24.364Z</updated>
   <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com"></link>
   <id>http://blog.sanjeevonline.com</id>
   <link rel="self" type="application/atom+xml" href="http://feeds.feedburner.com/sanjeevonline/atom"></link>
@@ -16,8 +16,8 @@
     <updated>2013-05-27T19:30:00.000Z</updated>
     <published>2013-05-27T19:30:00.000Z</published>
     <category scheme="http://blog.sanjeevonline.com" term="java" telabel="java"></category>
-    <summary type="html"><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project.]]></summary>
-    <content type="html"><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project.]]></content>
+    <summary type="html"><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ...]]></summary>
+    <content type="html"><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ...]]></content>
     <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/#disqus_thread" thr:count="0"></link>
     <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2013-05-27-New-Date-Time-API//lastest.rss" thr:count="0"></link>
     <thr:total>0</thr:total>
@@ -32,8 +32,8 @@
     <updated>2013-05-24T19:30:00.000Z</updated>
     <published>2013-05-24T19:30:00.000Z</published>
     <category scheme="http://blog.sanjeevonline.com" term="nodejs" telabel="nodejs"></category>
-    <summary type="html"><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like -]]></summary>
-    <content type="html"><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like -]]></content>
+    <summary type="html"><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ...]]></summary>
+    <content type="html"><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ...]]></content>
     <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/#disqus_thread" thr:count="0"></link>
     <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2013-05-25-Moving-Blog-To-Wintersmith//lastest.rss" thr:count="0"></link>
     <thr:total>0</thr:total>
@@ -48,8 +48,8 @@
     <updated>2013-05-19T09:30:00.000Z</updated>
     <published>2013-05-19T09:30:00.000Z</published>
     <category scheme="http://blog.sanjeevonline.com" term="trivia" telabel="trivia"></category>
-    <summary type="html"><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.]]></summary>
-    <content type="html"><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.]]></content>
+    <summary type="html"><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ...]]></summary>
+    <content type="html"><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ...]]></content>
     <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/#disqus_thread" thr:count="0"></link>
     <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2013-05-19-High-School-Reunion//lastest.rss" thr:count="0"></link>
     <thr:total>0</thr:total>
@@ -65,8 +65,8 @@
     <published>2012-01-05T09:30:00.000Z</published>
     <category scheme="http://blog.sanjeevonline.com" term="java" telabel="java"></category>
     <category scheme="http://blog.sanjeevonline.com" term="best-practices" telabel="best-practices"></category>
-    <summary type="html"><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application.]]></summary>
-    <content type="html"><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application.]]></content>
+    <summary type="html"><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ...]]></summary>
+    <content type="html"><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ...]]></content>
     <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread" thr:count="0"></link>
     <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2012-01-05-Choosing-The-Right-Collections//lastest.rss" thr:count="0"></link>
     <thr:total>0</thr:total>

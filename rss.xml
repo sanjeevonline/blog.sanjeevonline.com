@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2013-08-09T02:42:44.417Z</updated>
+  <updated>2013-08-09T05:49:24.668Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
@@ -11,14 +11,14 @@
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[New Date and Time API in Java 8]]></title>
-      <description><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <description><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ... - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/"&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/"></link>
       <id>http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/</id>
       <updated>2013-05-27T19:30:00.000Z</updated>
       <published>2013-05-27T19:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/">The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project.</content>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/">The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ...</content>
       <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/#disqus_thread" thr:count="0"></link>
       <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2013-05-27-New-Date-Time-API//lastest.rss</link>
       <thr:total>0</thr:total>
@@ -28,14 +28,14 @@
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Re-platformig this blog to Wintersmith]]></title>
-      <description><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like - - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <description><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ... - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/"&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/"></link>
       <id>http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/</id>
       <updated>2013-05-24T19:30:00.000Z</updated>
       <published>2013-05-24T19:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="nodejs"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/">After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like -</content>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/">After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ...</content>
       <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/#disqus_thread" thr:count="0"></link>
       <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2013-05-25-Moving-Blog-To-Wintersmith//lastest.rss</link>
       <thr:total>0</thr:total>
@@ -45,14 +45,14 @@
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[High school reunion]]></title>
-      <description><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast. - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <description><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ... - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/"&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/"></link>
       <id>http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</id>
       <updated>2013-05-19T09:30:00.000Z</updated>
       <published>2013-05-19T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="trivia"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/">It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.</content>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/">It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ...</content>
       <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/#disqus_thread" thr:count="0"></link>
       <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2013-05-19-High-School-Reunion//lastest.rss</link>
       <thr:total>0</thr:total>
@@ -62,7 +62,7 @@
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Choosing the right collection]]></title>
-      <description><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. - &lt;a href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <description><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ... - &lt;a href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"></link>
       <id>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</id>
       <updated>2012-01-05T09:30:00.000Z</updated>
@@ -70,7 +70,7 @@
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/">Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application.</content>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/">Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ...</content>
       <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread" thr:count="0"></link>
       <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2012-01-05-Choosing-The-Right-Collections//lastest.rss</link>
       <thr:total>0</thr:total>

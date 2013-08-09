@@ -102,17 +102,19 @@
           </div>
         </div>
       </div>
-      <article class="post shadow">
-        <div>
-          <h1>Best practices for threadsafe Singletons</h1>
-          <footer class="footer">
-            <div style="font-size: 13px" class="inner">
-              <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">January 15, 2011</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+      <div class="row">
+        <div class="span8">
+          <article class="post shadow">
+            <div>
+              <h1>Best practices for threadsafe Singletons</h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">
+                  <p class="pull-right"><a href="/blog.html" class="back"><< back to index</a></p>Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>|on&nbsp;<a href="/archive.html" class="back">January 15, 2011</a>|Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
             </div>
-          </footer>
-        </div>
-        <hr>
-        <section class="content"><p>A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.   </p>
+            <hr>
+            <section class="content"><p>A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.   </p>
 <p>Here are a few ways to create a thread safe singleton classes in your application. </p>
 <p><span class="more"></span></p>
 <h3>1. Lazy loading Singleton instance - Using Synchronized method or block</h3>
@@ -171,50 +173,101 @@
 <pre><code>Singleton<span class="preprocessor">.INSTANCE</span><span class="preprocessor">.getA</span>()<span class="comment">;</span></code></pre>
 <p><b>In my experience using enums is the best way to implement Singleton design pattern in any Java application. It is thread safe and also provides lazy initialization.</b></p>
 </section>
-        <hr>
-        <div id="social_bottom" class="topsocial">
-          <div class="social"><a href="/articles/2011-01-15-Thread-Safe-Singletons/" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-text="Best practices for threadsafe Singletons #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-              <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            <hr>
+            <div id="social_bottom" class="topsocial">
+              <div class="social"><a href="/articles/2011-01-15-Thread-Safe-Singletons/" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-text="Best practices for threadsafe Singletons #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                  <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+              </div>
+              <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/"></g:plusone></div>
+              <div class="social">
+                <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+                <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-counter="top"></script>
+              </div>
+            </div>
+            <hr>
+            <h3>Similar Articles</h3>
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/articles/2010-10-30-Package-By-Features/" title="best-practices,java">Package by feature not layer</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <h4></h4>
+            <div id="disqus_thread"></div><script type="text/javascript">
+            var disqus_shortname = 'sanjeevonline';
+            (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+          </article>
+        </div>
+        <div class="span4">
+          <div class="sidebar-header"><img src="/assets/images/sanjeev_ranit.JPG">
+            <hr><a href="http://www.sanjeevonline.com">About</a>
+            <hr><a href="https://github.com/sanjeevonline">Github</a>
+            <hr><a href="https://twitter.com/sandee_sh">Twitter</a>
+            <hr>
           </div>
-          <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/"></g:plusone></div>
-          <div class="social">
-            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-            <script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-counter="top"></script>
+          <div class="sidebar">
+            <ol>
+              <li>&nbsp;<a href="/articles/2013-05-27-New-Date-Time-API/">New Date and Time API in Java 8</a> - May 28 2013</li>
+              <li>&nbsp;<a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/">Re-platformig this blog to Wintersmith</a> - May 25 2013</li>
+              <li>&nbsp;<a href="/articles/2013-05-19-High-School-Reunion/">High school reunion</a> - May 19 2013</li>
+              <li>&nbsp;<a href="/articles/2012-01-05-Choosing-The-Right-Collections/">Choosing the right collection</a> - Jan 05 2012</li>
+              <li>&nbsp;<a href="/articles/2011-11-21-Code-Quality-Agile-Teams/">Improving code quality in agile teams</a> - Nov 21 2011</li>
+              <li>&nbsp;<a href="/articles/2011-11-11-Java7-Updates/">Java7 updates</a> - Nov 11 2011</li>
+              <li>&nbsp;<a href="/articles/2011-10-23-Evolution-Of-Java/">Evolution of Java</a> - Oct 23 2011</li>
+              <li>&nbsp;<a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/">Change default author name for JavaDocs in Eclipse</a> - Aug 03 2011</li>
+              <li>&nbsp;<a href="/articles/2011-07-08-Remote-Debugging-Jboss/">Remote debugging in Eclipse</a> - Jul 08 2011</li>
+              <li>&nbsp;<a href="/articles/2011-06-01-Debugging-With-Eclipse/">Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</a> - Jun 01 2011</li>
+              <li>&nbsp;<a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a> - Mar 20 2011</li>
+              <li>&nbsp;<a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">Eclipse keyboard shortcuts</a> - Mar 20 2011</li>
+              <li>&nbsp;<a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a> - Mar 15 2011</li>
+              <li>&nbsp;<a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">Troubleshooting eclipse issues</a> - Feb 25 2011</li>
+              <li>&nbsp;<a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a> - Jan 15 2011</li>
+              <li>&nbsp;<a href="/articles/2010-12-31-Tricky-Overloading/">Overloading can be tricky</a> - Dec 31 2010</li>
+              <li>&nbsp;<a href="/articles/2010-12-29-Prefer-Parameterized-Types/">Prefer using parameterized types over raw types</a> - Dec 29 2010</li>
+              <li>&nbsp;<a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/">Prefer switch over if-else</a> - Dec 28 2010</li>
+              <li>&nbsp;<a href="/articles/2010-12-10-Exception-Handling/">Exception handling guidelines/best practices</a> - Dec 20 2010</li>
+              <li>&nbsp;<a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">Avoiding null pointer exceptions</a> - Nov 27 2010</li>
+              <li>&nbsp;<a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a> - Nov 20 2010</li>
+              <li>&nbsp;<a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a> - Nov 18 2010</li>
+              <li>&nbsp;<a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a> - Oct 30 2010</li>
+              <li>&nbsp;<a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a> - Oct 20 2010</li>
+              <li>&nbsp;<a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a> - Oct 20 2010</li>
+              <li>&nbsp;<a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a> - Sep 19 2010</li>
+              <li>&nbsp;<a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a> - Aug 29 2010</li>
+              <li>&nbsp;<a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a> - Aug 07 2010</li>
+              <li>&nbsp;<a href="/articles/2010-07-07-Rome-Florence-Venice-Italy/">History, heritage and beauty of Italy</a> - Jul 07 2010</li>
+              <li>&nbsp;<a href="/articles/2010-06-07-Dinant-Belgium/">A day trip to Dinant, belgium</a> - Jun 07 2010</li>
+              <li>&nbsp;<a href="/articles/2010-05-30-Paris-France/">A trip to the city of fashion, Paris</a> - May 30 2010</li>
+              <li>&nbsp;<a href="/articles/2010-05-20-London-England/">London, England</a> - May 05 2010</li>
+              <li>&nbsp;<a href="/articles/2010-01-01-Amsterdam-Netherlands/">Day trip to the largest city of Netherlands - Amsterdam</a> - Jan 01 2010</li>
+              <li>&nbsp;<a href="/articles/2009-12-31-Kinderdijk-Netherlands/">The windmills of Kinderdijk, Netherlands</a> - Dec 31 2009</li>
+              <li>&nbsp;<a href="/articles/2009-12-30-Domtoren-Utrecht/">Domtoren Utrecht, Netherlands</a> - Dec 30 2009</li>
+              <li>&nbsp;<a href="/articles/2009-11-30-Aquatopia-Aquarium/">A day trip to Aquatopia at Antwerp, Brussels</a> - Dec 01 2009</li>
+              <li>&nbsp;<a href="/articles/2009-11-25-Brussels-Belgium/">A walk in Brussels</a> - Nov 25 2009</li>
+            </ol>
           </div>
         </div>
-        <hr>
-        <h3>Similar Articles</h3>
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2010-10-30-Package-By-Features/" title="best-practices,java">Package by feature not layer</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
-            </tr>
-            <tr>
-              <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
-            </tr>
-          </tbody>
-        </table>
-        <h4></h4>
-        <div id="disqus_thread"></div><script type="text/javascript">
-        var disqus_shortname = 'sanjeevonline';
-        (function() {
-           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-           dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-      </article><hr />
+      </div><hr />
       <footer class="footer">
         <div style="font-size: 13px" class="inner">
         </div>

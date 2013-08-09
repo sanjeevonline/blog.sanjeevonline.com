@@ -66,6 +66,20 @@
 </description>
     </item>
     <item>
+      <title>High school reunion</title>
+      <link>http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</link>
+      <pubDate>Sun, 19 May 2013 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</guid>
+      <author></author>
+      <description>&lt;p&gt;It was pleasure meeting childhood friends from school today after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.&lt;/p&gt;
+&lt;p&gt;After reintroducing ourselves to each other, we were in back-to-school mode in no time and it was fun after that. We gossiped about everyone who was not around, discussed our school time heartbreaks, affairs, who-was-hot-who-was-not and what not. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We all managed to finish a few pitchers of Kingfisher while these intresting conversations were on. It was all heart-to-heart conversations.. no polishing and no pretensions whatsoever.. Just like how we used to do it during our school days.&lt;/p&gt;
+&lt;p&gt;I am looking forward to many more such reunions and much more participation from my childhood buddies.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/2013-05-19-High-School-Reunion/HighSchoolReunion.jpg&quot; alt=&quot;High School Reunion&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Choosing the right collection</title>
       <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
       <pubDate>Thu, 05 Jan 2012 15:00:00 +0550</pubDate>
@@ -109,20 +123,6 @@
 &lt;li&gt;a &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt; for the stored objects be defined&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>High school reunion</title>
-      <link>http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</link>
-      <pubDate>Sun, 19 May 2013 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</guid>
-      <author></author>
-      <description>&lt;p&gt;It was pleasure meeting childhood friends from school today after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.&lt;/p&gt;
-&lt;p&gt;After reintroducing ourselves to each other, we were in back-to-school mode in no time and it was fun after that. We gossiped about everyone who was not around, discussed our school time heartbreaks, affairs, who-was-hot-who-was-not and what not. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;We all managed to finish a few pitchers of Kingfisher while these intresting conversations were on. It was all heart-to-heart conversations.. no polishing and no pretensions whatsoever.. Just like how we used to do it during our school days.&lt;/p&gt;
-&lt;p&gt;I am looking forward to many more such reunions and much more participation from my childhood buddies.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/articles/2013-05-19-High-School-Reunion/HighSchoolReunion.jpg&quot; alt=&quot;High School Reunion&quot;&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -359,46 +359,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
-      <title>Change default author name for JavaDocs in Eclipse</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</link>
-      <pubDate>Wed, 03 Aug 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</guid>
-      <author></author>
-      <description>&lt;p&gt;The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions. For example my user name that I use to login is something like SK0012345 and you will agree that it wouldn&amp;#39;t look good as an author name in a Java file and might not make any sense to most other viewers of the code. &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;javadoc&quot;&gt;/**
- * Test default author in JavaDocs
- * &lt;span class=&quot;javadoctag&quot;&gt;@author&lt;/span&gt; SK0012345
- */&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestClass&lt;/span&gt; {&lt;/span&gt;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Here is a quick way to change the default author name in your Eclipse projects. Simply edit your eclipse.ini file found in the root directory where you placed Eclipse. I have Eclipse at C:\devtools\development\eclipse, so my path would be C:\devtools\development\eclipse\eclipse.ini. Once editing this file add the following line and save.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;Duser&lt;/span&gt;.&lt;span class=&quot;comment&quot;&gt;name=Sanjeev&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;Kumar&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After saving restart Eclipse and when you do a JavaDoc comment and use the author attribute by typing @author and pressing enter on the autocomplete you will see something like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;javadoc&quot;&gt;/**
- * Test default author in JavaDocs
- * &lt;span class=&quot;javadoctag&quot;&gt;@author&lt;/span&gt; Sanjeev Kumar
- */&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestClass&lt;/span&gt; {&lt;/span&gt;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Simple yet useful. Happy coding!&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Remote debugging in Eclipse</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</link>
-      <pubDate>Fri, 08 Jul 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</guid>
-      <author></author>
-      <description>&lt;p&gt;To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server. By default it is turned off. In order to set jboss app server to be running in debugging mode, you should uncomment following line in &amp;quot;jboss-5.1.0.GA/jboss/bin/run.conf&amp;quot;&lt;/p&gt;
-&lt;p&gt;like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;#Sample JPDA settings for remote socket debugging&lt;/span&gt;
-&lt;span class=&quot;constant&quot;&gt;JAVA_OPTS&lt;/span&gt;=”&lt;span class=&quot;variable&quot;&gt;$JAVA_OPTS&lt;/span&gt; -&lt;span class=&quot;constant&quot;&gt;Xrunjdwp&lt;/span&gt;&lt;span class=&quot;symbol&quot;&gt;:transport=dt_socket&lt;/span&gt;,address=&lt;span class=&quot;number&quot;&gt;8787&lt;/span&gt;,serve &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Once done you can configure your eclipse remote application debugger on port 8787 and start debugging your application.&lt;/p&gt;
-&lt;p&gt;Happy debugging !!&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</title>
       <link>http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</link>
       <pubDate>Wed, 01 Jun 2011 15:00:00 +0550</pubDate>
@@ -446,6 +406,46 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;li&gt;org.osgi.*&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The last two are especially useful if you’re doing Eclipse RCP and/or OSGi development.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Remote debugging in Eclipse</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</link>
+      <pubDate>Fri, 08 Jul 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</guid>
+      <author></author>
+      <description>&lt;p&gt;To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server. By default it is turned off. In order to set jboss app server to be running in debugging mode, you should uncomment following line in &amp;quot;jboss-5.1.0.GA/jboss/bin/run.conf&amp;quot;&lt;/p&gt;
+&lt;p&gt;like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;#Sample JPDA settings for remote socket debugging&lt;/span&gt;
+&lt;span class=&quot;constant&quot;&gt;JAVA_OPTS&lt;/span&gt;=”&lt;span class=&quot;variable&quot;&gt;$JAVA_OPTS&lt;/span&gt; -&lt;span class=&quot;constant&quot;&gt;Xrunjdwp&lt;/span&gt;&lt;span class=&quot;symbol&quot;&gt;:transport=dt_socket&lt;/span&gt;,address=&lt;span class=&quot;number&quot;&gt;8787&lt;/span&gt;,serve &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once done you can configure your eclipse remote application debugger on port 8787 and start debugging your application.&lt;/p&gt;
+&lt;p&gt;Happy debugging !!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Change default author name for JavaDocs in Eclipse</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</link>
+      <pubDate>Wed, 03 Aug 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</guid>
+      <author></author>
+      <description>&lt;p&gt;The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions. For example my user name that I use to login is something like SK0012345 and you will agree that it wouldn&amp;#39;t look good as an author name in a Java file and might not make any sense to most other viewers of the code. &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;javadoc&quot;&gt;/**
+ * Test default author in JavaDocs
+ * &lt;span class=&quot;javadoctag&quot;&gt;@author&lt;/span&gt; SK0012345
+ */&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestClass&lt;/span&gt; {&lt;/span&gt;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is a quick way to change the default author name in your Eclipse projects. Simply edit your eclipse.ini file found in the root directory where you placed Eclipse. I have Eclipse at C:\devtools\development\eclipse, so my path would be C:\devtools\development\eclipse\eclipse.ini. Once editing this file add the following line and save.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;Duser&lt;/span&gt;.&lt;span class=&quot;comment&quot;&gt;name=Sanjeev&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;Kumar&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After saving restart Eclipse and when you do a JavaDoc comment and use the author attribute by typing @author and pressing enter on the autocomplete you will see something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;javadoc&quot;&gt;/**
+ * Test default author in JavaDocs
+ * &lt;span class=&quot;javadoctag&quot;&gt;@author&lt;/span&gt; Sanjeev Kumar
+ */&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestClass&lt;/span&gt; {&lt;/span&gt;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Simple yet useful. Happy coding!&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -512,27 +512,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
-      <title>Using Eclipse effectively</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
-      <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
-      <author></author>
-      <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
-&lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
-&lt;iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at &lt;a href=&quot;http://checkstyle.sourceforge.net/&quot;&gt;http://checkstyle.sourceforge.net/&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
-&lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    <item>
       <title>Troubleshooting eclipse issues</title>
       <link>http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/</link>
       <pubDate>Fri, 25 Feb 2011 15:00:00 +0550</pubDate>
@@ -563,6 +542,27 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;li&gt;&lt;p&gt;&lt;b&gt;Keyboard shortcuts&lt;/b&gt;
   It is productive and convenient to use keyboard shortcuts for performing certain tasks in eclipse rather than looking for options to do the same in various navigation menus. For example looking up references of a variable, method or a class can be quickly achieved via shortcut Ctrl+Shift+g. For your reference I have included a list of the most important keyboard shortcuts in my post Eclipse Keyboard Shortcuts&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Using Eclipse effectively</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
+      <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
+      <author></author>
+      <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
+&lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
+&lt;iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at &lt;a href=&quot;http://checkstyle.sourceforge.net/&quot;&gt;http://checkstyle.sourceforge.net/&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
+&lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -633,6 +633,15 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
+      <title>Prefer switch over if-else</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</link>
+      <pubDate>Tue, 28 Dec 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</guid>
+      <author></author>
+      <description>&lt;p&gt;In most cases switch will be lighter and performs faster than an if/else ladder. The compiler is able to optimize switch statements into a lookup table and perform compile-time checking for literals when dealing with enumerations, so I&amp;#39;d suggest that it&amp;#39;s usually preferable to use switch over if/else if if you&amp;#39;re dealing with numeric or enum types in Java. &lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Overloading can be tricky</title>
       <link>http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/</link>
       <pubDate>Fri, 31 Dec 2010 15:00:00 +0550</pubDate>
@@ -664,15 +673,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Unless you are using a JDK version prior to 1.5 I don&amp;#39;t see a reason why you should not use parameterized types in your code.&lt;/p&gt;
 &lt;p&gt;Happy coding !!&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Prefer switch over if-else</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</link>
-      <pubDate>Tue, 28 Dec 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</guid>
-      <author></author>
-      <description>&lt;p&gt;In most cases switch will be lighter and performs faster than an if/else ladder. The compiler is able to optimize switch statements into a lookup table and perform compile-time checking for literals when dealing with enumerations, so I&amp;#39;d suggest that it&amp;#39;s usually preferable to use switch over if/else if if you&amp;#39;re dealing with numeric or enum types in Java. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -756,6 +756,74 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
 &lt;p&gt;Happy coding!!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Ajax primer</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
+      <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</guid>
+      <author></author>
+      <description>&lt;p&gt;The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;HTML (or XHTML) and CSS for presentation&lt;/li&gt;
+&lt;li&gt;The Document Object Model (DOM) for dynamic display of and interaction with data&lt;/li&gt;
+&lt;li&gt;XML for the interchange of data, and XSLT for its manipulation&lt;/li&gt;
+&lt;li&gt;The XMLHttpRequest object for asynchronous communication&lt;/li&gt;
+&lt;li&gt;JavaScript to bring these technologies together&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.&lt;/p&gt;
+&lt;p&gt;This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.&lt;/p&gt;
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    <item>
+      <title>Use PMD - Programming Mistake Detector?</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</link>
+      <pubDate>Sat, 30 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</guid>
+      <author></author>
+      <description>&lt;h3&gt;About PMD&lt;/h3&gt;
+
+&lt;p&gt;How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &amp;quot;PMD&amp;quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.&lt;/p&gt;
+&lt;p&gt;PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Possible bugs - empty try/catch/finally/switch statements&lt;/li&gt;
+&lt;li&gt;Dead code - unused local variables, parameters and private methods&lt;/li&gt;
+&lt;li&gt;Suboptimal code - wasteful String/StringBuffer usage&lt;/li&gt;
+&lt;li&gt;Overcomplicated expressions - unnecessary if statements, for loops that could be while loops&lt;/li&gt;
+&lt;li&gt;Duplicate code - copied/pasted code means copied/pasted bugs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can &lt;a href=&quot;http://sourceforge.net/project/showfiles.php?group_id=56262&quot;&gt;download everything from here&lt;/a&gt;, and you can get an overview of all the rules at the &lt;a href=&quot;http://pmd.sourceforge.net/rules/index.html&quot;&gt;rulesets index page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PMD is integrated with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.&lt;/p&gt;
+&lt;h3&gt;Instructions for configuring PMD for Eclipse&lt;/h3&gt;
+
+
+&lt;p&gt;Let me walk you through the steps required to quickly configure it with your Eclipse installation. It works like a breeze.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start Eclipse.&lt;/li&gt;
+&lt;li&gt;Start the installation procedure : select the Help&amp;gt;Software Updates&amp;gt;Find and Install... menu item.&lt;/li&gt;
+&lt;li&gt;Select &amp;quot;Search for new features to install&amp;quot; option and click Next.&lt;/li&gt;
+&lt;li&gt;Click New Remote Site...&lt;/li&gt;
+&lt;li&gt;Give a name (ie PMD Eclipse Site), enter the URL &lt;a href=&quot;http://pmd.sourceforge.net/eclipse&quot;&gt;http://pmd.sourceforge.net/eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Select this new site in the Sites to include in search list and click Next.&lt;/li&gt;
+&lt;li&gt;Select PMD for Eclipse 3 and Apache Xerces in the &amp;quot;Select the features to install&amp;quot; list and click Next.&lt;/li&gt;
+&lt;li&gt;Accept the terms of the license agreements and click Next.&lt;/li&gt;
+&lt;li&gt;Verify that the install location is your Eclipse installation directory, otherwise select the correct one, click Finish.&lt;/li&gt;
+&lt;li&gt;A warning appear telling the feature is not signed. Ignore and click Install to continue.&lt;/li&gt;
+&lt;li&gt;Accept to restart the workbench to load PMD into the workbench.
+Eclipse is restarted and a PMD welcome page is displayed : the plugin is correctly installed. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Writing custom rules&lt;/h3&gt;
+
+&lt;p&gt;It is interesting and important to note that you can write your custom rules. Writing PMD rules is cool because you don&amp;#39;t have to wait for PMD team to get around to implementing feature requests. Following are the two approaches to write custom rules.
+1. Write a rule using Java
+2. Write an XPath expression
+More details about each of these approaches can be found at &lt;a href=&quot;http://pmd.sourceforge.net/howtowritearule.html&quot;&gt;sourceforge&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy coding.. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -884,74 +952,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
-      <title>Use PMD - Programming Mistake Detector?</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</link>
-      <pubDate>Sat, 30 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</guid>
-      <author></author>
-      <description>&lt;h3&gt;About PMD&lt;/h3&gt;
-
-&lt;p&gt;How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &amp;quot;PMD&amp;quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. &lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.&lt;/p&gt;
-&lt;p&gt;PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Possible bugs - empty try/catch/finally/switch statements&lt;/li&gt;
-&lt;li&gt;Dead code - unused local variables, parameters and private methods&lt;/li&gt;
-&lt;li&gt;Suboptimal code - wasteful String/StringBuffer usage&lt;/li&gt;
-&lt;li&gt;Overcomplicated expressions - unnecessary if statements, for loops that could be while loops&lt;/li&gt;
-&lt;li&gt;Duplicate code - copied/pasted code means copied/pasted bugs&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You can &lt;a href=&quot;http://sourceforge.net/project/showfiles.php?group_id=56262&quot;&gt;download everything from here&lt;/a&gt;, and you can get an overview of all the rules at the &lt;a href=&quot;http://pmd.sourceforge.net/rules/index.html&quot;&gt;rulesets index page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;PMD is integrated with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.&lt;/p&gt;
-&lt;h3&gt;Instructions for configuring PMD for Eclipse&lt;/h3&gt;
-
-
-&lt;p&gt;Let me walk you through the steps required to quickly configure it with your Eclipse installation. It works like a breeze.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Start Eclipse.&lt;/li&gt;
-&lt;li&gt;Start the installation procedure : select the Help&amp;gt;Software Updates&amp;gt;Find and Install... menu item.&lt;/li&gt;
-&lt;li&gt;Select &amp;quot;Search for new features to install&amp;quot; option and click Next.&lt;/li&gt;
-&lt;li&gt;Click New Remote Site...&lt;/li&gt;
-&lt;li&gt;Give a name (ie PMD Eclipse Site), enter the URL &lt;a href=&quot;http://pmd.sourceforge.net/eclipse&quot;&gt;http://pmd.sourceforge.net/eclipse&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Select this new site in the Sites to include in search list and click Next.&lt;/li&gt;
-&lt;li&gt;Select PMD for Eclipse 3 and Apache Xerces in the &amp;quot;Select the features to install&amp;quot; list and click Next.&lt;/li&gt;
-&lt;li&gt;Accept the terms of the license agreements and click Next.&lt;/li&gt;
-&lt;li&gt;Verify that the install location is your Eclipse installation directory, otherwise select the correct one, click Finish.&lt;/li&gt;
-&lt;li&gt;A warning appear telling the feature is not signed. Ignore and click Install to continue.&lt;/li&gt;
-&lt;li&gt;Accept to restart the workbench to load PMD into the workbench.
-Eclipse is restarted and a PMD welcome page is displayed : the plugin is correctly installed. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Writing custom rules&lt;/h3&gt;
-
-&lt;p&gt;It is interesting and important to note that you can write your custom rules. Writing PMD rules is cool because you don&amp;#39;t have to wait for PMD team to get around to implementing feature requests. Following are the two approaches to write custom rules.
-1. Write a rule using Java
-2. Write an XPath expression
-More details about each of these approaches can be found at &lt;a href=&quot;http://pmd.sourceforge.net/howtowritearule.html&quot;&gt;sourceforge&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Happy coding.. &lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Ajax primer</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
-      <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</guid>
-      <author></author>
-      <description>&lt;p&gt;The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;HTML (or XHTML) and CSS for presentation&lt;/li&gt;
-&lt;li&gt;The Document Object Model (DOM) for dynamic display of and interaction with data&lt;/li&gt;
-&lt;li&gt;XML for the interchange of data, and XSLT for its manipulation&lt;/li&gt;
-&lt;li&gt;The XMLHttpRequest object for asynchronous communication&lt;/li&gt;
-&lt;li&gt;JavaScript to bring these technologies together&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.&lt;/p&gt;
-&lt;p&gt;This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.&lt;/p&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    <item>
       <title>Beware of floating point numbers</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
       <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
@@ -968,30 +968,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;&lt;i&gt;
 &amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
 &lt;/i&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Use final liberally. Please do.</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
-      <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</guid>
-      <author></author>
-      <description>&lt;p&gt;Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;a final class cannot be extended&lt;/li&gt;
-&lt;li&gt;a final method cannot be overridden&lt;/li&gt;
-&lt;li&gt;final fields, parameters, and local variables cannot change their value once set&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the last case, &amp;quot;value&amp;quot; for primitives is understood in the usual sense, while &amp;quot;value&amp;quot; for objects means the object&amp;#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.&lt;/p&gt;
-&lt;p&gt;Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.&lt;/p&gt;
-&lt;p&gt;Using final :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;clearly communicates your intent&lt;/li&gt;
-&lt;li&gt;allows the compiler and virtual machine to perform minor optimizations&lt;/li&gt;
-&lt;li&gt;clearly flags items which are simpler in behavior - final says,  &amp;quot;If you are looking for complexity, you won&amp;#39;t find it here.&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     <item>
@@ -1035,6 +1011,30 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>Use final liberally. Please do.</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
+      <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</guid>
+      <author></author>
+      <description>&lt;p&gt;Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a final class cannot be extended&lt;/li&gt;
+&lt;li&gt;a final method cannot be overridden&lt;/li&gt;
+&lt;li&gt;final fields, parameters, and local variables cannot change their value once set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the last case, &amp;quot;value&amp;quot; for primitives is understood in the usual sense, while &amp;quot;value&amp;quot; for objects means the object&amp;#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.&lt;/p&gt;
+&lt;p&gt;Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.&lt;/p&gt;
+&lt;p&gt;Using final :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clearly communicates your intent&lt;/li&gt;
+&lt;li&gt;allows the compiler and virtual machine to perform minor optimizations&lt;/li&gt;
+&lt;li&gt;clearly flags items which are simpler in behavior - final says,  &amp;quot;If you are looking for complexity, you won&amp;#39;t find it here.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
       <title>Prefer composition over inheritance</title>
       <link>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</link>
       <pubDate>Sat, 07 Aug 2010 15:00:00 +0550</pubDate>
@@ -1068,6 +1068,20 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>A day trip to Dinant, belgium</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
+      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
+&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
+&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
+&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>History, heritage and beauty of Italy</title>
       <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
       <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
@@ -1079,6 +1093,16 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
 &lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
 &lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
+      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
+&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1098,38 +1122,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;Now we were at our last day in Paris but the good news was that we had the full day in hand as our bus was leaving from Paris at 6 in the evening. On this day we visited Chateau De Vincennes followed by the Parc Floral de Paris. It is relatively lesser known park but we enjoyed the most here. It was very beautiful and has some nice scenic spots to click some decent snaps.   If you are with kids they will love it. We also saw St. Marten canal and Paris De Nord on this day before heading towards our bus. &lt;/p&gt;
 &lt;p&gt;And just before we were to board our bus for Brussels and when I was feeling happy about being able to accomplish our trip within our allocated budget, Rajni started bargaining for a Perfume form Paris. Eventually we overshot our allocated budget by some 100 € :-(.&lt;/p&gt;
 &lt;p&gt;PS: I would like to thank this little french guy who helped us in reaching Champs-Elysees after we boarded the wrong bus and realized it half an hour later. It was difficult for him to make us understand(French Only Guy) the route so he came out of his way to make sure that we reach our destination safely . I learnt that language, nationality and color of skin is not a barrier if you are committed to help others, anywhere in this world.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>A day trip to Dinant, belgium</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
-      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
-&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
-&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
-&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
-      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
-      <author></author>
-      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
-&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
-&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
-&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
-It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
-&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
-&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
-&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1153,13 +1145,39 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 </description>
     </item>
     <item>
-      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
-      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
+      <title>Domtoren Utrecht, Netherlands</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
+      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
       <author></author>
-      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
-&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
+      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
+&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
+&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
+&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
+&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
+&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
+&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
+Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <author></author>
+      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
+&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
+&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
+&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
+It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
+&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
+&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
+&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1191,24 +1209,6 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 &lt;span2&gt;&lt;img src=&quot;https://lh5.googleusercontent.com/-PJUjJY7H-5Q/UR--ouCHg5I/AAAAAAAAZYY/6RmJksypA7Q/w352-h264-p-o/P1040813.JPG&quot; &gt;&lt;/span2&gt;
 &lt;span2&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-doW0wcSR15c/UR-_CgQ51OI/AAAAAAAAZZQ/4QNtJtl-ays/w345-h259-p-o/P1030536.JPG&quot;&gt;&lt;/span2&gt;
 &lt;span2&gt;&lt;img src=&quot;https://lh6.googleusercontent.com/-_7_x0VNACsI/UR--4ZuJ2LI/AAAAAAAAZY4/eX_c7crLv7c/w359-h269-p-o/P1040558.JPG&quot;&gt;&lt;/span2&gt;</description>
-    </item>
-    <item>
-      <title>Domtoren Utrecht, Netherlands</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
-      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
-      <author></author>
-      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
-&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
-&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
-&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
-&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
-&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
-&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
-Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
-</description>
     </item>
   </channel>
 </rss>
