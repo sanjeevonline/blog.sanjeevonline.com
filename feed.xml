@@ -66,20 +66,6 @@
 </description>
     </item>
     <item>
-      <title>High school reunion</title>
-      <link>http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</link>
-      <pubDate>Sun, 19 May 2013 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</guid>
-      <author></author>
-      <description>&lt;p&gt;It was pleasure meeting childhood friends from school today after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.&lt;/p&gt;
-&lt;p&gt;After reintroducing ourselves to each other, we were in back-to-school mode in no time and it was fun after that. We gossiped about everyone who was not around, discussed our school time heartbreaks, affairs, who-was-hot-who-was-not and what not. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;We all managed to finish a few pitchers of Kingfisher while these intresting conversations were on. It was all heart-to-heart conversations.. no polishing and no pretensions whatsoever.. Just like how we used to do it during our school days.&lt;/p&gt;
-&lt;p&gt;I am looking forward to many more such reunions and much more participation from my childhood buddies.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/articles/2013-05-19-High-School-Reunion/HighSchoolReunion.jpg&quot; alt=&quot;High School Reunion&quot;&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Choosing the right collection</title>
       <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
       <pubDate>Thu, 05 Jan 2012 15:00:00 +0550</pubDate>
@@ -123,6 +109,20 @@
 &lt;li&gt;a &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt; for the stored objects be defined&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>High school reunion</title>
+      <link>http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</link>
+      <pubDate>Sun, 19 May 2013 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</guid>
+      <author></author>
+      <description>&lt;p&gt;It was pleasure meeting childhood friends from school today after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.&lt;/p&gt;
+&lt;p&gt;After reintroducing ourselves to each other, we were in back-to-school mode in no time and it was fun after that. We gossiped about everyone who was not around, discussed our school time heartbreaks, affairs, who-was-hot-who-was-not and what not. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We all managed to finish a few pitchers of Kingfisher while these intresting conversations were on. It was all heart-to-heart conversations.. no polishing and no pretensions whatsoever.. Just like how we used to do it during our school days.&lt;/p&gt;
+&lt;p&gt;I am looking forward to many more such reunions and much more participation from my childhood buddies.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/2013-05-19-High-School-Reunion/HighSchoolReunion.jpg&quot; alt=&quot;High School Reunion&quot;&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -650,6 +650,23 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
+      <title>Prefer using parameterized types over raw types</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/</link>
+      <pubDate>Wed, 29 Dec 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/</guid>
+      <author></author>
+      <description>&lt;p&gt;When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;they usually require casts&lt;/li&gt;
+&lt;li&gt;they aren&amp;#39;t type safe, and some important kinds of errors will only appear at runtime&lt;/li&gt;
+&lt;li&gt;they are less expressive, and don&amp;#39;t self-document in the same way as parameterized types&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Unless you are using a JDK version prior to 1.5 I don&amp;#39;t see a reason why you should not use parameterized types in your code.&lt;/p&gt;
+&lt;p&gt;Happy coding !!&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Prefer switch over if-else</title>
       <link>http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</link>
       <pubDate>Tue, 28 Dec 2010 15:00:00 +0550</pubDate>
@@ -713,20 +730,32 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
-      <title>Prefer using parameterized types over raw types</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/</link>
-      <pubDate>Wed, 29 Dec 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/</guid>
+      <title>Avoiding null pointer exceptions</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
+      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
       <author></author>
-      <description>&lt;p&gt;When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;they usually require casts&lt;/li&gt;
-&lt;li&gt;they aren&amp;#39;t type safe, and some important kinds of errors will only appear at runtime&lt;/li&gt;
-&lt;li&gt;they are less expressive, and don&amp;#39;t self-document in the same way as parameterized types&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Unless you are using a JDK version prior to 1.5 I don&amp;#39;t see a reason why you should not use parameterized types in your code.&lt;/p&gt;
-&lt;p&gt;Happy coding !!&lt;/p&gt;
+&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
+&lt;p&gt;Happy coding!!&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -855,55 +884,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
-      <title>Avoiding null pointer exceptions</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
-      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
-      <author></author>
-      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
-&lt;p&gt;Happy coding!!&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Ajax primer</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
-      <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</guid>
-      <author></author>
-      <description>&lt;p&gt;The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;HTML (or XHTML) and CSS for presentation&lt;/li&gt;
-&lt;li&gt;The Document Object Model (DOM) for dynamic display of and interaction with data&lt;/li&gt;
-&lt;li&gt;XML for the interchange of data, and XSLT for its manipulation&lt;/li&gt;
-&lt;li&gt;The XMLHttpRequest object for asynchronous communication&lt;/li&gt;
-&lt;li&gt;JavaScript to bring these technologies together&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.&lt;/p&gt;
-&lt;p&gt;This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.&lt;/p&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    <item>
       <title>Use PMD - Programming Mistake Detector?</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</link>
       <pubDate>Sat, 30 Oct 2010 15:00:00 +0550</pubDate>
@@ -952,6 +932,69 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>Ajax primer</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
+      <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</guid>
+      <author></author>
+      <description>&lt;p&gt;The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;HTML (or XHTML) and CSS for presentation&lt;/li&gt;
+&lt;li&gt;The Document Object Model (DOM) for dynamic display of and interaction with data&lt;/li&gt;
+&lt;li&gt;XML for the interchange of data, and XSLT for its manipulation&lt;/li&gt;
+&lt;li&gt;The XMLHttpRequest object for asynchronous communication&lt;/li&gt;
+&lt;li&gt;JavaScript to bring these technologies together&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.&lt;/p&gt;
+&lt;p&gt;This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.&lt;/p&gt;
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    <item>
+      <title>Beware of floating point numbers</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
+      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <author></author>
+      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
+&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
+&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
+&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Use final liberally. Please do.</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
+      <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</guid>
+      <author></author>
+      <description>&lt;p&gt;Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a final class cannot be extended&lt;/li&gt;
+&lt;li&gt;a final method cannot be overridden&lt;/li&gt;
+&lt;li&gt;final fields, parameters, and local variables cannot change their value once set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the last case, &amp;quot;value&amp;quot; for primitives is understood in the usual sense, while &amp;quot;value&amp;quot; for objects means the object&amp;#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.&lt;/p&gt;
+&lt;p&gt;Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.&lt;/p&gt;
+&lt;p&gt;Using final :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clearly communicates your intent&lt;/li&gt;
+&lt;li&gt;allows the compiler and virtual machine to perform minor optimizations&lt;/li&gt;
+&lt;li&gt;clearly flags items which are simpler in behavior - final says,  &amp;quot;If you are looking for complexity, you won&amp;#39;t find it here.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
       <title>Package by feature not layer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/</link>
       <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
@@ -977,25 +1020,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.javagyan.com/articles/packagebyfeaturenotlayer&quot;&gt;Java Gyan&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    <item>
-      <title>Beware of floating point numbers</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
-      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
-      <author></author>
-      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
-&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
-&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
-&lt;/i&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1058,27 +1082,22 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Use final liberally. Please do.</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
-      <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</guid>
+      <title>A trip to the city of fashion, Paris</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/</link>
+      <pubDate>Sun, 30 May 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/</guid>
       <author></author>
-      <description>&lt;p&gt;Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;a final class cannot be extended&lt;/li&gt;
-&lt;li&gt;a final method cannot be overridden&lt;/li&gt;
-&lt;li&gt;final fields, parameters, and local variables cannot change their value once set&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the last case, &amp;quot;value&amp;quot; for primitives is understood in the usual sense, while &amp;quot;value&amp;quot; for objects means the object&amp;#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.&lt;/p&gt;
+      <description>&lt;p&gt;Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit&amp;#39;s school. So I have some time to pen down some moments from our Paris trip that we did earlier this month. &lt;/p&gt;
+&lt;p&gt;We had a lot of expectations from our trip when we left for Paris from Brussels. It was the city that I had thought about visiting at least once in this life while I was in junior school and when I first saw that movie &amp;quot;An evening in Paris&amp;quot; starring Shammi Kapoor. Of-course I am lying. But yes it was indeed a place where I wanted to be at least once and after our 5 days stay in Paris Trust me it is worth visiting at least once in your life. So if you happen to be in Europe for sometime for work or anything like that, DON&amp;#39;T MISS IT.&lt;/p&gt;
+&lt;p&gt;We had got a good deal for staying in Paris for 4 nights. It was actually not in Paris but about 20 km out of it. However, the city is so well connected that you hardly realize it.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.&lt;/p&gt;
-&lt;p&gt;Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.&lt;/p&gt;
-&lt;p&gt;Using final :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;clearly communicates your intent&lt;/li&gt;
-&lt;li&gt;allows the compiler and virtual machine to perform minor optimizations&lt;/li&gt;
-&lt;li&gt;clearly flags items which are simpler in behavior - final says,  &amp;quot;If you are looking for complexity, you won&amp;#39;t find it here.&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;We reached Paris on 13th May at around 12:30 PM. From there we directly went to our hotel, checked in and then left for a quick city tour. That  day we managed to see Defense Arc, Champs-Elysees, Arc De Triomphe and Concord. It was getting slightly darker and we were planning to call it a day. Just then we got our first glimpse of Eiffel Tower and we were fresh and energetic again and decided to see Eiffel from close before leaving for our hotel. In about 20 minutes and after changing couple of Metros we were there, right next to the Eiffel tower. It was stunningly beautiful. It was glowing in golden color with some white and purple lights twinkling all over it. We kept clicking photographs till both pairs of our batteries were dead. We had no option but to call it a day and leave for the hotel and because Ranit was also with us and it was already around 12 midnight it was a good decision.&lt;/p&gt;
+&lt;p&gt;Next day we spent at Disneyland, where Ranit was having all the fun and we were enjoying the excitement and spark in his eyes that he was having while waiting for his turn on the rides. Another good day gone.&lt;/p&gt;
+&lt;p&gt;Third day we was a few more beautiful places  like Montmatre, NotreDam, Bercy park and the wooden walking bridge over the Siene river of Paris. Also we couldn&amp;#39;t have enough of Eiffel tower on our first day in Paris, so decided to go there again and this time we spent some 2 hrs or more in the queue to get a ride to the top of Eiffel. Once  we were on the second floor of Eiffel and looked at the Paris city from there, we realized that it was worth the wait in the queue. We could not go to the top floor as that was closed for some maintenance :( probably for next time.&lt;/p&gt;
+&lt;p&gt;On the forth day we admired the history and art crafted on the walls (&amp;amp; Roofs)of Chateau De Versailles. Later we spent a lot of time in the beautiful gardens around the palace.&lt;/p&gt;
+&lt;p&gt;Now we were at our last day in Paris but the good news was that we had the full day in hand as our bus was leaving from Paris at 6 in the evening. On this day we visited Chateau De Vincennes followed by the Parc Floral de Paris. It is relatively lesser known park but we enjoyed the most here. It was very beautiful and has some nice scenic spots to click some decent snaps.   If you are with kids they will love it. We also saw St. Marten canal and Paris De Nord on this day before heading towards our bus. &lt;/p&gt;
+&lt;p&gt;And just before we were to board our bus for Brussels and when I was feeling happy about being able to accomplish our trip within our allocated budget, Rajni started bargaining for a Perfume form Paris. Eventually we overshot our allocated budget by some 100 € :-(.&lt;/p&gt;
+&lt;p&gt;PS: I would like to thank this little french guy who helped us in reaching Champs-Elysees after we boarded the wrong bus and realized it half an hour later. It was difficult for him to make us understand(French Only Guy) the route so he came out of his way to make sure that we reach our destination safely . I learnt that language, nationality and color of skin is not a barrier if you are committed to help others, anywhere in this world.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1096,22 +1115,21 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>A trip to the city of fashion, Paris</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/</link>
-      <pubDate>Sun, 30 May 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/</guid>
+      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
       <author></author>
-      <description>&lt;p&gt;Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit&amp;#39;s school. So I have some time to pen down some moments from our Paris trip that we did earlier this month. &lt;/p&gt;
-&lt;p&gt;We had a lot of expectations from our trip when we left for Paris from Brussels. It was the city that I had thought about visiting at least once in this life while I was in junior school and when I first saw that movie &amp;quot;An evening in Paris&amp;quot; starring Shammi Kapoor. Of-course I am lying. But yes it was indeed a place where I wanted to be at least once and after our 5 days stay in Paris Trust me it is worth visiting at least once in your life. So if you happen to be in Europe for sometime for work or anything like that, DON&amp;#39;T MISS IT.&lt;/p&gt;
-&lt;p&gt;We had got a good deal for staying in Paris for 4 nights. It was actually not in Paris but about 20 km out of it. However, the city is so well connected that you hardly realize it.&lt;/p&gt;
+      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
+&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
+&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;We reached Paris on 13th May at around 12:30 PM. From there we directly went to our hotel, checked in and then left for a quick city tour. That  day we managed to see Defense Arc, Champs-Elysees, Arc De Triomphe and Concord. It was getting slightly darker and we were planning to call it a day. Just then we got our first glimpse of Eiffel Tower and we were fresh and energetic again and decided to see Eiffel from close before leaving for our hotel. In about 20 minutes and after changing couple of Metros we were there, right next to the Eiffel tower. It was stunningly beautiful. It was glowing in golden color with some white and purple lights twinkling all over it. We kept clicking photographs till both pairs of our batteries were dead. We had no option but to call it a day and leave for the hotel and because Ranit was also with us and it was already around 12 midnight it was a good decision.&lt;/p&gt;
-&lt;p&gt;Next day we spent at Disneyland, where Ranit was having all the fun and we were enjoying the excitement and spark in his eyes that he was having while waiting for his turn on the rides. Another good day gone.&lt;/p&gt;
-&lt;p&gt;Third day we was a few more beautiful places  like Montmatre, NotreDam, Bercy park and the wooden walking bridge over the Siene river of Paris. Also we couldn&amp;#39;t have enough of Eiffel tower on our first day in Paris, so decided to go there again and this time we spent some 2 hrs or more in the queue to get a ride to the top of Eiffel. Once  we were on the second floor of Eiffel and looked at the Paris city from there, we realized that it was worth the wait in the queue. We could not go to the top floor as that was closed for some maintenance :( probably for next time.&lt;/p&gt;
-&lt;p&gt;On the forth day we admired the history and art crafted on the walls (&amp;amp; Roofs)of Chateau De Versailles. Later we spent a lot of time in the beautiful gardens around the palace.&lt;/p&gt;
-&lt;p&gt;Now we were at our last day in Paris but the good news was that we had the full day in hand as our bus was leaving from Paris at 6 in the evening. On this day we visited Chateau De Vincennes followed by the Parc Floral de Paris. It is relatively lesser known park but we enjoyed the most here. It was very beautiful and has some nice scenic spots to click some decent snaps.   If you are with kids they will love it. We also saw St. Marten canal and Paris De Nord on this day before heading towards our bus. &lt;/p&gt;
-&lt;p&gt;And just before we were to board our bus for Brussels and when I was feeling happy about being able to accomplish our trip within our allocated budget, Rajni started bargaining for a Perfume form Paris. Eventually we overshot our allocated budget by some 100 € :-(.&lt;/p&gt;
-&lt;p&gt;PS: I would like to thank this little french guy who helped us in reaching Champs-Elysees after we boarded the wrong bus and realized it half an hour later. It was difficult for him to make us understand(French Only Guy) the route so he came out of his way to make sure that we reach our destination safely . I learnt that language, nationality and color of skin is not a barrier if you are committed to help others, anywhere in this world.&lt;/p&gt;
+&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
+&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
+It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
+&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
+&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
+&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1135,6 +1153,16 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
+      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
+&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>The windmills of Kinderdijk, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</link>
       <pubDate>Thu, 31 Dec 2009 15:00:00 +0550</pubDate>
@@ -1152,22 +1180,17 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
-      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <title>A walk in Brussels</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</link>
+      <pubDate>Wed, 25 Nov 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</guid>
       <author></author>
-      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
-&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
-&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
-&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
-It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
-&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
-&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
-&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
-</description>
+      <description>&lt;p&gt;Arun and Anagha, our family friends, visited us in Brussels and we decided to do a little site seeing while they were around. Brussels has grown from a 10th-century fortress town to a sizeable city. It has a lot of popular places that a lot of tourists come to see.&lt;/p&gt;
+&lt;p&gt;We started our site seeing from the famous Atomium which is in Hayzel and is not very from where we live in Brussels. Rajni cooked some Parathas and snacks to carry along for site seeing. Later that day we went to see this place called Grand Place which is at walking distance from our place. It was a day well spent with family and friends.&lt;/p&gt;
+&lt;p&gt;Here are some pics from the tour.&lt;/p&gt;
+&lt;span2&gt;&lt;img src=&quot;https://lh5.googleusercontent.com/-PJUjJY7H-5Q/UR--ouCHg5I/AAAAAAAAZYY/6RmJksypA7Q/w352-h264-p-o/P1040813.JPG&quot; &gt;&lt;/span2&gt;
+&lt;span2&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-doW0wcSR15c/UR-_CgQ51OI/AAAAAAAAZZQ/4QNtJtl-ays/w345-h259-p-o/P1030536.JPG&quot;&gt;&lt;/span2&gt;
+&lt;span2&gt;&lt;img src=&quot;https://lh6.googleusercontent.com/-_7_x0VNACsI/UR--4ZuJ2LI/AAAAAAAAZY4/eX_c7crLv7c/w359-h269-p-o/P1040558.JPG&quot;&gt;&lt;/span2&gt;</description>
     </item>
     <item>
       <title>Domtoren Utrecht, Netherlands</title>
@@ -1186,29 +1209,6 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 &lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
 Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
 </description>
-    </item>
-    <item>
-      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
-      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
-&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>A walk in Brussels</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</link>
-      <pubDate>Wed, 25 Nov 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Arun and Anagha, our family friends, visited us in Brussels and we decided to do a little site seeing while they were around. Brussels has grown from a 10th-century fortress town to a sizeable city. It has a lot of popular places that a lot of tourists come to see.&lt;/p&gt;
-&lt;p&gt;We started our site seeing from the famous Atomium which is in Hayzel and is not very from where we live in Brussels. Rajni cooked some Parathas and snacks to carry along for site seeing. Later that day we went to see this place called Grand Place which is at walking distance from our place. It was a day well spent with family and friends.&lt;/p&gt;
-&lt;p&gt;Here are some pics from the tour.&lt;/p&gt;
-&lt;span2&gt;&lt;img src=&quot;https://lh5.googleusercontent.com/-PJUjJY7H-5Q/UR--ouCHg5I/AAAAAAAAZYY/6RmJksypA7Q/w352-h264-p-o/P1040813.JPG&quot; &gt;&lt;/span2&gt;
-&lt;span2&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-doW0wcSR15c/UR-_CgQ51OI/AAAAAAAAZZQ/4QNtJtl-ays/w345-h259-p-o/P1030536.JPG&quot;&gt;&lt;/span2&gt;
-&lt;span2&gt;&lt;img src=&quot;https://lh6.googleusercontent.com/-_7_x0VNACsI/UR--4ZuJ2LI/AAAAAAAAZY4/eX_c7crLv7c/w359-h269-p-o/P1040558.JPG&quot;&gt;&lt;/span2&gt;</description>
     </item>
   </channel>
 </rss>
