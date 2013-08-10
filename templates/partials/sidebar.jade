@@ -10,19 +10,26 @@
 - var map = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 div.sidebar-header
-  img(src="/assets/images/sanjeev_ranit.JPG")
+  a(href="http://www.sanjeevonline.com")
+    img(src="/assets/images/sanjeev_ranit.JPG")
   hr
-  a(href="http://www.sanjeevonline.com") About
+  h2
+    a(href="https://in.linkedin.com/in/sanjeevsprofile/") LinkedIn
   hr
-  a(href="https://github.com/sanjeevonline") Github
+  h2
+    a(href="https://github.com/sanjeevonline")
+      | Github
+    | &nbsp / &nbsp
+    a(href="https://twitter.com/sandee_sh")
+      | Twitter
   hr
-  a(href="http://www.javagyan.com") Java Gyan
+  h2
+    a(href="http://www.javagyan.com") JavaGyan
   hr
-  a(href="https://twitter.com/sandee_sh") Twitter
-  hr
+
 div.sidebar
   ol
     each article in articles
       li
         a(href=article.url)= article.title
-        |  - #{ map[article.date.getMonth()] } #{ article.date.toString().substring(8, 10) } #{article.date.getFullYear()}
+        br
