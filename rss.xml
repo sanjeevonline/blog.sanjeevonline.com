@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2013-08-10T07:38:47.858Z</updated>
+  <updated>2013-08-10T11:50:42.702Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
@@ -131,14 +131,14 @@
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Change default author name for JavaDocs in Eclipse]]></title>
-      <description><![CDATA[The auto generated Java docs at the class level picks the user name from the system user. - &lt;a href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/"&gt;Lire la suite&lt;/a&gt;]]></description>
+      <description><![CDATA[The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions - &lt;a href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/"&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/"></link>
       <id>http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</id>
       <updated>2011-08-03T09:30:00.000Z</updated>
       <published>2011-08-03T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/">The auto generated Java docs at the class level picks the user name from the system user.</content>
+      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/">The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions</content>
       <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/#disqus_thread" thr:count="0"></link>
       <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-08-03-Changing-Default-Author-Eclipse//lastest.rss</link>
       <thr:total>0</thr:total>

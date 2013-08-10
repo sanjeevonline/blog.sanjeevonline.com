@@ -5,9 +5,59 @@
     <atom:link href="http://blog.sanjeevonline.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://blog.sanjeevonline.com</link>
     <description>The Rootless Wanderer</description>
-    <pubDate>Tue, 28 May 2013 01:00:00 +0550</pubDate>
+    <pubDate>Wed, 01 Jun 2011 15:00:00 +0550</pubDate>
     <generator>The mighty Wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</link>
+      <pubDate>Wed, 01 Jun 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</guid>
+      <author></author>
+      <description>&lt;p&gt;Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.&lt;/p&gt;
+&lt;p&gt;For example, there’s almost no reason to ever want to step into Spring’s code or proxy classes (other than to learn more about them or maybe debug a potential bug in Spring). And normally I’m not interested in Java util classes (eg. ArrayList). This also goes for Hibernate, Apache Commons, Google and many other external libraries.&lt;/p&gt;
+&lt;p&gt;Fortunately, Eclipse makes it easy to specify which classes to skip by allowing step filters. This makes it easier to focus on your own code and also keeps your editor area clean since Eclipse won’t be opening classes in separate editors all the time.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Enable Step Filters&lt;/h3&gt;
+
+&lt;p&gt;To use step filters, the first step is to enable it. Eclipse comes with some default filters so let’s start by enabling them all. This will filter all Java classes (ie. java.) and all Sun classes (ie. sun.).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to Window &amp;gt; Preferences &amp;gt; Java &amp;gt; Debug &amp;gt; Step Filtering.&lt;/li&gt;
+&lt;li&gt;Select the option Use Step Filters.&lt;/li&gt;
+&lt;li&gt;Click Select All to enable all the filters.&lt;/li&gt;
+&lt;li&gt;Leave the other options below the filter list as-is.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here’s an example of what it should look like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/jO19t.jpg&quot; alt=&quot;Debug setting in eclipse&quot;&gt;&lt;/p&gt;
+&lt;p&gt;NB: Even with step filters enabled, you can still set breakpoints within any of these classes (if you have the source) and Eclipse will still stop at the breakpoint. Step filtering only affects the way that Step Into works.&lt;/p&gt;
+&lt;p&gt;Also note that Eclipse will still step into your classes if they’re called from the ignored classes. For example, when you call Collections.sort(List, Comparator) and pass your own Comparator implementation, Eclipse will not step into the sort code, but it will step into your Comparator when it’s called by the sort code.&lt;/p&gt;
+&lt;p&gt;If you want to change this behaviour (ie. prevent Eclipse from stopping in your method), then deselect Step through filters. However, I’d recommend only doing this if you’ve tried out the default, because most times you’ll probably want to step through your own code.&lt;/p&gt;
+&lt;h3&gt;The next step is to create some step filters of your own.&lt;/h3&gt;
+
+&lt;p&gt;Once you’ve enabled step filters, all you have to do is add the classes you want to filter. Let’s assume that we want to ignore all classes from Spring, especially proxy classes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If you’re not there already, go to Window &amp;gt; Preferences &amp;gt; Java &amp;gt; Debug &amp;gt; Step Filtering&lt;/li&gt;
+&lt;li&gt;Click Add Filter… A dialog should appear prompting you to enter a pattern&lt;/li&gt;
+&lt;li&gt;Enter a regular expression for the classes you want to filter in the Pattern to filter field then click Ok. In our example, enter org.springframework.* (see image below). It’s easier to specify the top level package name with an asterix at the end&lt;/li&gt;
+&lt;li&gt;Add another filter with the pattern $Proxy* to skip over Spring proxy classes (eg. when using Spring Transactions)&lt;/li&gt;
+&lt;li&gt;Click Ok on the Preferences dialog when you’re done&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here’s what the step filter pattern dialog should look like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/2RWRS.jpg&quot; alt=&quot;Filter pattern dialog&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Now when you use the debugger, you won’t be taken into Spring classes when you use Step Into (F5).&lt;/p&gt;
+&lt;h3&gt;Some ideas for custom filters&lt;/h3&gt;
+
+&lt;p&gt;In addition to the Spring classes, you might also want to consider adding the following common libraries to your step filters to make debugging easier:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;org.apache.*&lt;/li&gt;
+&lt;li&gt;org.hibernate.*&lt;/li&gt;
+&lt;li&gt;com.google.*&lt;/li&gt;
+&lt;li&gt;org.eclipse.*&lt;/li&gt;
+&lt;li&gt;org.osgi.*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The last two are especially useful if you’re doing Eclipse RCP and/or OSGi development.&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>New Date and Time API in Java 8</title>
       <link>http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/</link>
@@ -36,12 +86,12 @@
 &lt;ol&gt;
 &lt;li&gt;Dynamic blogs&lt;ol&gt;
 &lt;li&gt;Based on &lt;a href=&quot;http://www.enkiblog.com/&quot;&gt;Enki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Custom app that I can host on &lt;a href=&quot;/articles/2013-05-25-Moving-Blog-To-Wintersmith/www.heroku.com&quot;&gt;Heroku&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Custom app that I can host on &lt;a href=&quot;http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/www.heroku.com&quot;&gt;Heroku&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Java, Pyhton or go based app on &lt;a href=&quot;https://developers.google.com/appengine/&quot;&gt;Google App Engine&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;Static blogs&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;/articles/2013-05-25-Moving-Blog-To-Wintersmith/sites.google.com&quot;&gt;Google sites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/sites.google.com&quot;&gt;Google sites&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Ruby based &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Python based &lt;a href=&quot;http://hyde.github.io/&quot;&gt;Hyde&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;NodeJs based &lt;a href=&quot;http://jnordberg.github.io/wintersmith/&quot;&gt;Wintersmith&lt;/a&gt;&lt;/li&gt;
@@ -76,7 +126,7 @@
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;We all managed to finish a few pitchers of Kingfisher while these intresting conversations were on. It was all heart-to-heart conversations.. no polishing and no pretensions whatsoever.. Just like how we used to do it during our school days.&lt;/p&gt;
 &lt;p&gt;I am looking forward to many more such reunions and much more participation from my childhood buddies.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/articles/2013-05-19-High-School-Reunion/HighSchoolReunion.jpg&quot; alt=&quot;High School Reunion&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/HighSchoolReunion.jpg&quot; alt=&quot;High School Reunion&quot;&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -98,6 +148,52 @@
 &lt;li&gt;Begin regular use of static or dynamic code analysis tools.&lt;/li&gt;
 &lt;li&gt;Implement continous integration tools to proactively detect and prevent code quality issues&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Choosing the right collection</title>
+      <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
+      <pubDate>Thu, 05 Jan 2012 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</guid>
+      <author></author>
+      <description>&lt;p&gt;Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. &lt;/p&gt;
+&lt;p&gt;The best general purpose or &amp;#39;primary&amp;#39; implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation. That special feature is usually ordering or sorting.&lt;/p&gt;
+&lt;p&gt;Here, &amp;quot;ordering&amp;quot; refers to the order of items returned by an Iterator, and &amp;quot;sorting&amp;quot; refers to sorting items according to &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt; or &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt;. &lt;/p&gt;
+&lt;iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Principal features of non-primary implementations :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HashMap has slightly better performance than LinkedHashMap&lt;/li&gt;
+&lt;li&gt;HashSet has slightly better performance than LinkedHashSet&lt;/li&gt;
+&lt;li&gt;TreeSet is ordered and sorted, but slow&lt;/li&gt;
+&lt;li&gt;TreeMap is ordered and sorted, but slow&lt;/li&gt;
+&lt;li&gt;LinkedList has fast adding to the start of the list, and fast deletion from the interior via iteration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Iteration order for above implementations :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HashSet - undefined&lt;/li&gt;
+&lt;li&gt;HashMap - undefined&lt;/li&gt;
+&lt;li&gt;LinkedHashSet - insertion order&lt;/li&gt;
+&lt;li&gt;LinkedHashMap - insertion order of keys (by default), or &amp;#39;access order&amp;#39;&lt;/li&gt;
+&lt;li&gt;ArrayList - insertion order&lt;/li&gt;
+&lt;li&gt;LinkedList - insertion order&lt;/li&gt;
+&lt;li&gt;TreeSet - ascending order, according to Comparable / Comparator&lt;/li&gt;
+&lt;li&gt;TreeMap - ascending order of keys, according to Comparable / Comparator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For LinkedHashSet and LinkedHashMap, the re-insertion of an item does not affect insertion order.&lt;/p&gt;
+&lt;p&gt;While being used in a Map or Set, these items must not change state (hence, it is recommended that these items be immutable objects):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keys of a Map&lt;/li&gt;
+&lt;li&gt;items in a Set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sorting requires either that :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the stored items implement &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt; for the stored objects be defined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -302,49 +398,14 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
-      <title>Choosing the right collection</title>
-      <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
-      <pubDate>Thu, 05 Jan 2012 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</guid>
+      <title>Evolution of Java</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
+      <pubDate>Fri, 23 Mar 2012 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
       <author></author>
-      <description>&lt;p&gt;Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. &lt;/p&gt;
-&lt;p&gt;The best general purpose or &amp;#39;primary&amp;#39; implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation. That special feature is usually ordering or sorting.&lt;/p&gt;
-&lt;p&gt;Here, &amp;quot;ordering&amp;quot; refers to the order of items returned by an Iterator, and &amp;quot;sorting&amp;quot; refers to sorting items according to &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt; or &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt;. &lt;/p&gt;
-&lt;iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+      <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1meFweDCpygd0aF_ECNBMSo0L11zn944hXczhbUEh_nI/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot;  allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
 
-
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Principal features of non-primary implementations :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HashMap has slightly better performance than LinkedHashMap&lt;/li&gt;
-&lt;li&gt;HashSet has slightly better performance than LinkedHashSet&lt;/li&gt;
-&lt;li&gt;TreeSet is ordered and sorted, but slow&lt;/li&gt;
-&lt;li&gt;TreeMap is ordered and sorted, but slow&lt;/li&gt;
-&lt;li&gt;LinkedList has fast adding to the start of the list, and fast deletion from the interior via iteration&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Iteration order for above implementations :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HashSet - undefined&lt;/li&gt;
-&lt;li&gt;HashMap - undefined&lt;/li&gt;
-&lt;li&gt;LinkedHashSet - insertion order&lt;/li&gt;
-&lt;li&gt;LinkedHashMap - insertion order of keys (by default), or &amp;#39;access order&amp;#39;&lt;/li&gt;
-&lt;li&gt;ArrayList - insertion order&lt;/li&gt;
-&lt;li&gt;LinkedList - insertion order&lt;/li&gt;
-&lt;li&gt;TreeSet - ascending order, according to Comparable / Comparator&lt;/li&gt;
-&lt;li&gt;TreeMap - ascending order of keys, according to Comparable / Comparator&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For LinkedHashSet and LinkedHashMap, the re-insertion of an item does not affect insertion order.&lt;/p&gt;
-&lt;p&gt;While being used in a Map or Set, these items must not change state (hence, it is recommended that these items be immutable objects):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;keys of a Map&lt;/li&gt;
-&lt;li&gt;items in a Set&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Sorting requires either that :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the stored items implement &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;a &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt; for the stored objects be defined&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -374,17 +435,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
-      <title>Evolution of Java</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
-      <pubDate>Fri, 23 Mar 2012 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
-      <author></author>
-      <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1meFweDCpygd0aF_ECNBMSo0L11zn944hXczhbUEh_nI/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot;  allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
-
-</description>
-    </item>
-    <item>
       <title>Remote debugging in Eclipse</title>
       <link>http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</link>
       <pubDate>Fri, 08 Jul 2011 15:00:00 +0550</pubDate>
@@ -396,66 +446,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;span class=&quot;constant&quot;&gt;JAVA_OPTS&lt;/span&gt;=”&lt;span class=&quot;variable&quot;&gt;$JAVA_OPTS&lt;/span&gt; -&lt;span class=&quot;constant&quot;&gt;Xrunjdwp&lt;/span&gt;&lt;span class=&quot;symbol&quot;&gt;:transport=dt_socket&lt;/span&gt;,address=&lt;span class=&quot;number&quot;&gt;8787&lt;/span&gt;,serve &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Once done you can configure your eclipse remote application debugger on port 8787 and start debugging your application.&lt;/p&gt;
 &lt;p&gt;Happy debugging !!&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</link>
-      <pubDate>Wed, 01 Jun 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</guid>
-      <author></author>
-      <description>&lt;p&gt;Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.&lt;/p&gt;
-&lt;p&gt;For example, there’s almost no reason to ever want to step into Spring’s code or proxy classes (other than to learn more about them or maybe debug a potential bug in Spring). And normally I’m not interested in Java util classes (eg. ArrayList). This also goes for Hibernate, Apache Commons, Google and many other external libraries.&lt;/p&gt;
-&lt;p&gt;Fortunately, Eclipse makes it easy to specify which classes to skip by allowing step filters. This makes it easier to focus on your own code and also keeps your editor area clean since Eclipse won’t be opening classes in separate editors all the time.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h3&gt;Enable Step Filters&lt;/h3&gt;
-
-&lt;p&gt;To use step filters, the first step is to enable it. Eclipse comes with some default filters so let’s start by enabling them all. This will filter all Java classes (ie. java.) and all Sun classes (ie. sun.).&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Go to Window &amp;gt; Preferences &amp;gt; Java &amp;gt; Debug &amp;gt; Step Filtering.&lt;/li&gt;
-&lt;li&gt;Select the option Use Step Filters.&lt;/li&gt;
-&lt;li&gt;Click Select All to enable all the filters.&lt;/li&gt;
-&lt;li&gt;Leave the other options below the filter list as-is.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here’s an example of what it should look like:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/jO19t.jpg&quot; alt=&quot;Debug setting in eclipse&quot;&gt;&lt;/p&gt;
-&lt;p&gt;NB: Even with step filters enabled, you can still set breakpoints within any of these classes (if you have the source) and Eclipse will still stop at the breakpoint. Step filtering only affects the way that Step Into works.&lt;/p&gt;
-&lt;p&gt;Also note that Eclipse will still step into your classes if they’re called from the ignored classes. For example, when you call Collections.sort(List, Comparator) and pass your own Comparator implementation, Eclipse will not step into the sort code, but it will step into your Comparator when it’s called by the sort code.&lt;/p&gt;
-&lt;p&gt;If you want to change this behaviour (ie. prevent Eclipse from stopping in your method), then deselect Step through filters. However, I’d recommend only doing this if you’ve tried out the default, because most times you’ll probably want to step through your own code.&lt;/p&gt;
-&lt;h3&gt;The next step is to create some step filters of your own.&lt;/h3&gt;
-
-&lt;p&gt;Once you’ve enabled step filters, all you have to do is add the classes you want to filter. Let’s assume that we want to ignore all classes from Spring, especially proxy classes.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;If you’re not there already, go to Window &amp;gt; Preferences &amp;gt; Java &amp;gt; Debug &amp;gt; Step Filtering&lt;/li&gt;
-&lt;li&gt;Click Add Filter… A dialog should appear prompting you to enter a pattern&lt;/li&gt;
-&lt;li&gt;Enter a regular expression for the classes you want to filter in the Pattern to filter field then click Ok. In our example, enter org.springframework.* (see image below). It’s easier to specify the top level package name with an asterix at the end&lt;/li&gt;
-&lt;li&gt;Add another filter with the pattern $Proxy* to skip over Spring proxy classes (eg. when using Spring Transactions)&lt;/li&gt;
-&lt;li&gt;Click Ok on the Preferences dialog when you’re done&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here’s what the step filter pattern dialog should look like:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/2RWRS.jpg&quot; alt=&quot;Filter pattern dialog&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Now when you use the debugger, you won’t be taken into Spring classes when you use Step Into (F5).&lt;/p&gt;
-&lt;h3&gt;Some ideas for custom filters&lt;/h3&gt;
-
-&lt;p&gt;In addition to the Spring classes, you might also want to consider adding the following common libraries to your step filters to make debugging easier:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;org.apache.*&lt;/li&gt;
-&lt;li&gt;org.hibernate.*&lt;/li&gt;
-&lt;li&gt;com.google.*&lt;/li&gt;
-&lt;li&gt;org.eclipse.*&lt;/li&gt;
-&lt;li&gt;org.osgi.*&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The last two are especially useful if you’re doing Eclipse RCP and/or OSGi development.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Eclipse keyboard shortcuts</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</link>
-      <pubDate>Sun, 20 Mar 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</guid>
-      <author></author>
-      <description>&lt;p&gt;These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.5/&quot;&gt;http://creativecommons.org/licenses/by-sa/2.5/&lt;/a&gt;).&lt;/p&gt;
-&lt;iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
 </description>
     </item>
     <item>
@@ -512,6 +502,37 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
+      <title>Eclipse keyboard shortcuts</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</link>
+      <pubDate>Sun, 20 Mar 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</guid>
+      <author></author>
+      <description>&lt;p&gt;These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.5/&quot;&gt;http://creativecommons.org/licenses/by-sa/2.5/&lt;/a&gt;).&lt;/p&gt;
+&lt;iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    <item>
+      <title>Using Eclipse effectively</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
+      <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
+      <author></author>
+      <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
+&lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
+&lt;iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at &lt;a href=&quot;http://checkstyle.sourceforge.net/&quot;&gt;http://checkstyle.sourceforge.net/&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
+&lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
       <title>Troubleshooting eclipse issues</title>
       <link>http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/</link>
       <pubDate>Fri, 25 Feb 2011 15:00:00 +0550</pubDate>
@@ -542,27 +563,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;li&gt;&lt;p&gt;&lt;b&gt;Keyboard shortcuts&lt;/b&gt;
   It is productive and convenient to use keyboard shortcuts for performing certain tasks in eclipse rather than looking for options to do the same in various navigation menus. For example looking up references of a variable, method or a class can be quickly achieved via shortcut Ctrl+Shift+g. For your reference I have included a list of the most important keyboard shortcuts in my post Eclipse Keyboard Shortcuts&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    <item>
-      <title>Using Eclipse effectively</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
-      <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
-      <author></author>
-      <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
-&lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
-&lt;iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at &lt;a href=&quot;http://checkstyle.sourceforge.net/&quot;&gt;http://checkstyle.sourceforge.net/&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
-&lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -673,60 +673,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</guid>
       <author></author>
       <description>&lt;p&gt;In most cases switch will be lighter and performs faster than an if/else ladder. The compiler is able to optimize switch statements into a lookup table and perform compile-time checking for literals when dealing with enumerations, so I&amp;#39;d suggest that it&amp;#39;s usually preferable to use switch over if/else if if you&amp;#39;re dealing with numeric or enum types in Java. &lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Exception handling guidelines/best practices</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</link>
-      <pubDate>Mon, 20 Dec 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</guid>
-      <author></author>
-      <description>&lt;p&gt;Let’s review some basic exception design guidelines, summarized from Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock and Alan McKean, Addison-Wesley, 2003).&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;Don’t try to handle coding errors&lt;/b&gt;: Unless your software is required to take extraordinary measures in error scenarios, don’t spend a lot of time designing it to detect and recover from programming errors. In the case of an out-of-bounds array index, divide-by zero error, or any other programming error, the best strategy is to fail fast (and leave an audit trail of the problem that can be used to troubleshoot it).&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Avoid declaring lots of exception classes&lt;/b&gt;: Create a new exception class only when you expect some handling of the code to take a significantly different action, based on the exception type. In my experience it is rarely the case and exception classes available in java API serve the purpose.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;Recast lower-level exceptions to higher-level ones whenever you raise an abstraction level&lt;/b&gt;: Don’t let implementation details leak out of a method invocation as exceptions. Otherwise, your users might think your software is broken. When low-level exceptions percolate up to a high-level handler, there’s little context to assist the handler in making informed decisions or reporting conditions that are traceable to any obvious cause. Recasting an exception whenever you cross an abstraction boundary enables exception handlers higher up in the call chain to make more informed decisions. If you want to include a problem trace when recasting them, you can always create a chained exception. A chained exception provides added context and holds a reference to the original lower level exception. You can repeatedly chain exceptions.&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Provide context along with an exception&lt;/b&gt;: What’s most important in exception handling is information that helps create an informed response. Exception classes hold information. You can design them to be packed with information in addition to the bare-bones stack trace information provided by default. You might include values of parameters that raised the exception, specific error text, or detailed information that could be useful to plan a recovery. When an exception occurs, it is important that all pertinent data be passed to the exception&amp;#39;s constructor. Such data is often critical for understanding and solving the problem, and can greatly reduce the time needed to find a solution.
-The this reference is sometimes useful for this purpose, since toString is implicitly called. In addition, if you are defining exception classes yourself, you may even design your constructors to force the caller to pass the pertinent data.&lt;/p&gt;
-&lt;p&gt;  Uninformative stack traces are very frustrating for the maintainer, and often inspire even the most well-tempered programmers to temporarily violate local community standards for obscenity.&lt;/p&gt;
-&lt;p&gt;  Example&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;public final class RangeChecker {
-
-/**
-* Return &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt; only if &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;aNumber&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt; is in the range
-* &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;aLow..aHigh&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt; (inclusive).
-*
-* @param &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;aLow&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt; less than or equal to &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;aHigh&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;.
-*/
-static public boolean isInRange( int aNumber, int aLow, int aHigh ){
-  if (aLow &amp;gt; aHigh) {
-    throw new IllegalArgumentException(&quot;Low:&quot; + aLow + &quot; greater than High:&quot; + aHigh);
-  }
-  return (aLow &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;aNumber&lt;/span&gt; &amp;amp;&amp;amp; &lt;span class=&quot;attribute&quot;&gt;aNumber&lt;/span&gt; &amp;lt;= &lt;span class=&quot;attribute&quot;&gt;aHigh&lt;/span&gt;);
-}
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Handle exceptions as close to the problem as you can&lt;/b&gt;: As a first line of defense, consider the initial requestor. If the caller knows enough to perform a corrective action, you can rectify the condition on the spot. If you propagate an exception far away from the source, it can be difficult to trace the source. Often objects further away from the problem can’t make meaningful decisions.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Use exceptions only to signal emergencies&lt;/b&gt;: Exceptions shouldn’t be raised to indicate normal branching conditions that will alter the flow in the calling code. For example, a find operation may return zero, one, or many objects, so I wouldn’t raise an exception in this case. Instead, I’d design my find() method to return a null object or an empty collection. A dropped database connection, on the other hand, is a real emergency. There’s nothing that can be done to continue as planned.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Don’t repeatedly re-throw the same exception&lt;/b&gt;: Although exceptions don’t cost anything until they’re raised, programs that frequently raise exceptions run more slowly.&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Avoid empty catch blocks&lt;/b&gt;: It is usually a very bad idea to have an empty catch block because when the exception occurs, nothing happens, and the program fails for unknown reasons.&lt;/p&gt;
-&lt;p&gt;  In general, when a exception occurs, it can be thrown up to the caller, or it can be caught in a catch block. When catching an exception, some options include :&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   ** Inform &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; user (strongly recommended)
-   ** Log &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; problem, using &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;type&quot;&gt;application&lt;/span&gt; specific loggers &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; JDK logging services, &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; similar tool
-   ** Send an email describing &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; problem &lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt; an administrator&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;  Deciding what exactly to do seems to depend on the nature of the problem. If there is an actual bug in the program - a defect that needs to be fixed - then one might do all three of the above. In this case, the end user should likely be shown a generic &amp;quot;Sorry, we goofed&amp;quot; message, not a stack trace. It is usually considered bad form to display a stack trace to a non-technical end user, or if exposing a stack trace may be a security risk.&lt;/p&gt;
-&lt;p&gt;  If the exception does not represent a bug, then different behavior may be appropriate. For example, if a problem with user input is detected and an exception is thrown as a result, then merely informing the user of the problem might be all that is required.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;b&gt;Exception translation&lt;/b&gt;: Occasionally, it is appropriate to translate one type of exception into another.&lt;/p&gt;
-&lt;p&gt;  The data layer, for example, can profit from this technique. Here, the data layer seeks to hide almost all of its implementation details from other parts of the program. It even seeks to hide the basic persistence mechanism - whether or not a database or an ad hoc file scheme is used, for example.&lt;/p&gt;
-&lt;p&gt;  However, every persistence style has specific exceptions - SQLException for databases,  and IOException for files, for example. If the rest of the program is to remain truly ignorant of the persistence mechanism, then these exceptions cannot be allowed to propagate outside the data layer, and must be translated into some higher level abstraction - DataAccessException, say.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;Use template for repeated try-catch&lt;/b&gt;: Java&amp;#39;s try-catch blocks are particularly common when using APIs which give an important role to checked exceptions (such as SQLException in JDBC). When using such an API, many published examples simply repeat the same try-catch code structure whenever necessary. However, it is simple to eliminate such code repetition using the template method pattern. The idea is to define the structure of the try-catch block in one place, in an abstract base class (ABC). Such an ABC is then extended whenever that particular try-catch block is needed. The concrete implementation of such an ABC will often have simple, &amp;quot;straight line&amp;quot; code.&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     <item>
@@ -884,22 +830,77 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
-      <title>Beware of floating point numbers</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
-      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <title>Exception handling guidelines/best practices</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</link>
+      <pubDate>Mon, 20 Dec 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</guid>
       <author></author>
-      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
-&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+      <description>&lt;p&gt;Let’s review some basic exception design guidelines, summarized from Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock and Alan McKean, Addison-Wesley, 2003).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Don’t try to handle coding errors&lt;/b&gt;: Unless your software is required to take extraordinary measures in error scenarios, don’t spend a lot of time designing it to detect and recover from programming errors. In the case of an out-of-bounds array index, divide-by zero error, or any other programming error, the best strategy is to fail fast (and leave an audit trail of the problem that can be used to troubleshoot it).&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Avoid declaring lots of exception classes&lt;/b&gt;: Create a new exception class only when you expect some handling of the code to take a significantly different action, based on the exception type. In my experience it is rarely the case and exception classes available in java API serve the purpose.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
-&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
-&lt;/i&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Recast lower-level exceptions to higher-level ones whenever you raise an abstraction level&lt;/b&gt;: Don’t let implementation details leak out of a method invocation as exceptions. Otherwise, your users might think your software is broken. When low-level exceptions percolate up to a high-level handler, there’s little context to assist the handler in making informed decisions or reporting conditions that are traceable to any obvious cause. Recasting an exception whenever you cross an abstraction boundary enables exception handlers higher up in the call chain to make more informed decisions. If you want to include a problem trace when recasting them, you can always create a chained exception. A chained exception provides added context and holds a reference to the original lower level exception. You can repeatedly chain exceptions.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;b&gt;Provide context along with an exception&lt;/b&gt;: What’s most important in exception handling is information that helps create an informed response. Exception classes hold information. You can design them to be packed with information in addition to the bare-bones stack trace information provided by default. You might include values of parameters that raised the exception, specific error text, or detailed information that could be useful to plan a recovery. When an exception occurs, it is important that all pertinent data be passed to the exception&amp;#39;s constructor. Such data is often critical for understanding and solving the problem, and can greatly reduce the time needed to find a solution.
+The this reference is sometimes useful for this purpose, since toString is implicitly called. In addition, if you are defining exception classes yourself, you may even design your constructors to force the caller to pass the pertinent data.&lt;/p&gt;
+&lt;p&gt;  Uninformative stack traces are very frustrating for the maintainer, and often inspire even the most well-tempered programmers to temporarily violate local community standards for obscenity.&lt;/p&gt;
+&lt;p&gt;  Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public final class RangeChecker {
+
+/**
+* Return &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;true&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt; only if &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;aNumber&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt; is in the range
+* &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;aLow..aHigh&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt; (inclusive).
+*
+* @param &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;aLow&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt; less than or equal to &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;aHigh&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;title&quot;&gt;code&lt;/span&gt;&amp;gt;&lt;/span&gt;.
+*/
+static public boolean isInRange( int aNumber, int aLow, int aHigh ){
+  if (aLow &amp;gt; aHigh) {
+    throw new IllegalArgumentException(&quot;Low:&quot; + aLow + &quot; greater than High:&quot; + aHigh);
+  }
+  return (aLow &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;title&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;attribute&quot;&gt;aNumber&lt;/span&gt; &amp;amp;&amp;amp; &lt;span class=&quot;attribute&quot;&gt;aNumber&lt;/span&gt; &amp;lt;= &lt;span class=&quot;attribute&quot;&gt;aHigh&lt;/span&gt;);
+}
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;b&gt;Handle exceptions as close to the problem as you can&lt;/b&gt;: As a first line of defense, consider the initial requestor. If the caller knows enough to perform a corrective action, you can rectify the condition on the spot. If you propagate an exception far away from the source, it can be difficult to trace the source. Often objects further away from the problem can’t make meaningful decisions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Use exceptions only to signal emergencies&lt;/b&gt;: Exceptions shouldn’t be raised to indicate normal branching conditions that will alter the flow in the calling code. For example, a find operation may return zero, one, or many objects, so I wouldn’t raise an exception in this case. Instead, I’d design my find() method to return a null object or an empty collection. A dropped database connection, on the other hand, is a real emergency. There’s nothing that can be done to continue as planned.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Don’t repeatedly re-throw the same exception&lt;/b&gt;: Although exceptions don’t cost anything until they’re raised, programs that frequently raise exceptions run more slowly.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;b&gt;Avoid empty catch blocks&lt;/b&gt;: It is usually a very bad idea to have an empty catch block because when the exception occurs, nothing happens, and the program fails for unknown reasons.&lt;/p&gt;
+&lt;p&gt;  In general, when a exception occurs, it can be thrown up to the caller, or it can be caught in a catch block. When catching an exception, some options include :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   ** Inform &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; user (strongly recommended)
+   ** Log &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; problem, using &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;type&quot;&gt;application&lt;/span&gt; specific loggers &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; JDK logging services, &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; similar tool
+   ** Send an email describing &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; problem &lt;span class=&quot;keyword&quot;&gt;to&lt;/span&gt; an administrator&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;  Deciding what exactly to do seems to depend on the nature of the problem. If there is an actual bug in the program - a defect that needs to be fixed - then one might do all three of the above. In this case, the end user should likely be shown a generic &amp;quot;Sorry, we goofed&amp;quot; message, not a stack trace. It is usually considered bad form to display a stack trace to a non-technical end user, or if exposing a stack trace may be a security risk.&lt;/p&gt;
+&lt;p&gt;  If the exception does not represent a bug, then different behavior may be appropriate. For example, if a problem with user input is detected and an exception is thrown as a result, then merely informing the user of the problem might be all that is required.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;b&gt;Exception translation&lt;/b&gt;: Occasionally, it is appropriate to translate one type of exception into another.&lt;/p&gt;
+&lt;p&gt;  The data layer, for example, can profit from this technique. Here, the data layer seeks to hide almost all of its implementation details from other parts of the program. It even seeks to hide the basic persistence mechanism - whether or not a database or an ad hoc file scheme is used, for example.&lt;/p&gt;
+&lt;p&gt;  However, every persistence style has specific exceptions - SQLException for databases,  and IOException for files, for example. If the rest of the program is to remain truly ignorant of the persistence mechanism, then these exceptions cannot be allowed to propagate outside the data layer, and must be translated into some higher level abstraction - DataAccessException, say.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Use template for repeated try-catch&lt;/b&gt;: Java&amp;#39;s try-catch blocks are particularly common when using APIs which give an important role to checked exceptions (such as SQLException in JDBC). When using such an API, many published examples simply repeat the same try-catch code structure whenever necessary. However, it is simple to eliminate such code repetition using the template method pattern. The idea is to define the structure of the try-catch block in one place, in an abstract base class (ABC). Such an ABC is then extended whenever that particular try-catch block is needed. The concrete implementation of such an ABC will often have simple, &amp;quot;straight line&amp;quot; code.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Ajax primer</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
+      <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</guid>
+      <author></author>
+      <description>&lt;p&gt;The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;HTML (or XHTML) and CSS for presentation&lt;/li&gt;
+&lt;li&gt;The Document Object Model (DOM) for dynamic display of and interaction with data&lt;/li&gt;
+&lt;li&gt;XML for the interchange of data, and XSLT for its manipulation&lt;/li&gt;
+&lt;li&gt;The XMLHttpRequest object for asynchronous communication&lt;/li&gt;
+&lt;li&gt;JavaScript to bring these technologies together&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.&lt;/p&gt;
+&lt;p&gt;This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.&lt;/p&gt;
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
 </description>
     </item>
     <item>
@@ -951,26 +952,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Ajax primer</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
-      <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</guid>
-      <author></author>
-      <description>&lt;p&gt;The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;HTML (or XHTML) and CSS for presentation&lt;/li&gt;
-&lt;li&gt;The Document Object Model (DOM) for dynamic display of and interaction with data&lt;/li&gt;
-&lt;li&gt;XML for the interchange of data, and XSLT for its manipulation&lt;/li&gt;
-&lt;li&gt;The XMLHttpRequest object for asynchronous communication&lt;/li&gt;
-&lt;li&gt;JavaScript to bring these technologies together&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.&lt;/p&gt;
-&lt;p&gt;This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.&lt;/p&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    <item>
       <title>Package by feature not layer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/</link>
       <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
@@ -996,6 +977,25 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.javagyan.com/articles/packagebyfeaturenotlayer&quot;&gt;Java Gyan&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Beware of floating point numbers</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
+      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <author></author>
+      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
+&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
+&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
+&lt;/i&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1035,20 +1035,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>History, heritage and beauty of Italy</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
-      <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
-      <author></author>
-      <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
-&lt;p&gt;I found Rome very close and comparable to our India, particularly Delhi, in a number of ways. The weather, the people, their hospitality, familiar and pleasant smell of the soil after it rained, helping and fun loving nature of people, houses with roof top television antennas and scooters everywhere were some of the few similarities that we observed. We explored the rich history of Rome for three days followed by an afternoon at Ostia Antica beach. The weather was at our side most of the times except for the first day when it rained throughout the day and last day when we nearly fainted due the hot sunny day.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
-&lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
-&lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Prefer composition over inheritance</title>
       <link>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</link>
       <pubDate>Sat, 07 Aug 2010 15:00:00 +0550</pubDate>
@@ -1082,20 +1068,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>A day trip to Dinant, belgium</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
-      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
-&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
-&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
-&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>A trip to the city of fashion, Paris</title>
       <link>http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/</link>
       <pubDate>Sun, 30 May 2010 15:00:00 +0550</pubDate>
@@ -1112,6 +1084,20 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;Now we were at our last day in Paris but the good news was that we had the full day in hand as our bus was leaving from Paris at 6 in the evening. On this day we visited Chateau De Vincennes followed by the Parc Floral de Paris. It is relatively lesser known park but we enjoyed the most here. It was very beautiful and has some nice scenic spots to click some decent snaps.   If you are with kids they will love it. We also saw St. Marten canal and Paris De Nord on this day before heading towards our bus. &lt;/p&gt;
 &lt;p&gt;And just before we were to board our bus for Brussels and when I was feeling happy about being able to accomplish our trip within our allocated budget, Rajni started bargaining for a Perfume form Paris. Eventually we overshot our allocated budget by some 100 € :-(.&lt;/p&gt;
 &lt;p&gt;PS: I would like to thank this little french guy who helped us in reaching Champs-Elysees after we boarded the wrong bus and realized it half an hour later. It was difficult for him to make us understand(French Only Guy) the route so he came out of his way to make sure that we reach our destination safely . I learnt that language, nationality and color of skin is not a barrier if you are committed to help others, anywhere in this world.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>A day trip to Dinant, belgium</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
+      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
+&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
+&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
+&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1132,6 +1118,38 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;Sixth day was the most special one when Rohit drove us to Brighton beach which was some 60 miles from their house. Gungun was also with us on this trip. It was a nice sunny day again like on all other days during our trip. This was kind-of rare during that part of the year. We spent full day on this pebbled beach and it was so much fun. We spent some time playing some games in this casino-for-kids kind of thing. Gungun managed to win a few gifts from the games which were later distributed between Gungun and Ranit. Rohit also demonstrated his skills by winning us couple of toy dolphins by beating all his competitors in the fish race. He did that not once but twice and second time I was also competing with him. He won by a second or two. I was at second position.&lt;/p&gt;
 &lt;p&gt;Seventh day we spent at home. Usha Didi and Jija ji also joined us at Rohit&amp;#39;s house and in the evening Rohit stuffed us with a lot of chilled beer and delicious pork which he cooked himself.&lt;/p&gt;
 &lt;p&gt;Gungun, Simi and Rohit were awesome hosts throughout our stay in London and we thoroughly enjoyed each and every minute that we spent there.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>History, heritage and beauty of Italy</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
+      <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
+      <author></author>
+      <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
+&lt;p&gt;I found Rome very close and comparable to our India, particularly Delhi, in a number of ways. The weather, the people, their hospitality, familiar and pleasant smell of the soil after it rained, helping and fun loving nature of people, houses with roof top television antennas and scooters everywhere were some of the few similarities that we observed. We explored the rich history of Rome for three days followed by an afternoon at Ostia Antica beach. The weather was at our side most of the times except for the first day when it rained throughout the day and last day when we nearly fainted due the hot sunny day.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
+&lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
+&lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <author></author>
+      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
+&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
+&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
+&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
+It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
+&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
+&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
+&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1167,24 +1185,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
 &lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
 Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
-      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
-      <author></author>
-      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
-&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
-&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
-&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
-It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
-&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
-&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
-&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>

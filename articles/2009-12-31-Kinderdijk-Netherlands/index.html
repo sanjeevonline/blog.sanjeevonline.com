@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>The windmills of Kinderdijk, Netherlands - The Rootless Wanderer</title>
-    <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1.0, charset=utf-8">
+    <meta http-equiv="content-type" content="width=device-width, initial-scale=1.0, charset=utf-8">
     <link rel="stylesheet" href="/assets/css/github.css">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
@@ -12,23 +12,52 @@
     <style type="text/css">
       body { padding-top: 60px; padding-bottom: 40px; }
       
+      h1 {
+          font-size: 23pt;
+      }
+      
+      h2 {
+          font-size: 20pt;
+      }
+      
+      h3 {
+          font-size: 18pt;
+      }
+      
       /* Large desktop */
       @media (min-width: 1200px) {
           body { font-size:100%;}
-          .wrap {max-width:770px;}
+          h1 {
+              font-size: 23pt;
+          }
+          h2 {
+              font-size: 20pt;
+          }
+          h3 {
+              font-size: 18pt;
+          }
       }
       
       @media (max-width: 980px) {
          body {
             padding-top: 0px;
          }
+          h1 {
+              font-size: 20pt;
+          }
+          h2 {
+              font-size: 18pt;
+          }
+          h3 {
+              font-size: 16pt;
+          }
       }
       
       /* Portrait tablet to landscape and desktop */
       @media (min-width: 768px) and (max-width: 979px) {
           body { font-size:95%;}
           h1 {
-            font-size: 22pt;
+            font-size: 20pt;
           }
           h2 {
             font-size: 18pt;
@@ -42,7 +71,7 @@
       @media (max-width: 767px) {
           body { font-size:90%;}
           h1 {
-            font-size: 20pt;
+            font-size: 18pt;
           }
           h2 {
             font-size: 16pt;
@@ -56,7 +85,7 @@
       @media only screen and (max-width: 480px) {
           body { font-size:85%;}
           h1 {
-            font-size: 18pt;
+            font-size: 16pt;
           }
           h2 {
             font-size: 14pt;
@@ -74,7 +103,6 @@
           <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Rootless Wanderer</a>
             <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
               <ul class="nav">
-                <li><a href="/blog.html">Blog</a></li>
                 <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="/tag/agile.html">agile</a></li>
@@ -146,13 +174,13 @@
                   <td><a href="/articles/2009-11-30-Aquatopia-Aquarium/" title="travel">A day trip to Aquatopia at Antwerp, Brussels</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-01-01-Amsterdam-Netherlands/" title="travel">Day trip to the largest city of Netherlands - Amsterdam</a></td>
-                </tr>
-                <tr>
                   <td><a href="/articles/2009-12-30-Domtoren-Utrecht/" title="travel">Domtoren Utrecht, Netherlands</a></td>
                 </tr>
                 <tr>
                   <td><a href="/articles/2009-12-31-Kinderdijk-Netherlands/" title="travel">The windmills of Kinderdijk, Netherlands</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/articles/2010-01-01-Amsterdam-Netherlands/" title="travel">Day trip to the largest city of Netherlands - Amsterdam</a></td>
                 </tr>
               </tbody>
             </table>
@@ -170,52 +198,54 @@
           </article>
         </div>
         <div class="span3">
-          <div class="sidebar-header"><img src="/assets/images/sanjeev_ranit.JPG">
-            <hr><a href="http://www.sanjeevonline.com">About</a>
-            <hr><a href="https://github.com/sanjeevonline">Github</a>
-            <hr><a href="http://www.javagyan.com">Java Gyan</a>
-            <hr><a href="https://twitter.com/sandee_sh">Twitter</a>
+          <div class="sidebar-header"><a href="http://www.sanjeevonline.com"><img src="/assets/images/sanjeev_ranit.JPG"></a>
+            <hr>
+            <h2><a href="https://in.linkedin.com/in/sanjeevsprofile/">LinkedIn</a></h2>
+            <hr>
+            <h2><a href="https://github.com/sanjeevonline">Github</a>&nbsp / &nbsp<a href="https://twitter.com/sandee_sh">Twitter</a></h2>
+            <hr>
+            <h2><a href="http://www.javagyan.com">JavaGyan</a></h2>
             <hr>
           </div>
           <div class="sidebar">
             <ol>
-              <li><a href="/articles/2013-05-27-New-Date-Time-API/">New Date and Time API in Java 8</a> - May 28 2013</li>
-              <li><a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/">Re-platformig this blog to Wintersmith</a> - May 25 2013</li>
-              <li><a href="/articles/2013-05-19-High-School-Reunion/">High school reunion</a> - May 19 2013</li>
-              <li><a href="/articles/2012-11-21-Code-Quality-Agile-Teams/">Improving code quality in agile teams</a> - Nov 21 2012</li>
-              <li><a href="/articles/2012-05-11-Java7-Updates/">Java7 updates</a> - May 11 2012</li>
-              <li><a href="/articles/2011-10-23-Evolution-Of-Java/">Evolution of Java</a> - Mar 23 2012</li>
-              <li><a href="/articles/2012-01-05-Choosing-The-Right-Collections/">Choosing the right collection</a> - Jan 05 2012</li>
-              <li><a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/">Change default author name for JavaDocs in Eclipse</a> - Aug 03 2011</li>
-              <li><a href="/articles/2011-07-08-Remote-Debugging-Jboss/">Remote debugging in Eclipse</a> - Jul 08 2011</li>
-              <li><a href="/articles/2011-06-01-Debugging-With-Eclipse/">Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</a> - Jun 01 2011</li>
-              <li><a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">Eclipse keyboard shortcuts</a> - Mar 20 2011</li>
-              <li><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a> - Mar 20 2011</li>
-              <li><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a> - Mar 15 2011</li>
-              <li><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">Troubleshooting eclipse issues</a> - Feb 25 2011</li>
-              <li><a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a> - Jan 15 2011</li>
-              <li><a href="/articles/2010-12-31-Tricky-Overloading/">Overloading can be tricky</a> - Dec 31 2010</li>
-              <li><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">Prefer using parameterized types over raw types</a> - Dec 29 2010</li>
-              <li><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/">Prefer switch over if-else</a> - Dec 28 2010</li>
-              <li><a href="/articles/2010-12-10-Exception-Handling/">Exception handling guidelines/best practices</a> - Dec 20 2010</li>
-              <li><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">Avoiding null pointer exceptions</a> - Nov 27 2010</li>
-              <li><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a> - Nov 20 2010</li>
-              <li><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a> - Nov 18 2010</li>
-              <li><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a> - Oct 30 2010</li>
-              <li><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a> - Oct 20 2010</li>
-              <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a> - Oct 20 2010</li>
-              <li><a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a> - Sep 19 2010</li>
-              <li><a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a> - Aug 29 2010</li>
-              <li><a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a> - Aug 07 2010</li>
-              <li><a href="/articles/2010-07-07-Rome-Florence-Venice-Italy/">History, heritage and beauty of Italy</a> - Jul 07 2010</li>
-              <li><a href="/articles/2010-06-07-Dinant-Belgium/">A day trip to Dinant, belgium</a> - Jun 07 2010</li>
-              <li><a href="/articles/2010-05-30-Paris-France/">A trip to the city of fashion, Paris</a> - May 30 2010</li>
-              <li><a href="/articles/2010-05-20-London-England/">London, England</a> - May 05 2010</li>
-              <li><a href="/articles/2010-01-01-Amsterdam-Netherlands/">Day trip to the largest city of Netherlands - Amsterdam</a> - Jan 01 2010</li>
-              <li><a href="/articles/2009-12-31-Kinderdijk-Netherlands/">The windmills of Kinderdijk, Netherlands</a> - Dec 31 2009</li>
-              <li><a href="/articles/2009-12-30-Domtoren-Utrecht/">Domtoren Utrecht, Netherlands</a> - Dec 30 2009</li>
-              <li><a href="/articles/2009-11-30-Aquatopia-Aquarium/">A day trip to Aquatopia at Antwerp, Brussels</a> - Dec 01 2009</li>
-              <li><a href="/articles/2009-11-25-Brussels-Belgium/">A walk in Brussels</a> - Nov 25 2009</li>
+              <li><a href="/articles/2013-05-27-New-Date-Time-API/">New Date and Time API in Java 8</a><br></li>
+              <li><a href="/articles/2013-05-25-Moving-Blog-To-Wintersmith/">Re-platformig this blog to Wintersmith</a><br></li>
+              <li><a href="/articles/2013-05-19-High-School-Reunion/">High school reunion</a><br></li>
+              <li><a href="/articles/2012-11-21-Code-Quality-Agile-Teams/">Improving code quality in agile teams</a><br></li>
+              <li><a href="/articles/2012-05-11-Java7-Updates/">Java7 updates</a><br></li>
+              <li><a href="/articles/2011-10-23-Evolution-Of-Java/">Evolution of Java</a><br></li>
+              <li><a href="/articles/2012-01-05-Choosing-The-Right-Collections/">Choosing the right collection</a><br></li>
+              <li><a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/">Change default author name for JavaDocs in Eclipse</a><br></li>
+              <li><a href="/articles/2011-07-08-Remote-Debugging-Jboss/">Remote debugging in Eclipse</a><br></li>
+              <li><a href="/articles/2011-06-01-Debugging-With-Eclipse/">Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</a><br></li>
+              <li><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a><br></li>
+              <li><a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">Eclipse keyboard shortcuts</a><br></li>
+              <li><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a><br></li>
+              <li><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">Troubleshooting eclipse issues</a><br></li>
+              <li><a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a><br></li>
+              <li><a href="/articles/2010-12-31-Tricky-Overloading/">Overloading can be tricky</a><br></li>
+              <li><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">Prefer using parameterized types over raw types</a><br></li>
+              <li><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/">Prefer switch over if-else</a><br></li>
+              <li><a href="/articles/2010-12-10-Exception-Handling/">Exception handling guidelines/best practices</a><br></li>
+              <li><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">Avoiding null pointer exceptions</a><br></li>
+              <li><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a><br></li>
+              <li><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a><br></li>
+              <li><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a><br></li>
+              <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a><br></li>
+              <li><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a><br></li>
+              <li><a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a><br></li>
+              <li><a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a><br></li>
+              <li><a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a><br></li>
+              <li><a href="/articles/2010-07-07-Rome-Florence-Venice-Italy/">History, heritage and beauty of Italy</a><br></li>
+              <li><a href="/articles/2010-06-07-Dinant-Belgium/">A day trip to Dinant, belgium</a><br></li>
+              <li><a href="/articles/2010-05-30-Paris-France/">A trip to the city of fashion, Paris</a><br></li>
+              <li><a href="/articles/2010-05-20-London-England/">London, England</a><br></li>
+              <li><a href="/articles/2010-01-01-Amsterdam-Netherlands/">Day trip to the largest city of Netherlands - Amsterdam</a><br></li>
+              <li><a href="/articles/2009-12-31-Kinderdijk-Netherlands/">The windmills of Kinderdijk, Netherlands</a><br></li>
+              <li><a href="/articles/2009-12-30-Domtoren-Utrecht/">Domtoren Utrecht, Netherlands</a><br></li>
+              <li><a href="/articles/2009-11-30-Aquatopia-Aquarium/">A day trip to Aquatopia at Antwerp, Brussels</a><br></li>
+              <li><a href="/articles/2009-11-25-Brussels-Belgium/">A walk in Brussels</a><br></li>
             </ol>
           </div>
         </div>
@@ -254,10 +284,8 @@
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    |
        ga('create', 'UA-41222870-1', 'sanjeevonline.com');
        ga('send', 'pageview');
-    |
     </script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
   <title type="text">Sanjeev Kumar</title>
-  <updated>2013-08-10T07:38:47.558Z</updated>
+  <updated>2013-08-10T11:50:42.395Z</updated>
   <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com"></link>
   <id>http://blog.sanjeevonline.com</id>
   <link rel="self" type="application/atom+xml" href="http://feeds.feedburner.com/sanjeevonline/atom"></link>
@@ -129,8 +129,8 @@
     <updated>2011-08-03T09:30:00.000Z</updated>
     <published>2011-08-03T09:30:00.000Z</published>
     <category scheme="http://blog.sanjeevonline.com" term="eclipse" telabel="eclipse"></category>
-    <summary type="html"><![CDATA[The auto generated Java docs at the class level picks the user name from the system user.]]></summary>
-    <content type="html"><![CDATA[The auto generated Java docs at the class level picks the user name from the system user.]]></content>
+    <summary type="html"><![CDATA[The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions]]></summary>
+    <content type="html"><![CDATA[The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions]]></content>
     <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/#disqus_thread" thr:count="0"></link>
     <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-08-03-Changing-Default-Author-Eclipse//lastest.rss" thr:count="0"></link>
     <thr:total>0</thr:total>
