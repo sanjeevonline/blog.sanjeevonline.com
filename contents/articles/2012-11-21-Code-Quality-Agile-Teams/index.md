@@ -1,7 +1,7 @@
 ---
 template: article.jade
 title: Improving code quality in agile teams
-date: 2011-11-21 15:00
+date: 2012-11-21 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [agile]

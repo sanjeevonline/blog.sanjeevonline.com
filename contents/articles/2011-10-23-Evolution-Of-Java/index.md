@@ -1,7 +1,7 @@
 ---
 template: article.jade
 title: Evolution of Java
-date: 2011-10-23 15:00
+date: 2012-03-23 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
