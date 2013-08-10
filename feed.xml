@@ -80,56 +80,10 @@
 </description>
     </item>
     <item>
-      <title>Choosing the right collection</title>
-      <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
-      <pubDate>Thu, 05 Jan 2012 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</guid>
-      <author></author>
-      <description>&lt;p&gt;Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. &lt;/p&gt;
-&lt;p&gt;The best general purpose or &amp;#39;primary&amp;#39; implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation. That special feature is usually ordering or sorting.&lt;/p&gt;
-&lt;p&gt;Here, &amp;quot;ordering&amp;quot; refers to the order of items returned by an Iterator, and &amp;quot;sorting&amp;quot; refers to sorting items according to &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt; or &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt;. &lt;/p&gt;
-&lt;iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Principal features of non-primary implementations :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HashMap has slightly better performance than LinkedHashMap&lt;/li&gt;
-&lt;li&gt;HashSet has slightly better performance than LinkedHashSet&lt;/li&gt;
-&lt;li&gt;TreeSet is ordered and sorted, but slow&lt;/li&gt;
-&lt;li&gt;TreeMap is ordered and sorted, but slow&lt;/li&gt;
-&lt;li&gt;LinkedList has fast adding to the start of the list, and fast deletion from the interior via iteration&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Iteration order for above implementations :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;HashSet - undefined&lt;/li&gt;
-&lt;li&gt;HashMap - undefined&lt;/li&gt;
-&lt;li&gt;LinkedHashSet - insertion order&lt;/li&gt;
-&lt;li&gt;LinkedHashMap - insertion order of keys (by default), or &amp;#39;access order&amp;#39;&lt;/li&gt;
-&lt;li&gt;ArrayList - insertion order&lt;/li&gt;
-&lt;li&gt;LinkedList - insertion order&lt;/li&gt;
-&lt;li&gt;TreeSet - ascending order, according to Comparable / Comparator&lt;/li&gt;
-&lt;li&gt;TreeMap - ascending order of keys, according to Comparable / Comparator&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For LinkedHashSet and LinkedHashMap, the re-insertion of an item does not affect insertion order.&lt;/p&gt;
-&lt;p&gt;While being used in a Map or Set, these items must not change state (hence, it is recommended that these items be immutable objects):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;keys of a Map&lt;/li&gt;
-&lt;li&gt;items in a Set&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Sorting requires either that :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the stored items implement &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;a &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt; for the stored objects be defined&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Improving code quality in agile teams</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/</link>
-      <pubDate>Mon, 21 Nov 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/</guid>
+      <link>http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/</link>
+      <pubDate>Wed, 21 Nov 2012 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/</guid>
       <author></author>
       <description>&lt;p&gt;Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind.&lt;/p&gt;
 &lt;ul&gt;
@@ -148,9 +102,9 @@
     </item>
     <item>
       <title>Java7 updates</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/</link>
-      <pubDate>Fri, 11 Nov 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/</guid>
+      <link>http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/</link>
+      <pubDate>Fri, 11 May 2012 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/</guid>
       <author></author>
       <description>&lt;p&gt;It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples. 
 Contents&lt;/p&gt;
@@ -348,14 +302,49 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
-      <title>Evolution of Java</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
-      <pubDate>Sun, 23 Oct 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
+      <title>Choosing the right collection</title>
+      <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
+      <pubDate>Thu, 05 Jan 2012 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</guid>
       <author></author>
-      <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1meFweDCpygd0aF_ECNBMSo0L11zn944hXczhbUEh_nI/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot;  allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+      <description>&lt;p&gt;Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. &lt;/p&gt;
+&lt;p&gt;The best general purpose or &amp;#39;primary&amp;#39; implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation. That special feature is usually ordering or sorting.&lt;/p&gt;
+&lt;p&gt;Here, &amp;quot;ordering&amp;quot; refers to the order of items returned by an Iterator, and &amp;quot;sorting&amp;quot; refers to sorting items according to &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt; or &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt;. &lt;/p&gt;
+&lt;iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
 
+
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Principal features of non-primary implementations :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HashMap has slightly better performance than LinkedHashMap&lt;/li&gt;
+&lt;li&gt;HashSet has slightly better performance than LinkedHashSet&lt;/li&gt;
+&lt;li&gt;TreeSet is ordered and sorted, but slow&lt;/li&gt;
+&lt;li&gt;TreeMap is ordered and sorted, but slow&lt;/li&gt;
+&lt;li&gt;LinkedList has fast adding to the start of the list, and fast deletion from the interior via iteration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Iteration order for above implementations :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HashSet - undefined&lt;/li&gt;
+&lt;li&gt;HashMap - undefined&lt;/li&gt;
+&lt;li&gt;LinkedHashSet - insertion order&lt;/li&gt;
+&lt;li&gt;LinkedHashMap - insertion order of keys (by default), or &amp;#39;access order&amp;#39;&lt;/li&gt;
+&lt;li&gt;ArrayList - insertion order&lt;/li&gt;
+&lt;li&gt;LinkedList - insertion order&lt;/li&gt;
+&lt;li&gt;TreeSet - ascending order, according to Comparable / Comparator&lt;/li&gt;
+&lt;li&gt;TreeMap - ascending order of keys, according to Comparable / Comparator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For LinkedHashSet and LinkedHashMap, the re-insertion of an item does not affect insertion order.&lt;/p&gt;
+&lt;p&gt;While being used in a Map or Set, these items must not change state (hence, it is recommended that these items be immutable objects):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;keys of a Map&lt;/li&gt;
+&lt;li&gt;items in a Set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sorting requires either that :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the stored items implement &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt; for the stored objects be defined&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -382,6 +371,17 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;TestClass&lt;/span&gt; {&lt;/span&gt;
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Simple yet useful. Happy coding!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Evolution of Java</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
+      <pubDate>Fri, 23 Mar 2012 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
+      <author></author>
+      <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1meFweDCpygd0aF_ECNBMSo0L11zn944hXczhbUEh_nI/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot;  allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
 </description>
     </item>
     <item>
@@ -449,6 +449,16 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
+      <title>Eclipse keyboard shortcuts</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</link>
+      <pubDate>Sun, 20 Mar 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</guid>
+      <author></author>
+      <description>&lt;p&gt;These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.5/&quot;&gt;http://creativecommons.org/licenses/by-sa/2.5/&lt;/a&gt;).&lt;/p&gt;
+&lt;iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    <item>
       <title>Implementing Comparable and understanding compareTo</title>
       <link>http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/</link>
       <pubDate>Sun, 20 Mar 2011 15:00:00 +0550</pubDate>
@@ -502,37 +512,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
-      <title>Eclipse keyboard shortcuts</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</link>
-      <pubDate>Sun, 20 Mar 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</guid>
-      <author></author>
-      <description>&lt;p&gt;These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.5/&quot;&gt;http://creativecommons.org/licenses/by-sa/2.5/&lt;/a&gt;).&lt;/p&gt;
-&lt;iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    <item>
-      <title>Using Eclipse effectively</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
-      <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
-      <author></author>
-      <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
-&lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
-&lt;iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at &lt;a href=&quot;http://checkstyle.sourceforge.net/&quot;&gt;http://checkstyle.sourceforge.net/&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
-&lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    <item>
       <title>Troubleshooting eclipse issues</title>
       <link>http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/</link>
       <pubDate>Fri, 25 Feb 2011 15:00:00 +0550</pubDate>
@@ -563,6 +542,27 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;li&gt;&lt;p&gt;&lt;b&gt;Keyboard shortcuts&lt;/b&gt;
   It is productive and convenient to use keyboard shortcuts for performing certain tasks in eclipse rather than looking for options to do the same in various navigation menus. For example looking up references of a variable, method or a class can be quickly achieved via shortcut Ctrl+Shift+g. For your reference I have included a list of the most important keyboard shortcuts in my post Eclipse Keyboard Shortcuts&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Using Eclipse effectively</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
+      <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
+      <author></author>
+      <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
+&lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
+&lt;iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at &lt;a href=&quot;http://checkstyle.sourceforge.net/&quot;&gt;http://checkstyle.sourceforge.net/&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
+&lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -759,54 +759,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
-      <title>Use PMD - Programming Mistake Detector?</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</link>
-      <pubDate>Sat, 30 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</guid>
-      <author></author>
-      <description>&lt;h3&gt;About PMD&lt;/h3&gt;
-
-&lt;p&gt;How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &amp;quot;PMD&amp;quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. &lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.&lt;/p&gt;
-&lt;p&gt;PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Possible bugs - empty try/catch/finally/switch statements&lt;/li&gt;
-&lt;li&gt;Dead code - unused local variables, parameters and private methods&lt;/li&gt;
-&lt;li&gt;Suboptimal code - wasteful String/StringBuffer usage&lt;/li&gt;
-&lt;li&gt;Overcomplicated expressions - unnecessary if statements, for loops that could be while loops&lt;/li&gt;
-&lt;li&gt;Duplicate code - copied/pasted code means copied/pasted bugs&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You can &lt;a href=&quot;http://sourceforge.net/project/showfiles.php?group_id=56262&quot;&gt;download everything from here&lt;/a&gt;, and you can get an overview of all the rules at the &lt;a href=&quot;http://pmd.sourceforge.net/rules/index.html&quot;&gt;rulesets index page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;PMD is integrated with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.&lt;/p&gt;
-&lt;h3&gt;Instructions for configuring PMD for Eclipse&lt;/h3&gt;
-
-
-&lt;p&gt;Let me walk you through the steps required to quickly configure it with your Eclipse installation. It works like a breeze.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Start Eclipse.&lt;/li&gt;
-&lt;li&gt;Start the installation procedure : select the Help&amp;gt;Software Updates&amp;gt;Find and Install... menu item.&lt;/li&gt;
-&lt;li&gt;Select &amp;quot;Search for new features to install&amp;quot; option and click Next.&lt;/li&gt;
-&lt;li&gt;Click New Remote Site...&lt;/li&gt;
-&lt;li&gt;Give a name (ie PMD Eclipse Site), enter the URL &lt;a href=&quot;http://pmd.sourceforge.net/eclipse&quot;&gt;http://pmd.sourceforge.net/eclipse&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Select this new site in the Sites to include in search list and click Next.&lt;/li&gt;
-&lt;li&gt;Select PMD for Eclipse 3 and Apache Xerces in the &amp;quot;Select the features to install&amp;quot; list and click Next.&lt;/li&gt;
-&lt;li&gt;Accept the terms of the license agreements and click Next.&lt;/li&gt;
-&lt;li&gt;Verify that the install location is your Eclipse installation directory, otherwise select the correct one, click Finish.&lt;/li&gt;
-&lt;li&gt;A warning appear telling the feature is not signed. Ignore and click Install to continue.&lt;/li&gt;
-&lt;li&gt;Accept to restart the workbench to load PMD into the workbench.
-Eclipse is restarted and a PMD welcome page is displayed : the plugin is correctly installed. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Writing custom rules&lt;/h3&gt;
-
-&lt;p&gt;It is interesting and important to note that you can write your custom rules. Writing PMD rules is cool because you don&amp;#39;t have to wait for PMD team to get around to implementing feature requests. Following are the two approaches to write custom rules.
-1. Write a rule using Java
-2. Write an XPath expression
-More details about each of these approaches can be found at &lt;a href=&quot;http://pmd.sourceforge.net/howtowritearule.html&quot;&gt;sourceforge&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Happy coding.. &lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Crave for immutable classes</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/</link>
       <pubDate>Sat, 20 Nov 2010 15:00:00 +0550</pubDate>
@@ -932,6 +884,73 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>Beware of floating point numbers</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
+      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <author></author>
+      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
+&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
+&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
+&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Use PMD - Programming Mistake Detector?</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</link>
+      <pubDate>Sat, 30 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</guid>
+      <author></author>
+      <description>&lt;h3&gt;About PMD&lt;/h3&gt;
+
+&lt;p&gt;How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &amp;quot;PMD&amp;quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.&lt;/p&gt;
+&lt;p&gt;PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Possible bugs - empty try/catch/finally/switch statements&lt;/li&gt;
+&lt;li&gt;Dead code - unused local variables, parameters and private methods&lt;/li&gt;
+&lt;li&gt;Suboptimal code - wasteful String/StringBuffer usage&lt;/li&gt;
+&lt;li&gt;Overcomplicated expressions - unnecessary if statements, for loops that could be while loops&lt;/li&gt;
+&lt;li&gt;Duplicate code - copied/pasted code means copied/pasted bugs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can &lt;a href=&quot;http://sourceforge.net/project/showfiles.php?group_id=56262&quot;&gt;download everything from here&lt;/a&gt;, and you can get an overview of all the rules at the &lt;a href=&quot;http://pmd.sourceforge.net/rules/index.html&quot;&gt;rulesets index page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PMD is integrated with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.&lt;/p&gt;
+&lt;h3&gt;Instructions for configuring PMD for Eclipse&lt;/h3&gt;
+
+
+&lt;p&gt;Let me walk you through the steps required to quickly configure it with your Eclipse installation. It works like a breeze.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start Eclipse.&lt;/li&gt;
+&lt;li&gt;Start the installation procedure : select the Help&amp;gt;Software Updates&amp;gt;Find and Install... menu item.&lt;/li&gt;
+&lt;li&gt;Select &amp;quot;Search for new features to install&amp;quot; option and click Next.&lt;/li&gt;
+&lt;li&gt;Click New Remote Site...&lt;/li&gt;
+&lt;li&gt;Give a name (ie PMD Eclipse Site), enter the URL &lt;a href=&quot;http://pmd.sourceforge.net/eclipse&quot;&gt;http://pmd.sourceforge.net/eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Select this new site in the Sites to include in search list and click Next.&lt;/li&gt;
+&lt;li&gt;Select PMD for Eclipse 3 and Apache Xerces in the &amp;quot;Select the features to install&amp;quot; list and click Next.&lt;/li&gt;
+&lt;li&gt;Accept the terms of the license agreements and click Next.&lt;/li&gt;
+&lt;li&gt;Verify that the install location is your Eclipse installation directory, otherwise select the correct one, click Finish.&lt;/li&gt;
+&lt;li&gt;A warning appear telling the feature is not signed. Ignore and click Install to continue.&lt;/li&gt;
+&lt;li&gt;Accept to restart the workbench to load PMD into the workbench.
+Eclipse is restarted and a PMD welcome page is displayed : the plugin is correctly installed. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Writing custom rules&lt;/h3&gt;
+
+&lt;p&gt;It is interesting and important to note that you can write your custom rules. Writing PMD rules is cool because you don&amp;#39;t have to wait for PMD team to get around to implementing feature requests. Following are the two approaches to write custom rules.
+1. Write a rule using Java
+2. Write an XPath expression
+More details about each of these approaches can be found at &lt;a href=&quot;http://pmd.sourceforge.net/howtowritearule.html&quot;&gt;sourceforge&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy coding.. &lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Ajax primer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
       <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
@@ -980,25 +999,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Beware of floating point numbers</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
-      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
-      <author></author>
-      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
-&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
-&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
-&lt;/i&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Use final liberally. Please do.</title>
       <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
       <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
@@ -1035,6 +1035,20 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>History, heritage and beauty of Italy</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
+      <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
+      <author></author>
+      <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
+&lt;p&gt;I found Rome very close and comparable to our India, particularly Delhi, in a number of ways. The weather, the people, their hospitality, familiar and pleasant smell of the soil after it rained, helping and fun loving nature of people, houses with roof top television antennas and scooters everywhere were some of the few similarities that we observed. We explored the rich history of Rome for three days followed by an afternoon at Ostia Antica beach. The weather was at our side most of the times except for the first day when it rained throughout the day and last day when we nearly fainted due the hot sunny day.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
+&lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
+&lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Prefer composition over inheritance</title>
       <link>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</link>
       <pubDate>Sat, 07 Aug 2010 15:00:00 +0550</pubDate>
@@ -1065,20 +1079,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;li&gt;different packages are often under the control of different programmers - extending a class in a different package is risky&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A common exception is the template method design pattern. There, the safest style is to make all items in the abstract base class final, except for the single abstract method which needs to be implemented by the subclass.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>History, heritage and beauty of Italy</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
-      <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
-      <author></author>
-      <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
-&lt;p&gt;I found Rome very close and comparable to our India, particularly Delhi, in a number of ways. The weather, the people, their hospitality, familiar and pleasant smell of the soil after it rained, helping and fun loving nature of people, houses with roof top television antennas and scooters everywhere were some of the few similarities that we observed. We explored the rich history of Rome for three days followed by an afternoon at Ostia Antica beach. The weather was at our side most of the times except for the first day when it rained throughout the day and last day when we nearly fainted due the hot sunny day.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
-&lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
-&lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1152,24 +1152,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
-      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
-      <author></author>
-      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
-&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
-&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
-&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
-It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
-&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
-&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
-&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Domtoren Utrecht, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
       <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
@@ -1185,6 +1167,24 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 &lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
 &lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
 Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <author></author>
+      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
+&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
+&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
+&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
+It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
+&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
+&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
+&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>

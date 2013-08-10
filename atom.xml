@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
   <title type="text">Sanjeev Kumar</title>
-  <updated>2013-08-09T06:14:57.711Z</updated>
+  <updated>2013-08-10T07:38:47.558Z</updated>
   <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com"></link>
   <id>http://blog.sanjeevonline.com</id>
   <link rel="self" type="application/atom+xml" href="http://feeds.feedburner.com/sanjeevonline/atom"></link>
@@ -58,6 +58,54 @@
     <author>
       <name>sanjeev</name>
     </author>
+    <title type="html"><![CDATA[Improving code quality in agile teams]]></title>
+    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/"></link>
+    <id>http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/</id>
+    <updated>2012-11-21T09:30:00.000Z</updated>
+    <published>2012-11-21T09:30:00.000Z</published>
+    <category scheme="http://blog.sanjeevonline.com" term="agile" telabel="agile"></category>
+    <summary type="html"><![CDATA[Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind]]></summary>
+    <content type="html"><![CDATA[Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind]]></content>
+    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/#disqus_thread" thr:count="0"></link>
+    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2012-11-21-Code-Quality-Agile-Teams//lastest.rss" thr:count="0"></link>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+    </author>
+    <title type="html"><![CDATA[Java7 updates]]></title>
+    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/"></link>
+    <id>http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/</id>
+    <updated>2012-05-11T09:30:00.000Z</updated>
+    <published>2012-05-11T09:30:00.000Z</published>
+    <category scheme="http://blog.sanjeevonline.com" term="java" telabel="java"></category>
+    <summary type="html"><![CDATA[It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples]]></summary>
+    <content type="html"><![CDATA[It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples]]></content>
+    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/#disqus_thread" thr:count="0"></link>
+    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2012-05-11-Java7-Updates//lastest.rss" thr:count="0"></link>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+    </author>
+    <title type="html"><![CDATA[Evolution of Java]]></title>
+    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/"></link>
+    <id>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</id>
+    <updated>2012-03-23T09:30:00.000Z</updated>
+    <published>2012-03-23T09:30:00.000Z</published>
+    <category scheme="http://blog.sanjeevonline.com" term="java" telabel="java"></category>
+    <summary type="html"><![CDATA[I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.]]></summary>
+    <content type="html"><![CDATA[I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.]]></content>
+    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/#disqus_thread" thr:count="0"></link>
+    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-10-23-Evolution-Of-Java//lastest.rss" thr:count="0"></link>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+    </author>
     <title type="html"><![CDATA[Choosing the right collection]]></title>
     <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"></link>
     <id>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</id>
@@ -69,54 +117,6 @@
     <content type="html"><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ...]]></content>
     <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread" thr:count="0"></link>
     <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2012-01-05-Choosing-The-Right-Collections//lastest.rss" thr:count="0"></link>
-    <thr:total>0</thr:total>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-    </author>
-    <title type="html"><![CDATA[Improving code quality in agile teams]]></title>
-    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/"></link>
-    <id>http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/</id>
-    <updated>2011-11-21T09:30:00.000Z</updated>
-    <published>2011-11-21T09:30:00.000Z</published>
-    <category scheme="http://blog.sanjeevonline.com" term="agile" telabel="agile"></category>
-    <summary type="html"><![CDATA[Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind]]></summary>
-    <content type="html"><![CDATA[Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind]]></content>
-    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-11-21-Code-Quality-Agile-Teams/#disqus_thread" thr:count="0"></link>
-    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-11-21-Code-Quality-Agile-Teams//lastest.rss" thr:count="0"></link>
-    <thr:total>0</thr:total>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-    </author>
-    <title type="html"><![CDATA[Java7 updates]]></title>
-    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/"></link>
-    <id>http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/</id>
-    <updated>2011-11-11T09:30:00.000Z</updated>
-    <published>2011-11-11T09:30:00.000Z</published>
-    <category scheme="http://blog.sanjeevonline.com" term="java" telabel="java"></category>
-    <summary type="html"><![CDATA[It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples]]></summary>
-    <content type="html"><![CDATA[It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples]]></content>
-    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-11-11-Java7-Updates/#disqus_thread" thr:count="0"></link>
-    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-11-11-Java7-Updates//lastest.rss" thr:count="0"></link>
-    <thr:total>0</thr:total>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-    </author>
-    <title type="html"><![CDATA[Evolution of Java]]></title>
-    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/"></link>
-    <id>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</id>
-    <updated>2011-10-23T09:30:00.000Z</updated>
-    <published>2011-10-23T09:30:00.000Z</published>
-    <category scheme="http://blog.sanjeevonline.com" term="java" telabel="java"></category>
-    <summary type="html"><![CDATA[I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.]]></summary>
-    <content type="html"><![CDATA[I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.]]></content>
-    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/#disqus_thread" thr:count="0"></link>
-    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-10-23-Evolution-Of-Java//lastest.rss" thr:count="0"></link>
     <thr:total>0</thr:total>
   </entry>
   <entry>
