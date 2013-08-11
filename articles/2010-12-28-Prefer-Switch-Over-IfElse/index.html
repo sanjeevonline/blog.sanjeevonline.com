@@ -9,7 +9,266 @@
     <!--meta(http-equiv="content-type", content='width=device-width, initial-scale=1.0, charset=utf-8')-->
     <link rel="stylesheet" href="/assets/css/github.css">
     <link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap.min.css">
-    <style type="text/css">body { padding-top: 60px; padding-bottom: 40px; }</style>
+    <style type="text/css">
+      body {
+          padding-top: 60px;
+          padding-bottom: 40px;
+      }
+      
+          /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body {
+              font-size: 85%;
+          }
+          
+          h1 {
+              font-size: 22pt;
+          }
+          
+          h2 {
+              font-size: 20pt;
+          }
+          
+          h3 {
+              font-size: 18pt;
+          }
+          
+          .topsocial {
+              min-height: 65px;
+              text-align: center;
+          }
+          
+          .social {
+              float: left;
+              margin-right: 15px;
+          }
+          
+          .social:first-child {
+              margin-right: 15px;
+          }
+          
+          .social:last-child {
+              margin-right: 0px;
+          }
+      }
+      
+          /* Smartphones (portrait and landscape) ----------- */
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 480px) {
+          body {
+              font-size: 85%;
+          }
+          
+          h1 {
+              font-size: 22pt;
+          }
+          
+          h2 {
+              font-size: 20pt;
+          }
+          
+          h3 {
+              font-size: 18pt;
+          }
+          
+          .topsocial {
+              min-height: 65px;
+              text-align: center;
+          }
+          
+          .social {
+              float: left;
+              margin-right: 15px;
+          }
+          
+          .social:first-child {
+              margin-right: 15px;
+          }
+          
+          .social:last-child {
+              margin-right: 0px;
+          }
+      }
+      
+          /* Smartphones (landscape) ----------- */
+      @media only screen
+      and (min-width : 321px) {
+          body {
+              font-size: 85%;
+          }
+          
+          h1 {
+              font-size: 22pt;
+          }
+          
+          h2 {
+              font-size: 20pt;
+          }
+          
+          h3 {
+              font-size: 18pt;
+          }
+          
+          .topsocial {
+              min-height: 65px;
+              text-align: center;
+          }
+          
+          .social {
+              float: left;
+              margin-right: 15px;
+          }
+          
+          .social:first-child {
+              margin-right: 15px;
+          }
+          
+          .social:last-child {
+              margin-right: 0px;
+          }
+      }
+      
+          /* Smartphones (portrait) ----------- */
+      @media only screen
+      and (max-width : 320px) {
+          body {
+              font-size: 85%;
+          }
+          
+          h1 {
+              font-size: 22pt;
+          }
+          
+          h2 {
+              font-size: 20pt;
+          }
+          
+          h3 {
+              font-size: 18pt;
+          }
+          
+          .topsocial {
+              min-height: 65px;
+              text-align: center;
+          }
+          
+          .social {
+              float: left;
+              margin-right: 15px;
+          }
+          
+          .social:first-child {
+              margin-right: 15px;
+          }
+          
+          .social:last-child {
+              margin-right: 0px;
+          }
+      }
+      
+          /* iPads (portrait and landscape) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px) {
+          body {
+              font-size: 95%;
+          }
+          
+          h1 {
+              font-size: 24pt;
+          }
+          
+          h2 {
+              font-size: 22pt;
+          }
+          
+          h3 {
+              font-size: 20pt;
+          }
+      }
+      
+          /* iPads (landscape) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : landscape) {
+          body {
+              font-size: 95%;
+          }
+          
+          h1 {
+              font-size: 24pt;
+          }
+          
+          h2 {
+              font-size: 22pt;
+          }
+          
+          h3 {
+              font-size: 20pt;
+          }
+      }
+      
+      /* iPads (portrait) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : portrait) {
+          #sidebar {
+              display: inline-block;
+              margin-top: 20px;
+              width: 100%;
+          }
+          
+          body {
+              font-size: 95%;
+          }
+          
+          h1 {
+              font-size: 24pt;
+          }
+          
+          h2 {
+              font-size: 22pt;
+          }
+          
+          h3 {
+              font-size: 20pt;
+          }
+      }
+      
+          /* Desktops and laptops ----------- */
+      @media only screen
+      and (min-width : 1224px) {
+          body {
+              font-size: 100%;
+          }
+          
+          h1 {
+              font-size: 26pt;
+          }
+          
+          h2 {
+              font-size: 24pt;
+          }
+          
+          h3 {
+              font-size: 22pt;
+          }
+      }
+      
+          /* Large screens ----------- */
+      @media only screen
+      and (min-width : 1824px) {
+          /* Styles */
+      }
+      
+          /* iPhone 4 ----------- */
+      @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+          /* Styles */
+      }
+    </style>
     <link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="/assets/css/prettify.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Serif">
@@ -79,19 +338,19 @@
             <table class="table table-striped">
               <tbody>
                 <tr>
-                  <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
-                </tr>
-                <tr>
                   <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
                 </tr>
                 <tr>
                   <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+                  <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
                 </tr>
                 <tr>
                   <td><a href="/articles/2010-10-30-Package-By-Features/" title="best-practices,java">Package by feature not layer</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
                 </tr>
               </tbody>
             </table>

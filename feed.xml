@@ -539,6 +539,27 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
+      <title>Using Eclipse effectively</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
+      <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
+      <author></author>
+      <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
+&lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
+&lt;iframe width='100%' height='500' frameborder='0' src='http://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at &lt;a href=&quot;http://checkstyle.sourceforge.net/&quot;&gt;http://checkstyle.sourceforge.net/&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
+&lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
       <title>Troubleshooting eclipse issues</title>
       <link>http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/</link>
       <pubDate>Fri, 25 Feb 2011 15:00:00 +0550</pubDate>
@@ -569,27 +590,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;li&gt;&lt;p&gt;&lt;b&gt;Keyboard shortcuts&lt;/b&gt;
   It is productive and convenient to use keyboard shortcuts for performing certain tasks in eclipse rather than looking for options to do the same in various navigation menus. For example looking up references of a variable, method or a class can be quickly achieved via shortcut Ctrl+Shift+g. For your reference I have included a list of the most important keyboard shortcuts in my post Eclipse Keyboard Shortcuts&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    <item>
-      <title>Using Eclipse effectively</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
-      <pubDate>Tue, 15 Mar 2011 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
-      <author></author>
-      <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
-&lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
-&lt;iframe width='100%' height='500' frameborder='0' src='http://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;To start with you can simply import these xmls that are attached to this page to enable code formatting and checkstyle for your code. You can get more detail on CheckStyle at &lt;a href=&quot;http://checkstyle.sourceforge.net/&quot;&gt;http://checkstyle.sourceforge.net/&lt;/a&gt;. &lt;/p&gt;
-&lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
-&lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -703,35 +703,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
-      <title>Avoiding null pointer exceptions</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
-      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
-      <author></author>
-      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
-&lt;p&gt;Happy coding!!&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Exception handling guidelines/best practices</title>
       <link>http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</link>
       <pubDate>Mon, 20 Dec 2010 15:00:00 +0550</pubDate>
@@ -783,6 +754,35 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 &lt;/li&gt;
 &lt;li&gt;&lt;b&gt;Use template for repeated try-catch&lt;/b&gt;: Java&amp;#39;s try-catch blocks are particularly common when using APIs which give an important role to checked exceptions (such as SQLException in JDBC). When using such an API, many published examples simply repeat the same try-catch code structure whenever necessary. However, it is simple to eliminate such code repetition using the template method pattern. The idea is to define the structure of the try-catch block in one place, in an abstract base class (ABC). Such an ABC is then extended whenever that particular try-catch block is needed. The concrete implementation of such an ABC will often have simple, &amp;quot;straight line&amp;quot; code.&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Avoiding null pointer exceptions</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
+      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
+      <author></author>
+      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
+&lt;p&gt;Happy coding!!&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -979,6 +979,25 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>Beware of floating point numbers</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
+      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <author></author>
+      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
+&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
+&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
+&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Package by feature not layer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/</link>
       <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
@@ -1007,22 +1026,50 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Beware of floating point numbers</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
-      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <title>Prefer composition over inheritance</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</link>
+      <pubDate>Sat, 07 Aug 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</guid>
       <author></author>
-      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
-&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+      <description>&lt;p&gt;Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Composition&lt;ul&gt;
+&lt;li&gt;Functionality of an object is made up of an aggregate of different classes&lt;/li&gt;
+&lt;li&gt;In practice, this means holding a pointer to another class to which work is deferred&lt;/li&gt;
+&lt;li&gt;Collaboration is implemented simply by forwarding all calls to an object field&lt;/li&gt;
+&lt;li&gt;It has no dependence on implementation details of the object field&lt;/li&gt;
+&lt;li&gt;It is more flexible, since it is defined dynamically at run-time, not statically at compile-time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inheritance&lt;ul&gt;
+&lt;li&gt;Functionality of an object is made up of it&amp;#39;s own functionality plus functionality from its parent classes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
-&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
-&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Sub-classing or inheritance has the following issues :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It violates encapsulation, since the implementations of the superclass and subclass become tightly coupled&lt;/li&gt;
+&lt;li&gt;new methods added to the superclass can break the subclass&lt;/li&gt;
+&lt;li&gt;superclass and subclass need to evolve in parallel&lt;/li&gt;
+&lt;li&gt;designing a class so that it may be safely extended takes extra work - extending a class not explicitly designed for such use is risky&lt;/li&gt;
+&lt;li&gt;different packages are often under the control of different programmers - extending a class in a different package is risky&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A common exception is the template method design pattern. There, the safest style is to make all items in the abstract base class final, except for the single abstract method which needs to be implemented by the subclass.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>A day trip to Dinant, belgium</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
+      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
+&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
+&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
+&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1062,39 +1109,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Prefer composition over inheritance</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</link>
-      <pubDate>Sat, 07 Aug 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</guid>
-      <author></author>
-      <description>&lt;p&gt;Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Composition&lt;ul&gt;
-&lt;li&gt;Functionality of an object is made up of an aggregate of different classes&lt;/li&gt;
-&lt;li&gt;In practice, this means holding a pointer to another class to which work is deferred&lt;/li&gt;
-&lt;li&gt;Collaboration is implemented simply by forwarding all calls to an object field&lt;/li&gt;
-&lt;li&gt;It has no dependence on implementation details of the object field&lt;/li&gt;
-&lt;li&gt;It is more flexible, since it is defined dynamically at run-time, not statically at compile-time&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Inheritance&lt;ul&gt;
-&lt;li&gt;Functionality of an object is made up of it&amp;#39;s own functionality plus functionality from its parent classes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Sub-classing or inheritance has the following issues :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It violates encapsulation, since the implementations of the superclass and subclass become tightly coupled&lt;/li&gt;
-&lt;li&gt;new methods added to the superclass can break the subclass&lt;/li&gt;
-&lt;li&gt;superclass and subclass need to evolve in parallel&lt;/li&gt;
-&lt;li&gt;designing a class so that it may be safely extended takes extra work - extending a class not explicitly designed for such use is risky&lt;/li&gt;
-&lt;li&gt;different packages are often under the control of different programmers - extending a class in a different package is risky&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A common exception is the template method design pattern. There, the safest style is to make all items in the abstract base class final, except for the single abstract method which needs to be implemented by the subclass.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>History, heritage and beauty of Italy</title>
       <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
       <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
@@ -1106,20 +1120,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
 &lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
 &lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>A day trip to Dinant, belgium</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
-      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
-&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
-&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
-&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1162,34 +1162,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
-      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
-&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Domtoren Utrecht, Netherlands</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
-      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
-      <author></author>
-      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
-&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
-&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
-&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
-&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
-&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
-&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
-Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>The windmills of Kinderdijk, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</link>
       <pubDate>Thu, 31 Dec 2009 15:00:00 +0550</pubDate>
@@ -1225,6 +1197,24 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 </description>
     </item>
     <item>
+      <title>Domtoren Utrecht, Netherlands</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
+      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
+      <author></author>
+      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
+&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
+&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
+&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
+&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
+&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
+&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
+Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>A walk in Brussels</title>
       <link>http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</link>
       <pubDate>Wed, 25 Nov 2009 15:00:00 +0550</pubDate>
@@ -1236,6 +1226,16 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 &lt;span2&gt;&lt;img src=&quot;https://lh5.googleusercontent.com/-PJUjJY7H-5Q/UR--ouCHg5I/AAAAAAAAZYY/6RmJksypA7Q/w352-h264-p-o/P1040813.JPG&quot; &gt;&lt;/span2&gt;
 &lt;span2&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-doW0wcSR15c/UR-_CgQ51OI/AAAAAAAAZZQ/4QNtJtl-ays/w345-h259-p-o/P1030536.JPG&quot;&gt;&lt;/span2&gt;
 &lt;span2&gt;&lt;img src=&quot;https://lh6.googleusercontent.com/-_7_x0VNACsI/UR--4ZuJ2LI/AAAAAAAAZY4/eX_c7crLv7c/w359-h269-p-o/P1040558.JPG&quot;&gt;&lt;/span2&gt;</description>
+    </item>
+    <item>
+      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
+      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
+&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
+</description>
     </item>
   </channel>
 </rss>
