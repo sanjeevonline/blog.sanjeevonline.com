@@ -1,3 +1,5 @@
+img[alt=image-right] { float: right; }
+
 .sidebar {
     font-size: 12px;
     font-weight: bolder;

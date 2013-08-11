@@ -13,8 +13,11 @@ Here are couple of interesting historical facts that I learned today.
 ### Paid leaves
 
 Just have a look at the calendar for the month of September 1752.
-[Google "September 1752 calendar"](https://www.google.co.in/search?q=September+1752+calendar&oq=September+1752+calendar&aqs=chrome.0.69i57j69i62.582j0&sourceid=chrome&ie=UTF-8) & see for yourself.
+Google [September 1752 calendar](https://www.google.co.in/search?q=September+1752+calendar&oq=September+1752+calendar&aqs=chrome.0.69i57j69i62.582j0&sourceid=chrome&ie=UTF-8) & see for yourself.
 You will notice, 11 days are simply missing from the month.
+
+![image-right](September-1752-Calendar.png)
+
 
 Here's the explanation,
 
