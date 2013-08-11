@@ -15,10 +15,10 @@ block content
             div.inner(style="font-size: 13px")
               block footer
               | Posted by&nbsp;
-              mixin author(page.metadata.author)
-              | |on&nbsp;
-              a.back(href=locals.baseUrl + '/archive.html') #{ map[page.date.getMonth()] } #{ page.date.toString().substring(8, 10) }, #{page.date.getFullYear()}
-              | |Tags :&nbsp;
+              mixin author(page.metadata.author) &nbsp;
+              | | on&nbsp;
+              a.back(href=locals.baseUrl + '/archive.html') #{ map[page.date.getMonth()] } #{ page.date.toString().substring(8, 10) }, #{page.date.getFullYear()}&nbsp;
+              | | Tags :&nbsp;
               each tag in page.metadata.tags
                 a(href=locals.baseUrl + "/tag/#{tag}.html", rel="category tag", title="View all posts in '#{tag}'")
                   = tag
