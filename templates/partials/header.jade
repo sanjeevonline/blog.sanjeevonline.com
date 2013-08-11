@@ -22,8 +22,174 @@ head
           font-size: 18pt;
       }
 
-      /* Large desktop */
-      @media (min-width: 1200px) {
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+              font-size: 16pt;
+          }
+          h2 {
+              font-size: 14pt;
+          }
+          h3 {
+              font-size: 12pt;
+          }
+          .topsocial {
+              min-height: 65px;
+              text-align:center;
+          }
+          .social {
+              float:left;
+              margin-right:15px;
+          }
+          .social:first-child {
+              margin-right:15px;
+          }
+          .social:last-child {
+              margin-right:0px;
+          }
+      }
+          /* Smartphones (portrait and landscape) ----------- */
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 480px) {
+          body { font-size:85%;}
+          h1 {
+              font-size: 16pt;
+          }
+          h2 {
+              font-size: 14pt;
+          }
+          h3 {
+              font-size: 12pt;
+          }
+          .topsocial {
+              min-height: 65px;
+              text-align:center;
+          }
+          .social {
+              float:left;
+              margin-right:15px;
+          }
+          .social:first-child {
+              margin-right:15px;
+          }
+          .social:last-child {
+              margin-right:0px;
+          }
+      }
+
+      /* Smartphones (landscape) ----------- */
+      @media only screen
+      and (min-width : 321px) {
+          body { font-size:85%;}
+          h1 {
+              font-size: 16pt;
+          }
+          h2 {
+              font-size: 14pt;
+          }
+          h3 {
+              font-size: 12pt;
+          }
+          .topsocial {
+              min-height: 65px;
+              text-align:center;
+          }
+          .social {
+              float:left;
+              margin-right:15px;
+          }
+          .social:first-child {
+              margin-right:15px;
+          }
+          .social:last-child {
+              margin-right:0px;
+          }
+      }
+
+      /* Smartphones (portrait) ----------- */
+      @media only screen
+      and (max-width : 320px) {
+          body { font-size:85%;}
+          h1 {
+              font-size: 16pt;
+          }
+          h2 {
+              font-size: 14pt;
+          }
+          h3 {
+              font-size: 12pt;
+          }
+          .topsocial {
+              min-height: 65px;
+              text-align:center;
+          }
+          .social {
+              float:left;
+              margin-right:15px;
+          }
+          .social:first-child {
+              margin-right:15px;
+          }
+          .social:last-child {
+              margin-right:0px;
+          }
+      }
+
+      /* iPads (portrait and landscape) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px) {
+          body { font-size:95%;}
+          h1 {
+              font-size: 20pt;
+          }
+          h2 {
+              font-size: 18pt;
+          }
+          h3 {
+              font-size: 16pt;
+          }
+      }
+
+      /* iPads (landscape) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : landscape) {
+          body { font-size:95%;}
+          h1 {
+              font-size: 20pt;
+          }
+          h2 {
+              font-size: 18pt;
+          }
+          h3 {
+              font-size: 16pt;
+          }
+      }
+
+      /* iPads (portrait) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : portrait) {
+          body { font-size:95%;}
+          h1 {
+              font-size: 20pt;
+          }
+          h2 {
+              font-size: 18pt;
+          }
+          h3 {
+              font-size: 16pt;
+          }
+      }
+
+      /* Desktops and laptops ----------- */
+      @media only screen
+      and (min-width : 1224px) {
           body { font-size:100%;}
           h1 {
               font-size: 23pt;
@@ -36,73 +202,15 @@ head
           }
       }
 
-      @media (max-width: 980px) {
-         body {
-            padding-top: 0px;
-         }
-          h1 {
-              font-size: 20pt;
-          }
-          h2 {
-              font-size: 18pt;
-          }
-          h3 {
-              font-size: 16pt;
-          }
+      /* Large screens ----------- */
+      @media only screen
+      and (min-width : 1824px) {
+      /* Styles */
       }
 
-      /* Portrait tablet to landscape and desktop */
-      @media (min-width: 768px) and (max-width: 979px) {
-          body { font-size:95%;}
-          h1 {
-            font-size: 20pt;
-          }
-          h2 {
-            font-size: 18pt;
-          }
-          h3 {
-            font-size: 16pt;
-          }
-      }
-
-      /* Landscape phone to portrait tablet */
-      @media (max-width: 767px) {
-          body { font-size:90%;}
-          h1 {
-            font-size: 18pt;
-          }
-          h2 {
-            font-size: 16pt;
-          }
-          h3 {
-            font-size: 14pt;
-          }
-      }
-
-      /* Landscape phones and down */
-      @media only screen and (max-width: 480px) {
-          body { font-size:85%;}
-          h1 {
-            font-size: 16pt;
-          }
-          h2 {
-            font-size: 14pt;
-          }
-          h3 {
-            font-size: 12pt;
-          }
-          .topsocial {
-            min-height: 65px;
-            text-align:center;
-          }
-          .social {
-            float:left;
-            margin-right:15px;
-          }
-          .social:first-child {
-            margin-right:15px;
-          }
-          .social:last-child {
-            margin-right:0px;
-          }
+      /* iPhone 4 ----------- */
+      @media
+      only screen and (-webkit-min-device-pixel-ratio : 1.5),
+      only screen and (min-device-pixel-ratio : 1.5) {
+      /* Styles */
       }
