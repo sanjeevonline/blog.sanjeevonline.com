@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
   <title type="text">Sanjeev Kumar</title>
-  <updated>2013-08-10T11:50:42.395Z</updated>
+  <updated>2013-08-11T08:12:31.185Z</updated>
   <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com"></link>
   <id>http://blog.sanjeevonline.com</id>
   <link rel="self" type="application/atom+xml" href="http://feeds.feedburner.com/sanjeevonline/atom"></link>
@@ -10,7 +10,23 @@
     <author>
       <name>sanjeev</name>
     </author>
-    <title type="html"><![CDATA[New Date and Time API in Java 8]]></title>
+    <title type="html"><![CDATA[How &quot;Paid leave&quot; and &quot;April fool&quot; were born]]></title>
+    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/"></link>
+    <id>http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/</id>
+    <updated>2013-08-09T19:30:00.000Z</updated>
+    <published>2013-08-09T19:30:00.000Z</published>
+    <category scheme="http://blog.sanjeevonline.com" term="trivia" telabel="trivia"></category>
+    <summary type="html"><![CDATA[Today I learned an interesting historical fact. Just have a look at the calendar for the month of September 1752. You will notice, 11 days are simply missing from the month]]></summary>
+    <content type="html"><![CDATA[Today I learned an interesting historical fact. Just have a look at the calendar for the month of September 1752. You will notice, 11 days are simply missing from the month]]></content>
+    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/#disqus_thread" thr:count="0"></link>
+    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2013-08-11-History-Is-Really-Interesting//lastest.rss" thr:count="0"></link>
+    <thr:total>0</thr:total>
+  </entry>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+    </author>
+    <title type="html"><![CDATA[New Date and Time API in Java8]]></title>
     <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/"></link>
     <id>http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/</id>
     <updated>2013-05-27T19:30:00.000Z</updated>
@@ -149,23 +165,6 @@
     <content type="html"><![CDATA[To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server]]></content>
     <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/#disqus_thread" thr:count="0"></link>
     <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-07-08-Remote-Debugging-Jboss//lastest.rss" thr:count="0"></link>
-    <thr:total>0</thr:total>
-  </entry>
-  <entry>
-    <author>
-      <name>sanjeev</name>
-    </author>
-    <title type="html"><![CDATA[Skip over certain classes when using Step Into(F5) in Eclipse’s debugger]]></title>
-    <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/"></link>
-    <id>http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</id>
-    <updated>2011-06-01T09:30:00.000Z</updated>
-    <published>2011-06-01T09:30:00.000Z</published>
-    <category scheme="http://blog.sanjeevonline.com" term="eclipse" telabel="eclipse"></category>
-    <category scheme="http://blog.sanjeevonline.com" term="productivity" telabel="productivity"></category>
-    <summary type="html"><![CDATA[Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.]]></summary>
-    <content type="html"><![CDATA[Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.]]></content>
-    <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/#disqus_thread" thr:count="0"></link>
-    <link rel="replies" type="application/atom+xml" href="http://sanjeevonline.disqus.com/articles/2011-06-01-Debugging-With-Eclipse//lastest.rss" thr:count="0"></link>
     <thr:total>0</thr:total>
   </entry>
 </feed>
