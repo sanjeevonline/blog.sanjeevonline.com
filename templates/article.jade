@@ -13,8 +13,6 @@ block content
           h1= page.title
           footer.footer
             div.inner(style="font-size: 13px")
-              p(class="pull-right")
-                a.back(href=locals.baseUrl + '/blog.html') << back to index
               block footer
               | Posted by&nbsp;
               mixin author(page.metadata.author)

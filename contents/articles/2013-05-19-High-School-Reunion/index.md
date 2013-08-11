@@ -8,7 +8,9 @@ categories: [trivia]
 tags: [trivia]
 excerpt: It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ...
 ---
-It was pleasure meeting childhood friends from school today after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.
+It was pleasure meeting childhood friends from school today after 18 years.
+
+We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast.
 
 After reintroducing ourselves to each other, we were in back-to-school mode in no time and it was fun after that. We gossiped about everyone who was not around, discussed our school time heartbreaks, affairs, who-was-hot-who-was-not and what not. 
 

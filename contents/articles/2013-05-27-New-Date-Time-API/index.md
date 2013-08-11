@@ -1,6 +1,6 @@
 ---
 template: article.jade
-title: New Date and Time API in Java 8
+title: New Date and Time API in Java8
 date: 2013-05-28 01:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
