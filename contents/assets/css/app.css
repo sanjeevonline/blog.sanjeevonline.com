@@ -61,7 +61,9 @@ li {
 .social:first-child {
     margin-right:30px;
 }
-
+.social:last-child {
+    margin-right:15px;
+}
 .tagcloud {
     line-height: 1.5em;
     text-align: justify;

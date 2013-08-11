@@ -9,3 +9,5 @@
     <g:plusone size="tall" href="#{locals.url}#{article.url}"></g:plusone>
   .social
     | <script type="IN/Share" data-url="#{locals.url}#{article.url}" data-counter="top"></script>
+  .social
+    .fb-like(data-href='#{locals.url}#{article.url}', data-width='450', data-layout='box_count', data-show-faces='true', data-send='false')
