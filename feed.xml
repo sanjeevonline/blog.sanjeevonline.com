@@ -329,17 +329,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
-      <title>Evolution of Java</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
-      <pubDate>Fri, 23 Mar 2012 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
-      <author></author>
-      <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1meFweDCpygd0aF_ECNBMSo0L11zn944hXczhbUEh_nI/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot;  allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
-
-</description>
-    </item>
-    <item>
       <title>Choosing the right collection</title>
       <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
       <pubDate>Thu, 05 Jan 2012 15:00:00 +0550</pubDate>
@@ -383,6 +372,17 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;li&gt;a &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt; for the stored objects be defined&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Evolution of Java</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
+      <pubDate>Fri, 23 Mar 2012 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
+      <author></author>
+      <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1meFweDCpygd0aF_ECNBMSo0L11zn944hXczhbUEh_nI/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot;  allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
 </description>
     </item>
     <item>
@@ -594,6 +594,23 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
+      <title>Overloading can be tricky</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/</link>
+      <pubDate>Fri, 31 Dec 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/</guid>
+      <author></author>
+      <description>&lt;p&gt;Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type. For the case in which overloaded methods have the same number of arguments, the rules regarding this decision can sometimes be a bit tricky.&lt;/p&gt;
+&lt;p&gt;If there may be confusion, you may simplify the design:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;use different method names, and avoid overloading altogether&lt;/li&gt;
+&lt;li&gt;retain overloading, but ensure each method has a distinct number of arguments&lt;/li&gt;
+&lt;li&gt;In addition, it is recommended that varargs not be used when a method is overloaded, since this makes it more difficult to determine which overload is being called.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Reminder : Overloading requires methods with distinct signatures. The signature of a method includes its name and the ordered list of its argument types. All other items appearing in a method header, such as exceptions, return type, final, and synchronized, do not contribute to a method&amp;#39;s signature. &lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Best practices for threadsafe Singletons</title>
       <link>http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/</link>
       <pubDate>Sat, 15 Jan 2011 15:00:00 +0550</pubDate>
@@ -657,23 +674,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;p&gt;To get the value of member variable a, one should use:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Singleton&lt;span class=&quot;preprocessor&quot;&gt;.INSTANCE&lt;/span&gt;&lt;span class=&quot;preprocessor&quot;&gt;.getA&lt;/span&gt;()&lt;span class=&quot;comment&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;b&gt;In my experience using enums is the best way to implement Singleton design pattern in any Java application. It is thread safe and also provides lazy initialization.&lt;/b&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Overloading can be tricky</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/</link>
-      <pubDate>Fri, 31 Dec 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/</guid>
-      <author></author>
-      <description>&lt;p&gt;Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type. For the case in which overloaded methods have the same number of arguments, the rules regarding this decision can sometimes be a bit tricky.&lt;/p&gt;
-&lt;p&gt;If there may be confusion, you may simplify the design:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;use different method names, and avoid overloading altogether&lt;/li&gt;
-&lt;li&gt;retain overloading, but ensure each method has a distinct number of arguments&lt;/li&gt;
-&lt;li&gt;In addition, it is recommended that varargs not be used when a method is overloaded, since this makes it more difficult to determine which overload is being called.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Reminder : Overloading requires methods with distinct signatures. The signature of a method includes its name and the ordered list of its argument types. All other items appearing in a method header, such as exceptions, return type, final, and synchronized, do not contribute to a method&amp;#39;s signature. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1007,63 +1007,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Beware of floating point numbers</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
-      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
-      <author></author>
-      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
-&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
-&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
-&lt;/i&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>A day trip to Dinant, belgium</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
-      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
-&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
-&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
-&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Use final liberally. Please do.</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
-      <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</guid>
-      <author></author>
-      <description>&lt;p&gt;Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;a final class cannot be extended&lt;/li&gt;
-&lt;li&gt;a final method cannot be overridden&lt;/li&gt;
-&lt;li&gt;final fields, parameters, and local variables cannot change their value once set&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the last case, &amp;quot;value&amp;quot; for primitives is understood in the usual sense, while &amp;quot;value&amp;quot; for objects means the object&amp;#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.&lt;/p&gt;
-&lt;p&gt;Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.&lt;/p&gt;
-&lt;p&gt;Using final :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;clearly communicates your intent&lt;/li&gt;
-&lt;li&gt;allows the compiler and virtual machine to perform minor optimizations&lt;/li&gt;
-&lt;li&gt;clearly flags items which are simpler in behavior - final says,  &amp;quot;If you are looking for complexity, you won&amp;#39;t find it here.&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    <item>
       <title>Prefer composition over inheritance</title>
       <link>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</link>
       <pubDate>Sat, 07 Aug 2010 15:00:00 +0550</pubDate>
@@ -1094,6 +1037,77 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;li&gt;different packages are often under the control of different programmers - extending a class in a different package is risky&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A common exception is the template method design pattern. There, the safest style is to make all items in the abstract base class final, except for the single abstract method which needs to be implemented by the subclass.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Beware of floating point numbers</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
+      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <author></author>
+      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
+&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
+&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
+&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Use final liberally. Please do.</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
+      <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</guid>
+      <author></author>
+      <description>&lt;p&gt;Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a final class cannot be extended&lt;/li&gt;
+&lt;li&gt;a final method cannot be overridden&lt;/li&gt;
+&lt;li&gt;final fields, parameters, and local variables cannot change their value once set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the last case, &amp;quot;value&amp;quot; for primitives is understood in the usual sense, while &amp;quot;value&amp;quot; for objects means the object&amp;#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.&lt;/p&gt;
+&lt;p&gt;Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.&lt;/p&gt;
+&lt;p&gt;Using final :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;clearly communicates your intent&lt;/li&gt;
+&lt;li&gt;allows the compiler and virtual machine to perform minor optimizations&lt;/li&gt;
+&lt;li&gt;clearly flags items which are simpler in behavior - final says,  &amp;quot;If you are looking for complexity, you won&amp;#39;t find it here.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>A day trip to Dinant, belgium</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
+      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
+&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
+&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
+&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>History, heritage and beauty of Italy</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
+      <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
+      <author></author>
+      <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
+&lt;p&gt;I found Rome very close and comparable to our India, particularly Delhi, in a number of ways. The weather, the people, their hospitality, familiar and pleasant smell of the soil after it rained, helping and fun loving nature of people, houses with roof top television antennas and scooters everywhere were some of the few similarities that we observed. We explored the rich history of Rome for three days followed by an afternoon at Ostia Antica beach. The weather was at our side most of the times except for the first day when it rained throughout the day and last day when we nearly fainted due the hot sunny day.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
+&lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
+&lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1128,20 +1142,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>History, heritage and beauty of Italy</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
-      <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
-      <author></author>
-      <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
-&lt;p&gt;I found Rome very close and comparable to our India, particularly Delhi, in a number of ways. The weather, the people, their hospitality, familiar and pleasant smell of the soil after it rained, helping and fun loving nature of people, houses with roof top television antennas and scooters everywhere were some of the few similarities that we observed. We explored the rich history of Rome for three days followed by an afternoon at Ostia Antica beach. The weather was at our side most of the times except for the first day when it rained throughout the day and last day when we nearly fainted due the hot sunny day.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
-&lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
-&lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>London, England</title>
       <link>http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</link>
       <pubDate>Wed, 05 May 2010 15:00:00 +0550</pubDate>
@@ -1159,16 +1159,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;Sixth day was the most special one when Rohit drove us to Brighton beach which was some 60 miles from their house. Gungun was also with us on this trip. It was a nice sunny day again like on all other days during our trip. This was kind-of rare during that part of the year. We spent full day on this pebbled beach and it was so much fun. We spent some time playing some games in this casino-for-kids kind of thing. Gungun managed to win a few gifts from the games which were later distributed between Gungun and Ranit. Rohit also demonstrated his skills by winning us couple of toy dolphins by beating all his competitors in the fish race. He did that not once but twice and second time I was also competing with him. He won by a second or two. I was at second position.&lt;/p&gt;
 &lt;p&gt;Seventh day we spent at home. Usha Didi and Jija ji also joined us at Rohit&amp;#39;s house and in the evening Rohit stuffed us with a lot of chilled beer and delicious pork which he cooked himself.&lt;/p&gt;
 &lt;p&gt;Gungun, Simi and Rohit were awesome hosts throughout our stay in London and we thoroughly enjoyed each and every minute that we spent there.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
-      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
-&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1190,6 +1180,24 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 </description>
     </item>
     <item>
+      <title>Domtoren Utrecht, Netherlands</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
+      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
+      <author></author>
+      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
+&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
+&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
+&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
+&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
+&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
+&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
+Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>The windmills of Kinderdijk, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</link>
       <pubDate>Thu, 31 Dec 2009 15:00:00 +0550</pubDate>
@@ -1207,21 +1215,13 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 </description>
     </item>
     <item>
-      <title>Domtoren Utrecht, Netherlands</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
-      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
+      <title>A day trip to Aquatopia at Antwerp, Brussels</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
+      <pubDate>Tue, 01 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
       <author></author>
-      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
-&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
-&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
-&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
-&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
-&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
-&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
-Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
+      <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
+&lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
 </description>
     </item>
     <item>
