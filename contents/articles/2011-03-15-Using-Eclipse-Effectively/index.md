@@ -13,7 +13,7 @@ To ensure that the code that you write is always clean and complaint to your pro
 
 Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. 
 
-<iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&output=html&widget=true'></iframe>
+<iframe width='100%' height='500' frameborder='0' src='http://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&output=html&widget=true'></iframe>
 
 Also ideally your Eclipse should be configured with your "code formatter" and "CheckStyle" XML configurations. 
 
@@ -25,6 +25,6 @@ Links to configure the CheckStyle, Formatter and compiler setting can be found u
 
 Here the checkstyle and formatter that I  use on my projects 
 
-* [Java code formatter configuration XML](https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing)
-* [Checkstyle configuration XML](https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing)
+* [Java code formatter configuration XML](http://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing)
+* [Checkstyle configuration XML](http://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing)
 
