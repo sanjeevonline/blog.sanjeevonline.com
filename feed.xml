@@ -329,6 +329,17 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
+      <title>Evolution of Java</title>
+      <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
+      <pubDate>Fri, 23 Mar 2012 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
+      <author></author>
+      <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
+&lt;iframe src=&quot;http://docs.google.com/presentation/d/1meFweDCpygd0aF_ECNBMSo0L11zn944hXczhbUEh_nI/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot;  allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+</description>
+    </item>
+    <item>
       <title>Choosing the right collection</title>
       <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
       <pubDate>Thu, 05 Jan 2012 15:00:00 +0550</pubDate>
@@ -337,7 +348,7 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
       <description>&lt;p&gt;Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. &lt;/p&gt;
 &lt;p&gt;The best general purpose or &amp;#39;primary&amp;#39; implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation. That special feature is usually ordering or sorting.&lt;/p&gt;
 &lt;p&gt;Here, &amp;quot;ordering&amp;quot; refers to the order of items returned by an Iterator, and &amp;quot;sorting&amp;quot; refers to sorting items according to &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html&quot;&gt;Comparable&lt;/a&gt; or &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt;. &lt;/p&gt;
-&lt;iframe width='100%' height='180' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+&lt;iframe width='100%' height='180' frameborder='0' src='http://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
 
 
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -372,17 +383,6 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;li&gt;a &lt;a href=&quot;http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html&quot;&gt;Comparator&lt;/a&gt; for the stored objects be defined&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To retain the order of a ResultSet as specified in an ORDER BY clause, insert the records into a List or a LinkedHashMap.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Evolution of Java</title>
-      <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
-      <pubDate>Fri, 23 Mar 2012 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
-      <author></author>
-      <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1meFweDCpygd0aF_ECNBMSo0L11zn944hXczhbUEh_nI/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot;  allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
-
 </description>
     </item>
     <item>
@@ -535,7 +535,7 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</guid>
       <author></author>
       <description>&lt;p&gt;These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.5/&quot;&gt;http://creativecommons.org/licenses/by-sa/2.5/&lt;/a&gt;).&lt;/p&gt;
-&lt;iframe width='100%' height='400' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+&lt;iframe width='100%' height='400' frameborder='0' src='http://docs.google.com/spreadsheet/pub?key=0Ag_VihEyeaIudF9sREdTVi1XWmxGN0RFcXNCTFJSS2c&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
 </description>
     </item>
     <item>
@@ -546,7 +546,7 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
       <author></author>
       <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&amp;#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
 &lt;p&gt;Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. &lt;/p&gt;
-&lt;iframe width='100%' height='500' frameborder='0' src='https://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
+&lt;iframe width='100%' height='500' frameborder='0' src='http://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&amp;output=html&amp;widget=true'&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Also ideally your Eclipse should be configured with your &amp;quot;code formatter&amp;quot; and &amp;quot;CheckStyle&amp;quot; XML configurations. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -554,8 +554,8 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 &lt;p&gt;Links to configure the CheckStyle, Formatter and compiler setting can be found under your Eclipse--&amp;gt;Preferences menu.&lt;/p&gt;
 &lt;p&gt;Here the checkstyle and formatter that I  use on my projects &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docs.google.com/file/d/0B56Wf8mnIbkvVm9saFEwaHE0UWM/edit?usp=sharing&quot;&gt;Java code formatter configuration XML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docs.google.com/file/d/0B56Wf8mnIbkvX0pualpCWnRpc0E/edit?usp=sharing&quot;&gt;Checkstyle configuration XML&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -757,35 +757,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
-      <title>Avoiding null pointer exceptions</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
-      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
-      <author></author>
-      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
-&lt;p&gt;Happy coding!!&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Crave for immutable classes</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/</link>
       <pubDate>Sat, 20 Nov 2010 15:00:00 +0550</pubDate>
@@ -911,6 +882,35 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
+      <title>Avoiding null pointer exceptions</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
+      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
+      <author></author>
+      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
+&lt;p&gt;Happy coding!!&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Ajax primer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
       <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
@@ -927,7 +927,7 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Since then, however, there have been a number of developments in the technologies used in an Ajax application, and the definition of the term Ajax. In particular, it has been noted that JavaScript is not the only client-side scripting language that can be used for implementing an Ajax application; other languages such as VBScript are also capable of the required functionality. JavaScript is the most popular language for Ajax programming due to its inclusion in and compatibility with the majority of modern web browsers. Also, XML is not required for data interchange and therefore XSLT is not required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange, although other formats such as pre-formatted HTML or plain text can also be used.&lt;/p&gt;
 &lt;p&gt;This presentation shall provide you an overview of AJAX and understanding of all the necessary building blocks of an AJAX application.&lt;/p&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;iframe src=&quot;http://docs.google.com/presentation/d/1rcoPDHnhebSyEJXrhIRRXeqBp2ICKFYusOG5NcSefSo/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;500&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
 </description>
     </item>
     <item>
@@ -1062,6 +1062,20 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>A day trip to Dinant, belgium</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
+      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
+      <author></author>
+      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
+&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
+&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
+&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>History, heritage and beauty of Italy</title>
       <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
       <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
@@ -1148,38 +1162,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>A day trip to Dinant, belgium</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
-      <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
-      <author></author>
-      <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
-&lt;p&gt;It was a day trip. We left Brussels at around 10 AM and reached Dinant within an hour. Weather was very nice and sunny on that day. We started our tour by clicking some snaps of Citadel fort which was just about 400 meters from the station. Then we took a cable car tide to the top of the fort and spent a few hours there on the hill. Ranit had some great time on the swings in the play area for kids while we enjoyed the guided tour of the citadel fort. After getting down from Citadel we went to see the house of Adolphe Sax which still displays some of the original Saxophones that he made. We felt privileged for having got an opportunity to get some snaps clicked with the statue of Adolphe Sax.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;I bought some beers and snacks from a grocery store and then spent some time on the river side while enjoying the Beer and Sandwiches that Rajni had prepared and brought from home. &lt;/p&gt;
-&lt;p&gt;It was overall a relaxed tour where we didn&amp;#39;t sweat ourselves too much and enjoyed it on a slow pace without having to run from one site to the other. &lt;/p&gt;
-&lt;p&gt;There are a few other scenic places, châteaus and a small beautiful village in that area, that we have saved for our next trip :-).&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
-      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
-      <author></author>
-      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
-&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
-&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
-&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
-It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
-&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
-&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
-&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>The windmills of Kinderdijk, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</link>
       <pubDate>Thu, 31 Dec 2009 15:00:00 +0550</pubDate>
@@ -1212,6 +1194,24 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 &lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
 &lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
 Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <author></author>
+      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
+&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
+&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
+&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
+It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
+&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
+&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
+&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>
