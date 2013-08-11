@@ -24,8 +24,174 @@
           font-size: 18pt;
       }
       
-      /* Large desktop */
-      @media (min-width: 1200px) {
+      /* Landscape phones and down */
+      @media only screen and (max-width: 480px) {
+          body { font-size:85%;}
+          h1 {
+              font-size: 16pt;
+          }
+          h2 {
+              font-size: 14pt;
+          }
+          h3 {
+              font-size: 12pt;
+          }
+          .topsocial {
+              min-height: 65px;
+              text-align:center;
+          }
+          .social {
+              float:left;
+              margin-right:15px;
+          }
+          .social:first-child {
+              margin-right:15px;
+          }
+          .social:last-child {
+              margin-right:0px;
+          }
+      }
+          /* Smartphones (portrait and landscape) ----------- */
+      @media only screen
+      and (min-device-width : 320px)
+      and (max-device-width : 480px) {
+          body { font-size:85%;}
+          h1 {
+              font-size: 16pt;
+          }
+          h2 {
+              font-size: 14pt;
+          }
+          h3 {
+              font-size: 12pt;
+          }
+          .topsocial {
+              min-height: 65px;
+              text-align:center;
+          }
+          .social {
+              float:left;
+              margin-right:15px;
+          }
+          .social:first-child {
+              margin-right:15px;
+          }
+          .social:last-child {
+              margin-right:0px;
+          }
+      }
+      
+      /* Smartphones (landscape) ----------- */
+      @media only screen
+      and (min-width : 321px) {
+          body { font-size:85%;}
+          h1 {
+              font-size: 16pt;
+          }
+          h2 {
+              font-size: 14pt;
+          }
+          h3 {
+              font-size: 12pt;
+          }
+          .topsocial {
+              min-height: 65px;
+              text-align:center;
+          }
+          .social {
+              float:left;
+              margin-right:15px;
+          }
+          .social:first-child {
+              margin-right:15px;
+          }
+          .social:last-child {
+              margin-right:0px;
+          }
+      }
+      
+      /* Smartphones (portrait) ----------- */
+      @media only screen
+      and (max-width : 320px) {
+          body { font-size:85%;}
+          h1 {
+              font-size: 16pt;
+          }
+          h2 {
+              font-size: 14pt;
+          }
+          h3 {
+              font-size: 12pt;
+          }
+          .topsocial {
+              min-height: 65px;
+              text-align:center;
+          }
+          .social {
+              float:left;
+              margin-right:15px;
+          }
+          .social:first-child {
+              margin-right:15px;
+          }
+          .social:last-child {
+              margin-right:0px;
+          }
+      }
+      
+      /* iPads (portrait and landscape) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px) {
+          body { font-size:95%;}
+          h1 {
+              font-size: 20pt;
+          }
+          h2 {
+              font-size: 18pt;
+          }
+          h3 {
+              font-size: 16pt;
+          }
+      }
+      
+      /* iPads (landscape) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : landscape) {
+          body { font-size:95%;}
+          h1 {
+              font-size: 20pt;
+          }
+          h2 {
+              font-size: 18pt;
+          }
+          h3 {
+              font-size: 16pt;
+          }
+      }
+      
+      /* iPads (portrait) ----------- */
+      @media only screen
+      and (min-device-width : 768px)
+      and (max-device-width : 1024px)
+      and (orientation : portrait) {
+          body { font-size:95%;}
+          h1 {
+              font-size: 20pt;
+          }
+          h2 {
+              font-size: 18pt;
+          }
+          h3 {
+              font-size: 16pt;
+          }
+      }
+      
+      /* Desktops and laptops ----------- */
+      @media only screen
+      and (min-width : 1224px) {
           body { font-size:100%;}
           h1 {
               font-size: 23pt;
@@ -38,75 +204,17 @@
           }
       }
       
-      @media (max-width: 980px) {
-         body {
-            padding-top: 0px;
-         }
-          h1 {
-              font-size: 20pt;
-          }
-          h2 {
-              font-size: 18pt;
-          }
-          h3 {
-              font-size: 16pt;
-          }
+      /* Large screens ----------- */
+      @media only screen
+      and (min-width : 1824px) {
+      /* Styles */
       }
       
-      /* Portrait tablet to landscape and desktop */
-      @media (min-width: 768px) and (max-width: 979px) {
-          body { font-size:95%;}
-          h1 {
-            font-size: 20pt;
-          }
-          h2 {
-            font-size: 18pt;
-          }
-          h3 {
-            font-size: 16pt;
-          }
-      }
-      
-      /* Landscape phone to portrait tablet */
-      @media (max-width: 767px) {
-          body { font-size:90%;}
-          h1 {
-            font-size: 18pt;
-          }
-          h2 {
-            font-size: 16pt;
-          }
-          h3 {
-            font-size: 14pt;
-          }
-      }
-      
-      /* Landscape phones and down */
-      @media only screen and (max-width: 480px) {
-          body { font-size:85%;}
-          h1 {
-            font-size: 16pt;
-          }
-          h2 {
-            font-size: 14pt;
-          }
-          h3 {
-            font-size: 12pt;
-          }
-          .topsocial {
-            min-height: 65px;
-            text-align:center;
-          }
-          .social {
-            float:left;
-            margin-right:15px;
-          }
-          .social:first-child {
-            margin-right:15px;
-          }
-          .social:last-child {
-            margin-right:0px;
-          }
+      /* iPhone 4 ----------- */
+      @media
+      only screen and (-webkit-min-device-pixel-ratio : 1.5),
+      only screen and (min-device-pixel-ratio : 1.5) {
+      /* Styles */
       }
     </style>
   </head>
@@ -182,16 +290,16 @@
                   <td><a href="/articles/2009-11-25-Brussels-Belgium/" title="travel">A walk in Brussels</a></td>
                 </tr>
                 <tr>
+                  <td><a href="/articles/2009-12-30-Domtoren-Utrecht/" title="travel">Domtoren Utrecht, Netherlands</a></td>
+                </tr>
+                <tr>
+                  <td><a href="/articles/2010-01-01-Amsterdam-Netherlands/" title="travel">Day trip to the largest city of Netherlands - Amsterdam</a></td>
+                </tr>
+                <tr>
                   <td><a href="/articles/2009-11-30-Aquatopia-Aquarium/" title="travel">A day trip to Aquatopia at Antwerp, Brussels</a></td>
                 </tr>
                 <tr>
                   <td><a href="/articles/2009-12-31-Kinderdijk-Netherlands/" title="travel">The windmills of Kinderdijk, Netherlands</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/articles/2009-12-30-Domtoren-Utrecht/" title="travel">Domtoren Utrecht, Netherlands</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/articles/2010-05-20-London-England/" title="travel">London, England</a></td>
                 </tr>
               </tbody>
             </table>
@@ -244,8 +352,8 @@
               <li><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a><br></li>
               <li><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a><br></li>
               <li><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a><br></li>
-              <li><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a><br></li>
               <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a><br></li>
+              <li><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a><br></li>
               <li><a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a><br></li>
               <li><a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a><br></li>
               <li><a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a><br></li>
