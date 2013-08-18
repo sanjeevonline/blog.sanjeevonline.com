@@ -979,37 +979,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Beware of floating point numbers</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
-      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
-      <author></author>
-      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
-&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
-&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
-&lt;/i&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Overridable methods need special care</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</link>
-      <pubDate>Sun, 29 Aug 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</guid>
-      <author></author>
-      <description>&lt;p&gt;&lt;b&gt;Allowing a method to be overridden should always be done intentionally, not by accident&lt;/b&gt;.&lt;/p&gt;
-&lt;p&gt;Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&amp;#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;When you do override a method, you should use the @Override annotation. This allows the compiler to verify that the method is indeed a valid override of an existing method. For example, your implementations of toString, equals, and hashCode should always use @Override in the method header. &lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Package by feature not layer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/</link>
       <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
@@ -1038,6 +1007,25 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>Beware of floating point numbers</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
+      <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <author></author>
+      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
+&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &amp;quot;MonetaryAmount.java&amp;quot; that are wrappers over &amp;quot;BigDecimal&amp;quot; class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.&amp;quot;
+&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+&amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
+&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Use final liberally. Please do.</title>
       <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
       <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
@@ -1059,6 +1047,18 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;li&gt;allows the compiler and virtual machine to perform minor optimizations&lt;/li&gt;
 &lt;li&gt;clearly flags items which are simpler in behavior - final says,  &amp;quot;If you are looking for complexity, you won&amp;#39;t find it here.&amp;quot;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>Overridable methods need special care</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</link>
+      <pubDate>Sun, 29 Aug 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;b&gt;Allowing a method to be overridden should always be done intentionally, not by accident&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&amp;#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When you do override a method, you should use the @Override annotation. This allows the compiler to verify that the method is indeed a valid override of an existing method. For example, your implementations of toString, equals, and hashCode should always use @Override in the method header. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1180,24 +1180,6 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 </description>
     </item>
     <item>
-      <title>Domtoren Utrecht, Netherlands</title>
-      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
-      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
-      <author></author>
-      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
-&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
-&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
-&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
-&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
-&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
-&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
-Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>The windmills of Kinderdijk, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</link>
       <pubDate>Thu, 31 Dec 2009 15:00:00 +0550</pubDate>
@@ -1222,6 +1204,24 @@ Overall it was an excellent start and we all were  very happy and excited and we
       <author></author>
       <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
 &lt;p&gt;We went to see Aquatopia with Arun and Anagha who were visting us from Netherlands. It was a nice trip and Ranit was so excited after seeing so many fishes and other sea animals. Shark show was amazing and after that show Ranit kept asking that if shark can eat dad if he jumps into that water. Ranit also managed to get a Dolphin puzzle as a gift from Arun and that kept Ranit busy for quite a few days. While I am writing this Ranit is busy assembling the same Dolphin puzzle.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Domtoren Utrecht, Netherlands</title>
+      <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
+      <pubDate>Wed, 30 Dec 2009 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
+      <author></author>
+      <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
+&lt;p&gt;The trip started with a little trouble as we boarded the wrong train from Brussels.  The tickets that we had were for a normal train but we boarded the super fast (Thalys) train instead. Luckily the train manager was kind enough to let us go without charging us anything for boarding that train. He could have charged us around 50 Euros for this but he didn&amp;#39;t want to spoil our Christmas and allowed us to continue our journey. I love Christmas, god exists :-).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since it was a thalys train it hardly took us any time to reach Rotterdam and eventually to our final destination Utrecht where Arun was already waiting for us with his Italian umbrella as it was raining. It was around 11 AM of the Christmas day.&lt;/p&gt;
+&lt;p&gt;After the delicious lunch prepared by Anagha (Spicy Dum Aalu) we went out to see the tallest church Dom &amp;quot;Domtoren&amp;quot; in  Netherlands. It was hardly a few yards from Arun&amp;#39;s house. It was very windy and slippery outside the church but we still managed to click some snaps for our album. Thanks to Rajni&amp;#39;s Swiss umbrella. &lt;/p&gt;
+&lt;p&gt;After we saw the church Arun suggested to walk around the city a bit and showed us a few interesting places in Utrecht. On the way he told about how Greg and he used to roam around till 4 Am in that area after they were refused entry in the pubs.&lt;/p&gt;
+&lt;p&gt;Arun also told about why Nederland people are best water management experts in the word and how it is still rising to prosperity in spite of having a lot of area under the sea levels. In the back of my mind I started thinking about our Indian states like Orisa and Bihar where every year we suffer huge losses of lives and property due to floods. Why can&amp;#39;t we learn and implement the solutions that have been implemented successfully in Netherlands. &lt;/p&gt;
+&lt;p&gt;Ranit was also having a wonderful time on the streets.  Just then it started drizzling and we decided to move back to Arun&amp;#39;s luxurious :-)  apartment.&lt;/p&gt;
+&lt;p&gt;Arun had already planned for a daaru party on Christmas and he had to do certain arrangements for that. Ranit wanted to see his favorite movie &amp;quot;Hanuman Returns&amp;quot; for the thousandth time so we all joined him for that on you tube. Actually, I also like that movie and can watch it again and again. 
+Overall it was an excellent start and we all were  very happy and excited and were looking forward for the next event which was &amp;quot;The daaru party&amp;quot;.&lt;/p&gt;
 </description>
     </item>
     <item>
