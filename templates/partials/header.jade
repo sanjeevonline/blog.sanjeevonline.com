@@ -7,7 +7,7 @@ head
   //meta(http-equiv="content-type", content='width=device-width, initial-scale=1.0, charset=utf-8')
   link(rel='stylesheet', href= '#{locals.baseUrl}' + '/assets/css/github.css')
   link(rel='stylesheet', media='screen', href= '#{locals.baseUrl}' + '/assets/bootstrap/css/bootstrap.min.css')
-  style(type='text/css')
+  style(type='text/css').
     body {
         padding-top: 60px;
         padding-bottom: 40px;
@@ -91,7 +91,8 @@ head
 
         /* Smartphones (landscape) ----------- */
     @media only screen
-    and (min-width : 321px) {
+    and (min-width : 321px)
+    and (max-width : 979px) {
         body {
             font-size: 85%;
         }
@@ -105,7 +106,7 @@ head
         }
 
         h3 {
-            font-size: 18pt;
+            font-size: 14pt;
         }
 
         .topsocial {
