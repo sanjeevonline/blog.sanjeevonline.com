@@ -703,6 +703,35 @@ int x11 = &lt;span class=&quot;number&quot;&gt;052&lt;/span&gt;_;            // 
 </description>
     </item>
     <item>
+      <title>Avoiding null pointer exceptions</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
+      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
+      <author></author>
+      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
+    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
+    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
+        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
+&lt;p&gt;Happy coding!!&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Exception handling guidelines/best practices</title>
       <link>http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</link>
       <pubDate>Mon, 20 Dec 2010 15:00:00 +0550</pubDate>
@@ -754,35 +783,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 &lt;/li&gt;
 &lt;li&gt;&lt;b&gt;Use template for repeated try-catch&lt;/b&gt;: Java&amp;#39;s try-catch blocks are particularly common when using APIs which give an important role to checked exceptions (such as SQLException in JDBC). When using such an API, many published examples simply repeat the same try-catch code structure whenever necessary. However, it is simple to eliminate such code repetition using the template method pattern. The idea is to define the structure of the try-catch block in one place, in an abstract base class (ABC). Such an ABC is then extended whenever that particular try-catch block is needed. The concrete implementation of such an ABC will often have simple, &amp;quot;straight line&amp;quot; code.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    <item>
-      <title>Avoiding null pointer exceptions</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
-      <pubDate>Sat, 27 Nov 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
-      <author></author>
-      <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;// BAD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (status&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;)) { &lt;span class=&quot;comment&quot;&gt;// Potential null pointer if status is null.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Here if the &amp;quot;status&amp;quot; that is passed to the method is null you will get a NPE at the first statement in the method. However if we write the code like as follows it can be avoided.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;//GOOD CODE&lt;/span&gt;
-&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Boolean isExpired(final StatusEnum status) {
-    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (StatusEnum&lt;span class=&quot;variable&quot;&gt;.EXPIRED&lt;/span&gt;&lt;span class=&quot;variable&quot;&gt;.equals&lt;/span&gt;(status)) { &lt;span class=&quot;comment&quot;&gt;// Move variable part as parameter to equals method.&lt;/span&gt;
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.TRUE&lt;/span&gt;;
-    } &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; {
-        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; Boolean&lt;span class=&quot;variable&quot;&gt;.FALSE&lt;/span&gt;;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Some editors like IntelliJ provide a quick fix for similar use cases. If you have object.equals(”string literal”) it can replace with “string literal”.equals(object)  and you can do the replace all on your entire code base in one go if you wish. &lt;/p&gt;
-&lt;p&gt;Happy coding!!&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1007,18 +1007,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Overridable methods need special care</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</link>
-      <pubDate>Sun, 29 Aug 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</guid>
-      <author></author>
-      <description>&lt;p&gt;&lt;b&gt;Allowing a method to be overridden should always be done intentionally, not by accident&lt;/b&gt;.&lt;/p&gt;
-&lt;p&gt;Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&amp;#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;When you do override a method, you should use the @Override annotation. This allows the compiler to verify that the method is indeed a valid override of an existing method. For example, your implementations of toString, equals, and hashCode should always use @Override in the method header. &lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Beware of floating point numbers</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
       <pubDate>Wed, 20 Oct 2010 15:00:00 +0550</pubDate>
@@ -1035,6 +1023,18 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 &lt;p&gt;&lt;i&gt;
 &amp;quot;...it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.&amp;quot; 
 &lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Overridable methods need special care</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</link>
+      <pubDate>Sun, 29 Aug 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;b&gt;Allowing a method to be overridden should always be done intentionally, not by accident&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&amp;#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When you do override a method, you should use the @Override annotation. This allows the compiler to verify that the method is indeed a valid override of an existing method. For example, your implementations of toString, equals, and hashCode should always use @Override in the method header. &lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1142,24 +1142,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
-      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
-      <author></author>
-      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
-&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
-&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
-&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
-It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
-&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
-&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
-&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>London, England</title>
       <link>http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</link>
       <pubDate>Wed, 05 May 2010 15:00:00 +0550</pubDate>
@@ -1177,6 +1159,24 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 &lt;p&gt;Sixth day was the most special one when Rohit drove us to Brighton beach which was some 60 miles from their house. Gungun was also with us on this trip. It was a nice sunny day again like on all other days during our trip. This was kind-of rare during that part of the year. We spent full day on this pebbled beach and it was so much fun. We spent some time playing some games in this casino-for-kids kind of thing. Gungun managed to win a few gifts from the games which were later distributed between Gungun and Ranit. Rohit also demonstrated his skills by winning us couple of toy dolphins by beating all his competitors in the fish race. He did that not once but twice and second time I was also competing with him. He won by a second or two. I was at second position.&lt;/p&gt;
 &lt;p&gt;Seventh day we spent at home. Usha Didi and Jija ji also joined us at Rohit&amp;#39;s house and in the evening Rohit stuffed us with a lot of chilled beer and delicious pork which he cooked himself.&lt;/p&gt;
 &lt;p&gt;Gungun, Simi and Rohit were awesome hosts throughout our stay in London and we thoroughly enjoyed each and every minute that we spent there.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <author></author>
+      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
+&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
+&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
+&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
+It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
+&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
+&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
+&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>

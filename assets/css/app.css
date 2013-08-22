@@ -35,9 +35,9 @@ img[alt=image-right] { float: right; }
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
 }
 body {
-    font-family: 'Noto Serif', serif;
-    font-size: 15px;
-    line-height: 23px;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
 }
 li {
     line-height: 23px;
