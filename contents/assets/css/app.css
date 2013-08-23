@@ -1,7 +1,7 @@
 img[alt=image-right] { float: right; }
 
 .sidebar {
-    font-size: 12px;
+    font-size: .7em;
     font-weight: bolder;
     border-left-width:thin;
     border-left-style:solid;
@@ -40,7 +40,7 @@ body {
     line-height: 30px;
 }
 li {
-    line-height: 23px;
+    line-height: 25px;
 }
 .navbar .brand {
     font-size: 20px;
