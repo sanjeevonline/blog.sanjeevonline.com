@@ -30,56 +30,55 @@
 -   return word.toLowerCase()
 - }).value()
 
-div.navbar.navbar-fixed-top
-  div.navbar-inner
+div.navbar.navbar-default.navbar-fixed-top
     div.container
-      a(data-toggle='collapse', data-target='.nav-collapse').btn.btn-navbar
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a(href= locals.url).brand= locals.title
-      div.nav-collapse.collapse
-          <!-- .nav, .navbar-search, .navbar-form, etc -->
-          ul.nav
-            - var menu_items = _.chain(contents._.pages).compact().filter(function(article) {
-            -    return article.metadata.menu
-            - }).sortBy(function(v){
-            -    return v.metadata.menu.order
-            - }).value();
-              - each item in menu_items
-                - if (page.metadata.title == item.metadata.title)
-                    if (page.metadata.title == "Tag")
-                      li.dropdown.active
-                        a.dropdown-toggle(href="#", data-toggle="dropdown") #{item.metadata.menu.title}
-                          b.caret
-                        ul.dropdown-menu
-                            each word in sortedTags
-                              if (page.metadata.currentTag == word)
-                                li.active
-                                  a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
-                              else
-                                li
-                                  a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
-                    else
-                       li.active
-                          a(href= locals.baseUrl + item.url) #{item.metadata.menu.title}
-                - else
-                    if (item.metadata.title == "Tag")
-                      li.dropdown
-                        a.dropdown-toggle(href="#", data-toggle="dropdown") #{item.metadata.menu.title}
-                          b.caret
-                        ul.dropdown-menu
-                            each word in sortedTags
-                              li
-                                a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
-                    else
-                      li
-                        a(href= locals.baseUrl + item.url) #{item.metadata.menu.title}
-      div(class="pull-right").nav-collapse.collapse
-          form(id="search-form", class="navbar-search pull-left", action="http://www.google.com/search", method="get")
-            span(class="glass js-search-action"): i
-            input(type="hidden", value="UTF-8", name="ie")
-            input(type="hidden", value="UTF-8", name="oe")
-            input(type="hidden", value=locals.domain, name="domains")
-            input(type="hidden", value=locals.domain, name="sitesearch")
-            input(class="search-query span2", name="q", type="text", placeholder="Search using Google...")
+       div.navbar-header
+          a(href= locals.url).navbar-brand= locals.title
+          buttona(type='button', data-toggle='collapse', data-target='#navbar-main').navbar-toggle
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+       div#navbar-main.navbar-collapse.collapse
+              <!-- .nav, .navbar-search, .navbar-form, etc -->
+              ul.nav.navbar-nav
+                - var menu_items = _.chain(contents._.pages).compact().filter(function(article) {
+                -    return article.metadata.menu
+                - }).sortBy(function(v){
+                -    return v.metadata.menu.order
+                - }).value();
+                  - each item in menu_items
+                    - if (page.metadata.title == item.metadata.title)
+                        if (page.metadata.title == "Tag")
+                          li.dropdown.active
+                            a.dropdown-toggle(href="#", data-toggle="dropdown") #{item.metadata.menu.title}
+                              b.caret
+                            ul.dropdown-menu
+                                each word in sortedTags
+                                  if (page.metadata.currentTag == word)
+                                    li.active
+                                      a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
+                                  else
+                                    li
+                                      a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
+                        else
+                           li.active
+                              a(href= locals.baseUrl + item.url) #{item.metadata.menu.title}
+                    - else
+                        if (item.metadata.title == "Tag")
+                          li.dropdown
+                            a.dropdown-toggle(href="#", data-toggle="dropdown") #{item.metadata.menu.title}
+                              b.caret
+                            ul.dropdown-menu
+                                each word in sortedTags
+                                  li
+                                    a(href=locals.baseUrl + "/tag/#{word}.html") #{word}
+                        else
+                          li
+                            a(href= locals.baseUrl + item.url) #{item.metadata.menu.title}
+              form(id="search-form", class="navbar-form pull-right", action="http://www.google.com/search", method="get")
+                    span(class="glass js-search-action"): i
+                    input(type="hidden", value="UTF-8", name="ie")
+                    input(type="hidden", value="UTF-8", name="oe")
+                    input(type="hidden", value=locals.domain, name="domains")
+                    input(type="hidden", value=locals.domain, name="sitesearch")
+                    input(class="search-query span2", name="q", type="text", placeholder="Search using Google...")

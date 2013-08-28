@@ -1,10 +1,8 @@
 extends layout
 
-block header
-  div#page_subtitle
-    | Archives
 block content
-
+  div#page_subtitle
+      | Archives
   != page.html
   - var archive = _.chain(contents.articles._.directories).map(function(item) {
   -   return item.index
