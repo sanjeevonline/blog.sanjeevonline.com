@@ -26,100 +26,95 @@
       
       @media only screen
       and (min-width : 768px)
-      and (max-width : 979px) {
+      and (max-width : 995px) {
         h3 {
               font-size: 1.2em;
         }
       }
       
     </style>
-    <link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="/assets/css/prettify.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=ABeeZee&amp;subset=latin">
     <link rel="stylesheet" href="/assets/css/app.css">
   </head>
   <body>
     <div class="container">
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Rootless Wanderer</a>
-            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
-              <ul class="nav">
-                <li class="dropdown active"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/tag/agile.html">agile</a></li>
-                    <li class="active"><a href="/tag/best-practices.html">best-practices</a></li>
-                    <li><a href="/tag/eclipse.html">eclipse</a></li>
-                    <li><a href="/tag/java.html">java</a></li>
-                    <li><a href="/tag/nodejs.html">nodejs</a></li>
-                    <li><a href="/tag/productivity.html">productivity</a></li>
-                    <li><a href="/tag/travel.html">travel</a></li>
-                    <li><a href="/tag/trivia.html">trivia</a></li>
-                  </ul>
-                </li>
-                <li><a href="/archive.html">Archive</a></li>
-              </ul>
-            </div>
-            <div class="pull-right nav-collapse collapse">
-              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
-                <input type="hidden" value="UTF-8" name="ie">
-                <input type="hidden" value="UTF-8" name="oe">
-                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
-                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
-                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
-              </form>
-            </div>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header"><a href="http://blog.sanjeevonline.com" class="navbar-brand">The Rootless Wanderer</a>
+            <buttona type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></buttona>
+          </div>
+          <div id="navbar-main" class="navbar-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+            <ul class="nav navbar-nav">
+              <li class="dropdown active"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/tag/agile.html">agile</a></li>
+                  <li class="active"><a href="/tag/best-practices.html">best-practices</a></li>
+                  <li><a href="/tag/eclipse.html">eclipse</a></li>
+                  <li><a href="/tag/java.html">java</a></li>
+                  <li><a href="/tag/nodejs.html">nodejs</a></li>
+                  <li><a href="/tag/productivity.html">productivity</a></li>
+                  <li><a href="/tag/travel.html">travel</a></li>
+                  <li><a href="/tag/trivia.html">trivia</a></li>
+                </ul>
+              </li>
+              <li><a href="/archive.html">Archive</a></li>
+            </ul>
+            <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-form pull-right"><span class="glass js-search-action"><i></i></span>
+              <input type="hidden" value="UTF-8" name="ie">
+              <input type="hidden" value="UTF-8" name="oe">
+              <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+              <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+              <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+            </form>
           </div>
         </div>
       </div>
-      <div style="text-align: center">
-        <div id="page_subtitle"> Posts tagged with : best-practices</div>
-      </div>
       <div class="row">
-        <div class="span9">
-          <div class="row-fluid">
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2012-01-05-Choosing-The-Right-Collections/">Choosing the right collection</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">January 05 2012&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. </p>
+        <div class="col-lg-9 col-sm-9">
+          <div style="text-align: center">
+            <div id="page_subtitle"> Posts tagged with : best-practices</div>
+          </div>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2012-01-05-Choosing-The-Right-Collections/">Choosing the right collection</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">January 05 2012&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. </p>
 <p>The best general purpose or &#39;primary&#39; implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation. That special feature is usually ordering or sorting.</p>
 <p>Here, &quot;ordering&quot; refers to the order of items returned by an Iterator, and &quot;sorting&quot; refers to sorting items according to <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Comparable.html">Comparable</a> or <a href="http://docs.oracle.com/javase/6/docs/api/java/util/Comparator.html">Comparator</a>. </p>
 <iframe width='100%' height='180' frameborder='0' src='http://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdEI0LXZIN0V6c0JzcWxudTNsLWZBenc&output=html&widget=true'></iframe>
 
 
 <p>
-                  <p class="read-more"><a href="/articles/2012-01-05-Choosing-The-Right-Collections/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2012-01-05-Choosing-The-Right-Collections/" data-url="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/" data-text="Choosing the right collection #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2012-01-05-Choosing-The-Right-Collections/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2012-01-05-Choosing-The-Right-Collections/" data-url="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/" data-text="Choosing the right collection #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">March 20 2011&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><h3>Implementing Comparable</h3>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">March 20 2011&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><h3>Implementing Comparable</h3>
 
 <p>Implementing Comparable allows:</p>
 <ol>
@@ -129,88 +124,85 @@
 <li>Using objects as elements in a TreeSet.</li>
 </ol>
 <p>
-                  <p class="read-more"><a href="/articles/2011-05-05-Understanding-Comparable/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2011-05-05-Understanding-Comparable/" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-text="Implementing Comparable and understanding compareTo #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2011-05-05-Understanding-Comparable/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2011-05-05-Understanding-Comparable/" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-text="Implementing Comparable and understanding compareTo #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">March 15 2011&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;<a href="/tag/productivity.html" rel="category tag" title="View all posts in 'productivity'">productivity</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">March 15 2011&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/eclipse.html" rel="category tag" title="View all posts in 'eclipse'">eclipse</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;<a href="/tag/productivity.html" rel="category tag" title="View all posts in 'productivity'">productivity</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn&#39;t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.</p>
 <p>Following spread sheet has the configuration that we use in our current projects. You can customize these settings according to your development standards and needs. </p>
 <iframe width='100%' height='500' frameborder='0' src='http://docs.google.com/spreadsheet/pub?key=0Ap6Wf8mnIbkvdFZnZTNweGxOd2haZnpyN1NPSXNZNkE&output=html&widget=true'></iframe>
 
 <p>Also ideally your Eclipse should be configured with your &quot;code formatter&quot; and &quot;CheckStyle&quot; XML configurations. </p>
 <p>
-                  <p class="read-more"><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2011-03-15-Using-Eclipse-Effectively/" data-url="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-text="Using Eclipse effectively #eclipse #best-practices #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2011-03-15-Using-Eclipse-Effectively/" data-url="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-text="Using Eclipse effectively #eclipse #best-practices #productivity /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">January 15 2011&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.   </p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">January 15 2011&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.   </p>
 <p>Here are a few ways to create a thread safe singleton classes in your application. </p>
 <p>
-                  <p class="read-more"><a href="/articles/2011-01-15-Thread-Safe-Singletons/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2011-01-15-Thread-Safe-Singletons/" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-text="Best practices for threadsafe Singletons #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2011-01-15-Thread-Safe-Singletons/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2011-01-15-Thread-Safe-Singletons/" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-text="Best practices for threadsafe Singletons #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-12-31-Tricky-Overloading/">Overloading can be tricky</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">December 31 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type. For the case in which overloaded methods have the same number of arguments, the rules regarding this decision can sometimes be a bit tricky.</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-12-31-Tricky-Overloading/">Overloading can be tricky</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">December 31 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type. For the case in which overloaded methods have the same number of arguments, the rules regarding this decision can sometimes be a bit tricky.</p>
 <p>If there may be confusion, you may simplify the design:</p>
 <ul>
 <li>use different method names, and avoid overloading altogether</li>
@@ -218,117 +210,113 @@
 <li>In addition, it is recommended that varargs not be used when a method is overloaded, since this makes it more difficult to determine which overload is being called.</li>
 </ul>
 <p>
-                  <p class="read-more"><a href="/articles/2010-12-31-Tricky-Overloading/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-12-31-Tricky-Overloading/" data-url="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-text="Overloading can be tricky #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-12-31-Tricky-Overloading/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-12-31-Tricky-Overloading/" data-url="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-text="Overloading can be tricky #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">Prefer using parameterized types over raw types</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">December 29 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons :</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">Prefer using parameterized types over raw types</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">December 29 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons :</p>
 <ul>
 <li>they usually require casts</li>
 <li>they aren&#39;t type safe, and some important kinds of errors will only appear at runtime</li>
 <li>they are less expressive, and don&#39;t self-document in the same way as parameterized types</li>
 </ul>
 <p>
-                  <p class="read-more"><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-12-29-Prefer-Parameterized-Types/" data-url="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-text="Prefer using parameterized types over raw types #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-12-29-Prefer-Parameterized-Types/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-12-29-Prefer-Parameterized-Types/" data-url="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-text="Prefer using parameterized types over raw types #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/">Prefer switch over if-else</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">December 28 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>In most cases switch will be lighter and performs faster than an if/else ladder. The compiler is able to optimize switch statements into a lookup table and perform compile-time checking for literals when dealing with enumerations, so I&#39;d suggest that it&#39;s usually preferable to use switch over if/else if if you&#39;re dealing with numeric or enum types in Java. </p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/">Prefer switch over if-else</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">December 28 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>In most cases switch will be lighter and performs faster than an if/else ladder. The compiler is able to optimize switch statements into a lookup table and perform compile-time checking for literals when dealing with enumerations, so I&#39;d suggest that it&#39;s usually preferable to use switch over if/else if if you&#39;re dealing with numeric or enum types in Java. </p>
 </section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-url="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-text="Prefer switch over if-else #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-url="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-text="Prefer switch over if-else #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-12-10-Exception-Handling/">Exception handling guidelines/best practices</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">December 20 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>Let’s review some basic exception design guidelines, summarized from Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock and Alan McKean, Addison-Wesley, 2003).</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-12-10-Exception-Handling/">Exception handling guidelines/best practices</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">December 20 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>Let’s review some basic exception design guidelines, summarized from Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock and Alan McKean, Addison-Wesley, 2003).</p>
 <ul>
 <li><b>Don’t try to handle coding errors</b>: Unless your software is required to take extraordinary measures in error scenarios, don’t spend a lot of time designing it to detect and recover from programming errors. In the case of an out-of-bounds array index, divide-by zero error, or any other programming error, the best strategy is to fail fast (and leave an audit trail of the problem that can be used to troubleshoot it).</li>
 <li><b>Avoid declaring lots of exception classes</b>: Create a new exception class only when you expect some handling of the code to take a significantly different action, based on the exception type. In my experience it is rarely the case and exception classes available in java API serve the purpose.</li>
 </ul>
 <p>
-                  <p class="read-more"><a href="/articles/2010-12-10-Exception-Handling/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-12-10-Exception-Handling/" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-text="Exception handling guidelines/best practices #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-12-10-Exception-Handling/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-12-10-Exception-Handling/" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-text="Exception handling guidelines/best practices #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">Avoiding null pointer exceptions</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">November 27 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">Avoiding null pointer exceptions</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">November 27 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.</p>
 <pre><code><span class="comment">// BAD CODE</span>
 <span class="keyword">private</span> Boolean isExpired(final StatusEnum status) {
     <span class="keyword">if</span> (status<span class="variable">.equals</span>(StatusEnum<span class="variable">.EXPIRED</span>)) { <span class="comment">// Potential null pointer if status is null.</span>
@@ -338,61 +326,59 @@
     }
 }</code></pre>
 <p>
-                  <p class="read-more"><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-url="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-text="Avoiding null pointer exceptions #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-url="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-text="Avoiding null pointer exceptions #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">November 20 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>In the book &quot;Effective Java&quot;, Joshua Bloch makes this compelling recommendation :</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">November 20 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>In the book &quot;Effective Java&quot;, Joshua Bloch makes this compelling recommendation :</p>
 <p><i>
 &quot;Classes should be immutable unless there&#39;s a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible.&quot;
 </i></p>
 <p>Immutable objects are objects whose data or properties cannot be changed after it is constructed. JDK has a number of immutable class like String and Integer. Immutable objects have big list of compelling positive qualities and they can greatly simplify your program. Immutable objects :</p>
 <p>
-                  <p class="read-more"><a href="/articles/2010-11-20-Immutable-Classes/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-11-20-Immutable-Classes/" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-text="Crave for immutable classes #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-11-20-Immutable-Classes/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-11-20-Immutable-Classes/" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-text="Crave for immutable classes #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">November 18 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">November 18 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:</p>
 <ol>
 <li>HTML (or XHTML) and CSS for presentation</li>
 <li>The Document Object Model (DOM) for dynamic display of and interaction with data</li>
@@ -401,119 +387,115 @@
 <li>JavaScript to bring these technologies together</li>
 </ol>
 <p>
-                  <p class="read-more"><a href="/articles/2010-11-18-Ajax-Primer/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-11-18-Ajax-Primer/" data-url="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-text="Ajax primer #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-11-18-Ajax-Primer/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-11-18-Ajax-Primer/" data-url="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-text="Ajax primer #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">October 30 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><h3>About PMD</h3>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">October 30 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><h3>About PMD</h3>
 
 <p>How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &quot;PMD&quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. </p>
 <p><b>Note</b>: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.</p>
 <p>PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:</p>
 <p>
-                  <p class="read-more"><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-text="Use PMD - Programming Mistake Detector? #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-text="Use PMD - Programming Mistake Detector? #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">October 20 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>The first question in building an application is &quot;How do I divide it up into packages?&quot;. For typical business applications, there seems to be two ways of answering this question.</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">October 20 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>The first question in building an application is &quot;How do I divide it up into packages?&quot;. For typical business applications, there seems to be two ways of answering this question.</p>
 <ul>
 <li>Package by feature</li>
 <li>Package by layer</li>
 </ul>
 <p>In my experience, the package-by-feature style seems to be the superior of the two. Here are some of the reasoning:</p>
 <p>
-                  <p class="read-more"><a href="/articles/2010-10-30-Package-By-Features/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-10-30-Package-By-Features/" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-text="Package by feature not layer #best-practices #java /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-10-30-Package-By-Features/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-10-30-Package-By-Features/" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-text="Package by feature not layer #best-practices #java /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">October 20 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">October 20 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.</p>
 <p>In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like &quot;MonetaryAmount.java&quot; that are wrappers over &quot;BigDecimal&quot; class of the JDK and that provides helper methods and functionality as needed by the business application.</p>
 <p>
-                  <p class="read-more"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-text="Beware of floating point numbers #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-text="Beware of floating point numbers #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">September 19 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">September 19 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :</p>
 <ul>
 <li>a final class cannot be extended</li>
 <li>a final method cannot be overridden</li>
@@ -521,58 +503,56 @@
 </ul>
 <p>In the last case, &quot;value&quot; for primitives is understood in the usual sense, while &quot;value&quot; for objects means the object&#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.</p>
 <p>
-                  <p class="read-more"><a href="/articles/2010-09-19-Use-Final-Liberally/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-09-19-Use-Final-Liberally/" data-url="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/" data-text="Use final liberally. Please do. #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-09-19-Use-Final-Liberally/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-09-19-Use-Final-Liberally/" data-url="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/" data-text="Use final liberally. Please do. #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">August 29 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p><b>Allowing a method to be overridden should always be done intentionally, not by accident</b>.</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">August 29 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p><b>Allowing a method to be overridden should always be done intentionally, not by accident</b>.</p>
 <p>Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.</p>
 <p>
-                  <p class="read-more"><a href="/articles/2010-08-29-Overiride-Carefully/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-08-29-Overiride-Carefully/" data-url="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-text="Overridable methods need special care #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-08-29-Overiride-Carefully/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-08-29-Overiride-Carefully/" data-url="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-text="Overridable methods need special care #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-            <article class="post shadow">
-              <header>
-                <h1><a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a>
-                  <footer class="footer">
-                    <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
-                      | on&nbsp;<a href="/archive.html" class="back">August 07 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
-                    </div>
-                  </footer>
-                </h1>
-                <hr>
-                <section class="content"><p>Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance.</p>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article>
+          <article class="post shadow">
+            <header>
+              <h1><a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a></h1>
+              <footer class="footer">
+                <div style="font-size: 13px" class="inner">Posted by&nbsp;<span class="author"><a href="mailto:sanjeevonline@gmail.com">Sanjeev Kumar</a></span>&nbsp;
+                  | on&nbsp;<a href="/archive.html" class="back">August 07 2010&nbsp;</a>|&nbsp;<a href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/#disqus_thread">Comments</a>| Tags :&nbsp;<a href="/tag/java.html" rel="category tag" title="View all posts in 'java'">java</a>&nbsp;<a href="/tag/best-practices.html" rel="category tag" title="View all posts in 'best-practices'">best-practices</a>&nbsp;
+                </div>
+              </footer>
+              <hr>
+              <section class="content"><p>Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance.</p>
 <ul>
 <li>Composition<ul>
 <li>Functionality of an object is made up of an aggregate of different classes</li>
@@ -588,24 +568,23 @@
 </li>
 </ul>
 <p>
-                  <p class="read-more"><a href="/articles/2010-08-09-Composition-Inheritance/">More...</a></p></section>
-                <hr>
-                <div id="social_bottom" class="topsocial">
-                  <div class="social"><a href="/articles/2010-08-09-Composition-Inheritance/" data-url="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/" data-text="Prefer composition over inheritance #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
-                      <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                  </div>
-                  <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/"></g:plusone></div>
-                  <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/" data-counter="top"></script></div>
-                  <div class="social">
-                    <div data-href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
-                  </div>
+                <p class="read-more"><a href="/articles/2010-08-09-Composition-Inheritance/">More...</a></p></section>
+              <hr>
+              <div id="social_bottom" class="topsocial">
+                <div class="social"><a href="/articles/2010-08-09-Composition-Inheritance/" data-url="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/" data-text="Prefer composition over inheritance #java #best-practices /via @sandee_sh" data-count="vertical" class="twitter-share-button">
+                    <twitter-share-button></twitter-share-button></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
                 </div>
-              </header>
-            </article>
-          </div><a href="/archive.html" id="archive">Visit the archives!</a>
+                <div class="social"><g:plusone size="tall" href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/"></g:plusone></div>
+                <div class="social"><script type="IN/Share" data-url="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/" data-counter="top"></script></div>
+                <div class="social">
+                  <div data-href="http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/" data-width="450" data-layout="box_count" data-show-faces="true" data-send="false" class="fb-like"></div>
+                </div>
+              </div>
+            </header>
+          </article><a href="/archive.html" id="archive">Visit the archives!</a>
         </div>
-        <div id="sidebar" class="span3">
-          <div class="sidebar-header"><a href="http://www.sanjeevonline.com"><img src="/assets/images/sanjeev_ranit.JPG"></a>
+        <div id="sidebar" class="col-lg-3 col-sm-3">
+          <div class="sidebar-header"><a href="http://www.sanjeevonline.com"><img src="/assets/images/sanjeev_ranit.JPG" class="img-circle img-responsive"></a>
             <hr>
             <h3>
               <p class="pull-right"><a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fblog.sanjeevonline.com%2Ffeed"><img src="/assets/images/feedly.png"></a></p>

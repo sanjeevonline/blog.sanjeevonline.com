@@ -26,54 +26,52 @@
       
       @media only screen
       and (min-width : 768px)
-      and (max-width : 979px) {
+      and (max-width : 995px) {
         h3 {
               font-size: 1.2em;
         }
       }
       
     </style>
-    <link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="/assets/css/prettify.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=ABeeZee&amp;subset=latin">
     <link rel="stylesheet" href="/assets/css/app.css">
   </head>
   <body>
     <div class="container">
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container"><a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a href="http://blog.sanjeevonline.com" class="brand">The Rootless Wanderer</a>
-            <div class="nav-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
-              <ul class="nav">
-                <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/tag/agile.html">agile</a></li>
-                    <li><a href="/tag/best-practices.html">best-practices</a></li>
-                    <li><a href="/tag/eclipse.html">eclipse</a></li>
-                    <li><a href="/tag/java.html">java</a></li>
-                    <li><a href="/tag/nodejs.html">nodejs</a></li>
-                    <li><a href="/tag/productivity.html">productivity</a></li>
-                    <li><a href="/tag/travel.html">travel</a></li>
-                    <li><a href="/tag/trivia.html">trivia</a></li>
-                  </ul>
-                </li>
-                <li><a href="/archive.html">Archive</a></li>
-              </ul>
-            </div>
-            <div class="pull-right nav-collapse collapse">
-              <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-search pull-left"><span class="glass js-search-action"><i></i></span>
-                <input type="hidden" value="UTF-8" name="ie">
-                <input type="hidden" value="UTF-8" name="oe">
-                <input type="hidden" value="blog.sanjeevonline.com" name="domains">
-                <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
-                <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
-              </form>
-            </div>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header"><a href="http://blog.sanjeevonline.com" class="navbar-brand">The Rootless Wanderer</a>
+            <buttona type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></buttona>
+          </div>
+          <div id="navbar-main" class="navbar-collapse collapse"><!-- .nav, .navbar-search, .navbar-form, etc -->
+            <ul class="nav navbar-nav">
+              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Tags<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/tag/agile.html">agile</a></li>
+                  <li><a href="/tag/best-practices.html">best-practices</a></li>
+                  <li><a href="/tag/eclipse.html">eclipse</a></li>
+                  <li><a href="/tag/java.html">java</a></li>
+                  <li><a href="/tag/nodejs.html">nodejs</a></li>
+                  <li><a href="/tag/productivity.html">productivity</a></li>
+                  <li><a href="/tag/travel.html">travel</a></li>
+                  <li><a href="/tag/trivia.html">trivia</a></li>
+                </ul>
+              </li>
+              <li><a href="/archive.html">Archive</a></li>
+            </ul>
+            <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-form pull-right"><span class="glass js-search-action"><i></i></span>
+              <input type="hidden" value="UTF-8" name="ie">
+              <input type="hidden" value="UTF-8" name="oe">
+              <input type="hidden" value="blog.sanjeevonline.com" name="domains">
+              <input type="hidden" value="blog.sanjeevonline.com" name="sitesearch">
+              <input name="q" type="text" placeholder="Search using Google..." class="search-query span2">
+            </form>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="span9">
+        <div class="col-lg-9 col-sm-9">
           <article class="post shadow">
             <div>
               <h1>High school reunion</h1>
@@ -129,8 +127,8 @@
             <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
           </article>
         </div>
-        <div id="sidebar" class="span3">
-          <div class="sidebar-header"><a href="http://www.sanjeevonline.com"><img src="/assets/images/sanjeev_ranit.JPG"></a>
+        <div id="sidebar" class="col-lg-3 col-sm-3">
+          <div class="sidebar-header"><a href="http://www.sanjeevonline.com"><img src="/assets/images/sanjeev_ranit.JPG" class="img-circle img-responsive"></a>
             <hr>
             <h3>
               <p class="pull-right"><a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fblog.sanjeevonline.com%2Ffeed"><img src="/assets/images/feedly.png"></a></p>
