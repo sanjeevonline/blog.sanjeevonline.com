@@ -911,54 +911,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 </description>
     </item>
     <item>
-      <title>Use PMD - Programming Mistake Detector?</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</link>
-      <pubDate>Sat, 30 Oct 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</guid>
-      <author></author>
-      <description>&lt;h3&gt;About PMD&lt;/h3&gt;
-
-&lt;p&gt;How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &amp;quot;PMD&amp;quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. &lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.&lt;/p&gt;
-&lt;p&gt;PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Possible bugs - empty try/catch/finally/switch statements&lt;/li&gt;
-&lt;li&gt;Dead code - unused local variables, parameters and private methods&lt;/li&gt;
-&lt;li&gt;Suboptimal code - wasteful String/StringBuffer usage&lt;/li&gt;
-&lt;li&gt;Overcomplicated expressions - unnecessary if statements, for loops that could be while loops&lt;/li&gt;
-&lt;li&gt;Duplicate code - copied/pasted code means copied/pasted bugs&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You can &lt;a href=&quot;http://sourceforge.net/project/showfiles.php?group_id=56262&quot;&gt;download everything from here&lt;/a&gt;, and you can get an overview of all the rules at the &lt;a href=&quot;http://pmd.sourceforge.net/rules/index.html&quot;&gt;rulesets index page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;PMD is integrated with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.&lt;/p&gt;
-&lt;h3&gt;Instructions for configuring PMD for Eclipse&lt;/h3&gt;
-
-
-&lt;p&gt;Let me walk you through the steps required to quickly configure it with your Eclipse installation. It works like a breeze.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Start Eclipse.&lt;/li&gt;
-&lt;li&gt;Start the installation procedure : select the Help&amp;gt;Software Updates&amp;gt;Find and Install... menu item.&lt;/li&gt;
-&lt;li&gt;Select &amp;quot;Search for new features to install&amp;quot; option and click Next.&lt;/li&gt;
-&lt;li&gt;Click New Remote Site...&lt;/li&gt;
-&lt;li&gt;Give a name (ie PMD Eclipse Site), enter the URL &lt;a href=&quot;http://pmd.sourceforge.net/eclipse&quot;&gt;http://pmd.sourceforge.net/eclipse&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Select this new site in the Sites to include in search list and click Next.&lt;/li&gt;
-&lt;li&gt;Select PMD for Eclipse 3 and Apache Xerces in the &amp;quot;Select the features to install&amp;quot; list and click Next.&lt;/li&gt;
-&lt;li&gt;Accept the terms of the license agreements and click Next.&lt;/li&gt;
-&lt;li&gt;Verify that the install location is your Eclipse installation directory, otherwise select the correct one, click Finish.&lt;/li&gt;
-&lt;li&gt;A warning appear telling the feature is not signed. Ignore and click Install to continue.&lt;/li&gt;
-&lt;li&gt;Accept to restart the workbench to load PMD into the workbench.
-Eclipse is restarted and a PMD welcome page is displayed : the plugin is correctly installed. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Writing custom rules&lt;/h3&gt;
-
-&lt;p&gt;It is interesting and important to note that you can write your custom rules. Writing PMD rules is cool because you don&amp;#39;t have to wait for PMD team to get around to implementing feature requests. Following are the two approaches to write custom rules.
-1. Write a rule using Java
-2. Write an XPath expression
-More details about each of these approaches can be found at &lt;a href=&quot;http://pmd.sourceforge.net/howtowritearule.html&quot;&gt;sourceforge&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Happy coding.. &lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Ajax primer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
       <pubDate>Thu, 18 Nov 2010 15:00:00 +0550</pubDate>
@@ -1007,6 +959,54 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>Use PMD - Programming Mistake Detector?</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</link>
+      <pubDate>Sat, 30 Oct 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</guid>
+      <author></author>
+      <description>&lt;h3&gt;About PMD&lt;/h3&gt;
+
+&lt;p&gt;How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &amp;quot;PMD&amp;quot;. It is aiming towards becoming a de-facto tool for analyzing the source code and is being used by more and more Java applications everyday. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: There are a lot many tools that PMD competes with i.e Checkstyle, FindBugs, Hammurapi, Soot, Squale etc. However exploring capabilities of these tools(other than PMD) are out of scope of this article.&lt;/p&gt;
+&lt;p&gt;PMD is a static rule set based Java source code analyzer that identifies potential problems in the code like:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Possible bugs - empty try/catch/finally/switch statements&lt;/li&gt;
+&lt;li&gt;Dead code - unused local variables, parameters and private methods&lt;/li&gt;
+&lt;li&gt;Suboptimal code - wasteful String/StringBuffer usage&lt;/li&gt;
+&lt;li&gt;Overcomplicated expressions - unnecessary if statements, for loops that could be while loops&lt;/li&gt;
+&lt;li&gt;Duplicate code - copied/pasted code means copied/pasted bugs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can &lt;a href=&quot;http://sourceforge.net/project/showfiles.php?group_id=56262&quot;&gt;download everything from here&lt;/a&gt;, and you can get an overview of all the rules at the &lt;a href=&quot;http://pmd.sourceforge.net/rules/index.html&quot;&gt;rulesets index page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PMD is integrated with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.&lt;/p&gt;
+&lt;h3&gt;Instructions for configuring PMD for Eclipse&lt;/h3&gt;
+
+
+&lt;p&gt;Let me walk you through the steps required to quickly configure it with your Eclipse installation. It works like a breeze.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start Eclipse.&lt;/li&gt;
+&lt;li&gt;Start the installation procedure : select the Help&amp;gt;Software Updates&amp;gt;Find and Install... menu item.&lt;/li&gt;
+&lt;li&gt;Select &amp;quot;Search for new features to install&amp;quot; option and click Next.&lt;/li&gt;
+&lt;li&gt;Click New Remote Site...&lt;/li&gt;
+&lt;li&gt;Give a name (ie PMD Eclipse Site), enter the URL &lt;a href=&quot;http://pmd.sourceforge.net/eclipse&quot;&gt;http://pmd.sourceforge.net/eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Select this new site in the Sites to include in search list and click Next.&lt;/li&gt;
+&lt;li&gt;Select PMD for Eclipse 3 and Apache Xerces in the &amp;quot;Select the features to install&amp;quot; list and click Next.&lt;/li&gt;
+&lt;li&gt;Accept the terms of the license agreements and click Next.&lt;/li&gt;
+&lt;li&gt;Verify that the install location is your Eclipse installation directory, otherwise select the correct one, click Finish.&lt;/li&gt;
+&lt;li&gt;A warning appear telling the feature is not signed. Ignore and click Install to continue.&lt;/li&gt;
+&lt;li&gt;Accept to restart the workbench to load PMD into the workbench.
+Eclipse is restarted and a PMD welcome page is displayed : the plugin is correctly installed. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Writing custom rules&lt;/h3&gt;
+
+&lt;p&gt;It is interesting and important to note that you can write your custom rules. Writing PMD rules is cool because you don&amp;#39;t have to wait for PMD team to get around to implementing feature requests. Following are the two approaches to write custom rules.
+1. Write a rule using Java
+2. Write an XPath expression
+More details about each of these approaches can be found at &lt;a href=&quot;http://pmd.sourceforge.net/howtowritearule.html&quot;&gt;sourceforge&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy coding.. &lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Use final liberally. Please do.</title>
       <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
       <pubDate>Sun, 19 Sep 2010 15:00:00 +0550</pubDate>
@@ -1050,18 +1050,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Overridable methods need special care</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</link>
-      <pubDate>Sun, 29 Aug 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</guid>
-      <author></author>
-      <description>&lt;p&gt;&lt;b&gt;Allowing a method to be overridden should always be done intentionally, not by accident&lt;/b&gt;.&lt;/p&gt;
-&lt;p&gt;Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&amp;#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;When you do override a method, you should use the @Override annotation. This allows the compiler to verify that the method is indeed a valid override of an existing method. For example, your implementations of toString, equals, and hashCode should always use @Override in the method header. &lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Prefer composition over inheritance</title>
       <link>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</link>
       <pubDate>Sat, 07 Aug 2010 15:00:00 +0550</pubDate>
@@ -1095,20 +1083,6 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>History, heritage and beauty of Italy</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
-      <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
-      <author></author>
-      <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
-&lt;p&gt;I found Rome very close and comparable to our India, particularly Delhi, in a number of ways. The weather, the people, their hospitality, familiar and pleasant smell of the soil after it rained, helping and fun loving nature of people, houses with roof top television antennas and scooters everywhere were some of the few similarities that we observed. We explored the rich history of Rome for three days followed by an afternoon at Ostia Antica beach. The weather was at our side most of the times except for the first day when it rained throughout the day and last day when we nearly fainted due the hot sunny day.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
-&lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
-&lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>A day trip to Dinant, belgium</title>
       <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
       <pubDate>Mon, 07 Jun 2010 15:00:00 +0550</pubDate>
@@ -1123,21 +1097,29 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
-      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <title>Overridable methods need special care</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</link>
+      <pubDate>Sun, 29 Aug 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</guid>
       <author></author>
-      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
-&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
-&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
+      <description>&lt;p&gt;&lt;b&gt;Allowing a method to be overridden should always be done intentionally, not by accident&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;Any method which is not private, static, or final can be overridden. Over-ridable methods, and any methods which call them, represent unusual places in your code, to which special attention must be paid. This is because sub-classing violates encapsulation, in the sense that it is possible for a subclass to break its superclass&amp;#39;s contract. If you do not intend a method to be overridden, then you should declare it as private, static, or final.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
-&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
-It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
-&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
-&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
-&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
+&lt;p&gt;When you do override a method, you should use the @Override annotation. This allows the compiler to verify that the method is indeed a valid override of an existing method. For example, your implementations of toString, equals, and hashCode should always use @Override in the method header. &lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>History, heritage and beauty of Italy</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
+      <pubDate>Wed, 07 Jul 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
+      <author></author>
+      <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
+&lt;p&gt;I found Rome very close and comparable to our India, particularly Delhi, in a number of ways. The weather, the people, their hospitality, familiar and pleasant smell of the soil after it rained, helping and fun loving nature of people, houses with roof top television antennas and scooters everywhere were some of the few similarities that we observed. We explored the rich history of Rome for three days followed by an afternoon at Ostia Antica beach. The weather was at our side most of the times except for the first day when it rained throughout the day and last day when we nearly fainted due the hot sunny day.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Colosseum was the best place to see in Rome closely followed by Vatican City, Trevi fountain, Spanish steps and a few piazzas (Rectangular open areas in the city usually surrounded by restaurants and shops. Nice places to hang out with friends and observe city culture).&lt;/p&gt;
+&lt;p&gt;Next we went to Florence and just after checking in our hotel we went to see the leaning tower of Pisa. It was worth the visit and the white marble used in its construction reminded me of the Taj Mahal. We returned to Florence in the evening and kept roaming around in the city till late night while Ranit was having a nap in his Pram. It was fun. Florence has some very huge and beautiful old churches that we kept looking at in awe.&lt;/p&gt;
+&lt;p&gt;Final place on our trip was Venice and we had spared around 3 days for this place. I am not exaggerating when I say that Venice was the most beautiful place that I have seen till now. Rajni seconds this feeling. We spent a lot of time on the boats. We also saw the making of Murano glass on Murano island and Rajni even bought a jewellery set as a souvenir from Murano. We walked through the streets deep inside the Venice city and thoroughly enjoyed our time there. Ice lollies proved a lot effective in beating the heat on venice during those sunny days. There is so much about the city to talk and write about; Some other time perhaps.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1157,6 +1139,24 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
 &lt;p&gt;Now we were at our last day in Paris but the good news was that we had the full day in hand as our bus was leaving from Paris at 6 in the evening. On this day we visited Chateau De Vincennes followed by the Parc Floral de Paris. It is relatively lesser known park but we enjoyed the most here. It was very beautiful and has some nice scenic spots to click some decent snaps.   If you are with kids they will love it. We also saw St. Marten canal and Paris De Nord on this day before heading towards our bus. &lt;/p&gt;
 &lt;p&gt;And just before we were to board our bus for Brussels and when I was feeling happy about being able to accomplish our trip within our allocated budget, Rajni started bargaining for a Perfume form Paris. Eventually we overshot our allocated budget by some 100 € :-(.&lt;/p&gt;
 &lt;p&gt;PS: I would like to thank this little french guy who helped us in reaching Champs-Elysees after we boarded the wrong bus and realized it half an hour later. It was difficult for him to make us understand(French Only Guy) the route so he came out of his way to make sure that we reach our destination safely . I learnt that language, nationality and color of skin is not a barrier if you are committed to help others, anywhere in this world.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Day trip to the largest city of Netherlands - Amsterdam</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 +0550</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
+      <author></author>
+      <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun&amp;#39;s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni&amp;#39;s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant &amp;quot; I AMSTERDAM&amp;quot; structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
+&lt;p&gt;After spending sometime at Dam Square we moved towards the Bloeman market which is known for wide variety of flowers and souvenirs items. We bought some small wooden shoes, small windmill replicas and famous cheese of Holland.&lt;/p&gt;
+&lt;p&gt;After that we started asking people about the &amp;quot;I AMSTERDAM&amp;quot; structure. Nobody seemed to knew about any such thing in Amsterdam. Eventually we got some hint about it that it was near &amp;quot;Rijks&amp;quot; museum. On the way to the Rijks museum we passed through the famous Vondel Park and clicked some snaps there. It was freezing cold in the park as it was open from all sides. We were surprised to see some people jogging there in shots and plane track suits. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After asking a few more people we finally made it to the museum and the &amp;quot;I AMSTERDAM&amp;quot; place. &lt;/p&gt;
+&lt;p&gt;We clicked some snaps there and after Rajni was satisfied, we moved ahead to see the red light area of Amsterdam. It started raining on the way and we were carrying only one umbrella which was obviously not enough to accommodate all of us.  We were also very hungry so decided to get into some restaurant for some snacks and stay there until it stops raining.
+It was all non-vegetarian restaurant, so Anagha did not have anything accept for few biscuits with Mayonnaise. She is too sweet to complain about anything.&lt;/p&gt;
+&lt;p&gt;Eventually we all reached the place that we all wanted to see and that was Red Light district. We didn&amp;#39;t need to ask anyone about this place as it was all too obvious as soon as we reached there. Thankfully, Ranit was sleeping in his pram so I was spared from answering all those questions that he would have asked. We spend some half an hour in those streets and then started back for Amsterdam railway station from where we had to catch our train for Brussels.&lt;/p&gt;
+&lt;p&gt;It was the most fun filling and full filling trip that we have had in Europe and we highly appreciate Arun and Anagha for being the perfect host. &lt;/p&gt;
+&lt;p&gt;I am looking forward for some more site seeing tours of Nederlands during tulip season. &lt;/p&gt;
 </description>
     </item>
     <item>
