@@ -1,8 +1,8 @@
 {
-    "name": "blog.bazoud.com",
+    "name": "blog.sanjeevonline.com",
     "version": "0.2.0",
-    "description": "The source code of Olivier Bazoud's website",
-    "homepage": "https://github.com/obazoud/blog.bazoud.com",
+    "description": "The source code of Sanjeev Kumar's blog",
+    "homepage": "https://github.com/sanjeevonline/blog.sanjeevonline.com",
     "keywords": [
         "twitter",
         "bootstrap",
@@ -11,21 +11,21 @@
         "theme"
     ],
     "author": {
-        "name": "Olivier Bazoud",
-        "url": "http://blog.bazoud.com"
+        "name": "Sanjeev Kumar",
+        "url": "http://blog.sanjeevonline.com"
     },
     "maintainers": [
         {
-            "name": "Olivier Bazoud",
-            "url": "http://blog.bazoud.com"
+            "name": "Sanjeev Kumar",
+            "url": "http://blog.sanjeevonline.com"
         }
     ],
     "bugs": {
-        "url": "https://github.com/obazoud/blog.bazoud.com/issues"
+        "url": "https://github.com/sanjeevonline/blog.sanjeevonline.com/issues"
     },
     "repository" : {
         "type" : "git",
-        "url" : "https://github.com/obazoud/blog.bazoud.com"
+        "url" : "https://github.com/sanjeevonline/blog.sanjeevonline.com"
     },
     "dependencies": {
         "coffee-script": "1.3.3",
