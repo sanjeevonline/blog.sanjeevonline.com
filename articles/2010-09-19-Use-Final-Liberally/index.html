@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Use final liberally. Please do. - The Rootless Wanderer</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <meta charset="utf-8">
-    <meta content="IE=edge;chrome=1">
-    <meta http-equiv="X-UA-Compatible">
-    <!--meta(http-equiv="content-type", content='width=device-width, initial-scale=1.0, charset=utf-8')-->
-    <link rel="stylesheet" href="/assets/css/github.css">
-    <link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Use final liberally. Please do. -Sanjeev Kumar
+    </title>
+    <link rel="alternate" href="http://blog.sanjeevonline.com/feed.xml" type="application/rss+xml" title="The rootless wanderer">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <style type="text/css">
       body {
           padding-top: 60px;
@@ -27,9 +27,9 @@
       @media only screen
       and (min-width : 768px)
       and (max-width : 995px) {
-        h3 {
+          h3 {
               font-size: 1.2em;
-        }
+          }
       }
       
     </style>
@@ -58,7 +58,7 @@
                   <li><a href="/tag/trivia.html">trivia</a></li>
                 </ul>
               </li>
-              <li><a href="/archive.html">Archive</a></li>
+              <li><a href="/archive.html">Archives</a></li>
             </ul>
             <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-form pull-right"><span class="glass js-search-action"><i></i></span>
               <input type="hidden" value="UTF-8" name="ie">
@@ -88,7 +88,7 @@
 <li>a final method cannot be overridden</li>
 <li>final fields, parameters, and local variables cannot change their value once set</li>
 </ul>
-<p>In the last case, &quot;value&quot; for primitives is understood in the usual sense, while &quot;value&quot; for objects means the object&#39;s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.</p>
+<p>In the last case, “value” for primitives is understood in the usual sense, while “value” for objects means the object’s identity, not its state. Once the identity of a final object reference is set, it can still change its state, but not its identity. Declaring primitive fields as final automatically ensures thread-safety for that field.</p>
 <p><span class="more"></span></p>
 <p>Some habitually declare parameters as final, since this almost always is the desired behaviour. Others find this verbose, and of little real benefit.</p>
 <p>Consistently using final with local variables (when appropriate) can be useful as well. It brings attention to the non-final local variables, which usually have more logic associated with them (for example, result variables, accumulators, loop variables). Many find this verbose. A reasonable approach is to use final for local variables only if there is at least one non-final local variable in the method ; this serves to quickly distinguish the non-final local variables from the others.</p>
@@ -96,7 +96,7 @@
 <ul>
 <li>clearly communicates your intent</li>
 <li>allows the compiler and virtual machine to perform minor optimizations</li>
-<li>clearly flags items which are simpler in behavior - final says,  &quot;If you are looking for complexity, you won&#39;t find it here.&quot;</li>
+<li>clearly flags items which are simpler in behavior - final says,  “If you are looking for complexity, you won’t find it here.”</li>
 </ul>
 </section>
             <hr>
@@ -116,19 +116,19 @@
             <table class="table table-striped">
               <tbody>
                 <tr>
-                  <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+                  <td><a href="/articles/2013-05-27-New-Date-Time-API/" title="java">New Date and Time API in Java8</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+                  <td><a href="/articles/2012-05-11-Java7-Updates/" title="java">Java7 updates</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+                  <td><a href="/articles/2011-10-23-Evolution-Of-Java/" title="java">Evolution of Java</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+                  <td><a href="/articles/2012-01-05-Choosing-The-Right-Collections/" title="java,best-practices">Choosing the right collection</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
+                  <td><a href="/articles/2011-05-05-Understanding-Comparable/" title="java,best-practices">Implementing Comparable and understanding compareTo</a></td>
                 </tr>
               </tbody>
             </table>
@@ -169,11 +169,6 @@
             </h3>
             <hr>
             <h3>
-              <p class="pull-right"><a href="https://www.facebook.com/sanjeevonline"><img src="/assets/images/facebook.png"></a></p>
-              <P><a href="https://www.facebook.com/sanjeevonline" style="color:#3B5998;">Facebook</a></P>
-            </h3>
-            <hr>
-            <h3>
               <p class="pull-right"><a href="http://www.javagyan.com"><img src="/assets/images/javagyan.png"></a></p>
               <P><a href="http://www.javagyan.com" style="color:grey;">JavaGyan</a></P>
             </h3>
@@ -192,8 +187,8 @@
               <li><a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/">Change default author name for JavaDocs in Eclipse</a><br></li>
               <li><a href="/articles/2011-07-08-Remote-Debugging-Jboss/">Remote debugging in Eclipse</a><br></li>
               <li><a href="/articles/2011-06-01-Debugging-With-Eclipse/">Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</a><br></li>
-              <li><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a><br></li>
               <li><a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">Eclipse keyboard shortcuts</a><br></li>
+              <li><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a><br></li>
               <li><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a><br></li>
               <li><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">Troubleshooting eclipse issues</a><br></li>
               <li><a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a><br></li>
@@ -205,8 +200,8 @@
               <li><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a><br></li>
               <li><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a><br></li>
               <li><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a><br></li>
-              <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a><br></li>
               <li><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a><br></li>
+              <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a><br></li>
               <li><a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a><br></li>
               <li><a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a><br></li>
               <li><a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a><br></li>
@@ -229,9 +224,6 @@
         </div>
       </footer>
     </div>
-    <!--le javascript-->
-    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
-    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
     <script src="/assets/javascript/jquery.min.js"></script>
     <script src="/assets/javascript/app.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Exception handling guidelines/best practices - The Rootless Wanderer</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <meta charset="utf-8">
-    <meta content="IE=edge;chrome=1">
-    <meta http-equiv="X-UA-Compatible">
-    <!--meta(http-equiv="content-type", content='width=device-width, initial-scale=1.0, charset=utf-8')-->
-    <link rel="stylesheet" href="/assets/css/github.css">
-    <link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Exception handling guidelines/best practices -Sanjeev Kumar
+    </title>
+    <link rel="alternate" href="http://blog.sanjeevonline.com/feed.xml" type="application/rss+xml" title="The rootless wanderer">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <style type="text/css">
       body {
           padding-top: 60px;
@@ -27,9 +27,9 @@
       @media only screen
       and (min-width : 768px)
       and (max-width : 995px) {
-        h3 {
+          h3 {
               font-size: 1.2em;
-        }
+          }
       }
       
     </style>
@@ -58,7 +58,7 @@
                   <li><a href="/tag/trivia.html">trivia</a></li>
                 </ul>
               </li>
-              <li><a href="/archive.html">Archive</a></li>
+              <li><a href="/archive.html">Archives</a></li>
             </ul>
             <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-form pull-right"><span class="glass js-search-action"><i></i></span>
               <input type="hidden" value="UTF-8" name="ie">
@@ -90,23 +90,23 @@
 <p><span class="more"></span></p>
 <ul>
 <li><b>Recast lower-level exceptions to higher-level ones whenever you raise an abstraction level</b>: Don’t let implementation details leak out of a method invocation as exceptions. Otherwise, your users might think your software is broken. When low-level exceptions percolate up to a high-level handler, there’s little context to assist the handler in making informed decisions or reporting conditions that are traceable to any obvious cause. Recasting an exception whenever you cross an abstraction boundary enables exception handlers higher up in the call chain to make more informed decisions. If you want to include a problem trace when recasting them, you can always create a chained exception. A chained exception provides added context and holds a reference to the original lower level exception. You can repeatedly chain exceptions.</li>
-<li><p><b>Provide context along with an exception</b>: What’s most important in exception handling is information that helps create an informed response. Exception classes hold information. You can design them to be packed with information in addition to the bare-bones stack trace information provided by default. You might include values of parameters that raised the exception, specific error text, or detailed information that could be useful to plan a recovery. When an exception occurs, it is important that all pertinent data be passed to the exception&#39;s constructor. Such data is often critical for understanding and solving the problem, and can greatly reduce the time needed to find a solution.
+<li><p><b>Provide context along with an exception</b>: What’s most important in exception handling is information that helps create an informed response. Exception classes hold information. You can design them to be packed with information in addition to the bare-bones stack trace information provided by default. You might include values of parameters that raised the exception, specific error text, or detailed information that could be useful to plan a recovery. When an exception occurs, it is important that all pertinent data be passed to the exception’s constructor. Such data is often critical for understanding and solving the problem, and can greatly reduce the time needed to find a solution.
 The this reference is sometimes useful for this purpose, since toString is implicitly called. In addition, if you are defining exception classes yourself, you may even design your constructors to force the caller to pass the pertinent data.</p>
 <p>  Uninformative stack traces are very frustrating for the maintainer, and often inspire even the most well-tempered programmers to temporarily violate local community standards for obscenity.</p>
 <p>  Example</p>
 <pre><code>public final class RangeChecker {
 
 /**
-* Return <span class="tag">&lt;<span class="title">code</span>&gt;</span>true<span class="tag">&lt;/<span class="title">code</span>&gt;</span> only if <span class="tag">&lt;<span class="title">code</span>&gt;</span>aNumber<span class="tag">&lt;/<span class="title">code</span>&gt;</span> is in the range
-* <span class="tag">&lt;<span class="title">code</span>&gt;</span>aLow..aHigh<span class="tag">&lt;/<span class="title">code</span>&gt;</span> (inclusive).
+* Return &lt;code&gt;true&lt;/code&gt; only if &lt;code&gt;aNumber&lt;/code&gt; is in the range
+* &lt;code&gt;aLow..aHigh&lt;/code&gt; (inclusive).
 *
-* @param <span class="tag">&lt;<span class="title">code</span>&gt;</span>aLow<span class="tag">&lt;/<span class="title">code</span>&gt;</span> less than or equal to <span class="tag">&lt;<span class="title">code</span>&gt;</span>aHigh<span class="tag">&lt;/<span class="title">code</span>&gt;</span>.
+* @param &lt;code&gt;aLow&lt;/code&gt; less than or equal to &lt;code&gt;aHigh&lt;/code&gt;.
 */
 static public boolean isInRange( int aNumber, int aLow, int aHigh ){
   if (aLow &gt; aHigh) {
-    throw new IllegalArgumentException("Low:" + aLow + " greater than High:" + aHigh);
+    throw new IllegalArgumentException(&quot;Low:&quot; + aLow + &quot; greater than High:&quot; + aHigh);
   }
-  return (aLow <span class="tag">&lt;<span class="title">=</span> <span class="attribute">aNumber</span> &amp;&amp; <span class="attribute">aNumber</span> &lt;= <span class="attribute">aHigh</span>);
+  return (aLow &lt;= aNumber &amp;&amp; aNumber &lt;= aHigh);
 }
 }</code></pre>
 </li>
@@ -116,17 +116,17 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
 <li><b>Don’t repeatedly re-throw the same exception</b>: Although exceptions don’t cost anything until they’re raised, programs that frequently raise exceptions run more slowly.</li>
 <li><p><b>Avoid empty catch blocks</b>: It is usually a very bad idea to have an empty catch block because when the exception occurs, nothing happens, and the program fails for unknown reasons.</p>
 <p>  In general, when a exception occurs, it can be thrown up to the caller, or it can be caught in a catch block. When catching an exception, some options include :</p>
-<pre><code>   ** Inform <span class="keyword">the</span> user (strongly recommended)
-   ** Log <span class="keyword">the</span> problem, using <span class="keyword">the</span> <span class="type">application</span> specific loggers <span class="keyword">or</span> JDK logging services, <span class="keyword">or</span> similar tool
-   ** Send an email describing <span class="keyword">the</span> problem <span class="keyword">to</span> an administrator</code></pre>
-<p>  Deciding what exactly to do seems to depend on the nature of the problem. If there is an actual bug in the program - a defect that needs to be fixed - then one might do all three of the above. In this case, the end user should likely be shown a generic &quot;Sorry, we goofed&quot; message, not a stack trace. It is usually considered bad form to display a stack trace to a non-technical end user, or if exposing a stack trace may be a security risk.</p>
+<pre><code>   ** Inform the user (strongly recommended)
+   ** Log the problem, using the application specific loggers or JDK logging services, or similar tool
+   ** Send an email describing the problem to an administrator</code></pre>
+<p>  Deciding what exactly to do seems to depend on the nature of the problem. If there is an actual bug in the program - a defect that needs to be fixed - then one might do all three of the above. In this case, the end user should likely be shown a generic “Sorry, we goofed” message, not a stack trace. It is usually considered bad form to display a stack trace to a non-technical end user, or if exposing a stack trace may be a security risk.</p>
 <p>  If the exception does not represent a bug, then different behavior may be appropriate. For example, if a problem with user input is detected and an exception is thrown as a result, then merely informing the user of the problem might be all that is required.</p>
 </li>
 <li><p><b>Exception translation</b>: Occasionally, it is appropriate to translate one type of exception into another.</p>
 <p>  The data layer, for example, can profit from this technique. Here, the data layer seeks to hide almost all of its implementation details from other parts of the program. It even seeks to hide the basic persistence mechanism - whether or not a database or an ad hoc file scheme is used, for example.</p>
 <p>  However, every persistence style has specific exceptions - SQLException for databases,  and IOException for files, for example. If the rest of the program is to remain truly ignorant of the persistence mechanism, then these exceptions cannot be allowed to propagate outside the data layer, and must be translated into some higher level abstraction - DataAccessException, say.</p>
 </li>
-<li><b>Use template for repeated try-catch</b>: Java&#39;s try-catch blocks are particularly common when using APIs which give an important role to checked exceptions (such as SQLException in JDBC). When using such an API, many published examples simply repeat the same try-catch code structure whenever necessary. However, it is simple to eliminate such code repetition using the template method pattern. The idea is to define the structure of the try-catch block in one place, in an abstract base class (ABC). Such an ABC is then extended whenever that particular try-catch block is needed. The concrete implementation of such an ABC will often have simple, &quot;straight line&quot; code.</li>
+<li><b>Use template for repeated try-catch</b>: Java’s try-catch blocks are particularly common when using APIs which give an important role to checked exceptions (such as SQLException in JDBC). When using such an API, many published examples simply repeat the same try-catch code structure whenever necessary. However, it is simple to eliminate such code repetition using the template method pattern. The idea is to define the structure of the try-catch block in one place, in an abstract base class (ABC). Such an ABC is then extended whenever that particular try-catch block is needed. The concrete implementation of such an ABC will often have simple, “straight line” code.</li>
 </ul>
 </section>
             <hr>
@@ -146,19 +146,19 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
             <table class="table table-striped">
               <tbody>
                 <tr>
-                  <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+                  <td><a href="/articles/2013-05-27-New-Date-Time-API/" title="java">New Date and Time API in Java8</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+                  <td><a href="/articles/2012-05-11-Java7-Updates/" title="java">Java7 updates</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+                  <td><a href="/articles/2011-10-23-Evolution-Of-Java/" title="java">Evolution of Java</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+                  <td><a href="/articles/2012-01-05-Choosing-The-Right-Collections/" title="java,best-practices">Choosing the right collection</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
+                  <td><a href="/articles/2011-05-05-Understanding-Comparable/" title="java,best-practices">Implementing Comparable and understanding compareTo</a></td>
                 </tr>
               </tbody>
             </table>
@@ -199,11 +199,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
             </h3>
             <hr>
             <h3>
-              <p class="pull-right"><a href="https://www.facebook.com/sanjeevonline"><img src="/assets/images/facebook.png"></a></p>
-              <P><a href="https://www.facebook.com/sanjeevonline" style="color:#3B5998;">Facebook</a></P>
-            </h3>
-            <hr>
-            <h3>
               <p class="pull-right"><a href="http://www.javagyan.com"><img src="/assets/images/javagyan.png"></a></p>
               <P><a href="http://www.javagyan.com" style="color:grey;">JavaGyan</a></P>
             </h3>
@@ -222,8 +217,8 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
               <li><a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/">Change default author name for JavaDocs in Eclipse</a><br></li>
               <li><a href="/articles/2011-07-08-Remote-Debugging-Jboss/">Remote debugging in Eclipse</a><br></li>
               <li><a href="/articles/2011-06-01-Debugging-With-Eclipse/">Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</a><br></li>
-              <li><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a><br></li>
               <li><a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">Eclipse keyboard shortcuts</a><br></li>
+              <li><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a><br></li>
               <li><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a><br></li>
               <li><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">Troubleshooting eclipse issues</a><br></li>
               <li><a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a><br></li>
@@ -235,8 +230,8 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
               <li><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a><br></li>
               <li><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a><br></li>
               <li><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a><br></li>
-              <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a><br></li>
               <li><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a><br></li>
+              <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a><br></li>
               <li><a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a><br></li>
               <li><a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a><br></li>
               <li><a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a><br></li>
@@ -259,9 +254,6 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
         </div>
       </footer>
     </div>
-    <!--le javascript-->
-    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
-    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
     <script src="/assets/javascript/jquery.min.js"></script>
     <script src="/assets/javascript/app.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>

@@ -1,180 +1,790 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2013-08-28T17:25:44.453Z</updated>
+  <updated>2014-10-14T16:57:56.767Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
   <id>http://feeds.feedburner.com/sanjeevonline/rss</id>
   <generator uri="https://github.com/jnordberg/wintersmith" version="1.1.1">Wintersmith</generator>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[How &quot;Paid leave&quot; and &quot;April fool&quot; were born]]></title>
-      <description><![CDATA[Today I learned an interesting historical fact. Just have a look at the calendar for the month of September 1752. You will notice, 11 days are simply missing from the month - &lt;a href="http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/</id>
+      <description><![CDATA[Today I learned an interesting historical fact. Just have a look at the calendar for the month of September 1752. You will notice, 11 days are simply missing from the month - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2013-08-09T19:30:00.000Z</updated>
       <published>2013-08-09T19:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="trivia"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/">Today I learned an interesting historical fact. Just have a look at the calendar for the month of September 1752. You will notice, 11 days are simply missing from the month</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2013-08-11-History-Is-Really-Interesting//lastest.rss</link>
+      <content type="html">Today I learned an interesting historical fact. Just have a look at the calendar for the month of September 1752. You will notice, 11 days are simply missing from the month</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[New Date and Time API in Java8]]></title>
-      <description><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ... - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/</id>
+      <description><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2013-05-27T19:30:00.000Z</updated>
       <published>2013-05-27T19:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/">The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ...</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2013-05-27-New-Date-Time-API//lastest.rss</link>
+      <content type="html">The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ...</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Re-platformig this blog to Wintersmith]]></title>
-      <description><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ... - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/</id>
+      <description><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2013-05-24T19:30:00.000Z</updated>
       <published>2013-05-24T19:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="nodejs"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/">After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ...</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2013-05-25-Moving-Blog-To-Wintersmith//lastest.rss</link>
+      <content type="html">After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ...</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[High school reunion]]></title>
-      <description><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ... - &lt;a href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</id>
+      <description><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2013-05-19T09:30:00.000Z</updated>
       <published>2013-05-19T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="trivia"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/">It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ...</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2013-05-19-High-School-Reunion//lastest.rss</link>
+      <content type="html">It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ...</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Improving code quality in agile teams]]></title>
-      <description><![CDATA[Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind - &lt;a href="http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/</id>
+      <description><![CDATA[Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2012-11-21T09:30:00.000Z</updated>
       <published>2012-11-21T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="agile"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/">Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2012-11-21-Code-Quality-Agile-Teams//lastest.rss</link>
+      <content type="html">Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Java7 updates]]></title>
-      <description><![CDATA[It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples - &lt;a href="http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/</id>
+      <description><![CDATA[It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2012-05-11T09:30:00.000Z</updated>
       <published>2012-05-11T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/">It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2012-05-11-Java7-Updates//lastest.rss</link>
+      <content type="html">It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Evolution of Java]]></title>
-      <description><![CDATA[I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java. - &lt;a href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</id>
+      <description><![CDATA[I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2012-03-23T09:30:00.000Z</updated>
       <published>2012-03-23T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/">I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-10-23-Evolution-Of-Java//lastest.rss</link>
+      <content type="html">I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Choosing the right collection]]></title>
-      <description><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ... - &lt;a href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</id>
+      <description><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2012-01-05T09:30:00.000Z</updated>
       <published>2012-01-05T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/">Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ...</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2012-01-05-Choosing-The-Right-Collections//lastest.rss</link>
+      <content type="html">Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ...</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Change default author name for JavaDocs in Eclipse]]></title>
-      <description><![CDATA[The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions - &lt;a href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</id>
+      <description><![CDATA[The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2011-08-03T09:30:00.000Z</updated>
       <published>2011-08-03T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/">The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-08-03-Changing-Default-Author-Eclipse//lastest.rss</link>
+      <content type="html">The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
   <entry>
     <author>
       <name>sanjeev</name>
       <title type="html"><![CDATA[Remote debugging in Eclipse]]></title>
-      <description><![CDATA[To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server - &lt;a href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/"&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/"></link>
-      <id>http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</id>
+      <description><![CDATA[To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
       <updated>2011-07-08T09:30:00.000Z</updated>
       <published>2011-07-08T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <summary type="html"></summary>
-      <content type="html" xml:base="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/">To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server</content>
-      <link rel="replies" type="text/html" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/#disqus_thread" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" href="http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/#disqus_thread" thr:count="0">http://sanjeevonline.disqus.com/articles/2011-07-08-Remote-Debugging-Jboss//lastest.rss</link>
+      <content type="html">To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Skip over certain classes when using Step Into(F5) in Eclipse’s debugger]]></title>
+      <description><![CDATA[Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2011-06-01T09:30:00.000Z</updated>
+      <published>2011-06-01T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <summary type="html"></summary>
+      <content type="html">Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Implementing Comparable and understanding compareTo]]></title>
+      <description><![CDATA[Implementing Comparable and understanding compareTo - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2011-03-20T09:30:00.000Z</updated>
+      <published>2011-03-20T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">Implementing Comparable and understanding compareTo</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Eclipse keyboard shortcuts]]></title>
+      <description><![CDATA[These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/). - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2011-03-20T09:30:00.000Z</updated>
+      <published>2011-03-20T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <summary type="html"></summary>
+      <content type="html">These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/).</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Using Eclipse effectively]]></title>
+      <description><![CDATA[To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2011-03-15T09:30:00.000Z</updated>
+      <published>2011-03-15T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <summary type="html"></summary>
+      <content type="html">To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Troubleshooting eclipse issues]]></title>
+      <description><![CDATA[Following are some tips that shall help you in avoiding potential issues and for being a little more productive while working with eclipse. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2011-02-25T09:30:00.000Z</updated>
+      <published>2011-02-25T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <summary type="html"></summary>
+      <content type="html">Following are some tips that shall help you in avoiding potential issues and for being a little more productive while working with eclipse.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Best practices for threadsafe Singletons]]></title>
+      <description><![CDATA[A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2011-01-15T09:30:00.000Z</updated>
+      <published>2011-01-15T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Overloading can be tricky]]></title>
+      <description><![CDATA[Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-12-31T09:30:00.000Z</updated>
+      <published>2010-12-31T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Prefer using parameterized types over raw types]]></title>
+      <description><![CDATA[When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons.. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-12-29T09:30:00.000Z</updated>
+      <published>2010-12-29T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons..</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Prefer switch over if-else]]></title>
+      <description><![CDATA[In most cases switch will be lighter and performs faster than an if/else ladder. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-12-28T09:30:00.000Z</updated>
+      <published>2010-12-28T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">In most cases switch will be lighter and performs faster than an if/else ladder.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Exception handling guidelines/best practices]]></title>
+      <description><![CDATA[Lets review some basic xception design guidelines in Java - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-12-20T09:30:00.000Z</updated>
+      <published>2010-12-20T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">Lets review some basic xception design guidelines in Java</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Avoiding null pointer exceptions]]></title>
+      <description><![CDATA[Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-11-27T09:30:00.000Z</updated>
+      <published>2010-11-27T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Crave for immutable classes]]></title>
+      <description><![CDATA[Classes should be immutable unless there's a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-11-20T09:30:00.000Z</updated>
+      <published>2010-11-20T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">Classes should be immutable unless there's a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Ajax primer]]></title>
+      <description><![CDATA[The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-11-18T09:30:00.000Z</updated>
+      <published>2010-11-18T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Use PMD - Programming Mistake Detector?]]></title>
+      <description><![CDATA[How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &quot;PMD&quot;... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-10-30T09:30:00.000Z</updated>
+      <published>2010-10-30T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &quot;PMD&quot;...</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Package by feature not layer]]></title>
+      <description><![CDATA[The first question that we normaly phase whie building an application is &quot;How do I divide it up into packages?&quot;. For typical business applications, there seems to be two ways of answering this question. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-10-20T09:30:00.000Z</updated>
+      <published>2010-10-20T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <summary type="html"></summary>
+      <content type="html">The first question that we normaly phase whie building an application is &quot;How do I divide it up into packages?&quot;. For typical business applications, there seems to be two ways of answering this question.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Beware of floating point numbers]]></title>
+      <description><![CDATA[iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-10-20T09:30:00.000Z</updated>
+      <published>2010-10-20T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Use final liberally. Please do.]]></title>
+      <description><![CDATA[Use the final keyword liberally to communicate your intent - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-09-19T09:30:00.000Z</updated>
+      <published>2010-09-19T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">Use the final keyword liberally to communicate your intent</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Overridable methods need special care]]></title>
+      <description><![CDATA[Allowing a method to be overridden should always be done intentionally, not by accident. Any method which is not private, static, or final can be overridden. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-08-29T09:30:00.000Z</updated>
+      <published>2010-08-29T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">Allowing a method to be overridden should always be done intentionally, not by accident. Any method which is not private, static, or final can be overridden.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Prefer composition over inheritance]]></title>
+      <description><![CDATA[Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-08-07T09:30:00.000Z</updated>
+      <published>2010-08-07T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <summary type="html"></summary>
+      <content type="html">Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[History, heritage and beauty of Italy]]></title>
+      <description><![CDATA[After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-07-07T09:30:00.000Z</updated>
+      <published>2010-07-07T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[A day trip to Dinant, belgium]]></title>
+      <description><![CDATA[Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-06-07T09:30:00.000Z</updated>
+      <published>2010-06-07T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[A trip to the city of fashion, Paris]]></title>
+      <description><![CDATA[Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit's school. So I have some time to pen down some moments from our Paris trip that we did earlier this month. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-05-30T09:30:00.000Z</updated>
+      <published>2010-05-30T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit's school. So I have some time to pen down some moments from our Paris trip that we did earlier this month.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[London, England]]></title>
+      <description><![CDATA[It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-05-05T09:30:00.000Z</updated>
+      <published>2010-05-05T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Day trip to the largest city of Netherlands - Amsterdam]]></title>
+      <description><![CDATA[The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda of Netherlands trip. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-01-01T09:30:00.000Z</updated>
+      <published>2010-01-01T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda of Netherlands trip.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev kumar</name>
+      <title type="html"><![CDATA[The windmills of Kinderdijk, Netherlands]]></title>
+      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python'] - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2009-12-31T09:30:00.000Z</updated>
+      <published>2009-12-31T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python']</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Domtoren Utrecht, Netherlands]]></title>
+      <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['java'] - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2009-12-30T09:30:00.000Z</updated>
+      <published>2009-12-30T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">this a sample excerpt for post with title Code &amp; Stuff tagged with ['java']</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[A day trip to Aquatopia at Antwerp, Brussels]]></title>
+      <description><![CDATA[Finally we went to see this large Aquarium, Aquatopia that Ranit was longing to see from quite some time. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2009-12-01T09:30:00.000Z</updated>
+      <published>2009-12-01T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">Finally we went to see this large Aquarium, Aquatopia that Ranit was longing to see from quite some time.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[A walk in Brussels]]></title>
+      <description><![CDATA[A day well spent with friends and family. A lot of site seeing and a lot of fun. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2009-11-25T09:30:00.000Z</updated>
+      <published>2009-11-25T09:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="travel"></category>
+      <summary type="html"></summary>
+      <content type="html">A day well spent with friends and family. A lot of site seeing and a lot of fun.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
       <thr:total>0</thr:total>
     </author>
   </entry>

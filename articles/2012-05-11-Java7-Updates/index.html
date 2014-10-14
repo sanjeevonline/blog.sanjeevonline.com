@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Java7 updates - The Rootless Wanderer</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <meta charset="utf-8">
-    <meta content="IE=edge;chrome=1">
-    <meta http-equiv="X-UA-Compatible">
-    <!--meta(http-equiv="content-type", content='width=device-width, initial-scale=1.0, charset=utf-8')-->
-    <link rel="stylesheet" href="/assets/css/github.css">
-    <link rel="stylesheet" media="screen" href="/assets/bootstrap/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Java7 updates -Sanjeev Kumar
+    </title>
+    <link rel="alternate" href="http://blog.sanjeevonline.com/feed.xml" type="application/rss+xml" title="The rootless wanderer">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <style type="text/css">
       body {
           padding-top: 60px;
@@ -27,9 +27,9 @@
       @media only screen
       and (min-width : 768px)
       and (max-width : 995px) {
-        h3 {
+          h3 {
               font-size: 1.2em;
-        }
+          }
       }
       
     </style>
@@ -58,7 +58,7 @@
                   <li><a href="/tag/trivia.html">trivia</a></li>
                 </ul>
               </li>
-              <li><a href="/archive.html">Archive</a></li>
+              <li><a href="/archive.html">Archives</a></li>
             </ul>
             <form id="search-form" action="http://www.google.com/search" method="get" class="navbar-form pull-right"><span class="glass js-search-action"><i></i></span>
               <input type="hidden" value="UTF-8" name="ie">
@@ -86,7 +86,7 @@
 Contents</p>
 <ol>
 <li>Strings in switch statements</li>
-<li>The diamond operator &quot;&lt;&gt;&quot;</li>
+<li>The diamond operator “&lt;&gt;”</li>
 <li>Handling more than one type of exception</li>
 <li>Re-throwing exceptions with more inclusive type checking</li>
 <li>The try-with-resources statement</li>
@@ -99,60 +99,60 @@ Contents</p>
 <h3>Strings in switch statements</h3>
 
 <p>In the JDK 7 release, you can use a String object in the expression of a switch statement:</p>
-<pre><code><span class="keyword">public</span> String getTypeOfDayWithSwitchStatement(String dayOfWeekArg) {
+<pre><code>public String getTypeOfDayWithSwitchStatement(String dayOfWeekArg) {
      String typeOfDay;
-     <span class="keyword">switch</span> (dayOfWeekArg) {
-         <span class="keyword">case</span> <span class="string">"Monday"</span>:
-            typeOfDay = <span class="string">"Start of work week"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Tuesday"</span>:
-         <span class="keyword">case</span> <span class="string">"Wednesday"</span>:
-         <span class="keyword">case</span> <span class="string">"Thursday"</span>:
-            typeOfDay = <span class="string">"Midweek"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Friday"</span>:
-             typeOfDay = <span class="string">"End of work week"</span>;
-             <span class="keyword">break</span>;
-         <span class="keyword">case</span> <span class="string">"Saturday"</span>:
-         <span class="keyword">case</span> <span class="string">"Sunday"</span>:
-            typeOfDay = <span class="string">"Weekend"</span>;
-             <span class="keyword">break</span>;
-        <span class="keyword">default</span>:
-            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"Invalid day of the week: "</span> + dayOfWeekArg);
+     switch (dayOfWeekArg) {
+         case &quot;Monday&quot;:
+            typeOfDay = &quot;Start of work week&quot;;
+             break;
+         case &quot;Tuesday&quot;:
+         case &quot;Wednesday&quot;:
+         case &quot;Thursday&quot;:
+            typeOfDay = &quot;Midweek&quot;;
+             break;
+         case &quot;Friday&quot;:
+             typeOfDay = &quot;End of work week&quot;;
+             break;
+         case &quot;Saturday&quot;:
+         case &quot;Sunday&quot;:
+            typeOfDay = &quot;Weekend&quot;;
+             break;
+        default:
+            throw new IllegalArgumentException(&quot;Invalid day of the week: &quot; + dayOfWeekArg);
      }
-     <span class="keyword">return</span> typeOfDay;
+     return typeOfDay;
 }</code></pre>
-<h3>The diamond operator &quot;&lt;&gt;&quot;</h3>
+<h3>The diamond operator “&lt;&gt;”</h3>
 
 <p>You can replace the type arguments required to invoke the constructor of a generic class with an empty set of type parameters (&lt;&gt;) as long as the compiler can infer the type arguments from the context. This pair of angle brackets is informally called the diamond.</p>
 <p>For example, consider the following variable declaration:</p>
-<pre><code>Map<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt; myMap = new HashMap<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt;();</code></pre>
+<pre><code>Map&lt;String, List&lt;String&gt;&gt; myMap = new HashMap&lt;String, List&lt;String&gt;&gt;();</code></pre>
 <p>In Java SE 7, you can substitute the parameterized type of the constructor with an empty set of type parameters (&lt;&gt;):</p>
-<pre><code>Map<span class="tag">&lt;<span class="title">String,</span> <span class="attribute">List</span>&lt;<span class="attribute">String</span>&gt;</span>&gt; myMap = new HashMap<span class="tag">&lt;&gt;</span>();</code></pre>
+<pre><code>Map&lt;String, List&lt;String&gt;&gt; myMap = new HashMap&lt;&gt;();</code></pre>
 <p>Java SE 7 supports limited type inference for generic instance creation; you can only use type inference if the parameterized type of the constructor is obvious from the context. For example, the following example does not compile:</p>
-<pre><code>List<span class="tag">&lt;<span class="title">String</span>&gt;</span> list = new ArrayList<span class="tag">&lt;&gt;</span>();
-list.add("A");
-list.addAll(new ArrayList<span class="tag">&lt;&gt;</span>()); // Statement should fail since addAll expects Collection<span class="pi">&lt;? extends String&gt;</code></pre>
+<pre><code>List&lt;String&gt; list = new ArrayList&lt;&gt;();
+list.add(&quot;A&quot;);
+list.addAll(new ArrayList&lt;&gt;()); // Statement should fail since addAll expects Collection&lt;? extends String&gt;</code></pre>
 <p>In comparison, the following example compiles:</p>
-<pre><code>List<span class="pi">&lt;? extends String&gt; list2 = new ArrayList&lt;&gt;();
+<pre><code>List&lt;? extends String&gt; list2 = new ArrayList&lt;&gt;();
 list.addAll(list2);</code></pre>
 <p>Note: The diamond often works in method calls; however, it is suggested that you use the diamond primarily for variable declarations.</p>
 <h3>Handling more than one type of exception</h3>
 
 <p>In Java SE 7 and later, a single catch block can handle more than one type of exception. Consider the following example, which contains duplicate code in each of the catch blocks:</p>
-<pre><code>//<span class="variable">Prior</span> to <span class="variable">Java</span> <span class="number">7</span>
-<span class="function"><span class="title">catch</span> <span class="params">(<span class="variable">IOException</span> ex)</span> {
- <span class="title">logger</span>.<span class="title">log</span><span class="params">(ex)</span>;
- <span class="title">throw</span> <span class="title">ex</span>;
-<span class="title">catch</span> <span class="params">(<span class="variable">SQLException</span> ex)</span> {
- <span class="title">logger</span>.<span class="title">log</span><span class="params">(ex)</span>;
- <span class="title">throw</span> <span class="title">ex</span>;
+<pre><code>//Prior to Java 7
+catch (IOException ex) {
+ logger.log(ex);
+ throw ex;
+catch (SQLException ex) {
+ logger.log(ex);
+ throw ex;
 }</code></pre>
 <p>In releases prior to Java SE 7, it is difficult to create a common method to eliminate the duplicated code because the variable ex has different types.</p>
 <p>The following example, which is valid in Java SE 7 and later, eliminates the duplicated code:</p>
-<pre><code><span class="keyword">catch</span> (IOException|SQLException ex) { <span class="comment">// java 7 handling more than one type of exception</span>
-    logger<span class="variable">.log</span>(ex);
-    <span class="keyword">throw</span> ex;
+<pre><code>catch (IOException|SQLException ex) { // java 7 handling more than one type of exception
+    logger.log(ex);
+    throw ex;
 }</code></pre>
 <p>The catch clause specifies the types of exceptions that the block can handle, and each exception type is separated with a vertical bar (|). Some other advantages apart from syntactical improvement:</p>
 <ul>
@@ -164,25 +164,25 @@ list.addAll(list2);</code></pre>
 
 <p>The Java SE 7 compiler performs more precise analysis of rethrown exceptions than earlier releases of Java SE. This enables you to specify more specific exception types in the throws clause of a method declaration.</p>
 <p>Consider the following example:</p>
-<pre><code><span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">FirstException</span> <span class="keyword">extends</span> <span class="title">Exception</span> {</span> }
-  <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SecondException</span> <span class="keyword">extends</span> <span class="title">Exception</span> {</span> }
+<pre><code>static class FirstException extends Exception { }
+  static class SecondException extends Exception { }
 
-  <span class="keyword">public</span> <span class="keyword">void</span> rethrowException(String exceptionName) <span class="keyword">throws</span> Exception {
-    <span class="keyword">try</span> {
-          <span class="keyword">if</span> (exceptionName.equals(<span class="string">"First"</span>)) {
-            <span class="keyword">throw</span> <span class="keyword">new</span> FirstException();
-          } <span class="keyword">else</span> {
-            <span class="keyword">throw</span> <span class="keyword">new</span> SecondException();
+  public void rethrowException(String exceptionName) throws Exception {
+    try {
+          if (exceptionName.equals(&quot;First&quot;)) {
+            throw new FirstException();
+          } else {
+            throw new SecondException();
           }
-    } <span class="keyword">catch</span> (Exception e) {
-          <span class="keyword">throw</span> e;
+    } catch (Exception e) {
+          throw e;
     }
   }</code></pre>
-<p>This examples&#39;s try block could throw either FirstException or SecondException. Suppose you want to specify these exception types in the throws clause of the rethrowException method declaration. In releases prior to Java SE 7, you cannot do so. Because the exception parameter of the catch clause, e, is type Exception, and the catch block rethrows the exception parameter e, you can only specify the exception type Exception in the throws clause of the rethrowException method declaration.</p>
+<p>This examples’s try block could throw either FirstException or SecondException. Suppose you want to specify these exception types in the throws clause of the rethrowException method declaration. In releases prior to Java SE 7, you cannot do so. Because the exception parameter of the catch clause, e, is type Exception, and the catch block rethrows the exception parameter e, you can only specify the exception type Exception in the throws clause of the rethrowException method declaration.</p>
 <p>However, in Java SE 7, you can specify the exception types FirstException and SecondException in the throws clause in the rethrowException method declaration. The Java SE 7 compiler can determine that the exception thrown by the statement throw e must have come from the try block, and the only exceptions thrown by the try block can be FirstException and SecondException. Even though the exception parameter of the catch clause, e, is type Exception, the compiler can determine that it is an instance of either FirstException or SecondException:</p>
 <pre><code>public void rethrowException(String exceptionName) throws FirstException, SecondException {
-    <span class="keyword">try</span> {
-          // <span class="keyword">...</span>
+    try {
+          // ...
     }
     catch (Exception e) {
           throw e;
@@ -193,29 +193,29 @@ list.addAll(list2);</code></pre>
 <ul>
 <li>The try block is able to throw it.</li>
 <li>There are no other preceding catch blocks that can handle it.</li>
-<li>It is a subtype or supertype of one of the catch clause&#39;s exception parameters.</li>
+<li>It is a subtype or supertype of one of the catch clause’s exception parameters.</li>
 </ul>
 <p>The Java SE 7 compiler allows you to specify the exception types FirstException and SecondException in the throws clause in the rethrowException method declaration because you can rethrow an exception that is a supertype of any of the types declared in the throws.</p>
-<p>In releases prior to Java SE 7, you cannot throw an exception that is a supertype of one of the catch clause&#39;s exception parameters. A compiler from a release prior to Java SE 7 generates the error, &quot;unreported exception Exception; must be caught or declared to be thrown&quot; at the statement throw e. The compiler checks if the type of the exception thrown is assignable to any of the types declared in the throws clause of the rethrowException method declaration. However, the type of the catch parameter e is Exception, which is a supertype, not a subtype, of FirstException andSecondException.</p>
+<p>In releases prior to Java SE 7, you cannot throw an exception that is a supertype of one of the catch clause’s exception parameters. A compiler from a release prior to Java SE 7 generates the error, “unreported exception Exception; must be caught or declared to be thrown” at the statement throw e. The compiler checks if the type of the exception thrown is assignable to any of the types declared in the throws clause of the rethrowException method declaration. However, the type of the catch parameter e is Exception, which is a supertype, not a subtype, of FirstException andSecondException.</p>
 <h3>The try-with-resources statement</h3>
 
 <p>The try-with-resources statement is a try statement that declares one or more resources. A resource is as an object that must be closed after the program is finished with it. The try-with-resources statement ensures that each resource is closed at the end of the statement. Any object that implements java.lang.AutoCloseable, which includes all objects which implement java.io.Closeable, can be used as a resource.</p>
 <p>The following example reads the first line from a file. It uses an instance of BufferedReader to read data from the file. BufferedReader is a resource that must be closed after the program is finished with it:</p>
-<pre><code><span class="comment">// Java 7 Code</span>
-<span class="keyword">static</span> String readFirstLineFromFile(String path) <span class="keyword">throws</span> IOException { 
-      <span class="keyword">try</span> (BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(path))) {
-        <span class="keyword">return</span> br.readLine();
-      }<span class="comment">//no finally block required as resources will be closed automatically</span>
+<pre><code>// Java 7 Code
+static String readFirstLineFromFile(String path) throws IOException { 
+      try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+        return br.readLine();
+      }//no finally block required as resources will be closed automatically
 }</code></pre>
 <p>In this example, the resource declared in the try-with-resources statement is a BufferedReader. The declaration statement appears within parentheses immediately after the try keyword. The class BufferedReader, in Java SE 7 and later, implements the interface java.lang.AutoCloseable. Because the BufferedReader instance is declared in a try-with-resource statement, it will be closed regardless of whether the try statement completes normally or abruptly (as a result of the method BufferedReader.readLine throwing an IOException).</p>
 <p>Prior to Java SE 7, you can use a finally block to ensure that a resource is closed regardless of whether the whether the try statement completes normally or abruptly. The following example uses a finally block instead of a try-with-resources statement:</p>
-<pre><code><span class="comment">//Before Java 7</span>
-<span class="keyword">static</span> String readFirstLineFromFileWithFinallyBlock(String path) <span class="keyword">throws</span> IOException {
-  BufferedReader br = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(path));
-    <span class="keyword">try</span> {
-    <span class="keyword">return</span> br.readLine();
-    } <span class="keyword">finally</span> { 
-    <span class="keyword">if</span> (br != <span class="keyword">null</span>) br.close();
+<pre><code>//Before Java 7
+static String readFirstLineFromFileWithFinallyBlock(String path) throws IOException {
+  BufferedReader br = new BufferedReader(new FileReader(path));
+    try {
+    return br.readLine();
+    } finally { 
+    if (br != null) br.close();
     }
 }</code></pre>
 <p>You may declare one or more resources in a try-with-resources statement.</p>
@@ -231,49 +231,49 @@ list.addAll(list2);</code></pre>
 <li>In positions where a string of digits is expected</li>
 </ul>
 <p>The following examples demonstrate valid and invalid underscore placements (which are highlighted) in numeric literals:</p>
-<pre><code>float pi1 = <span class="number">3</span>_<span class="number">.1415</span>F;      // Invalid; cannot <span class="keyword">put</span> underscores adjacent <span class="keyword">to</span> a decimal point
-float pi2 = <span class="number">3.</span>_1415F;      // Invalid; cannot <span class="keyword">put</span> underscores adjacent <span class="keyword">to</span> a decimal point
-long ssn= <span class="number">999</span>_99_9999_L; // Invalid; cannot <span class="keyword">put</span> underscores prior <span class="keyword">to</span> an L suffix
+<pre><code>float pi1 = 3_.1415F;      // Invalid; cannot put underscores adjacent to a decimal point
+float pi2 = 3._1415F;      // Invalid; cannot put underscores adjacent to a decimal point
+long ssn= 999_99_9999_L; // Invalid; cannot put underscores prior to an L suffix
 
-int x1 = _52;              // This <span class="keyword">is</span> an identifier, <span class="keyword">not</span> a numeric literal
-int x2 = <span class="number">5</span>_2;              // OK (decimal literal)
-int x3 = <span class="number">52</span>_;              // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a literal
-int x4 = <span class="number">5</span>_______2;        // OK (decimal literal)
+int x1 = _52;              // This is an identifier, not a numeric literal
+int x2 = 5_2;              // OK (decimal literal)
+int x3 = 52_;              // Invalid; cannot put underscores at the end of a literal
+int x4 = 5_______2;        // OK (decimal literal)
 
-int x5 = <span class="number">0</span>_x52;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">in</span> <span class="keyword">the</span> <span class="number">0</span>x radix prefix
-int x6 = <span class="number">0</span>x_52;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">beginning</span> <span class="keyword">of</span> a <span class="type">number</span>
-int x7 = <span class="number">0x5</span>_2;            // OK (hexadecimal literal)
-int x8 = <span class="number">0x52</span>_;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a <span class="type">number</span>
+int x5 = 0_x52;            // Invalid; cannot put underscores in the 0x radix prefix
+int x6 = 0x_52;            // Invalid; cannot put underscores at the beginning of a number
+int x7 = 0x5_2;            // OK (hexadecimal literal)
+int x8 = 0x52_;            // Invalid; cannot put underscores at the end of a number
 
-int x9 = <span class="number">0</span>_52;             // OK (octal literal)
-int x10 = <span class="number">05</span>_2;            // OK (octal literal)
-int x11 = <span class="number">052</span>_;            // Invalid; cannot <span class="keyword">put</span> underscores <span class="keyword">at</span> <span class="keyword">the</span> <span class="keyword">end</span> <span class="keyword">of</span> a <span class="type">number</span></code></pre>
+int x9 = 0_52;             // OK (octal literal)
+int x10 = 05_2;            // OK (octal literal)
+int x11 = 052_;            // Invalid; cannot put underscores at the end of a number</code></pre>
 <h3>Binary literals</h3>
 
 <p>In Java SE 7, the integral types (byte, short, int, and long) can also be expressed using the binary number system. To specify a binary literal, add the prefix 0b or 0B to the number. The following examples show binary literals:</p>
-<pre><code><span class="comment">// An 8-bit 'byte' value:</span>
-<span class="keyword">byte</span> aByte = (<span class="keyword">byte</span>)<span class="number">0</span>b00100001;
+<pre><code>// An 8-bit &#39;byte&#39; value:
+byte aByte = (byte)0b00100001;
 
-<span class="comment">// A 16-bit 'short' value:</span>
-<span class="keyword">short</span> aShort = (<span class="keyword">short</span>)<span class="number">0</span>b1010000101000101;
+// A 16-bit &#39;short&#39; value:
+short aShort = (short)0b1010000101000101;
 
-<span class="comment">// Some 32-bit 'int' values:</span>
-<span class="keyword">int</span> anInt1 = <span class="number">0</span>b10100001010001011010000101000101;
-<span class="keyword">int</span> anInt2 = <span class="number">0</span>b101;
-<span class="keyword">int</span> anInt3 = <span class="number">0</span>B101; <span class="comment">// The B can be upper or lower case.</span>
+// Some 32-bit &#39;int&#39; values:
+int anInt1 = 0b10100001010001011010000101000101;
+int anInt2 = 0b101;
+int anInt3 = 0B101; // The B can be upper or lower case.
 
-<span class="comment">// A 64-bit 'long' value. Note the "L" suffix:</span>
-<span class="keyword">long</span> aLong = <span class="number">0</span>b1010000101000101101000010100010110100001010001011010000101000101L;</code></pre>
+// A 64-bit &#39;long&#39; value. Note the &quot;L&quot; suffix:
+long aLong = 0b1010000101000101101000010100010110100001010001011010000101000101L;</code></pre>
 <h3>Fork and Join</h3>
 
 <p>The effective use of parallel cores in a Java program has always been a challenge. There were few home-grown frameworks that would distribute the work across multiple cores and then join them to return the result set. Java 7 has incorporated this feature as a Fork and Join framework.</p>
-<p>Basically the Fork-Join breaks the task at hand into mini-tasks until the mini-task is simple enough that it can be solved without further breakups. It&#39;s like a divide-and-conquer algorithm. One important concept to note in this framework is that ideally no worker thread is idle. They implement a work-stealing algorithm in that idle workers &quot;steal&quot; the work from those workers who are busy.</p>
+<p>Basically the Fork-Join breaks the task at hand into mini-tasks until the mini-task is simple enough that it can be solved without further breakups. It’s like a divide-and-conquer algorithm. One important concept to note in this framework is that ideally no worker thread is idle. They implement a work-stealing algorithm in that idle workers “steal” the work from those workers who are busy.</p>
 <p>The core classes supporting the Fork-Join mechanism are ForkJoinPool and ForkJoinTask. The ForkJoinPool is basically a specialized implementation of ExecutorService implementing the work-stealing algorithm.</p>
 <h3>Supporting dynamism</h3>
 
 <p>Java is a statically typed language — the type checking of the variables, methods and return values is performed at compile time. The JVM executes this strongly-typed bytecode at runtime without having to worry about finding the type information.</p>
-<p>There&#39;s another breed of typed languages — the dynamically typed languages. Ruby, Python and Clojure are in this category. The type information is unresolved until runtime in these languages. This is not possible in Java as it would not have any necessary type information.</p>
-<p>There is an increasing pressure on Java folks improvise running the dynamic languages efficiently. Although it is possible to run these languages on a JVM (using Reflection), it&#39;s not without constraints and restrictions.</p>
+<p>There’s another breed of typed languages — the dynamically typed languages. Ruby, Python and Clojure are in this category. The type information is unresolved until runtime in these languages. This is not possible in Java as it would not have any necessary type information.</p>
+<p>There is an increasing pressure on Java folks improvise running the dynamic languages efficiently. Although it is possible to run these languages on a JVM (using Reflection), it’s not without constraints and restrictions.</p>
 <p>In Java 7, a new feature called invokedynamic was introduced. This makes VM changes to incorporate non-Java language requirements. A new package, java.lang.invoke, consisting of classes such as MethodHandle, CallSite and others, has been created to extend the support of dynamic languages.</p>
 </section>
             <hr>
@@ -293,19 +293,19 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
             <table class="table table-striped">
               <tbody>
                 <tr>
-                  <td><a href="/articles/2010-08-29-Overiride-Carefully/" title="java,best-practices">Overridable methods need special care</a></td>
+                  <td><a href="/articles/2013-05-27-New-Date-Time-API/" title="java">New Date and Time API in Java8</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-08-09-Composition-Inheritance/" title="java,best-practices">Prefer composition over inheritance</a></td>
+                  <td><a href="/articles/2012-05-11-Java7-Updates/" title="java">Java7 updates</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-10-20-Beware-Of-Floating-Points/" title="java,best-practices">Beware of floating point numbers</a></td>
+                  <td><a href="/articles/2011-10-23-Evolution-Of-Java/" title="java">Evolution of Java</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-09-19-Use-Final-Liberally/" title="java,best-practices">Use final liberally. Please do.</a></td>
+                  <td><a href="/articles/2012-01-05-Choosing-The-Right-Collections/" title="java,best-practices">Choosing the right collection</a></td>
                 </tr>
                 <tr>
-                  <td><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/" title="java,best-practices">Use PMD - Programming Mistake Detector?</a></td>
+                  <td><a href="/articles/2011-05-05-Understanding-Comparable/" title="java,best-practices">Implementing Comparable and understanding compareTo</a></td>
                 </tr>
               </tbody>
             </table>
@@ -346,11 +346,6 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
             </h3>
             <hr>
             <h3>
-              <p class="pull-right"><a href="https://www.facebook.com/sanjeevonline"><img src="/assets/images/facebook.png"></a></p>
-              <P><a href="https://www.facebook.com/sanjeevonline" style="color:#3B5998;">Facebook</a></P>
-            </h3>
-            <hr>
-            <h3>
               <p class="pull-right"><a href="http://www.javagyan.com"><img src="/assets/images/javagyan.png"></a></p>
               <P><a href="http://www.javagyan.com" style="color:grey;">JavaGyan</a></P>
             </h3>
@@ -369,8 +364,8 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
               <li><a href="/articles/2011-08-03-Changing-Default-Author-Eclipse/">Change default author name for JavaDocs in Eclipse</a><br></li>
               <li><a href="/articles/2011-07-08-Remote-Debugging-Jboss/">Remote debugging in Eclipse</a><br></li>
               <li><a href="/articles/2011-06-01-Debugging-With-Eclipse/">Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</a><br></li>
-              <li><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a><br></li>
               <li><a href="/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/">Eclipse keyboard shortcuts</a><br></li>
+              <li><a href="/articles/2011-05-05-Understanding-Comparable/">Implementing Comparable and understanding compareTo</a><br></li>
               <li><a href="/articles/2011-03-15-Using-Eclipse-Effectively/">Using Eclipse effectively</a><br></li>
               <li><a href="/articles/2011-02-25-Troubleshooting-Eclipse-Issues/">Troubleshooting eclipse issues</a><br></li>
               <li><a href="/articles/2011-01-15-Thread-Safe-Singletons/">Best practices for threadsafe Singletons</a><br></li>
@@ -382,8 +377,8 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
               <li><a href="/articles/2010-11-20-Immutable-Classes/">Crave for immutable classes</a><br></li>
               <li><a href="/articles/2010-11-18-Ajax-Primer/">Ajax primer</a><br></li>
               <li><a href="/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/">Use PMD - Programming Mistake Detector?</a><br></li>
-              <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a><br></li>
               <li><a href="/articles/2010-10-20-Beware-Of-Floating-Points/">Beware of floating point numbers</a><br></li>
+              <li><a href="/articles/2010-10-30-Package-By-Features/">Package by feature not layer</a><br></li>
               <li><a href="/articles/2010-09-19-Use-Final-Liberally/">Use final liberally. Please do.</a><br></li>
               <li><a href="/articles/2010-08-29-Overiride-Carefully/">Overridable methods need special care</a><br></li>
               <li><a href="/articles/2010-08-09-Composition-Inheritance/">Prefer composition over inheritance</a><br></li>
@@ -406,9 +401,6 @@ int x11 = <span class="number">052</span>_;            // Invalid; cannot <span 
         </div>
       </footer>
     </div>
-    <!--le javascript-->
-    <!--script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js')-->
-    <!--script(src= '#{locals.baseUrl}' + '/assets/javascript/jquery-twitter-plugin.js')-->
     <script src="/assets/javascript/jquery.min.js"></script>
     <script src="/assets/javascript/app.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
