@@ -1,6 +1,6 @@
 {
-    "title": "Tag",
     "template": "tag.jade",
+    "title": "Tag",
     "menu": {
         "title": "Tags",
         "order": 2

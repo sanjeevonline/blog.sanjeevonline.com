@@ -1,4 +1,4 @@
 {
-  "template": "rss.jade",
-  "filename": "rss.xml"
+    "template": "rss.jade",
+    "filename": "rss.xml"
 }

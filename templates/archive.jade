@@ -1,27 +1,29 @@
 extends layout
-
+//- this logic should be moved to a view at some point
 block content
-  div#page_subtitle
-      | Archives
-  != page.html
-  - var archive = _.chain(contents.articles._.directories).map(function(item) {
-  -   return item.index
-  - }).compact().sortBy(function(item) {
-  -   return -item.date
-  - }).groupBy(function(item) {
-  -   return item.date.getFullYear()
-  - }).value()
-  - var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-
-  section.archive
-    ul
-      each year in _.chain(archive).keys().reverse().value()
-        li.year= year
-        - var months = _.groupBy(archive[year], function(item) { return map[item.date.getMonth()] })
+    div#page_subtitle
+        | Archives
+    - var lineHeight = 2.2;
+    - var archives = _.chain(env.helpers.getArticles(contents)).groupBy(function(item) {
+    -     return item.date.getFullYear()
+    - }).value()
+    - for (var archive in archives) {
+    -    archives[archive] = _.groupBy(archives[archive], function(item){return item.date.getMonth();})
+    - }
+    - var month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    section.archive
         ul
-          each articles, month in months
-            li
-              strong= month
-              each article in articles
-                br
-                a(href=locals.baseUrl + article.url)= article.title
+            - var yearsK = _.chain(archives).keys().reverse().value()
+            - for(var year in yearsK)
+                - months = archives[yearsK[year]]
+                li.year= yearsK[year]
+                    ul
+                        - var monthsK = _.chain(months).keys().reverse().value()
+                        - for(month in monthsK){
+                            - var monthHeight = lineHeight * months[monthsK[month]].length
+                            strong= month_names[monthsK[month]]
+                                ul
+                                    each item in months[monthsK[month]]
+                                        li
+                                            a(href=item.url)=item.title
+                        - }

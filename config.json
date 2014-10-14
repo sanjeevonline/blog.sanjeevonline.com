@@ -1,27 +1,40 @@
 {
-    "locals": {
-        "url": "http://blog.sanjeevonline.com",
-        "domain": "blog.sanjeevonline.com",
-        "baseUrl": "",
-        "name": "Sanjeev Kumar",
-        "owner": "Sanjeev Kumar",
-        "author": "sanjeev",
-        "description": "The Rootless Wanderer",
-        "generator": "Wintersmith",
-        "language": "en-EN",
-        "googleSiteVerification": "",
-        "keywords": ["geek","web","java","spring","spring batch","spring batch in action","node.js","git","ruby","svn","subversion"],
-        "feeds": {
-            "feed": "http://feeds.feedburner.com/sanjeevonline/feed",
-            "rss": "http://feeds.feedburner.com/sanjeevonline/rss",
-            "atom": "http://feeds.feedburner.com/sanjeevonline/atom",
-            "comments": "http://feeds.feedburner.com/sanjeevonline/comments"
-        },
-        "disqus": {
-            "url": "http://sanjeevonline.disqus.com",
-            "shortname": "sanjeevonline"
-        },
-        "index_articles": 3,
-        "title": "The Rootless Wanderer"
+  "locals": {
+    "url": "http://blog.sanjeevonline.com",
+    "domain": "blog.sanjeevonline.com",
+    "baseUrl": "",
+    "name": "Sanjeev Kumar",
+    "owner": "Sanjeev Kumar",
+    "description": "The rootless wanderer",
+    "title": "The Rootless Wanderer",
+    "feeds": {
+        "feed": "http://feeds.feedburner.com/sanjeevonline/feed",
+        "rss": "http://feeds.feedburner.com/sanjeevonline/rss",
+        "atom": "http://feeds.feedburner.com/sanjeevonline/atom",
+        "comments": "http://feeds.feedburner.com/sanjeevonline/comments"
+    },
+    "disqus": {
+        "url": "http://sanjeevonline.disqus.com",
+        "shortname": "sanjeevonline"
     }
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 100
+  }
 }

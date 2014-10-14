@@ -1,35 +1,37 @@
 head
-  title #{page.title} - #{locals.title}
-  meta(content="width=device-width, initial-scale=1, maximum-scale=1", name="viewport")
-  meta(charset="utf-8")
-  meta(content="IE=edge;chrome=1")
-  meta(http-equiv="X-UA-Compatible")
-  //meta(http-equiv="content-type", content='width=device-width, initial-scale=1.0, charset=utf-8')
-  link(rel='stylesheet', href= '#{locals.baseUrl}' + '/assets/css/github.css')
-  link(rel='stylesheet', media='screen', href= '#{locals.baseUrl}' + '/assets/bootstrap/css/bootstrap.min.css')
-  style(type='text/css').
-    body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-    h3 {
-        font-size: 1.7em;
-    }
+    block head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        meta(name='viewport', content='width=device-width')
+        title
+            block title
+                = locals.name
+        link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
+        link(rel='stylesheet', href= '#{locals.baseUrl}' + '/assets/bootstrap/css/bootstrap.min.css')
+        style(type='text/css').
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            h3 {
+                font-size: 1.7em;
+            }
 
-    @media only screen
-    and (min-width : 768px)
-    and (max-width : 995px) {
-      h3 {
-            font-size: 1.2em;
-      }
-    }
+            @media only screen
+            and (min-width : 768px)
+            and (max-width : 995px) {
+                h3 {
+                    font-size: 1.2em;
+                }
+            }
 
-  link(rel='stylesheet', href= '#{locals.baseUrl}' + '/assets/css/prettify.css')
-  link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=ABeeZee&subset=latin')
-  link(rel='stylesheet', href= '#{locals.baseUrl}' + '/assets/css/app.css')
+        link(rel='stylesheet', href= '#{locals.baseUrl}' + '/assets/css/prettify.css')
+        link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=ABeeZee&subset=latin')
+        link(rel='stylesheet', href= '#{locals.baseUrl}' + '/assets/css/app.css')

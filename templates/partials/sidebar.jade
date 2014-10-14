@@ -1,51 +1,43 @@
-- var articles = _.chain(contents.articles._.directories).map(function(item) {
--   // map articles to index pages of subdirectories of 'articles'
--   return item.index
-- }).compact().filter(function(article) {
--   return article.metadata.ignored !== true
-- }).sortBy(function(item) { // compact removes any directories w/o an index
--   // sort them by date
--   return -item.date
-- }).value()
-- var map = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-
 div.sidebar-header
-  a(href="http://www.sanjeevonline.com")
-    img(src="/assets/images/sanjeev_ranit.JPG").img-circle.img-responsive
-  hr
-  h3
-    p(class="pull-right"): a(href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fblog.sanjeevonline.com%2Ffeed"): img(src="/assets/images/feedly.png")
-    P
-      a(href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fblog.sanjeevonline.com%2Ffeed" , style="color:green;")  Feedly
-  hr
-  h3
-    p(class="pull-right"): a(href="https://in.linkedin.com/in/sanjeevsprofile/"): img(src="/assets/images/linkedin.png")
-    P
-      a(href="https://in.linkedin.com/in/sanjeevsprofile/") LinkedIn
-  hr
-  h3
-    p(class="pull-right"): a(href="https://github.com/sanjeevonline"): img(src="/assets/images/github.png")
-    P
-      a(href="https://github.com/sanjeevonline", style="color:black;") Github
-  hr
-  h3
-    p(class="pull-right"): a(href="https://twitter.com/sandee_sh"): img(src="/assets/images/twitter.png")
-    P
-      a(href="https://twitter.com/sandee_sh", style="color:#00aced") Twitter
-  hr
-  h3
-    p(class="pull-right"): a(href="https://www.facebook.com/sanjeevonline"): img(src="/assets/images/facebook.png")
-    P
-        a(href="https://www.facebook.com/sanjeevonline", style="color:#3B5998;") Facebook
-  hr
-  h3
-    p(class="pull-right"): a(href="http://www.javagyan.com"): img(src="/assets/images/javagyan.png")
-    P
-      a(href="http://www.javagyan.com", style="color:grey;") JavaGyan
-  hr
+    a(href="http://www.sanjeevonline.com")
+        img(src="/assets/images/sanjeev_ranit.JPG").img-circle.img-responsive
+    hr
+    h3
+        p(class="pull-right"): a(href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fblog.sanjeevonline.com%2Ffeed"): img(src="/assets/images/feedly.png")
+        P
+            a(href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fblog.sanjeevonline.com%2Ffeed" , style="color:green;")  Feedly
+    hr
+    h3
+        p(class="pull-right"): a(href="https://in.linkedin.com/in/sanjeevsprofile/"): img(src="/assets/images/linkedin.png")
+        P
+            a(href="https://in.linkedin.com/in/sanjeevsprofile/") LinkedIn
+    hr
+    h3
+        p(class="pull-right"): a(href="https://github.com/sanjeevonline"): img(src="/assets/images/github.png")
+        P
+            a(href="https://github.com/sanjeevonline", style="color:black;") Github
+    hr
+    h3
+        p(class="pull-right"): a(href="https://twitter.com/sandee_sh"): img(src="/assets/images/twitter.png")
+        P
+            a(href="https://twitter.com/sandee_sh", style="color:#00aced") Twitter
+    hr
+    h3
+        p(class="pull-right"): a(href="http://www.javagyan.com"): img(src="/assets/images/javagyan.png")
+        P
+            a(href="http://www.javagyan.com", style="color:grey;") JavaGyan
+    hr
+
 div.sidebar
-  ol
-    each article in articles
-      li
-        a(href=article.url)= article.title
-        br
+    - var articles = _.chain(contents.articles._.directories).map(function(item) {
+    -   // map articles to index pages of subdirectories of 'articles'
+    -   return item.index
+    - }).compact().sortBy(function(item) { // compact removes any directories w/o an index
+    -   // sort them by date
+    -   return -item.date
+    - }).first(40).value()
+    ol
+        each article in articles
+            li
+                a(href=article.url)= article.title
+                br

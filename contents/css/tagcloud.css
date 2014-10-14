@@ -1,0 +1,87 @@
+.tagcloud {
+    line-height: 1.5em;
+    text-align: justify;
+}
+.tagcloud a {
+    margin: 0 4px 0 0;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.tagcloud a.size-0 {
+    font-size: 0.95em;
+}
+.tagcloud a.size-1 {
+    font-size: 1em;
+}
+.tagcloud a.size-2 {
+    font-size: 1.05em;
+}
+.tagcloud a.size-3 {
+    font-size: 1.1em;
+}
+.tagcloud a.size-4 {
+    font-size: 1.15em;
+}
+.tagcloud a.size-5 {
+    font-size: 1.2em;
+}
+.tagcloud a.size-6 {
+    font-size: 1.25em;
+}
+.tagcloud a.size-7 {
+    font-size: 1.3em;
+}
+.tagcloud a.size-8 {
+    font-size: 1.35em;
+}
+.tagcloud a.size-9 {
+    font-size: 1.4em;
+}
+.tagcloud a.size-10 {
+    font-size: 1.45em;
+}
+.tagcloud a.size-11 {
+    font-size: 1.50em;
+}
+.tagcloud a.size-12 {
+    font-size: 1.55em;
+}
+.tagcloud a.size-13 {
+    font-size: 1.60em;
+}
+.tagcloud a.size-14 {
+    font-size: 1.65em;
+}
+.tagcloud a.size-15 {
+    font-size: 1.70em;
+}
+.tagcloud a.size-16 {
+    font-size: 1.75em;
+}
+.tagcloud a.size-17 {
+    font-size: 1.80em;
+}
+.tagcloud a.size-18 {
+    font-size: 1.85em;
+}
+.tagcloud a.size-19 {
+    font-size: 1.90em;
+}
+.tagcloud a.size-20 {
+    font-size: 1.95em;
+}
+.tagcloud a.size-21 {
+    font-size: 1.96em;
+}
+.tagcloud a.size-22 {
+    font-size: 1.96em;
+}
+.tagcloud a.size-23 {
+    font-size: 1.96em;
+}
+.tagcloud a.size-24 {
+    font-size: 1.96em;
+}
+.tagcloud a.size-25 {
+    font-size: 1.96em;
+}

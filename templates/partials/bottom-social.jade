@@ -1,13 +1,13 @@
 #social_bottom.topsocial
-  .social
-    - var socialstags = _.chain(page.metadata.tags).map(function(tag) {
-    -   return "#" + tag
-    - }).value().join(" ")
-    a(href=page.url, class="twitter-share-button", data-url=locals.url + page.url, data-text=page.title + " #{socialstags} /via @sandee_sh", data-count="vertical"): twitter-share-button
-    script(src= '//platform.twitter.com/widgets.js')
-  .social
-    <g:plusone size="tall" href="#{locals.url}#{page.url}"></g:plusone>
-  .social
-    | <script type="IN/Share" data-url="#{locals.url}#{page.url}" data-counter="top"></script>
-  .social
-    .fb-like(data-href='#{locals.url}#{page.url}', data-width='450', data-layout='box_count', data-show-faces='true', data-send='false')
+    .social
+        - var socialstags = _.chain(page.metadata.tags).map(function(tag) {
+        -   return "#" + tag
+        - }).value().join(" ")
+        a(href=page.url, class="twitter-share-button", data-url=locals.url + page.url, data-text=page.title + " #{socialstags} /via @sandee_sh", data-count="vertical"): twitter-share-button
+        script(src= '//platform.twitter.com/widgets.js')
+    .social
+        <g:plusone size="tall" href="#{locals.url}#{page.url}"></g:plusone>
+    .social
+        | <script type="IN/Share" data-url="#{locals.url}#{page.url}" data-counter="top"></script>
+    .social
+        .fb-like(data-href='#{locals.url}#{page.url}', data-width='450', data-layout='box_count', data-show-faces='true', data-send='false')
