@@ -26,7 +26,11 @@ The paste dried out in an hour and the house started looking as good as new. It 
 
 ![image-right](Chullah.JPG)
 
-I was hungry and wanted something to eat but the [Chullah](https://www.google.co.in/search?q=chullah&espv=2&biw=1622&bih=892&source=lnms&tbm=isch&sa=X&ei=SPR-VLfsM4KbuQSHxoKIAw&ved=0CAYQ_AUoAQ) was not setup for cooking yet. On repeated requests, my granny asked me to get some fire from the neighbours and some dry cow dung cakes from the store on the roof. Yes thats right. Get fire from the neighbours was what she asked to me do. What could that possibly mean? and how was I suppose to get the fire from neighbour's house. She handed me an iron [Chimta](https://www.google.co.in/search?q=chullah&espv=2&biw=1622&bih=892&source=lnms&tbm=isch&sa=X&ei=SPR-VLfsM4KbuQSHxoKIAw&ved=0CAYQ_AUoAQ#tbm=isch&q=chimta) and told me that the neighbour will understand and that I am good to go. 
+I was hungry and wanted something to eat but the [Chullah](https://www.google.co.in/search?q=chullah&espv=2&biw=1622&bih=892&source=lnms&tbm=isch&sa=X&ei=SPR-VLfsM4KbuQSHxoKIAw&ved=0CAYQ_AUoAQ) was not setup for cooking yet. On repeated requests, my granny asked me to get some fire from the neighbours and some dry cow dung cakes from the store on the roof. 
+
+what!!! Yes thats right. Get fire from the neighbours was what she asked to me do. 
+
+What could that possibly mean? and how was I suppose to get the fire from neighbour's house? She handed me an iron [Chimta](https://www.google.co.in/search?q=chullah&espv=2&biw=1622&bih=892&source=lnms&tbm=isch&sa=X&ei=SPR-VLfsM4KbuQSHxoKIAw&ved=0CAYQ_AUoAQ#tbm=isch&q=chimta) and told me that the neighbour will understand and that I am good to go. 
 
 On my way I was still thinking about how would I ask for fire and what is naani (Granny) going to do with it. Nevertheless I went ahead and was shortly in our neighbour's open kitchen where they were already cooking evening meal. I asked hesitantly "Maamy ji, Naani ne aag mangayi hai" (Naani has asked for some fire).  Maamy pulled me into her laps and showered me with a few kisses, took the Chimta from my hand and pulled a piece of burning wood from her chullah and gave it to me. She also asked me to be careful with it on my way back.
 
