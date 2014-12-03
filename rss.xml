@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2014-10-14T16:57:56.767Z</updated>
+  <updated>2014-12-03T12:19:59.127Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
   <id>http://feeds.feedburner.com/sanjeevonline/rss</id>
   <generator uri="https://github.com/jnordberg/wintersmith" version="1.1.1">Wintersmith</generator>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Things our kids will probably never relate to]]></title>
+      <description><![CDATA[Today morning while Ranit and I were on our way to Ranit's bus stop, he was telling about how disgusting it was to see cowdung lying around in a farm house that he visited with his classmates sometime back during a school trip. He couldn't make sense of people making cow dung cakes with bare hands. That made me realize how the time has changed and how much fun it used to be for me when I was his age doing the same things that he finds disgusting. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2014-12-02T19:30:00.000Z</updated>
+      <published>2014-12-02T19:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="trivia"></category>
+      <summary type="html"></summary>
+      <content type="html">Today morning while Ranit and I were on our way to Ranit's bus stop, he was telling about how disgusting it was to see cowdung lying around in a farm house that he visited with his classmates sometime back during a school trip. He couldn't make sense of people making cow dung cakes with bare hands. That made me realize how the time has changed and how much fun it used to be for me when I was his age doing the same things that he finds disgusting.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
   <var>permalink = locals.url + article.url</var>
   <var>commentlink = permalink + "#disqus_thread"</var>
   <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
