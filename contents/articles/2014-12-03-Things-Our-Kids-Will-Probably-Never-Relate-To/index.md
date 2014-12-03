@@ -1,7 +1,7 @@
 ---
 template: article.jade
 title: Things our kids will probably never relate to
-date: 2014-12-03 01:00
+date: 2014-12-02 01:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [trivia]
@@ -14,7 +14,7 @@ Today morning while Ranit and I were on our way to Ranit's bus stop, he was tell
 
 ### Flashback to late 1980s:
 
-It was a nice sunny day and I was at my maternal grandmothers house in a village called "Pandori Bhainsa Di" which is about 15 KM from the nearest town. 
+It was a nice sunny day and I was at my maternal grandmothers house in a village called "Pandori Bhainsa Di" which is about 15 KM from the nearest town Dinanagar in Punjab. 
 
 Naani(Grandmother) was preparing for some guests or for some festival that was around the corner. I don't remember the exact occasion but what it meant for us was that entire house needed to be cleaned, sanitised and decorated. It was a [kachha house](https://www.google.co.in/search?q=kachha+house&espv=2&biw=1622&bih=892&source=lnms&tbm=isch&sa=X&ei=Hd5-VPTBA4y9uATyzYLgAQ&ved=0CAYQ_AUoAQ).
 
