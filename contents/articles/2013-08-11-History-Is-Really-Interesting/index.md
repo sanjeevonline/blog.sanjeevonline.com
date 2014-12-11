@@ -24,6 +24,8 @@ Here's the explanation,
 This was the month during which England shifted from the Roman Julian Calendar to the Gregorian Calendar.
 A Julian year was 11 days longer than a Gregorian year. So, the King of England decided and ordered 11 days to be wiped off the face of that particular month.
 
+<span class="more"></span>
+
 **So, the workers worked for 11 days less that month, but got paid for the whole month :-)**
 
 That's how the concept of "Paid leave" was born and we still get 10 paid holidays every year. 10 and not 11 because 1752 was a leap year.

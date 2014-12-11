@@ -18,6 +18,8 @@ It was a nice sunny day and I was at my maternal grandmothers house in a village
 
 Naani(Grandmother) was preparing for some guests or for some festival that was around the corner. I don't remember the exact occasion but what it meant for us was that entire house needed to be cleaned, sanitised and decorated. It was a [kachha house](https://www.google.co.in/search?q=kachha+house&espv=2&biw=1622&bih=892&source=lnms&tbm=isch&sa=X&ei=Hd5-VPTBA4y9uATyzYLgAQ&ved=0CAYQ_AUoAQ).
 
+<span class="more"></span>
+
 First step of the preparation was to gather a lot of fresh cow dung and bring it home and it meant going to people's houses in the neighbourhood and collect hot & fresh cow dung from their cattel sheds. It felt like a social trip to everyones house. Next step was to add a little water in this collection of cow dung and mix it up with hands or feet until everything mixes up perfectly and a uniform paste is ready. This was followed up with pasting of the paste on entire kachha floor of the house.
 
 The paste dried out in an hour and the house started looking as good as new. It was so much fun doing all that and being part of this sanitising process. 
