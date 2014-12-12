@@ -5,9 +5,21 @@
     <atom:link href="http://blog.sanjeevonline.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://blog.sanjeevonline.com</link>
     <description>The rootless wanderer</description>
-    <pubDate>Tue, 02 Dec 2014 01:00:00 +0630</pubDate>
+    <pubDate>Fri, 12 Dec 2014 01:00:00 +0630</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>Linked data based integration</title>
+      <link>http://blog.sanjeevonline.com/articles/2014-12-12-Linked-Data-Based-Integration/</link>
+      <pubDate>Fri, 12 Dec 2014 01:00:00 +0630</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2014-12-12-Linked-Data-Based-Integration/</guid>
+      <author></author>
+      <description>&lt;p&gt;Recently I was involved in a study to evaluate how the semantic web space is evolving and how can we leverage these new technology trends to power our integration architecture. Linked data is one of the many building blocks of semantic web that I found interesting and  that I believe has a potential to be used as a key integration technology in future. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Here is a deck that I put together to discuss and syndicate the approach and concept with other architects in the Firm and to generate some interest in this area. This was a talk-through deck so readers might need a little more context to understand everything mentioned in it. At Broader level it might still make sense though.&lt;/p&gt;
+&lt;iframe src=&quot;https://docs.google.com/file/d/0B56Wf8mnIbkvQ08yQ2otTUs3bkU/preview&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/iframe&gt;
+</description>
+    </item>
     <item>
       <title>Things our kids will probably never relate to</title>
       <link>http://blog.sanjeevonline.com/articles/2014-12-03-Things-Our-Kids-Will-Probably-Never-Relate-To/</link>

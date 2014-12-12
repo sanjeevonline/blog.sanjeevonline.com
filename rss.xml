@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2014-12-11T06:24:05.552Z</updated>
+  <updated>2014-12-12T10:09:17.865Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
   <id>http://feeds.feedburner.com/sanjeevonline/rss</id>
   <generator uri="https://github.com/jnordberg/wintersmith" version="1.1.1">Wintersmith</generator>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
+      <title type="html"><![CDATA[Linked data based integration]]></title>
+      <description><![CDATA[Recently I was involved in a study to evaluate how the semantic web space is evolving and how can we leverage these new technology trends to power our integration architecture. Linked data was one of the many building blocks of semantic web and I found it really interesting technology that I believe has a potential to be used as a key integration technology in future. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2014-12-11T19:30:00.000Z</updated>
+      <published>2014-12-11T19:30:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
+      <summary type="html"></summary>
+      <content type="html">Recently I was involved in a study to evaluate how the semantic web space is evolving and how can we leverage these new technology trends to power our integration architecture. Linked data was one of the many building blocks of semantic web and I found it really interesting technology that I believe has a potential to be used as a key integration technology in future.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
   <var>permalink = locals.url + article.url</var>
   <var>commentlink = permalink + "#disqus_thread"</var>
   <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
@@ -60,6 +80,7 @@
       <updated>2013-05-27T19:30:00.000Z</updated>
       <published>2013-05-27T19:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ...</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -80,6 +101,7 @@
       <updated>2013-05-24T19:30:00.000Z</updated>
       <published>2013-05-24T19:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="nodejs"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ...</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -120,6 +142,7 @@
       <updated>2012-11-21T09:30:00.000Z</updated>
       <published>2012-11-21T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="agile"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -140,6 +163,7 @@
       <updated>2012-05-11T09:30:00.000Z</updated>
       <published>2012-05-11T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -160,6 +184,7 @@
       <updated>2012-03-23T09:30:00.000Z</updated>
       <published>2012-03-23T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -181,6 +206,7 @@
       <published>2012-01-05T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ...</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -201,6 +227,7 @@
       <updated>2011-08-03T09:30:00.000Z</updated>
       <published>2011-08-03T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -221,6 +248,7 @@
       <updated>2011-07-08T09:30:00.000Z</updated>
       <published>2011-07-08T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -242,6 +270,7 @@
       <published>2011-06-01T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -263,6 +292,7 @@
       <published>2011-03-20T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Implementing Comparable and understanding compareTo</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -284,6 +314,7 @@
       <published>2011-03-20T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/).</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -306,6 +337,7 @@
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -327,6 +359,7 @@
       <published>2011-02-25T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Following are some tips that shall help you in avoiding potential issues and for being a little more productive while working with eclipse.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -348,6 +381,7 @@
       <published>2011-01-15T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -369,6 +403,7 @@
       <published>2010-12-31T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -390,6 +425,7 @@
       <published>2010-12-29T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons..</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -411,6 +447,7 @@
       <published>2010-12-28T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">In most cases switch will be lighter and performs faster than an if/else ladder.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -432,6 +469,7 @@
       <published>2010-12-20T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Lets review some basic xception design guidelines in Java</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -453,6 +491,7 @@
       <published>2010-11-27T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -474,6 +513,7 @@
       <published>2010-11-20T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Classes should be immutable unless there's a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -495,6 +535,7 @@
       <published>2010-11-18T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -516,6 +557,7 @@
       <published>2010-10-30T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &quot;PMD&quot;...</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -537,6 +579,7 @@
       <published>2010-10-20T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">The first question that we normaly phase whie building an application is &quot;How do I divide it up into packages?&quot;. For typical business applications, there seems to be two ways of answering this question.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -558,6 +601,7 @@
       <published>2010-10-20T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -579,6 +623,7 @@
       <published>2010-09-19T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Use the final keyword liberally to communicate your intent</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -600,6 +645,7 @@
       <published>2010-08-29T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Allowing a method to be overridden should always be done intentionally, not by accident. Any method which is not private, static, or final can be overridden.</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
@@ -621,6 +667,7 @@
       <published>2010-08-07T09:30:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance</content>
       <link rel="replies" type="text/html" thr:count="0"></link>
