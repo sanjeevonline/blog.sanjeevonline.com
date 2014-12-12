@@ -15,4 +15,4 @@ Recently I was involved in a study to evaluate how the semantic web space is evo
 
 Here is a deck that I put together to discuss and syndicate the approach and concept with other architects in the Firm and to generate some interest in this area. This was a talk-through deck so readers might need a little more context to understand everything mentioned in it. At Broader level it might still make sense though.
 
-<iframe src="https://docs.google.com/file/d/0B56Wf8mnIbkvQ08yQ2otTUs3bkU/preview" width="640" height="480"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1GPpa4CKB94Qm0er2ejvzd_7Cl3Nwc6p9CIDHY4XSdAU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
