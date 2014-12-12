@@ -5,7 +5,7 @@ date: 2011-03-20 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [eclipse, productivity]
+tags: [eclipse, productivity, technology]
 excerpt: These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/).
 ---
 These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/).

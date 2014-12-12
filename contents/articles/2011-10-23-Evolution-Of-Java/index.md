@@ -5,7 +5,7 @@ date: 2012-03-23 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java]
+tags: [java, technology]
 excerpt: I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.
 ---
 

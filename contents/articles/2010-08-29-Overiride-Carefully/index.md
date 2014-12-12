@@ -5,7 +5,7 @@ date: 2010-08-29 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: Allowing a method to be overridden should always be done intentionally, not by accident. Any method which is not private, static, or final can be overridden. 
 ---
 <b>Allowing a method to be overridden should always be done intentionally, not by accident</b>.

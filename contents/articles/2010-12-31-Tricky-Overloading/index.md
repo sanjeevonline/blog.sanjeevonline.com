@@ -5,7 +5,7 @@ date: 2010-12-31 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type.
 ---
 

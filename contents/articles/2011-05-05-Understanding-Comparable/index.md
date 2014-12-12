@@ -5,7 +5,7 @@ date: 2011-03-20 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: Implementing Comparable and understanding compareTo 
 ---
 

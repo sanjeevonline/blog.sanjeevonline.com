@@ -5,7 +5,7 @@ date: 2010-10-30 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use "PMD"...
 ---
 

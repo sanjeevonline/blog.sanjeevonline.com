@@ -5,7 +5,7 @@ date: 2012-05-11 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java]
+tags: [java, technology]
 excerpt: It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples
 ---
 It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples. 

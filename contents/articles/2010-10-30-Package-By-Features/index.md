@@ -5,7 +5,7 @@ date: 2010-10-20 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [best-practices, java]
+tags: [best-practices, java, technology]
 excerpt: The first question that we normaly phase whie building an application is "How do I divide it up into packages?". For typical business applications, there seems to be two ways of answering this question.
 ---
 The first question in building an application is "How do I divide it up into packages?". For typical business applications, there seems to be two ways of answering this question.

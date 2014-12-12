@@ -5,7 +5,7 @@ date: 2013-05-25 01:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [nodejs]
+tags: [nodejs, technology]
 excerpt: After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ...
 ---
 After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like -

@@ -5,7 +5,7 @@ date: 2010-09-19 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: Use the final keyword liberally to communicate your intent
 ---
 Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :

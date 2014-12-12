@@ -5,7 +5,7 @@ date: 2010-11-27 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. 
 ---
 Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.

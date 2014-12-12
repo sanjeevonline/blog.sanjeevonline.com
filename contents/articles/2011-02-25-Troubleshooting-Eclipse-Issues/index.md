@@ -5,7 +5,7 @@ date: 2011-02-25 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [eclipse, productivity]
+tags: [eclipse, productivity, technology]
 excerpt: Following are some tips that shall help you in avoiding potential issues and for being a little more productive while working with eclipse.
 ---
 Following are some tips that shall help you in avoiding potential issues and for being a little more productive while working with eclipse.

@@ -5,7 +5,7 @@ date: 2010-08-07 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance
 ---
 Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance.

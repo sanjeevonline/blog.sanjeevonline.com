@@ -5,7 +5,7 @@ date: 2012-11-21 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [agile]
-tags: [agile]
+tags: [agile, technology]
 excerpt: Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind
 ---
 

@@ -5,7 +5,7 @@ date: 2011-01-15 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.
 ---
 A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.   

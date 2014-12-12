@@ -5,7 +5,7 @@ date: 2013-05-28 01:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java]
+tags: [java, technology]
 excerpt: The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ...
 ---
 At some point during your day-to-day coding experience with Java you might have realised that the existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the [Joda-Time](http://joda-time.sourceforge.net/) project. The good news is that the new API that got delivered with [JDK8 milestone M6](http://openjdk.java.net/projects/jdk8/milestones#M6) has a more intuitive design allowing code to better express its intent. The classes are immutable which aligns with the multi-core direction of the industry.

@@ -5,7 +5,7 @@ date: 2012-01-05 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application.
         The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ...
 ---

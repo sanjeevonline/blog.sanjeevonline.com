@@ -5,7 +5,7 @@ date: 2010-12-29 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [java, best-practices]
+tags: [java, best-practices, technology]
 excerpt: When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons..
 ---
 

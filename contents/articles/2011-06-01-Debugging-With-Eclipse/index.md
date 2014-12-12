@@ -5,7 +5,7 @@ date: 2011-06-01 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [eclipse, productivity]
+tags: [eclipse, productivity, technology]
 excerpt: Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.
 ---
 Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.

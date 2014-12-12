@@ -5,7 +5,7 @@ date: 2011-03-15 15:00
 author: sanjeev
 aliases: ['/post/2007/01/08/code-and-stuff/', '/post/2007/01/08/first/', '/post/2008/01/08/first']
 categories: [technology]
-tags: [eclipse, best-practices, productivity]
+tags: [eclipse, best-practices, productivity, technology]
 excerpt: To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features.
 ---
 
