@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
   <channel></channel>
-  <updated>2014-12-12T10:24:48.652Z</updated>
+  <updated>2015-01-12T16:34:37.978Z</updated>
   <title>Sanjeev Kumar</title>
   <subtitle type="text"></subtitle>
   <link rel="alternate" type="text/html">http://blog.sanjeevonline.com</link>
@@ -13,12 +13,32 @@
   <entry>
     <author>
       <name>sanjeev</name>
+      <title type="html"><![CDATA[My Little Van Gogh]]></title>
+      <description><![CDATA[Last Friday, I got a text message from a school in Gurgaon to collect an appreciation gift for my younger son who won the first prize in a colouring contest that they held at their school and where several schools from Gurgaon participated. First prize??? That can’t be true, at least genetically, I thought. I never got a first prize in my life in anything. But I had seen Rajit scribbling on and ruining the walls of our drawing room a few times and knew that he had it in him :-). - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2014-12-22T06:00:00.000Z</updated>
+      <published>2014-12-22T06:00:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="trivia"></category>
+      <summary type="html"></summary>
+      <content type="html">Last Friday, I got a text message from a school in Gurgaon to collect an appreciation gift for my younger son who won the first prize in a colouring contest that they held at their school and where several schools from Gurgaon participated. First prize??? That can’t be true, at least genetically, I thought. I never got a first prize in my life in anything. But I had seen Rajit scribbling on and ruining the walls of our drawing room a few times and knew that he had it in him :-).</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
       <title type="html"><![CDATA[Linked data based integration]]></title>
       <description><![CDATA[Recently I was involved in a study to evaluate how the semantic web space is evolving and how can we leverage these new technology trends to power our integration architecture. Linked data was one of the many building blocks of semantic web and I found it really interesting technology that I believe has a potential to be used as a key integration technology in future. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2014-12-11T19:30:00.000Z</updated>
-      <published>2014-12-11T19:30:00.000Z</published>
+      <updated>2014-12-12T06:00:00.000Z</updated>
+      <published>2014-12-12T06:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
       <content type="html">Recently I was involved in a study to evaluate how the semantic web space is evolving and how can we leverage these new technology trends to power our integration architecture. Linked data was one of the many building blocks of semantic web and I found it really interesting technology that I believe has a potential to be used as a key integration technology in future.</content>
@@ -37,8 +57,8 @@
       <description><![CDATA[Today morning while Ranit and I were on our way to Ranit's bus stop, he was telling about how disgusting it was to see cowdung lying around in a farm house that he visited with his classmates sometime back during a school trip. He couldn't make sense of people making cow dung cakes with bare hands. That made me realize how the time has changed and how much fun it used to be for me when I was his age doing the same things that he finds disgusting. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2014-12-01T19:30:00.000Z</updated>
-      <published>2014-12-01T19:30:00.000Z</published>
+      <updated>2014-12-02T06:00:00.000Z</updated>
+      <published>2014-12-02T06:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="trivia"></category>
       <summary type="html"></summary>
       <content type="html">Today morning while Ranit and I were on our way to Ranit's bus stop, he was telling about how disgusting it was to see cowdung lying around in a farm house that he visited with his classmates sometime back during a school trip. He couldn't make sense of people making cow dung cakes with bare hands. That made me realize how the time has changed and how much fun it used to be for me when I was his age doing the same things that he finds disgusting.</content>
@@ -57,8 +77,8 @@
       <description><![CDATA[Today I learned an interesting historical fact. Just have a look at the calendar for the month of September 1752. You will notice, 11 days are simply missing from the month - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2013-08-09T19:30:00.000Z</updated>
-      <published>2013-08-09T19:30:00.000Z</published>
+      <updated>2013-08-10T05:00:00.000Z</updated>
+      <published>2013-08-10T05:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="trivia"></category>
       <summary type="html"></summary>
       <content type="html">Today I learned an interesting historical fact. Just have a look at the calendar for the month of September 1752. You will notice, 11 days are simply missing from the month</content>
@@ -77,8 +97,8 @@
       <description><![CDATA[The existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the Joda-Time project. The good news is that the ... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2013-05-27T19:30:00.000Z</updated>
-      <published>2013-05-27T19:30:00.000Z</published>
+      <updated>2013-05-28T05:00:00.000Z</updated>
+      <published>2013-05-28T05:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
@@ -98,8 +118,8 @@
       <description><![CDATA[After deferring it for more than a year, finally I decided to re-platform my blog. After careful analysis and research trying out several several viable options at hand like ... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2013-05-24T19:30:00.000Z</updated>
-      <published>2013-05-24T19:30:00.000Z</published>
+      <updated>2013-05-25T05:00:00.000Z</updated>
+      <published>2013-05-25T05:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="nodejs"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
@@ -119,8 +139,8 @@
       <description><![CDATA[It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2013-05-19T09:30:00.000Z</updated>
-      <published>2013-05-19T09:30:00.000Z</published>
+      <updated>2013-05-19T19:00:00.000Z</updated>
+      <published>2013-05-19T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="trivia"></category>
       <summary type="html"></summary>
       <content type="html">It was pleasure meeting childhood friends from school after 18 years. We were expecting at least 10 of our 95 batch mates of KV1 Hindon but only 6 of us could make it for the first reunion. Nevertheless, it was quite a fun and we all had a blast ...</content>
@@ -139,8 +159,8 @@
       <description><![CDATA[Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2012-11-21T09:30:00.000Z</updated>
-      <published>2012-11-21T09:30:00.000Z</published>
+      <updated>2012-11-21T20:00:00.000Z</updated>
+      <published>2012-11-21T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="agile"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
@@ -160,8 +180,8 @@
       <description><![CDATA[It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2012-05-11T09:30:00.000Z</updated>
-      <published>2012-05-11T09:30:00.000Z</published>
+      <updated>2012-05-11T19:00:00.000Z</updated>
+      <published>2012-05-11T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
@@ -181,8 +201,8 @@
       <description><![CDATA[I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2012-03-23T09:30:00.000Z</updated>
-      <published>2012-03-23T09:30:00.000Z</published>
+      <updated>2012-03-23T19:00:00.000Z</updated>
+      <published>2012-03-23T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
@@ -202,8 +222,8 @@
       <description><![CDATA[Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. The best general purpose or 'primary' implementations are likely ArrayList, LinkedHashMap, and LinkedHashSet. Their overall performance is better, and you should use them unless you need a special feature provided by another implementation ... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2012-01-05T09:30:00.000Z</updated>
-      <published>2012-01-05T09:30:00.000Z</published>
+      <updated>2012-01-05T20:00:00.000Z</updated>
+      <published>2012-01-05T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -224,8 +244,8 @@
       <description><![CDATA[The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2011-08-03T09:30:00.000Z</updated>
-      <published>2011-08-03T09:30:00.000Z</published>
+      <updated>2011-08-03T19:00:00.000Z</updated>
+      <published>2011-08-03T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
@@ -245,8 +265,8 @@
       <description><![CDATA[To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2011-07-08T09:30:00.000Z</updated>
-      <published>2011-07-08T09:30:00.000Z</published>
+      <updated>2011-07-08T19:00:00.000Z</updated>
+      <published>2011-07-08T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
       <summary type="html"></summary>
@@ -266,8 +286,8 @@
       <description><![CDATA[Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2011-06-01T09:30:00.000Z</updated>
-      <published>2011-06-01T09:30:00.000Z</published>
+      <updated>2011-06-01T19:00:00.000Z</updated>
+      <published>2011-06-01T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -288,8 +308,8 @@
       <description><![CDATA[Implementing Comparable and understanding compareTo - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2011-03-20T09:30:00.000Z</updated>
-      <published>2011-03-20T09:30:00.000Z</published>
+      <updated>2011-03-20T19:00:00.000Z</updated>
+      <published>2011-03-20T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -310,8 +330,8 @@
       <description><![CDATA[These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (http://creativecommons.org/licenses/by-sa/2.5/). - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2011-03-20T09:30:00.000Z</updated>
-      <published>2011-03-20T09:30:00.000Z</published>
+      <updated>2011-03-20T19:00:00.000Z</updated>
+      <published>2011-03-20T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -332,8 +352,8 @@
       <description><![CDATA[To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2011-03-15T09:30:00.000Z</updated>
-      <published>2011-03-15T09:30:00.000Z</published>
+      <updated>2011-03-15T19:00:00.000Z</updated>
+      <published>2011-03-15T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
@@ -355,8 +375,8 @@
       <description><![CDATA[Following are some tips that shall help you in avoiding potential issues and for being a little more productive while working with eclipse. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2011-02-25T09:30:00.000Z</updated>
-      <published>2011-02-25T09:30:00.000Z</published>
+      <updated>2011-02-25T20:00:00.000Z</updated>
+      <published>2011-02-25T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="eclipse"></category>
       <category schema="http://blog.sanjeevonline.com" term="productivity"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -377,8 +397,8 @@
       <description><![CDATA[A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2011-01-15T09:30:00.000Z</updated>
-      <published>2011-01-15T09:30:00.000Z</published>
+      <updated>2011-01-15T20:00:00.000Z</updated>
+      <published>2011-01-15T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -399,8 +419,8 @@
       <description><![CDATA[Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-12-31T09:30:00.000Z</updated>
-      <published>2010-12-31T09:30:00.000Z</published>
+      <updated>2010-12-31T20:00:00.000Z</updated>
+      <published>2010-12-31T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -421,8 +441,8 @@
       <description><![CDATA[When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons.. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-12-29T09:30:00.000Z</updated>
-      <published>2010-12-29T09:30:00.000Z</published>
+      <updated>2010-12-29T20:00:00.000Z</updated>
+      <published>2010-12-29T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -443,8 +463,8 @@
       <description><![CDATA[In most cases switch will be lighter and performs faster than an if/else ladder. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-12-28T09:30:00.000Z</updated>
-      <published>2010-12-28T09:30:00.000Z</published>
+      <updated>2010-12-28T20:00:00.000Z</updated>
+      <published>2010-12-28T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -465,8 +485,8 @@
       <description><![CDATA[Lets review some basic xception design guidelines in Java - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-12-20T09:30:00.000Z</updated>
-      <published>2010-12-20T09:30:00.000Z</published>
+      <updated>2010-12-20T20:00:00.000Z</updated>
+      <published>2010-12-20T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -487,8 +507,8 @@
       <description><![CDATA[Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-11-27T09:30:00.000Z</updated>
-      <published>2010-11-27T09:30:00.000Z</published>
+      <updated>2010-11-27T20:00:00.000Z</updated>
+      <published>2010-11-27T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -509,8 +529,8 @@
       <description><![CDATA[Classes should be immutable unless there's a very good reason to make them mutable....If a class cannot be made immutable, limit its mutability as much as possible - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-11-20T09:30:00.000Z</updated>
-      <published>2010-11-20T09:30:00.000Z</published>
+      <updated>2010-11-20T20:00:00.000Z</updated>
+      <published>2010-11-20T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -531,8 +551,8 @@
       <description><![CDATA[The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-11-18T09:30:00.000Z</updated>
-      <published>2010-11-18T09:30:00.000Z</published>
+      <updated>2010-11-18T20:00:00.000Z</updated>
+      <published>2010-11-18T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -553,8 +573,8 @@
       <description><![CDATA[How do you ensure that your code follows standard programming principles? For most Java development projects going on these days the answer would be to use &quot;PMD&quot;... - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-10-30T09:30:00.000Z</updated>
-      <published>2010-10-30T09:30:00.000Z</published>
+      <updated>2010-10-30T19:00:00.000Z</updated>
+      <published>2010-10-30T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -571,34 +591,12 @@
   <entry>
     <author>
       <name>sanjeev</name>
-      <title type="html"><![CDATA[Beware of floating point numbers]]></title>
-      <description><![CDATA[iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
-      <link rel="alternate" type="text/html"></link>
-      <id></id>
-      <updated>2010-10-20T09:30:00.000Z</updated>
-      <published>2010-10-20T09:30:00.000Z</published>
-      <category schema="http://blog.sanjeevonline.com" term="java"></category>
-      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
-      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
-      <summary type="html"></summary>
-      <content type="html">iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided.</content>
-      <link rel="replies" type="text/html" thr:count="0"></link>
-      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
-      <thr:total>0</thr:total>
-    </author>
-  </entry>
-  <var>permalink = locals.url + article.url</var>
-  <var>commentlink = permalink + "#disqus_thread"</var>
-  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
-  <entry>
-    <author>
-      <name>sanjeev</name>
       <title type="html"><![CDATA[Package by feature not layer]]></title>
       <description><![CDATA[The first question that we normaly phase whie building an application is &quot;How do I divide it up into packages?&quot;. For typical business applications, there seems to be two ways of answering this question. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-10-20T09:30:00.000Z</updated>
-      <published>2010-10-20T09:30:00.000Z</published>
+      <updated>2010-10-20T19:00:00.000Z</updated>
+      <published>2010-10-20T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -615,12 +613,34 @@
   <entry>
     <author>
       <name>sanjeev</name>
+      <title type="html"><![CDATA[Beware of floating point numbers]]></title>
+      <description><![CDATA[iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
+      <link rel="alternate" type="text/html"></link>
+      <id></id>
+      <updated>2010-10-20T19:00:00.000Z</updated>
+      <published>2010-10-20T19:00:00.000Z</published>
+      <category schema="http://blog.sanjeevonline.com" term="java"></category>
+      <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
+      <category schema="http://blog.sanjeevonline.com" term="technology"></category>
+      <summary type="html"></summary>
+      <content type="html">iOutside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided.</content>
+      <link rel="replies" type="text/html" thr:count="0"></link>
+      <link rel="replies" type="application/rss+xml" thr:count="0"></link>
+      <thr:total>0</thr:total>
+    </author>
+  </entry>
+  <var>permalink = locals.url + article.url</var>
+  <var>commentlink = permalink + "#disqus_thread"</var>
+  <var>disqusRss = locals.disqus.url + article.url + "/lastest.rss"</var>
+  <entry>
+    <author>
+      <name>sanjeev</name>
       <title type="html"><![CDATA[Use final liberally. Please do.]]></title>
       <description><![CDATA[Use the final keyword liberally to communicate your intent - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-09-19T09:30:00.000Z</updated>
-      <published>2010-09-19T09:30:00.000Z</published>
+      <updated>2010-09-19T19:00:00.000Z</updated>
+      <published>2010-09-19T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -641,8 +661,8 @@
       <description><![CDATA[Allowing a method to be overridden should always be done intentionally, not by accident. Any method which is not private, static, or final can be overridden. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-08-29T09:30:00.000Z</updated>
-      <published>2010-08-29T09:30:00.000Z</published>
+      <updated>2010-08-29T19:00:00.000Z</updated>
+      <published>2010-08-29T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -663,8 +683,8 @@
       <description><![CDATA[Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-08-07T09:30:00.000Z</updated>
-      <published>2010-08-07T09:30:00.000Z</published>
+      <updated>2010-08-07T19:00:00.000Z</updated>
+      <published>2010-08-07T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="java"></category>
       <category schema="http://blog.sanjeevonline.com" term="best-practices"></category>
       <category schema="http://blog.sanjeevonline.com" term="technology"></category>
@@ -685,8 +705,8 @@
       <description><![CDATA[After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-07-07T09:30:00.000Z</updated>
-      <published>2010-07-07T09:30:00.000Z</published>
+      <updated>2010-07-07T19:00:00.000Z</updated>
+      <published>2010-07-07T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June.</content>
@@ -705,8 +725,8 @@
       <description><![CDATA[Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-06-07T09:30:00.000Z</updated>
-      <published>2010-06-07T09:30:00.000Z</published>
+      <updated>2010-06-07T19:00:00.000Z</updated>
+      <published>2010-06-07T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s.</content>
@@ -725,8 +745,8 @@
       <description><![CDATA[Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit's school. So I have some time to pen down some moments from our Paris trip that we did earlier this month. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-05-30T09:30:00.000Z</updated>
-      <published>2010-05-30T09:30:00.000Z</published>
+      <updated>2010-05-30T19:00:00.000Z</updated>
+      <published>2010-05-30T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit's school. So I have some time to pen down some moments from our Paris trip that we did earlier this month.</content>
@@ -745,8 +765,8 @@
       <description><![CDATA[It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-05-05T09:30:00.000Z</updated>
-      <published>2010-05-05T09:30:00.000Z</published>
+      <updated>2010-05-05T19:00:00.000Z</updated>
+      <published>2010-05-05T19:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travel blog.</content>
@@ -765,8 +785,8 @@
       <description><![CDATA[The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda of Netherlands trip. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2010-01-01T09:30:00.000Z</updated>
-      <published>2010-01-01T09:30:00.000Z</published>
+      <updated>2010-01-01T20:00:00.000Z</updated>
+      <published>2010-01-01T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda of Netherlands trip.</content>
@@ -785,8 +805,8 @@
       <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python'] - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2009-12-31T09:30:00.000Z</updated>
-      <published>2009-12-31T09:30:00.000Z</published>
+      <updated>2009-12-31T20:00:00.000Z</updated>
+      <published>2009-12-31T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">this a sample excerpt for post with title Code &amp; Stuff tagged with ['c', 'python']</content>
@@ -805,8 +825,8 @@
       <description><![CDATA[this a sample excerpt for post with title Code &amp; Stuff tagged with ['java'] - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2009-12-30T09:30:00.000Z</updated>
-      <published>2009-12-30T09:30:00.000Z</published>
+      <updated>2009-12-30T20:00:00.000Z</updated>
+      <published>2009-12-30T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">this a sample excerpt for post with title Code &amp; Stuff tagged with ['java']</content>
@@ -825,8 +845,8 @@
       <description><![CDATA[Finally we went to see this large Aquarium, Aquatopia that Ranit was longing to see from quite some time. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2009-12-01T09:30:00.000Z</updated>
-      <published>2009-12-01T09:30:00.000Z</published>
+      <updated>2009-12-01T20:00:00.000Z</updated>
+      <published>2009-12-01T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">Finally we went to see this large Aquarium, Aquatopia that Ranit was longing to see from quite some time.</content>
@@ -845,8 +865,8 @@
       <description><![CDATA[A day well spent with friends and family. A lot of site seeing and a lot of fun. - &lt;a href=""&gt;Lire la suite&lt;/a&gt;]]></description>
       <link rel="alternate" type="text/html"></link>
       <id></id>
-      <updated>2009-11-25T09:30:00.000Z</updated>
-      <published>2009-11-25T09:30:00.000Z</published>
+      <updated>2009-11-25T20:00:00.000Z</updated>
+      <published>2009-11-25T20:00:00.000Z</published>
       <category schema="http://blog.sanjeevonline.com" term="travel"></category>
       <summary type="html"></summary>
       <content type="html">A day well spent with friends and family. A lot of site seeing and a lot of fun.</content>

@@ -5,13 +5,28 @@
     <atom:link href="http://blog.sanjeevonline.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://blog.sanjeevonline.com</link>
     <description>The rootless wanderer</description>
-    <pubDate>Fri, 12 Dec 2014 01:00:00 +0630</pubDate>
+    <pubDate>Mon, 22 Dec 2014 01:00:00 -0500</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
+      <title>My Little Van Gogh</title>
+      <link>http://blog.sanjeevonline.com/articles/2014-12-22-My-Little-Van-Gogh/</link>
+      <pubDate>Mon, 22 Dec 2014 01:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2014-12-22-My-Little-Van-Gogh/</guid>
+      <author></author>
+      <description>&lt;p&gt;&lt;img src=&quot;http://blog.sanjeevonline.com/articles/2014-12-22-My-Little-Van-Gogh/VanGogh.jpg&quot; alt=&quot;image-right&quot;&gt; Last Friday, I got a text message from a school in Gurgaon to collect an appreciation gift for my younger son who won the first prize in a colouring contest that they held at their school and where several schools from Gurgaon participated.&lt;/p&gt;
+&lt;p&gt;First prize??? That can’t be true, at least genetically, I thought. I never got a first prize in my life. But I had seen Rajit scribbling on and ruining the walls of our drawing room a few times and knew that he had it in him :-) and now with this acknowledgement of his talent I can rest assured that my 3 and half year old is on his way to become India’s Van Gogh. Unless education ruins him he can very well become Van Gogh. At least in his father’s eyes he already is. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Anyways, I called back to confirm if it was &lt;strong&gt;Rajit Sharma&lt;/strong&gt; son of &lt;strong&gt;Sanjeev Kumar&lt;/strong&gt; and they confirmed that it was indeed my younger one. &lt;/p&gt;
+&lt;p&gt;Last week being a terrible one at work with yearend appraisals and all being done and me getting my share of peanuts, this news was a wonderful one to end the week. It put everything related to job, promotion, increments etc to the back burner, at least for the weekend and made me feel very happy and proud. Proud of you fr saving my weekend my Van Gogh. &lt;/p&gt;
+&lt;p&gt;I can now also relate to the expressions and the feelings that my dad must have felt on our way back from my school in a convertible army Jeep 30+ years back. That day our annual results were announced and I came third in my class. I was in 1st standard and that was the closest I ever got to the first position.&lt;/p&gt;
+&lt;p&gt;I must admit that fatherhood is an amazing experience and teaches a lot, that otherwise is imposible to feel and learn. These little moments are all that make life so interesting and full.&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Linked data based integration</title>
       <link>http://blog.sanjeevonline.com/articles/2014-12-12-Linked-Data-Based-Integration/</link>
-      <pubDate>Fri, 12 Dec 2014 01:00:00 +0630</pubDate>
+      <pubDate>Fri, 12 Dec 2014 01:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2014-12-12-Linked-Data-Based-Integration/</guid>
       <author></author>
       <description>&lt;p&gt;Recently I was involved in a study to evaluate how the semantic web space is evolving and how can we leverage these new technology trends to power our integration architecture. Linked data is one of the many building blocks of semantic web that I found interesting and  that I believe has a potential to be used as a key integration technology in future. &lt;/p&gt;
@@ -23,7 +38,7 @@
     <item>
       <title>Things our kids will probably never relate to</title>
       <link>http://blog.sanjeevonline.com/articles/2014-12-03-Things-Our-Kids-Will-Probably-Never-Relate-To/</link>
-      <pubDate>Tue, 02 Dec 2014 01:00:00 +0630</pubDate>
+      <pubDate>Tue, 02 Dec 2014 01:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2014-12-03-Things-Our-Kids-Will-Probably-Never-Relate-To/</guid>
       <author></author>
       <description>&lt;p&gt;Today morning while Ranit and I were on our way to Ranit’s bus stop, he was telling about how disgusting it was to see cow dung lying around in a farm house that he visited with his classmates sometime back during a school trip. He couldn’t make sense of people making cow dung cakes with bare hands. That made me realize how the time has changed and how much fun it used to be for me when I was his age doing the same things that he finds disgusting.&lt;/p&gt;
@@ -49,7 +64,7 @@
     <item>
       <title>How &quot;Paid leave&quot; and &quot;April fool&quot; were born</title>
       <link>http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/</link>
-      <pubDate>Sat, 10  Aug 2013 01:00:00 +0630</pubDate>
+      <pubDate>Sat, 10  Aug 2013 01:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2013-08-11-History-Is-Really-Interesting/</guid>
       <author></author>
       <description>&lt;p&gt;Here are couple of interesting historical facts that I learned today.&lt;/p&gt;
@@ -76,7 +91,7 @@ A Julian year was 11 days longer than a Gregorian year. So, the King of England 
     <item>
       <title>New Date and Time API in Java8</title>
       <link>http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/</link>
-      <pubDate>Tue, 28 May 2013 01:00:00 +0630</pubDate>
+      <pubDate>Tue, 28 May 2013 01:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2013-05-27-New-Date-Time-API/</guid>
       <author></author>
       <description>&lt;p&gt;At some point during your day-to-day coding experience with Java you might have realised that the existing Java date and time classes are poor, mutable, and have unpredictable performance. There has been a long-standing desire for a better date and time API based on the &lt;a href=&quot;http://joda-time.sourceforge.net/&quot;&gt;Joda-Time&lt;/a&gt; project. The good news is that the new API that got delivered with &lt;a href=&quot;http://openjdk.java.net/projects/jdk8/milestones#M6&quot;&gt;JDK8 milestone M6&lt;/a&gt; has a more intuitive design allowing code to better express its intent. The classes are immutable which aligns with the multi-core direction of the industry.&lt;/p&gt;
@@ -94,7 +109,7 @@ A Julian year was 11 days longer than a Gregorian year. So, the King of England 
     <item>
       <title>Re-platformig this blog to Wintersmith</title>
       <link>http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/</link>
-      <pubDate>Sat, 25 May 2013 01:00:00 +0630</pubDate>
+      <pubDate>Sat, 25 May 2013 01:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2013-05-25-Moving-Blog-To-Wintersmith/</guid>
       <author></author>
       <description>&lt;p&gt;After deferring it for more than a year, finally I decided to re-platform my blog. I had several viable options at hand like -&lt;/p&gt;
@@ -133,7 +148,7 @@ A Julian year was 11 days longer than a Gregorian year. So, the King of England 
     <item>
       <title>High school reunion</title>
       <link>http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</link>
-      <pubDate>Sun, 19 May 2013 15:00:00 +0630</pubDate>
+      <pubDate>Sun, 19 May 2013 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2013-05-19-High-School-Reunion/</guid>
       <author></author>
       <description>&lt;p&gt;It was pleasure meeting childhood friends from school today after 18 years.&lt;/p&gt;
@@ -148,7 +163,7 @@ A Julian year was 11 days longer than a Gregorian year. So, the King of England 
     <item>
       <title>Improving code quality in agile teams</title>
       <link>http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/</link>
-      <pubDate>Wed, 21 Nov 2012 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 21 Nov 2012 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-11-21-Code-Quality-Agile-Teams/</guid>
       <author></author>
       <description>&lt;p&gt;Here are a few quick pointers that have worked for me to improve code quality in agile teams and to deliver stories completely without leaving bugs behind.&lt;/p&gt;
@@ -169,7 +184,7 @@ A Julian year was 11 days longer than a Gregorian year. So, the King of England 
     <item>
       <title>Java7 updates</title>
       <link>http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/</link>
-      <pubDate>Fri, 11 May 2012 15:00:00 +0630</pubDate>
+      <pubDate>Fri, 11 May 2012 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-05-11-Java7-Updates/</guid>
       <author></author>
       <description>&lt;p&gt;It has been quite sometime that Java 7 got released with plenty of new features and enhancements that shall interest Java developer community. Following sections of this page cover some of these changes with examples. 
@@ -370,7 +385,7 @@ long aLong = 0b1010000101000101101000010100010110100001010001011010000101000101L
     <item>
       <title>Evolution of Java</title>
       <link>http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</link>
-      <pubDate>Fri, 23 Mar 2012 15:00:00 +0630</pubDate>
+      <pubDate>Fri, 23 Mar 2012 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-10-23-Evolution-Of-Java/</guid>
       <author></author>
       <description>&lt;p&gt;I thought it would be useful for java developers to understand how Java has evolved since its inception so that they are aware of what all capabilities they have access to when working with a particular version of Java.  Besides, it is always good to have knowledge about evolution of the technologies that you are working with. &lt;/p&gt;
@@ -381,7 +396,7 @@ long aLong = 0b1010000101000101101000010100010110100001010001011010000101000101L
     <item>
       <title>Choosing the right collection</title>
       <link>http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</link>
-      <pubDate>Thu, 05 Jan 2012 15:00:00 +0630</pubDate>
+      <pubDate>Thu, 05 Jan 2012 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2012-01-05-Choosing-The-Right-Collections/</guid>
       <author></author>
       <description>&lt;p&gt;Here is a quick guide for selecting the proper implementation of a Set, List, or Map in your application. &lt;/p&gt;
@@ -427,7 +442,7 @@ long aLong = 0b1010000101000101101000010100010110100001010001011010000101000101L
     <item>
       <title>Change default author name for JavaDocs in Eclipse</title>
       <link>http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</link>
-      <pubDate>Wed, 03  Aug 2011 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 03  Aug 2011 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-08-03-Changing-Default-Author-Eclipse/</guid>
       <author></author>
       <description>&lt;p&gt;The auto generated Java docs at the class level picks the user name from the system user. This could result in weird author names in your code files as in an organization usernames are usually as per organizational naming conventions. For example my user name that I use to login is something like SK0012345 and you will agree that it wouldn’t look good as an author name in a Java file and might not make any sense to most other viewers of the code. &lt;/p&gt;
@@ -453,7 +468,7 @@ public class TestClass {
     <item>
       <title>Remote debugging in Eclipse</title>
       <link>http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</link>
-      <pubDate>Fri, 08 Jul 2011 15:00:00 +0630</pubDate>
+      <pubDate>Fri, 08 Jul 2011 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-07-08-Remote-Debugging-Jboss/</guid>
       <author></author>
       <description>&lt;p&gt;To debug your application on JBOSS server you would need to enable the debugging on your JBOSS application server. By default it is turned off. In order to set jboss app server to be running in debugging mode, you should uncomment following line in “jboss-5.1.0.GA/jboss/bin/run.conf”&lt;/p&gt;
@@ -467,7 +482,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Skip over certain classes when using Step Into(F5) in Eclipse’s debugger</title>
       <link>http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</link>
-      <pubDate>Wed, 01 Jun 2011 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 01 Jun 2011 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-06-01-Debugging-With-Eclipse/</guid>
       <author></author>
       <description>&lt;p&gt;Whenever I use the Step Into feature (F5) in Eclipse’s debugger, I’m mainly interested in stepping through code in my own classes, not the ones from external libraries or even Java classes.&lt;/p&gt;
@@ -517,7 +532,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Implementing Comparable and understanding compareTo</title>
       <link>http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/</link>
-      <pubDate>Sun, 20 Mar 2011 15:00:00 +0630</pubDate>
+      <pubDate>Sun, 20 Mar 2011 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-05-05-Understanding-Comparable/</guid>
       <author></author>
       <description>&lt;h3&gt;Implementing Comparable&lt;/h3&gt;
@@ -570,7 +585,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Eclipse keyboard shortcuts</title>
       <link>http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</link>
-      <pubDate>Sun, 20 Mar 2011 15:00:00 +0630</pubDate>
+      <pubDate>Sun, 20 Mar 2011 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-20-Eclipse-Keyboard-Shortcuts/</guid>
       <author></author>
       <description>&lt;p&gt;These keybindings are made by Carsten Ullrich (cullrich located-at activemath.org) and are released under the Creative Commons Attribution-ShareAlike 2.5 License (&lt;a href=&quot;http://creativecommons.org/licenses/by-sa/2.5/&quot;&gt;http://creativecommons.org/licenses/by-sa/2.5/&lt;/a&gt;).&lt;/p&gt;
@@ -580,7 +595,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Using Eclipse effectively</title>
       <link>http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</link>
-      <pubDate>Tue, 15 Mar 2011 15:00:00 +0630</pubDate>
+      <pubDate>Tue, 15 Mar 2011 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-03-15-Using-Eclipse-Effectively/</guid>
       <author></author>
       <description>&lt;p&gt;To ensure that the code that you write is always clean and complaint to your project specific coding standards and guidelines, it is important that you configure your eclipse to effectively use its compiler settings, Formatter, CheckStyle and related built in features. Most developers wouldn’t bother to do so but trust me that it is huge time saver in long run and shall always keep your code quality under check.&lt;/p&gt;
@@ -601,7 +616,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Troubleshooting eclipse issues</title>
       <link>http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/</link>
-      <pubDate>Fri, 25 Feb 2011 15:00:00 +0630</pubDate>
+      <pubDate>Fri, 25 Feb 2011 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-02-25-Troubleshooting-Eclipse-Issues/</guid>
       <author></author>
       <description>&lt;p&gt;Following are some tips that shall help you in avoiding potential issues and for being a little more productive while working with eclipse.&lt;/p&gt;
@@ -635,7 +650,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Best practices for threadsafe Singletons</title>
       <link>http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/</link>
-      <pubDate>Sat, 15 Jan 2011 15:00:00 +0630</pubDate>
+      <pubDate>Sat, 15 Jan 2011 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2011-01-15-Thread-Safe-Singletons/</guid>
       <author></author>
       <description>&lt;p&gt;A singleton class should be designed to ensures that there exists only one instance per application. Special care must be taken if your application is deployed on a clustered environment as in this case it is possible that multiple instance of your singleton class are available in your application.   &lt;/p&gt;
@@ -701,7 +716,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Overloading can be tricky</title>
       <link>http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/</link>
-      <pubDate>Fri, 31 Dec 2010 15:00:00 +0630</pubDate>
+      <pubDate>Fri, 31 Dec 2010 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-31-Tricky-Overloading/</guid>
       <author></author>
       <description>&lt;p&gt;Extra care must be taken while writing Overloading methods. The compiler decides which version of an overloaded method will be called based on declared compile-time type, not run-time type. For the case in which overloaded methods have the same number of arguments, the rules regarding this decision can sometimes be a bit tricky.&lt;/p&gt;
@@ -718,7 +733,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Prefer using parameterized types over raw types</title>
       <link>http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/</link>
-      <pubDate>Wed, 29 Dec 2010 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 29 Dec 2010 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-29-Prefer-Parameterized-Types/</guid>
       <author></author>
       <description>&lt;p&gt;When generics were introduced in JDK 1.5, raw types were retained only to maintain backwards compatibility with older versions of Java. Although using raw types is still possible, they should be avoided for following reasons :&lt;/p&gt;
@@ -735,7 +750,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Prefer switch over if-else</title>
       <link>http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</link>
-      <pubDate>Tue, 28 Dec 2010 15:00:00 +0630</pubDate>
+      <pubDate>Tue, 28 Dec 2010 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-28-Prefer-Switch-Over-IfElse/</guid>
       <author></author>
       <description>&lt;p&gt;In most cases switch will be lighter and performs faster than an if/else ladder. The compiler is able to optimize switch statements into a lookup table and perform compile-time checking for literals when dealing with enumerations, so I’d suggest that it’s usually preferable to use switch over if/else if if you’re dealing with numeric or enum types in Java. &lt;/p&gt;
@@ -744,7 +759,7 @@ JAVA_OPTS=”$JAVA_OPTS -Xrunjdwp:transport=dt_socket,address=8787,serve &lt;/co
     <item>
       <title>Exception handling guidelines/best practices</title>
       <link>http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</link>
-      <pubDate>Mon, 20 Dec 2010 15:00:00 +0630</pubDate>
+      <pubDate>Mon, 20 Dec 2010 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-12-10-Exception-Handling/</guid>
       <author></author>
       <description>&lt;p&gt;Let’s review some basic exception design guidelines, summarized from Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock and Alan McKean, Addison-Wesley, 2003).&lt;/p&gt;
@@ -798,7 +813,7 @@ static public boolean isInRange( int aNumber, int aLow, int aHigh ){
     <item>
       <title>Avoiding null pointer exceptions</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</link>
-      <pubDate>Sat, 27 Nov 2010 15:00:00 +0630</pubDate>
+      <pubDate>Sat, 27 Nov 2010 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-27-Avoiding-Null-Pointer-Exceptions/</guid>
       <author></author>
       <description>&lt;p&gt;Null pointer exceptions(NPE) are the undoubtedly the most common and most annoying errors. In most cases I have observed that it could have been avoided by simply sticking to some best coding practices while writing code. Here is an example of a potential NPE.&lt;/p&gt;
@@ -827,7 +842,7 @@ private Boolean isExpired(final StatusEnum status) {
     <item>
       <title>Crave for immutable classes</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/</link>
-      <pubDate>Sat, 20 Nov 2010 15:00:00 +0630</pubDate>
+      <pubDate>Sat, 20 Nov 2010 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-20-Immutable-Classes/</guid>
       <author></author>
       <description>&lt;p&gt;In the book “Effective Java”, Joshua Bloch makes this compelling recommendation :&lt;/p&gt;
@@ -952,7 +967,7 @@ public final class Planet {
     <item>
       <title>Ajax primer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</link>
-      <pubDate>Thu, 18 Nov 2010 15:00:00 +0630</pubDate>
+      <pubDate>Thu, 18 Nov 2010 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-11-18-Ajax-Primer/</guid>
       <author></author>
       <description>&lt;p&gt;The term Ajax has come to represent a broad group of web technologies that can be used to implement a web application that communicates with a server in the background, without interfering with the current state of the page. In the article that coined the term Ajax, Jesse James Garrett explained that the following technologies are incorporated:&lt;/p&gt;
@@ -972,7 +987,7 @@ public final class Planet {
     <item>
       <title>Use PMD - Programming Mistake Detector?</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</link>
-      <pubDate>Sat, 30 Oct 2010 15:00:00 +0630</pubDate>
+      <pubDate>Sat, 30 Oct 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-30-Use-PMD-ProgrammingMistakeDetector/</guid>
       <author></author>
       <description>&lt;h3&gt;About PMD&lt;/h3&gt;
@@ -1020,28 +1035,9 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
-      <title>Beware of floating point numbers</title>
-      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
-      <pubDate>Wed, 20 Oct 2010 15:00:00 +0630</pubDate>
-      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
-      <author></author>
-      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
-&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like “MonetaryAmount.java” that are wrappers over “BigDecimal” class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-“…binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.”
-&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
-&lt;p&gt;&lt;i&gt;
-“…it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.” 
-&lt;/i&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Package by feature not layer</title>
       <link>http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/</link>
-      <pubDate>Wed, 20 Oct 2010 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 20 Oct 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-30-Package-By-Features/</guid>
       <author></author>
       <description>&lt;p&gt;The first question in building an application is “How do I divide it up into packages?”. For typical business applications, there seems to be two ways of answering this question.&lt;/p&gt;
@@ -1067,9 +1063,28 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
 </description>
     </item>
     <item>
+      <title>Beware of floating point numbers</title>
+      <link>http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</link>
+      <pubDate>Wed, 20 Oct 2010 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-10-20-Beware-Of-Floating-Points/</guid>
+      <author></author>
+      <description>&lt;p&gt;Outside of a scientific or engineering context, the use of float and double (and the corresponding wrapper classes Float and Double ) should likely be avoided. The fundamental problem is that rounding errors will always occur when using these data types - they are unavoidable.&lt;/p&gt;
+&lt;p&gt;In a typical business application, using float and double to represent money values is dangerous, because of these rounding issues. Instead, BigDecimal should usually be used to represent money. It is also a common practice to have utility classes like “MonetaryAmount.java” that are wrappers over “BigDecimal” class of the JDK and that provides helper methods and functionality as needed by the business application.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From an IBM article on this topic :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+“…binary floating-point arithmetic should not be used for financial, commercial, and user-centric applications or web services because the decimal data used in these applications cannot be represented exactly using binary floating-point.”
+&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;From an article by Brian Goetz :&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;
+“…it is a bad idea to use floating point to try to represent exact quantities like monetary amounts. Using floating point for dollars-and-cents calculations is a recipe for disaster. Floating point numbers are best reserved for values such as measurements, whose values are fundamentally inexact to begin with.” 
+&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Use final liberally. Please do.</title>
       <link>http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</link>
-      <pubDate>Sun, 19 Sep 2010 15:00:00 +0630</pubDate>
+      <pubDate>Sun, 19 Sep 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-09-19-Use-Final-Liberally/</guid>
       <author></author>
       <description>&lt;p&gt;Use the final keyword liberally to communicate your intent. The final keyword has more than one meaning :&lt;/p&gt;
@@ -1093,7 +1108,7 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
     <item>
       <title>Overridable methods need special care</title>
       <link>http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</link>
-      <pubDate>Sun, 29  Aug 2010 15:00:00 +0630</pubDate>
+      <pubDate>Sun, 29  Aug 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-29-Overiride-Carefully/</guid>
       <author></author>
       <description>&lt;p&gt;&lt;b&gt;Allowing a method to be overridden should always be done intentionally, not by accident&lt;/b&gt;.&lt;/p&gt;
@@ -1105,7 +1120,7 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
     <item>
       <title>Prefer composition over inheritance</title>
       <link>http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</link>
-      <pubDate>Sat, 07  Aug 2010 15:00:00 +0630</pubDate>
+      <pubDate>Sat, 07  Aug 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-08-09-Composition-Inheritance/</guid>
       <author></author>
       <description>&lt;p&gt;Trust me on this one, I have learnt it the hard way. To start with lets start with the understanding of the terms composition and inheritance.&lt;/p&gt;
@@ -1138,7 +1153,7 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
     <item>
       <title>History, heritage and beauty of Italy</title>
       <link>http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</link>
-      <pubDate>Wed, 07 Jul 2010 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 07 Jul 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-07-07-Rome-Florence-Venice-Italy/</guid>
       <author></author>
       <description>&lt;p&gt;After a long wait for summers and good holiday deals, we finalized our itinerary during last week of May. The trip was planned from 19th June till 26th June. This time we chose to stay at camping sites at the out skirts of Rome city centre and now I can say that it was a good decision as the camping was fun and we always had something to do after returning from our day trips from Rome and other places. &lt;/p&gt;
@@ -1152,7 +1167,7 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
     <item>
       <title>A day trip to Dinant, belgium</title>
       <link>http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</link>
-      <pubDate>Mon, 07 Jun 2010 15:00:00 +0630</pubDate>
+      <pubDate>Mon, 07 Jun 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-06-07-Dinant-Belgium/</guid>
       <author></author>
       <description>&lt;p&gt;Last week finally we got the opportunity to visit Dinant, which is a small town known for its natural beauty and some terrible historic events that happened there during late 1800s. Another relatively lesser know fact about this place is that Adolphe Sax, inventor of the saxophone was also born and brought up in the vicinity of Citadel fort, which is a prominent  tourist attraction in this region of Belgium.&lt;/p&gt;
@@ -1166,7 +1181,7 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
     <item>
       <title>A trip to the city of fashion, Paris</title>
       <link>http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/</link>
-      <pubDate>Sun, 30 May 2010 15:00:00 +0630</pubDate>
+      <pubDate>Sun, 30 May 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-05-30-Paris-France/</guid>
       <author></author>
       <description>&lt;p&gt;Finally its a weekend and we have no plans except for going to the fancy dress show in Ranit’s school. So I have some time to pen down some moments from our Paris trip that we did earlier this month. &lt;/p&gt;
@@ -1185,7 +1200,7 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
     <item>
       <title>London, England</title>
       <link>http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</link>
-      <pubDate>Wed, 05 May 2010 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 05 May 2010 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-05-20-London-England/</guid>
       <author></author>
       <description>&lt;p&gt;It has been more than a month since our London trip ended but the memories of the trip are still so fresh as if it was Yesterday. So before my recollections of the trip fade away, I am putting it down in my travelog. &lt;/p&gt;
@@ -1205,7 +1220,7 @@ More details about each of these approaches can be found at &lt;a href=&quot;htt
     <item>
       <title>Day trip to the largest city of Netherlands - Amsterdam</title>
       <link>http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</link>
-      <pubDate>Fri, 01 Jan 2010 15:00:00 +0630</pubDate>
+      <pubDate>Fri, 01 Jan 2010 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2010-01-01-Amsterdam-Netherlands/</guid>
       <author></author>
       <description>&lt;p&gt;The city of glamour, weed and fun, Amsterdam, was the last site that was on our agenda. Unlike Arun’s basic nature, he was very accommodating :-) and agreed to almost all our plans and gave up giving anymore advices for site seeing. We all surrendered to Rajni’s agenda of feeding grains to pigeons on dam square and get some snaps clicked on the giant “ I AMSTERDAM” structure, followed by a tour of famous red light district of Amsterdam.&lt;/p&gt;
@@ -1223,7 +1238,7 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
     <item>
       <title>The windmills of Kinderdijk, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</link>
-      <pubDate>Thu, 31 Dec 2009 15:00:00 +0630</pubDate>
+      <pubDate>Thu, 31 Dec 2009 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-31-Kinderdijk-Netherlands/</guid>
       <author></author>
       <description>&lt;p&gt;We had heard a lot about Netherlands wind mills that were built more than two centuries ago and are still into existence.For many centuries these windmills played an important role in the drainage &amp;amp; subsequent reclamation of the lands in NL. These windmills were already on our agenda for this weekend. &lt;/p&gt;
@@ -1240,7 +1255,7 @@ It was all non-vegetarian restaurant, so Anagha did not have anything accept for
     <item>
       <title>Domtoren Utrecht, Netherlands</title>
       <link>http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</link>
-      <pubDate>Wed, 30 Dec 2009 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 30 Dec 2009 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-12-30-Domtoren-Utrecht/</guid>
       <author></author>
       <description>&lt;p&gt;We were waiting for this long weekend from quite some time and finally it came with a bang. It was quite an event full weekend and will stay in our memories for a long long time.&lt;/p&gt;
@@ -1258,7 +1273,7 @@ Overall it was an excellent start and we all were  very happy and excited and we
     <item>
       <title>A day trip to Aquatopia at Antwerp, Brussels</title>
       <link>http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</link>
-      <pubDate>Tue, 01 Dec 2009 15:00:00 +0630</pubDate>
+      <pubDate>Tue, 01 Dec 2009 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-30-Aquatopia-Aquarium/</guid>
       <author></author>
       <description>&lt;p&gt;Aquatopia is a popular educational attraction in central Antwerp, Belgium. It features a set of aquariums, along with recreations of other marine habitats, including swamps, rain forests, river deltas, and coral reefs. Aquatopia also includes a number of special exhibits covering sharks, nautilus, and mysteries of the deep.&lt;/p&gt;
@@ -1268,7 +1283,7 @@ Overall it was an excellent start and we all were  very happy and excited and we
     <item>
       <title>A walk in Brussels</title>
       <link>http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</link>
-      <pubDate>Wed, 25 Nov 2009 15:00:00 +0630</pubDate>
+      <pubDate>Wed, 25 Nov 2009 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://blog.sanjeevonline.com/articles/2009-11-25-Brussels-Belgium/</guid>
       <author></author>
       <description>&lt;p&gt;Arun and Anagha, our family friends, visited us in Brussels and we decided to do a little site seeing while they were around. Brussels has grown from a 10th-century fortress town to a sizeable city. It has a lot of popular places that a lot of tourists come to see.&lt;/p&gt;
