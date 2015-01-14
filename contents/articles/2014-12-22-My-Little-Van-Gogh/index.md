@@ -9,11 +9,11 @@ tags: [trivia]
 excerpt: Last Friday, I got a text message from a school in Gurgaon to collect an appreciation gift for my younger son who won the first prize in a colouring contest that they held at their school and where several schools from Gurgaon participated. First prize??? That can’t be true, at least genetically, I thought. I never got a first prize in my life in anything. But I had seen Rajit scribbling on and ruining the walls of our drawing room a few times and knew that he had it in him :-).
 ---
 
-![image-right](VanGogh.jpg) Last Friday, I got a text message from a school in Gurgaon to collect an appreciation gift for my younger son who won the first prize in a colouring contest that they held at their school and where several schools from Gurgaon participated.
+<img style="float: right" src="VanGogh.jpg" class="img-responsive" alt="Responsive image"/> Last Friday, I got a text message from a school in Gurgaon to collect an appreciation gift for my younger son who won the first prize in a colouring contest that they held at their school and where several schools from Gurgaon participated.
 
 First prize??? That can’t be true, at least genetically, I thought. I never got a first prize in my life. But I had seen Rajit scribbling on and ruining the walls of our drawing room a few times and knew that he had it in him :-) and now with this acknowledgement of his talent I can rest assured that my 3 and half year old is on his way to become India's Van Gogh. Unless education ruins him he can very well become Van Gogh. At least in his father's eyes he already is. 
 
-<span class="more"></span>
+<span class="more" ></span>
 
 Anyways, I called back to confirm if it was **Rajit Sharma** son of **Sanjeev Kumar** and they confirmed that it was indeed my younger one. 
 

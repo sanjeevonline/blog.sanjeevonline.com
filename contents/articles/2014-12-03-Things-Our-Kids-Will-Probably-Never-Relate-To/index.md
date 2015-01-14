@@ -26,7 +26,7 @@ The paste dried out in an hour and the house started looking as good as new. It 
 
 ### Another incident from around the same time:
 
-![image-right](Chullah.JPG)
+<img style="float: right" src="Chullah.JPG" class="img-responsive" alt="Responsive image"/>
 
 I was hungry and wanted something to eat but the [Chullah](https://www.google.co.in/search?q=chullah&espv=2&biw=1622&bih=892&source=lnms&tbm=isch&sa=X&ei=SPR-VLfsM4KbuQSHxoKIAw&ved=0CAYQ_AUoAQ) was not setup for cooking yet. On repeated requests, my granny asked me to get some fire from the neighbours and some dry cow dung cakes from the store on the roof. 
 
